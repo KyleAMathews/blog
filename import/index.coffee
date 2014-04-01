@@ -40,9 +40,7 @@ fs.readFile('/tmp/rows.json', (err, rows) ->
 
   # TODO
   # linkify links (how to do it without double-linking?)
-  # ----convert kyle.mathews2000.com links to relative links w/ new link format.
   # fetch images and rewrite links to be relative
-  # specify if a post is a draft or not (don't put drafts in any index posts or rss/atom)?
   for row in rows
     # Convert tags into an array.
     row.tags = row.tags.split('|') if row.tags?
