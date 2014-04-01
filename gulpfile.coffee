@@ -19,6 +19,11 @@ gulp.task('build', ->
       file.path = file.path.replace(/md$/, 'html')
       cb(null, file)
     ))
+    # Remove date from URLs
+    .pipe(map((file, cb) ->
+      file.path = file.base + file.path.split('---')[1]
+      cb(null, file)
+    ))
     .pipe(indexer())
     .pipe(gulp.dest('public/'))
 )

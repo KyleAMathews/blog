@@ -1,0 +1,22 @@
+{
+  "name": "import",
+  "version": "0.0.0",
+  "description": "Imports my blog entries from its former Drupal home",
+  "main": "index.coffee",
+  "dependencies": {
+    "mysql": "~2.1.1",
+    "marked": "~0.3.2",
+    "html-md": "~3.0.2",
+    "html-linkify": "~1.1.0",
+    "moment": "~2.5.1",
+    "underscore.string": "~2.3.3",
+    "js-yaml": "~3.0.2",
+    "richtypo": "~0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "license": "ISC"
+}

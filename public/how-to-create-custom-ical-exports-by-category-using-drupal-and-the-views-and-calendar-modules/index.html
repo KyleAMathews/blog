@@ -1,0 +1,51 @@
+<p>Lately I&#39;ve been helping out a web development team at BYU develop a new calendaring system in Drupal to replace our <a href="http://byunews.byu.edu/calendar/">existing all-in-one calendar</a>. It&#39;s an ambitious project that&#39;s leveraging quite a few different modules from the Drupalsphere.  </p>
+<p>Some of the features include:  </p>
+<ul>
+<li><p>Import ical feeds.  </p>
+</li>
+<li><p>Filter events for display by event category  </p>
+</li>
+<li><p>Download customized ical feeds by category (i.e. Student wants to import just sport and academic events into his personal calendar).  </p>
+</li>
+<li><p>Hovering on event titles exposes tooltip (we&#39;re using <a href="http://www.lullabot.com/files/bt/bt-latest/DEMO/index.html">Beautytips</a>) with full event info  </p>
+</li>
+</ul>
+<p>Here&#39;s a screenshot of the UI as of last night:  </p>
+<p><a href="http://kyle.mathews2000.com/files/tooltip.png"><img src="http://kyle.mathews2000.com/files/tooltip.png" alt=""></a>  </p>
+<p>I wanted to blog about how we created our ical exports by category as I couldn&#39;t find any documentation about this and it doesn&#39;t work out of the box.  </p>
+<p>The default view from Calendar includes an ical display. This, by default, filters ical feeds by date -- e.g. only include events in the ical feed after a certain date. This works fine.   </p>
+<p>The problem we ran into is how to filter the ical feed by taxonomy terms. In Views we created a taxonomy term filter and exposed that to users so they can created custom calendar views of different event categories. That worked wonderfully. The problem was that when you downloaded the ical feed from the filtered calendar view, it included all events, not just events from the categories you&#39;d selected.  </p>
+<p>After examining the url for the ical feed we found the problem.  </p>
+<p>The default ical URL that&#39;s generated looks like this:  </p>
+<p><code>/aiocalendar/calendar/ical/2009-10?tid[2]=2&amp;tid[1]=1&amp;tid[3]=3&amp;tid[4]=4&amp;tid[5]=5&amp;tid[6]=6&amp;tid[7]=7</code>  </p>
+<p>Views takes each url segment separated by a forward slash as arguments. &quot;calendar/ical&quot; tells views to return an ical representation of the calendar. 2009-10 tells views to only include events from October 2009 onward. But the next bit, &quot;?tid[2]=2&amp;tid[1]=1&amp;tid[3]=3&amp;tid[4]=4&amp;tid[5]=5&amp;tid[6]=6&amp;tid[7]=7&quot;, a list of term IDs that were currently active on the calendar view, weren&#39;t working at helping Views produced a filtered ical feed.  </p>
+<p>Digging into the taxonomy term argument, I discovered it expected arguments in the form of &quot;1+2+3&quot; or &quot;1,2,3&quot;. 1+2+3 meaning Views would return events that had term 1 OR 2 OR 3 and 1,2,3 meaning Views would return events that had terms 1 AND 2 AND 3. For example, &quot;<code>aiocalendar/calendar/ical/2009-10/1+4+6</code>&quot; would return an ical feed of all events from October 2009 onward that had term ids of 1 or 4 or 6.  </p>
+<p>I jumped to the command line and tested my theory by using wget and some handcrafted urls and it worked! The ical feeds I was getting only included events from categories I included as arguments in the URL.  </p>
+<p>Now the trick was to override the ical url generated to replace it with one in the correct format. I found the theme function in the Calendar module where the the ical feed icon was generated, copied that to my module, and rewrote the url using some regex kungfu (read more <a href="http://drupal.org/node/11811">on overriding theme functions</a> in the <a href="http://drupal.org/handbooks">Drupal handbook</a>).  </p>
+<p>/*  </p>
+<p>* Override theme_calendar_ical_icon() so we can override the url produced.  </p>
+<p>*/  </p>
+<p>function phptemplate_calendar_ical_icon($url) {  </p>
+<p>// Pull out array of Term IDs from the url.  </p>
+<p>$search = preg_match_all(&quot;/tid\[([0-9])*\]/&quot;, $url, $matches);  </p>
+<p>$tids = $matches[1];  </p>
+<p>// Grab url stem, we&#39;ll add the Term ID arguments back in a bit.  </p>
+<p>$search = preg_match(&quot;/(.*ical\/)20[0-9]{2}-.*/&quot;, $url, $url_stem);  </p>
+<p>$url = $url_stem[1];  </p>
+<p>// Views arguments treat a &quot;+&quot; between arguments as OR.  </p>
+<p>// So we&#39;re crafting an argument that asks for all events which match one of the  </p>
+<p>// term IDs.  </p>
+<p>foreach($tids as $tid) {  </p>
+<p>$url .= $tid . &quot;+&quot;;  </p>
+<p>}  </p>
+<p>// Trim off extra +  </p>
+<p>$url = trim($url, &quot;+&quot;);  </p>
+<p>if ($image = theme(&#39;image&#39;, drupal_get_path(&#39;module&#39;, &#39;date_api&#39;) .&#39;/images/ical16x16.gif&#39;, t(&#39;Add to calendar&#39;), t(&#39;Add to calendar&#39;))) {  </p>
+<p>return &#39;</p>
+<p>[&#39;. $image .&#39;][5]&#39;;  </p>
+<p>}  </p>
+<p>}  </p>
+<p>?>  </p>
+<p>We&#39;ll be releasing our calendar, custom code and all, as a feature on BYU&#39;s own feature server once the new calendar is released to production. But you can grab a development copy of it now at <a href="https://island.byu.edu/content/first-upload-calendar-feature">https://island.byu.edu/content/first-upload-calendar-feature</a>  </p>
+<p>The BYU Drupal community is collaborating to improve our calendar feature as it solves nicely a common need on the many department web sites deployed on campus. If you&#39;d like to join the <a href="https://island.byu.edu/group/drupal-calendar">Drupal Calendar group</a> to participate, <a href="http://kyle.mathews2000.com/contact">contact me</a>, and I&#39;ll create an account for you on our groups site.</p>
+<p>[5]: &#39;. check_url($url) .&#39; &quot;ical&quot;</p>

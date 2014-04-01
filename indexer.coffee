@@ -16,7 +16,6 @@ module.exports = (site, options) ->
     files = files.sort((post1, post2) ->
       date1 = moment(post1.meta.date)
       date2 = moment(post2.meta.date)
-      console.log date1.isBefore(date2)
       if date1.isBefore(date2) then 1 else -1
     )
 
@@ -40,6 +39,8 @@ generateHomePage = (files) ->
   homepage = ""
 
   for file in files
+    if file.meta.draft
+      continue
     date = moment(file.meta.date)
     url = path.dirname(file.relative)
     homepage += "<a href='#{ url }'>#{ date.format('YYYY MM DD') } #{ file.meta.title }</a><br>"
