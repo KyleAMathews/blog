@@ -1,5 +1,6 @@
 ---
 title: Why I blog - Part 1
+url: /why-i-blog-part-1
 tags:
   - Learning
   - Writing

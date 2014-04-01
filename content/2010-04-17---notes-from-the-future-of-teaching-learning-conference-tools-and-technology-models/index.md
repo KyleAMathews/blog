@@ -1,5 +1,6 @@
 ---
 title: "Notes from \"The Future of Teaching & Learning\" conference -- Tools and Technology Models"
+url: /notes-future-teaching-learning-conference-tools-and-technology-models
 tags:
   - Education
   - education tools

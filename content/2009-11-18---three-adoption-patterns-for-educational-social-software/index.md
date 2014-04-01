@@ -1,5 +1,6 @@
 ---
 title: Three adoption patterns for educational social software
+url: /three-adoption-patterns-educational-social-software
 tags:
   - Education
   - elearning2.0

@@ -1,5 +1,6 @@
 ---
 title: New Drupal-Mixpanel integration module released to track event-based analytics
+url: /new-drupal-mixpanel-integration-module-released-track-event-based-analytics
 tags:
   - drupal
   - drupal planet

@@ -1,5 +1,6 @@
 ---
 title: "Notes from \"The Future of Teaching & Learning\" conference -- Howard Rheingold's keynote"
+url: /notes-future-teaching-learning-conference-howard-rheingolds-keynote
 tags:
   - Education
   - Eduglu

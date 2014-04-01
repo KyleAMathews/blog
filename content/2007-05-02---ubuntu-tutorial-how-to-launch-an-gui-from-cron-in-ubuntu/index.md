@@ -1,5 +1,6 @@
 ---
 title: "Ubuntu Tutorial: How to launch an GUI from cron in Ubuntu"
+url: /ubuntu-tutorial-how-to-launch-an-gui-from-cron-i
 tags:
   - Linux
   - Ubuntu

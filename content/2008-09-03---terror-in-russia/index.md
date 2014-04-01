@@ -1,5 +1,6 @@
 ---
 title: Terror in Russia
+url: /terror-russia
 tags:
   - russia
   - terror

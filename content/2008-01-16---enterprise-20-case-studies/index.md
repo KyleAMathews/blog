@@ -1,5 +1,6 @@
 ---
 title: Enterprise 2.0 Case Studies
+url: /enterprise-20-case-studies
 tags:
   - enterprise2.0
   - social software

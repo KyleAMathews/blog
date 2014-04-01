@@ -1,5 +1,6 @@
 ---
 title: Stockdale paradox
+url: /stockdale-paradox
 tags: null
 date: "2011-03-02T17:31:52.000Z"
 layout: post

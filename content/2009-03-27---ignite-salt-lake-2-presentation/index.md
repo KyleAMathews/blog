@@ -1,5 +1,6 @@
 ---
 title: Ignite Salt Lake 2 Presentation
+url: /ignite-salt-lake-2-presentation
 tags:
   - ignite
   - ignite salt lake

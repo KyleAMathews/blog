@@ -1,5 +1,6 @@
 ---
 title: A loose assortment of thoughts
+url: /loose-assortment-thoughts
 tags: null
 date: "2011-04-22T22:39:10.000Z"
 layout: post

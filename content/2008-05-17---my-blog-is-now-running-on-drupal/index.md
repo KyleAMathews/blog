@@ -1,5 +1,6 @@
 ---
 title: My blog is now running on Drupal
+url: /my-blog-now-running-drupal
 tags:
   - blogging
   - drupal

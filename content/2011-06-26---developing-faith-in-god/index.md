@@ -1,5 +1,6 @@
 ---
 title: Developing faith in God
+url: /developing-faith-god
 tags: null
 date: "2011-06-26T23:30:50.000Z"
 layout: post

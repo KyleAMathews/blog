@@ -1,5 +1,6 @@
 ---
 title: How to become an expert
+url: /how-become-expert
 date: "2008-05-17T15:12:59.000Z"
 draft: true
 layout: post

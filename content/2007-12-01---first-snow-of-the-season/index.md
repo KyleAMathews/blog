@@ -1,5 +1,6 @@
 ---
 title: First Snow of the Season
+url: /first-snow-season
 tags:
   - pictures
 date: "2007-12-01T17:13:33.000Z"

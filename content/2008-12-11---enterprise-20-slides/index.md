@@ -1,5 +1,6 @@
 ---
 title: Enterprise 2.0 Slides
+url: /enterprise-20-slides
 tags:
   - enterprise2.0
 date: "2008-12-11T16:41:56.000Z"

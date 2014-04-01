@@ -1,5 +1,6 @@
 ---
 title: The problem of too-general tools
+url: /problem-too-general-tools
 tags:
   - entrepreneurship
 date: "2010-06-02T19:49:23.000Z"

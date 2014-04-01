@@ -1,5 +1,6 @@
 ---
 title: It is the learners who inherit the future
+url: /it-learners-who-inherit-future
 tags: null
 date: "2011-07-25T04:59:38.000Z"
 layout: post

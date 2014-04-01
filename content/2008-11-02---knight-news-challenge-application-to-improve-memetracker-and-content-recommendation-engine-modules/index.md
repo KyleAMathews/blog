@@ -1,5 +1,6 @@
 ---
 title: Knight News Challenge application to improve Memetracker and Content Recommendation Engine modules
+url: /knight-news-challenge-application-improve-memetracker-and-content-recommendation-eng
 tags:
   - drupal
   - memetracker

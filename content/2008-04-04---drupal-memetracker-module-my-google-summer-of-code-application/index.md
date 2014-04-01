@@ -1,5 +1,6 @@
 ---
 title: Drupal Memetracker Module -- My Google Summer of Code Application
+url: /drupal-memetracker-module-my-google-summer-of-code-application
 tags:
   - drupal
   - memetracker

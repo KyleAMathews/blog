@@ -1,5 +1,6 @@
 ---
 title: Love is the fountain for all creativity
+url: /love-fountain-all-creativity
 tags:
   - creativity
   - love

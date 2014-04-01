@@ -1,5 +1,6 @@
 ---
 title: An Education Syllogism
+url: /education-syllogism
 tags:
   - Education
   - Learning

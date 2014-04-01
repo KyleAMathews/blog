@@ -1,5 +1,6 @@
 ---
 title: I really liked these insights
+url: /i-really-liked-these-insights
 tags:
   - Education
   - entrepreneurship

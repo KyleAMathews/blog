@@ -1,5 +1,6 @@
 ---
 title: New elearning website
+url: /new-elearning-website
 tags:
   - drupal
   - Education

@@ -1,5 +1,6 @@
 ---
 title: "Creating a CCK Field module with an \"invisible\" widget"
+url: /creating-cck-field-module-invisible-widget
 tags:
   - drupal
   - drupal planet

@@ -1,5 +1,6 @@
 ---
 title: Internet reduces need for experts. Where does this leave professors?
+url: /internet-reduces-need-experts-where-does-leave-professors
 tags:
   - Education
   - internet

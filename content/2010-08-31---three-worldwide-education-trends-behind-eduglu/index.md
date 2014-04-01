@@ -1,5 +1,6 @@
 ---
 title: Three worldwide education trends behind Eduglu
+url: /three-worldwide-trends-behind-eduglu
 tags:
   - Education
   - elearning2.0

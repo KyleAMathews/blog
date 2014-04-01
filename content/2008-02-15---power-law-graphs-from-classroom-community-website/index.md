@@ -1,5 +1,6 @@
 ---
 title: Power Law Graphs from classroom community website
+url: /power-law-graphs-from-classroom-community-websit
 tags:
   - drupal
   - Education

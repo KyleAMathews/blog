@@ -1,5 +1,6 @@
 ---
 title: Enterprise 2.0 -- A Summary Post
+url: /enterprise-20-my-attempt-to-summarize
 tags:
   - enterprise2.0
 date: "2007-03-14T13:53:48.000Z"

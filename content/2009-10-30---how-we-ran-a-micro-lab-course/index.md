@@ -1,5 +1,6 @@
 ---
 title: How we ran a micro-lab course
+url: /how-we-ran-micro-lab-course
 tags:
   - Education
   - social learning

@@ -1,5 +1,6 @@
 ---
 title: A dozen papers on enterprise2.0
+url: /a-dozen-papers-on-enterprise20-2
 tags:
   - elearning2.0
   - enterprise2.0

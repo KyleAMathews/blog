@@ -1,5 +1,6 @@
 ---
 title: "Looking for Alpha Testers for Eduglu, a new Drupal Install Profile for Higher Education"
+url: /need-alpha-testers-eduglu-new-drupal-install-profile-higher-education
 tags:
   - drupal
   - Education

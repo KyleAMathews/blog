@@ -1,5 +1,6 @@
 ---
 title: "It's a great day to be an entrepreneur"
+url: /its-a-great-day-be-entrepreneur
 tags:
   - entrepreneurship
 date: "2007-06-04T15:33:06.000Z"

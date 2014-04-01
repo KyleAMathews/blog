@@ -1,5 +1,6 @@
 ---
 title: Some words of wisdom
+url: /some-words-wisdom
 tags: null
 date: "2008-12-01T00:34:44.000Z"
 layout: post

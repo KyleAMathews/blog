@@ -1,5 +1,6 @@
 ---
 title: Marshall McLuhan on education
+url: /marshall-mcluhan-education
 tags:
   - Education
   - social media

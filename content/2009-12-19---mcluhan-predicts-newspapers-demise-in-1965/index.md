@@ -1,5 +1,6 @@
 ---
 title: "McLuhan predicts newspaper's demise in 1965."
+url: /mcluhan-predicts-newspapers-demise-1965
 tags:
   - newspapers
 date: "2009-12-19T20:29:17.000Z"

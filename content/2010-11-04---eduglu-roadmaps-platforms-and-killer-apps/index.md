@@ -1,5 +1,6 @@
 ---
 title: "Eduglu, Roadmaps, platforms, and killer apps"
+url: /roadmaps-platforms-and-killer-apps
 tags:
   - drupal
   - drupal planet

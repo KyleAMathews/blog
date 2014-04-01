@@ -1,5 +1,6 @@
 ---
 title: Ubuntu 6.10 - Edgy Eft - thoughts on upgrading from Dapper
+url: /ubuntu-610-edgy-eft-thoughts-upgrading-dapper
 tags:
   - Linux
   - Ubuntu

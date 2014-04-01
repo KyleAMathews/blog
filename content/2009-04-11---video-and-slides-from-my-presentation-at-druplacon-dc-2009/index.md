@@ -1,5 +1,6 @@
 ---
 title: Video and slides from my presentation at Druplacon DC 2009
+url: /video-and-slides-my-presentation-druplacon-dc-2009
 tags:
   - drupal
   - elearning2.0

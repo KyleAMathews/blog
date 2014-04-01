@@ -1,5 +1,6 @@
 ---
 title: Announcing the first alpha release of the Drupal Memetracker module
+url: /announcing-first-alpha-release-drupal-memetracker-module
 tags:
   - drupal
   - memetracker

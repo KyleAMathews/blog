@@ -1,5 +1,6 @@
 ---
 title: First beta release for Drupal-native mailinglist module
+url: /first-beta-release-drupal-native-mailinglist-module
 tags:
   - drupal
   - drupal planet

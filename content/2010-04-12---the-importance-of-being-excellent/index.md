@@ -1,5 +1,6 @@
 ---
 title: The importance of being excellent
+url: /importance-being-excellent
 tags:
   - execellency
 date: "2010-04-12T01:03:10.000Z"

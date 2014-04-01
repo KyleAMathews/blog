@@ -1,5 +1,6 @@
 ---
 title: Richard Hamming on Luck
+url: /richard-hamming-luck
 tags:
   - luck
 date: "2011-04-09T18:26:54.000Z"

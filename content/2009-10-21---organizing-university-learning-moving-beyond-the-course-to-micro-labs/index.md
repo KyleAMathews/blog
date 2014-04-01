@@ -1,5 +1,6 @@
 ---
 title: "Organizing University Learning: Moving Beyond the Course to Micro-labs"
+url: /organizing-university-learning-moving-beyond-classroom
 tags:
   - Education
   - Learning

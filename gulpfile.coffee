@@ -6,7 +6,6 @@ connect = require 'gulp-connect'
 
 # Load plugins
 $ = require('gulp-load-plugins')()
-console.log $
 count = 1
 gulp.task('build', ->
   gulp.src('./content/**/*.md')
@@ -21,7 +20,7 @@ gulp.task('build', ->
     ))
     # Remove date from URLs
     .pipe(map((file, cb) ->
-      file.path = file.base + file.path.split('---')[1]
+      file.path = file.base + file.meta.url.slice(1) + "/index.html"
       cb(null, file)
     ))
     .pipe(indexer())

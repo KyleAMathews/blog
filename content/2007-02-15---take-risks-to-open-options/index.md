@@ -1,5 +1,6 @@
 ---
 title: Take Risks to Open Options
+url: /take-risks-open-options
 tags:
   - entrepreneurship
   - Learning

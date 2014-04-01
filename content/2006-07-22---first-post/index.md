@@ -1,5 +1,6 @@
 ---
 title: First Post
+url: /first-post
 date: "2006-07-22T22:39:53.000Z"
 layout: post
 ---

@@ -1,5 +1,6 @@
 ---
 title: Chatroom Feature for Drupal 6.x built with Node.js and Backbone.js
+url: /chatroom-feature-drupal-6x-built-nodejs-and-backbonejs
 tags:
   - drupal
   - drupal planet

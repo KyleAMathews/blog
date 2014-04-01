@@ -1,5 +1,6 @@
 ---
 title: Eduglu enters the deadpool
+url: /eduglu-enters-deadpool
 tags: null
 date: "2011-04-22T23:03:50.000Z"
 layout: post

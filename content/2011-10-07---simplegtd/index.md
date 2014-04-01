@@ -1,5 +1,6 @@
 ---
 title: SimpleGTD
+url: /simplegtd
 tags:
   - gtd
 date: "2011-10-07T18:59:39.000Z"

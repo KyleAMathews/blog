@@ -1,5 +1,6 @@
 ---
 title: Second release of Eduglu
+url: /second-release-eduglu
 tags:
   - Education
   - drupal planet

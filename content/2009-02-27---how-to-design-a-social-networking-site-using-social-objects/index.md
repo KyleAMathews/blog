@@ -1,5 +1,6 @@
 ---
 title: How to design a social networking site using social objects
+url: /how-design-social-networking-site-using-social-objects
 tags:
   - social software
   - drupal planet

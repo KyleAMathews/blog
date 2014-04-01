@@ -1,5 +1,6 @@
 ---
 title: Conversation
+url: /conversation
 tags:
   - Education
   - social learning

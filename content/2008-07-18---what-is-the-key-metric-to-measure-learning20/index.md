@@ -1,5 +1,6 @@
 ---
 title: What is the key metric to measure Learning2.0?
+url: /what-key-metric-measure-learning20
 tags:
   - Education
   - elearning2.0

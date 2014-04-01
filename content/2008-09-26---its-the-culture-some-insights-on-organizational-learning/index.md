@@ -1,5 +1,6 @@
 ---
 title: "It's the culture, some insights on organizational learning."
+url: /its-culture-some-insights-organizational-learning
 tags:
   - drupal
   - Education

@@ -1,5 +1,6 @@
 ---
 title: A new focus for my blog
+url: /a-new-focus-my-blog
 date: "2007-08-01T00:30:56.000Z"
 layout: post
 ---

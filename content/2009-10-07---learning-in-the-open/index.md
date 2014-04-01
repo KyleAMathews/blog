@@ -1,5 +1,6 @@
 ---
 title: Learning in the open
+url: /learning-open
 tags:
   - Education
   - social learning

@@ -1,5 +1,6 @@
 ---
 title: How to create custom ical exports by category using Drupal and the Views and Calendar modules
+url: /how-create-custom-ical-exports-category-using-drupal-and-views
 tags:
   - drupal
   - drupal planet

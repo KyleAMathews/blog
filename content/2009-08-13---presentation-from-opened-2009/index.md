@@ -1,5 +1,6 @@
 ---
 title: Presentation from OpenEd 2009
+url: /presentation-opened-2009
 tags:
   - social software
   - opened09

@@ -1,5 +1,6 @@
 ---
 title: "Deploying Social Software in Universities: Go Broad then Deep"
+url: /deploying-social-software-universities-broad-then-deep
 tags:
   - Education
   - elearning2.0

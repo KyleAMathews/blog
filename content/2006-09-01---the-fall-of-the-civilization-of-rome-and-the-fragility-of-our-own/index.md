@@ -4,6 +4,7 @@ tags:
   - history
 date: "2006-09-01T15:52:04.000Z"
 layout: post
+url: /the-fall-civilization-rome-and-fragility-our-own
 ---
 
 Tyler Cowen over at <a href="http://www.marginalrevolution.com/marginalrevolution/2006/08/the_dark_ages_w.html">Marginal Revolution</a> pointed me recently to a fascinating and very well-written book entitled "<a href="http://www.amazon.com/Fall-Rome-End-Civilization/dp/0192807285/sr=8-1/qid=1157041617/ref=sr_1_1/102-2703149-8576135?ie=UTF8">The Fall of Rome and the End of Civilization</a>" . I don't intend to review the book per se (but here are two good reviews, <a href="http://www.chicagoboyz.net/archives/004376.html">1</a> and <a href="http://www.telegraph.co.uk/arts/main.jhtml?xml=/arts/2005/06/19/bohea19.xml&sSheet=/arts/2005/06/19/botop.html">2</a>) but instead comment on some interesting points the author made.

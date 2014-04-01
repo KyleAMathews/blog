@@ -1,5 +1,6 @@
 ---
 title: 10 Ways to Grow your Network
+url: /10-ways-to-grow-your-network
 tags:
   - entrepreneurship
   - innovation

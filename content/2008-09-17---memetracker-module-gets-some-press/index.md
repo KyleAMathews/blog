@@ -1,5 +1,6 @@
 ---
 title: Memetracker module gets some press
+url: /memetracker-module-gets-some-press
 tags:
   - memetracker
 date: "2008-09-17T22:08:08.000Z"

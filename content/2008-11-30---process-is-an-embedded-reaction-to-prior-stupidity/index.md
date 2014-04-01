@@ -1,5 +1,6 @@
 ---
 title: Process is an embedded reaction to prior stupidity
+url: /process-embedded-reaction-prior-stupidity
 tags:
   - process
 date: "2008-11-30T02:39:36.000Z"

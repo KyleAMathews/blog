@@ -1,5 +1,6 @@
 ---
 title: Building your own tools
+url: /building-your-own-tools
 tags:
   - tools
 date: "2011-10-28T08:00:37.000Z"

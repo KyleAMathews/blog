@@ -1,5 +1,6 @@
 ---
 title: Never update your resume again (just your blog)
+url: /never-update-your-resume-again
 tags:
   - blogging
 date: "2008-05-17T13:22:14.000Z"

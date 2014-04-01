@@ -1,5 +1,6 @@
 ---
 title: What are Social Objects?
+url: /what-are-social-objects
 tags:
   - social software
   - drupal planet
@@ -81,5 +82,5 @@ To read more on the topic, see my [delicious bookmarks for social objects.][6]
 [2]: http://drupal.org
 [3]: https://island.byu.edu
 [4]: http://www.zengestrom.com/blog/2007/08/what-makes-a-go.html
-[5]: /how-to-design-a-social-networking-site-using-social-objects
+[5]: /how-design-social-networking-site-using-social-objects
 [6]: http://delicious.com/mathews.kyle/social_objects

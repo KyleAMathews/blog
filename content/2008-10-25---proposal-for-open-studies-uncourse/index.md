@@ -1,5 +1,6 @@
 ---
 title: Proposal for Open Studies (Un)course
+url: /proposal-open-studies-uncourse
 tags:
   - Education
   - Learning

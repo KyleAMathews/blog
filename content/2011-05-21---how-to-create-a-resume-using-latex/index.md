@@ -1,5 +1,6 @@
 ---
 title: How to create a resume using Latex
+url: /how-create-resume-using-latex
 tags: null
 date: "2011-05-21T02:22:02.000Z"
 layout: post

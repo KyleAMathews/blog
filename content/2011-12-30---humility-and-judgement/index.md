@@ -1,5 +1,6 @@
 ---
 title: Humility and judgement
+url: /humility-and-judgement
 tags:
   - humility
 date: "2011-12-30T03:48:00.000Z"

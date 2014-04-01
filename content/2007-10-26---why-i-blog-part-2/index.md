@@ -1,5 +1,6 @@
 ---
 title: Why I blog -- Part 2
+url: /why-i-blog-part-2
 tags:
   - blogging
   - internet-marketing

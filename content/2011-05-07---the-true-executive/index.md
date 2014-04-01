@@ -1,5 +1,6 @@
 ---
 title: The True Executive
+url: /true-executive
 tags: null
 date: "2011-05-07T03:43:15.000Z"
 layout: post

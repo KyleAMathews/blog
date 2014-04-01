@@ -1,5 +1,6 @@
 ---
 title: "When in Doubt, Make it Public"
+url: /when-doubt-make-it-public
 tags:
   - Education
   - social learning

@@ -1,5 +1,6 @@
 ---
 title: Video and pictures from my presentation at Ignite
+url: /video-and-pictures-my-presentation-ignite
 tags:
   - social networking
   - ignite

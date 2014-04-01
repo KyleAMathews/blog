@@ -14,26 +14,28 @@ connection = mysql.createConnection({
   database : process.env.DATABASE
 })
 
-#connection.connect()
+connection.connect()
 
 query = "SELECT n.nid, \
                 n.title, \
                 nr.body, \
                 n.created, \
                 n.status, \
+                ua.dst as url, \
                 GROUP_CONCAT( td.name SEPARATOR '|' ) AS 'tags' \
            FROM node_revisions AS nr, \
                 node AS n \
+           INNER JOIN url_alias AS ua ON ua.src = CONCAT('node/', n.nid)
            LEFT OUTER JOIN term_node AS tn ON tn.nid = n.nid \
            LEFT OUTER JOIN term_data AS td ON tn.tid = td.tid \
           WHERE (n.type = 'blog' OR n.type = 'story' OR n.type = 'article') \
             AND n.vid = nr.vid \
        GROUP BY n.nid"
 
-#connection.query(query, (err, rows, fields) ->
-fs.readFile('/tmp/rows.json', (err, rows) ->
+connection.query(query, (err, rows, fields) ->
+#fs.readFile('/tmp/rows.json', (err, rows) ->
   if err then throw err
-  rows = JSON.parse(rows)
+  #rows = JSON.parse(rows)
   #rows = [rows[10]]
   #console.log rows
   #fs.writeFileSync('/tmp/rows.json', JSON.stringify(rows))
@@ -59,7 +61,7 @@ fs.readFile('/tmp/rows.json', (err, rows) ->
 
     # Create directory for post w/ format YEAR-MONTH-DAY---sluggified-title-of-post
     directory = "../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }"
-    #fs.mkdirSync(directory)
+    fs.mkdirSync(directory)
     #console.log("../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }")
 
 
@@ -78,6 +80,9 @@ fs.readFile('/tmp/rows.json', (err, rows) ->
       row.draft = true
     delete row.status
     delete row.nid
+
+    # Remove blog + date from URL.
+    row.url = row.url.replace(/blog\/\d{4}\/\d{2}\/\d{2}\/([a-zA-Z-\d]+)/g, "/$1")
 
     # Uncategorized is so Wordpress.
     if row.tags?[0] is "Uncategorized"

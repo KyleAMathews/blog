@@ -1,5 +1,6 @@
 ---
 title: Veracity is the heart of morality
+url: /veracity-heart-morality
 tags:
   - Education
 date: "2010-09-23T04:43:53.000Z"

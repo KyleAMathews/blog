@@ -1,5 +1,6 @@
 ---
 title: Ubuntu meta-packages website
+url: /ubuntu-meta-packages-website
 date: "2008-05-17T15:12:59.000Z"
 draft: true
 layout: post

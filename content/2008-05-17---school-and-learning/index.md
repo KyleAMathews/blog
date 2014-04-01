@@ -1,5 +1,6 @@
 ---
 title: school and learning
+url: /school-and-learning
 tags:
   - Learning
 date: "2008-05-17T15:12:59.000Z"

@@ -1,5 +1,6 @@
 ---
 title: My social learning Drupal distribution Eduglu is out for testing
+url: /eduglu-alpha-1-out-testing
 tags:
   - drupal
   - Education

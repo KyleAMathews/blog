@@ -1,5 +1,6 @@
 ---
 title: "In social media there's not one right answer"
+url: /social-media-theres-not-one-right-answer
 tags:
   - enterprise2.0
   - social software
