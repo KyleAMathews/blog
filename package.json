@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "description": "'My blog'",
+  "main": "cult watch",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-front-matter": "~1.0.0",
+    "gulp-marked": "~0.2.0",
+    "gulp-util": "~2.2.14",
+    "map-stream": "~0.1.0",
+    "through": "~2.3.4",
+    "underscore": "~1.6.0",
+    "coffee-script": "~1.7.1",
+    "gulp-load-plugins": "~0.4.0",
+    "gulp-connect": "~1.1.0",
+    "open": "0.0.4",
+    "moment": "~2.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>"
+}
