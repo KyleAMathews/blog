@@ -11,7 +11,10 @@
     "moment": "~2.5.1",
     "underscore.string": "~2.3.3",
     "js-yaml": "~3.0.2",
-    "richtypo": "~0.1.8"
+    "richtypo": "~0.1.8",
+    "cheerio": "~0.14.0",
+    "underscore": "~1.6.0",
+    "request": "~2.34.0"
   },
   "devDependencies": {},
   "scripts": {

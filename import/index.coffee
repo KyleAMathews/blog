@@ -1,10 +1,14 @@
 mysql = require('mysql')
+_ = require 'underscore'
 _str = require 'underscore.string'
 yaml = require 'js-yaml'
 moment = require 'moment'
 linkify = require("html-linkify")
 md = require 'html-md'
 fs = require 'fs'
+cheerio = require 'cheerio'
+path = require 'path'
+request = require 'request'
 
 connection = mysql.createConnection({
   host     : process.env.HOST
@@ -42,8 +46,10 @@ connection.query(query, (err, rows, fields) ->
 
   # TODO
   # linkify links (how to do it without double-linking?)
-  # fetch images and rewrite links to be relative
+  # fetch images and rewrite links to be relative and create gulp task to optimze/resize/move images to public
   for row in rows
+    origBody = row.body
+
     # Convert tags into an array.
     row.tags = row.tags.split('|') if row.tags?
 
@@ -54,15 +60,24 @@ connection.query(query, (err, rows, fields) ->
     row.body = row.body.replace(/http:\/\/kyle.mathews2000.com\/blog\/\d{4}\/\d{2}\/\d{2}\/([a-zA-Z-\d]+)/g, "/$1")
 
     # Turn line breaks into <br>
-    row.body = row.body.replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1<br>$2')
+    #row.body = row.body.replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1<br>$2')
 
     # Convert body html to markdown
-    row.body = md(row.body)
+    #row.body = md(row.body)
 
     # Create directory for post w/ format YEAR-MONTH-DAY---sluggified-title-of-post
     directory = "../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }"
-    fs.mkdirSync(directory)
+    #fs.mkdirSync(directory)
     #console.log("../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }")
+
+    # Download images
+    $ = cheerio.load(origBody)
+    if $('img').length > 0
+      $('img').each (i, el) ->
+        link = el.attribs.src
+        destPath = "#{ directory }/#{ path.basename(link) }"
+        console.log "downloading #{ link } to #{ destPath }"
+        request(link).pipe(fs.createWriteStream(destPath))
 
 
     ## Generate the markdown file
