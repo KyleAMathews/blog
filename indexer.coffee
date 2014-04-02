@@ -26,6 +26,7 @@ module.exports = (site, options) ->
       path: path.join(__dirname, './content/index.html')
     })
     homepage._contents = Buffer(generateHomePage(files))
+    homepage['meta'] = { layout: 'post' }
     files.push homepage
 
     for file in files

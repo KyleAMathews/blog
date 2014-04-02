@@ -1,4 +1,18 @@
-<p>New Note 66  </p>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <p>New Note 66  </p>
 <p>Each one of us wakes up everyday with a problem. A problem we must solve in order to have a successful day. The problem is finding the right information. Without the right information, we can&#39;t choose a good breakfast, catch the bus to work, find a restaurant, call a client, buy the right stock, cook chicken noodle soup, help a child with homework or complete any of the other billion and one tasks we do daily. If the information we know is either of bad quality or missing important pieces then we are poor employees, poor parents, poor friends, and live a life far short of its potential. If we know something we can do something. On the flip side, if we don&#39;t know something then we are unable to do something. If we don&#39;t know the bus time or bus number, we can&#39;t ride it to work. If we don&#39;t know a client&#39;s number, then we can&#39;t call them. If we don&#39;t know a restaurant&#39;s number then we&#39;re unable to eat there. This is a vitally important point. We can&#39;t do what we don&#39;t know. If we know little we do little.   </p>
 <p>Knowing and understanding things is a topic I&#39;ve thought about deeply for a long time. Specifically about mechanisms we use on the individual, community and society-wide basis for identifying and propagating the most interesting and relevant news. This past summer, I worked on building an open-source memetracker for the Drupal social publishing platform as part of Google Summer of Code. Memetrackers are one technique used for creating automated news sites similar to Google News and Techmeme (see my original proposal to Google Summer of Code for more details). In this blog post I want to take a more holistic approach for examining the question of what exactly is content recommendation and why do we need it. Finally, I&#39;ll use my analysis to make a recommendation for creating a general purpose content recommendation engine that can be implemented in Drupal (and other online systems).  </p>
 <p>We need information to live. We need content recommendation because we can&#39;t, by ourselves, get all the information we need. How much harder would all of our lives be if each of us, individually, had to figure out the bus schedule in our city? Probably billions of man-hours are saved yearly just because one of the employees of each bus company is responsible for creating a bus schedule and posting it online or in a booklet. In a similar fashion, think how useful are books. If you were a bit curious about astronomy and wanted to learn some think how difficult it&#39;d be, unaided, to start to grasp what astronomy is all about. Books are so convenient. An expert in the field spends several months of their life distilling the most important important information for a beginner like you. One lazy Saturday afternoon with that book and you will know more about the subject then months of stumbling about trying to understand. And how did we find information before Google? Google (and other search engines) are critical for finding that very small needle of information in the very large haystack that is the internet.  </p>
@@ -48,3 +62,16 @@
 <p>display = what content you emphesize and make easily assible. . . and what content you don&#39;t  </p>
 <p>A small Drupal note. This model fits very well into the views paradigm. I suggest that all content recommendation modules be consolidated within the views framework. For example, memetracker would be an organizer, you could filter by how many days you wanted, sort by interestingness of memes etc.  </p>
 <p>visual of steps of filtering and organizing and displaying news</p>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

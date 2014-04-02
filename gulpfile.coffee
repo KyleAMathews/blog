@@ -4,6 +4,14 @@ open = require 'open'
 indexer = require './indexer'
 connect = require 'gulp-connect'
 
+# Setup ECT
+ECT = require('ect')
+renderer = ECT({
+  root: __dirname + '/templates'
+  watch: true
+  ext: '.eco'
+})
+
 # Load plugins
 $ = require('gulp-load-plugins')()
 
@@ -24,6 +32,11 @@ gulp.task('md', ->
       cb(null, file)
     ))
     .pipe(indexer())
+    # Run posts through their template
+    .pipe(map((file, cb) ->
+      file._contents = Buffer(renderer.render(file.meta.layout, post: file._contents.toString()))
+      cb(null, file)
+    ))
     .pipe(gulp.dest('public'))
 )
 
@@ -59,7 +72,7 @@ gulp.task 'default', ->
   gulp.start 'md'
 
 gulp.task 'watch', ['md', 'images', 'connect', 'serve'], ->
-  gulp.watch 'content/**/*.md', ['md']
+  gulp.watch ['content/**/*.md', 'templates/*'], ['md']
   gulp.watch(['content/**/*.png','content/**/*.jpg','content/**/*.gif'], ['images'])
 
   gulp.watch 'content/**/*', (event) ->
