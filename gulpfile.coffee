@@ -6,9 +6,9 @@ connect = require 'gulp-connect'
 
 # Load plugins
 $ = require('gulp-load-plugins')()
-count = 1
+
 gulp.task('build', ->
-  gulp.src('./content/**/*.md')
+  gulp.src('content/**/*.md')
     .pipe($.frontMatter({
       property: 'meta'
       remove: true

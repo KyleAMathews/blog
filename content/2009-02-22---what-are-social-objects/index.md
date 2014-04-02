@@ -1,6 +1,5 @@
 ---
 title: What are Social Objects?
-url: /what-are-social-objects
 tags:
   - social software
   - drupal planet

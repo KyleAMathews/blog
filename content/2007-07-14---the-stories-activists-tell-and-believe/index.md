@@ -1,6 +1,5 @@
 ---
 title: The stories activists tell and believe
-url: /the-stories-activists-tell-and-believe
 tags:
   - history
 date: "2007-07-14T04:22:38.000Z"

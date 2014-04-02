@@ -1,6 +1,5 @@
 ---
 title: SEO (Search Engine Optimization) Basics
-url: /seo-search-engine-optimization-basics
 tags:
   - entrepreneurship
   - internet-marketing

@@ -1,6 +1,5 @@
 ---
 title: "Startup Chronicles #1"
-url: /startup-chronicles-1
 tags:
   - entrepreneurship
   - startup

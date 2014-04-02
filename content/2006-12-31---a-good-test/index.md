@@ -1,6 +1,5 @@
 ---
 title: A Good Test
-url: /a-good-test
 tags:
   - Education
   - Learning

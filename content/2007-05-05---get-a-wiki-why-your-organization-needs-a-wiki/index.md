@@ -1,6 +1,5 @@
 ---
 title: "Get a Wiki: Why Your Organization needs a Wiki"
-url: /get-a-wiki-why-your-organization-needs-a-wiki
 tags:
   - enterprise2.0
 date: "2007-05-05T20:03:57.000Z"

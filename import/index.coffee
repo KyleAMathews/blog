@@ -60,14 +60,17 @@ connection.query(query, (err, rows, fields) ->
     row.body = row.body.replace(/http:\/\/kyle.mathews2000.com\/blog\/\d{4}\/\d{2}\/\d{2}\/([a-zA-Z-\d]+)/g, "/$1")
 
     # Turn line breaks into <br>
-    #row.body = row.body.replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1<br>$2')
+    row.body = row.body.replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1<br>$2')
 
     # Convert body html to markdown
-    #row.body = md(row.body)
+    row.body = md(row.body)
+
+    # Remove blog + date from URL.
+    row.url = row.url.replace(/blog\/\d{4}\/\d{2}\/\d{2}\/([a-zA-Z-\d]+)/g, "$1")
 
     # Create directory for post w/ format YEAR-MONTH-DAY---sluggified-title-of-post
-    directory = "../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }"
-    #fs.mkdirSync(directory)
+    directory = "../content/#{ row.created.format('YYYY-MM-DD') }---#{ row.url }"
+    fs.mkdirSync(directory)
     #console.log("../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }")
 
     # Download images
@@ -77,8 +80,7 @@ connection.query(query, (err, rows, fields) ->
         link = el.attribs.src
         destPath = "#{ directory }/#{ path.basename(link) }"
         console.log "downloading #{ link } to #{ destPath }"
-        request(link).pipe(fs.createWriteStream(destPath))
-
+        request(link).on('error', (err) -> console.log err).pipe(fs.createWriteStream(destPath))
 
     ## Generate the markdown file
 
@@ -95,9 +97,7 @@ connection.query(query, (err, rows, fields) ->
       row.draft = true
     delete row.status
     delete row.nid
-
-    # Remove blog + date from URL.
-    row.url = row.url.replace(/blog\/\d{4}\/\d{2}\/\d{2}\/([a-zA-Z-\d]+)/g, "/$1")
+    delete row.url
 
     # Uncategorized is so Wordpress.
     if row.tags?[0] is "Uncategorized"

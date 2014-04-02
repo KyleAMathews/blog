@@ -1,6 +1,5 @@
 ---
 title: Assorted Links
-url: /assorted-links
 tags:
   - blogging
   - elearning2.0

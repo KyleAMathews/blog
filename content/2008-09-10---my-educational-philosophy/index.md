@@ -1,6 +1,5 @@
 ---
 title: My educational philosophy
-url: /my-educational-philosophy
 tags:
   - Education
   - entrepreneurship

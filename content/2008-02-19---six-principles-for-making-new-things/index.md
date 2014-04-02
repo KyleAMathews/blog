@@ -1,6 +1,5 @@
 ---
 title: Six principles for making new things
-url: /six-principles-for-making-new-things
 tags:
   - blogging
   - innovation

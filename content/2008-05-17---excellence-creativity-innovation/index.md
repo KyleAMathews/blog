@@ -1,6 +1,5 @@
 ---
 title: "Excellence, creativity, innovation"
-url: /excellence-creativity-innovation
 date: "2008-05-17T15:12:59.000Z"
 draft: true
 layout: post

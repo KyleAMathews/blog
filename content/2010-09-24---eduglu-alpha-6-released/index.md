@@ -1,6 +1,5 @@
 ---
 title: Eduglu Alpha 6 released
-url: /eduglu-alpha-6-released
 tags:
   - drupal
   - drupal planet

@@ -1,6 +1,5 @@
 ---
 title: Very cool map of undersea fiber-optic cables
-url: /very-cool-map-of-undersea-fiber-optic-cables
 date: "2008-02-03T04:22:06.000Z"
 layout: post
 ---

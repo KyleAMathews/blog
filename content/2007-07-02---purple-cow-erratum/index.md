@@ -1,6 +1,5 @@
 ---
 title: Purple Cow Erratum
-url: /purple-cow-erratum
 tags:
   - internet-marketing
 date: "2007-07-02T18:55:15.000Z"

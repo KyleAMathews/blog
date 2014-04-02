@@ -1,6 +1,5 @@
 ---
 title: "I've been accepted to Google Summer of Code"
-url: /ive-been-accepted-to-google-summer-of-code
 tags:
   - drupal
   - memetracker

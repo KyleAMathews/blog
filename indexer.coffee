@@ -42,6 +42,7 @@ generateHomePage = (files) ->
     if file.meta.draft
       continue
     date = moment(file.meta.date)
-    homepage += "<a href='#{ file.meta.url }'>#{ date.format('YYYY MM DD') } #{ file.meta.title }</a><br>"
+    url = path.dirname(file.relative)
+    homepage += "<a href='#{ url }'>#{ date.format('YYYY MM DD') } #{ file.meta.title }</a><br>"
 
   return homepage

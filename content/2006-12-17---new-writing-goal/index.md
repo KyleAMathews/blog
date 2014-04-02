@@ -1,6 +1,5 @@
 ---
 title: New Writing Goal
-url: /new-writing-goal
 tags:
   - Learning
   - Writing

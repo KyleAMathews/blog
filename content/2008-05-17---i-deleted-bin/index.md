@@ -1,6 +1,5 @@
 ---
 title: I deleted /bin
-url: /i-deleted-bin
 date: "2008-05-17T15:12:59.000Z"
 draft: true
 layout: post

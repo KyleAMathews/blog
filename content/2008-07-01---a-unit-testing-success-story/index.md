@@ -1,6 +1,5 @@
 ---
 title: A unit testing success story
-url: /a-unit-testing-success-story
 tags:
   - drupal
   - google summer of code

@@ -1,6 +1,5 @@
 ---
 title: "What I've been up to lately"
-url: /what-ive-been-up-to-lately
 tags:
   - drupal
   - elearning2.0

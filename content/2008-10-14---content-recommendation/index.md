@@ -1,6 +1,5 @@
 ---
 title: Content Recommendation
-url: /content-recommendation
 tags:
   - memetracker
   - drupal planet
