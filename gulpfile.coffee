@@ -18,7 +18,7 @@ gulp.task('md', ->
       file.path = file.path.replace(/md$/, 'html')
       cb(null, file)
     ))
-    # Remove date from URLs
+    # Remove date from paths
     .pipe(map((file, cb) ->
       file.path = file.base + file.path.split('---')[1]
       cb(null, file)
@@ -31,12 +31,12 @@ gulp.task('md', ->
 gulp.task('images', ->
   gulp.src(['content/**/*.png','content/**/*.jpg','content/**/*.gif'])
     .pipe($.newer('public'))
-    .pipe($.imagemin({
-        optimizationLevel: 3,
-        progressive: true,
-        interlaced: true
-    }))
-    # Remove date from URLs
+    #.pipe($.imagemin({
+        #optimizationLevel: 3,
+        #progressive: true,
+        #interlaced: true
+    #}))
+    # Remove date from paths
     .pipe(map((file, cb) ->
       file.path = file.base + file.path.split('---')[1]
       cb(null, file)
