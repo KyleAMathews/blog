@@ -48,8 +48,6 @@ connection.query(query, (err, rows, fields) ->
   # linkify links (how to do it without double-linking?)
   # fetch images and rewrite links to be relative and create gulp task to optimze/resize/move images to public
   for row in rows
-    origBody = row.body
-
     # Convert tags into an array.
     row.tags = row.tags.split('|') if row.tags?
 
@@ -62,6 +60,23 @@ connection.query(query, (err, rows, fields) ->
     # Turn line breaks into <br>
     row.body = row.body.replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1<br>$2')
 
+    # Download images
+    $ = cheerio.load(row.body)
+    if $('img').length > 0
+      $('img').each (i, el) ->
+        link = el.attribs.src
+        destPath = "#{ directory }/#{ path.basename(link) }"
+        console.log "downloading #{ link } to #{ destPath }"
+        request(link).on('error', (err) -> console.log err).pipe(fs.createWriteStream(destPath))
+
+    # Rewrite image links to point to local relative path.
+    if $('img').length > 0
+      $('img').each (i, el) ->
+        link = path.basename(el.attribs.src)
+        el.attribs.src = "./#{ link }"
+
+    row.body = $.html()
+
     # Convert body html to markdown
     row.body = md(row.body)
 
@@ -70,17 +85,8 @@ connection.query(query, (err, rows, fields) ->
 
     # Create directory for post w/ format YEAR-MONTH-DAY---sluggified-title-of-post
     directory = "../content/#{ row.created.format('YYYY-MM-DD') }---#{ row.url }"
-    fs.mkdirSync(directory)
+    #fs.mkdirSync(directory)
     #console.log("../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }")
-
-    # Download images
-    $ = cheerio.load(origBody)
-    if $('img').length > 0
-      $('img').each (i, el) ->
-        link = el.attribs.src
-        destPath = "#{ directory }/#{ path.basename(link) }"
-        console.log "downloading #{ link } to #{ destPath }"
-        request(link).on('error', (err) -> console.log err).pipe(fs.createWriteStream(destPath))
 
     ## Generate the markdown file
 

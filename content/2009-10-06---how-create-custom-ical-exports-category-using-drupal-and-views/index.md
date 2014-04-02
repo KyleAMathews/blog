@@ -34,7 +34,7 @@ Some of the features include:
 
 Here's a screenshot of the UI as of last night:  
 
-[![](http://kyle.mathews2000.com/files/tooltip.png)][2]  
+[![](./tooltip.png)][2]  
 
   
 

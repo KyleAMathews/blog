@@ -17,7 +17,7 @@ An screenshot from the latest code:
 
   
 
-[![Screenshot 6/27/08](http://farm4.static.flickr.com/3110/2616168771_136c8c3e4a_o.png)][1]  
+[![Screenshot 6/27/08](./2616168771_136c8c3e4a_o.png)][1]  
 
   
 

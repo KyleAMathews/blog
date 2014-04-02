@@ -22,7 +22,7 @@ The course would be divided into three 6-week segments. In each segment, the stu
 
 #### Diagram of a six-week segment.  
 
-[![openstudies](http://farm4.static.flickr.com/3051/2969785767_ce6ff99643_b.jpg)][1]  
+[![openstudies](./2969785767_ce6ff99643_b.jpg)][1]  
 
   
 

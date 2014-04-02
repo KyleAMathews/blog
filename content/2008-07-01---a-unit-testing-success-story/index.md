@@ -48,7 +48,7 @@ I wanted to make sure this function works correctly so I wrote a unit test which
 
 So I wrote the test. . . and it worked!  
 
-[![click_test](http://farm4.static.flickr.com/3151/2625633427_4fa80978a2_o.png)][9]  
+[![click_test](./2625633427_4fa80978a2_o.png)][9]  
 
   
 

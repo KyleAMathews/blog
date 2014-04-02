@@ -40,7 +40,7 @@ Ross Mayfield came up with a beautiful concept a number of years ago called the 
 
 Reproduced image:  
 
-[![](http://kyle.mathews2000.com/files/power-law-participation.jpg)][6]  
+[![](./power-law-participation.jpg)][6]  
 
   
 

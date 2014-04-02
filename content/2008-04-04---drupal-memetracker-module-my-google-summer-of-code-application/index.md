@@ -160,7 +160,7 @@ Screenshot from [Techmeme][2] -- My memetracker UI will look similar.[
 
   
 
-![techmeme example](http://kyle.mathews2000.com/techmeme.png)  
+![techmeme example](./techmeme.png)  
 
 
 ### How is memetracker different from other content recommendation engines on Drupal?  

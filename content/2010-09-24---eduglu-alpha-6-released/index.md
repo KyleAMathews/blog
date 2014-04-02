@@ -27,7 +27,7 @@ The quiz feature isn't enabled by default so to make it available to groups on y
 
   
 
-[![](http://kyle.mathews2000.com/files/membership_directory-small.png)][2]  
+[![](./membership_directory-small.png)][2]  
 
   
 
@@ -35,7 +35,7 @@ The quiz feature isn't enabled by default so to make it available to groups on y
 
   
 
-[![](http://kyle.mathews2000.com/files/group-members-admin-tool-small.png)][3]  
+[![](./group-members-admin-tool-small.png)][3]  
 
   
 

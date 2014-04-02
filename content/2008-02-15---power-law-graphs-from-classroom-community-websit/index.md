@@ -19,7 +19,7 @@ Here is an example power law graph from Wikipedia:
 
   
 
-![Power Law](http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Long_tail.svg/300px-Long_tail.svg.png)  
+![Power Law](./300px-Long_tail.svg.png)  
 
 [Many][1] [have][2] [written][3] that almost all measures of web site usage follow the same pattern whether that be page views, in-bound links, etc.  
 
@@ -37,11 +37,11 @@ So onto the graphs I made.
 
   
 
-First is a graph of the number of comments each student made on the class website throughout the semester. This is a good measure of their engagement with the online community. You can see that some students left as many as 40-60 comments throughout the semester and others left as little as 1 or two:![Number of comments made by each student](http://kyle.mathews2000.com/files/num_comments_per_student.png)  
+First is a graph of the number of comments each student made on the class website throughout the semester. This is a good measure of their engagement with the online community. You can see that some students left as many as 40-60 comments throughout the semester and others left as little as 1 or two:![Number of comments made by each student](./num_comments_per_student.png)  
 
 Another graph which follows the power law. This time a graph of the number of visits to the class website per student. Again we see a wide disparity between students. One student visited the site over 400 times! Which in a four month semester means they visited the site on average 3 times a day! And on the other end, a number of students only visited the site 5-10 times the entire semester.  
 
-![Number of visits to the site made by each student](http://kyle.mathews2000.com/files/num_visits_to_site_per_student.png)  
+![Number of visits to the site made by each student](./num_visits_to_site_per_student.png)  
 
 
 ### Why the Power Law?  

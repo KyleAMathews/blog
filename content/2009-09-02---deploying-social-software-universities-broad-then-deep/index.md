@@ -101,7 +101,7 @@ Michael Idinopolus answers that question in a second article "[Launch E2.0 Broad
 
   
 
-[![](http://kyle.mathews2000.com/files/power-law-participation.jpg)][4]  
+[![](./power-law-participation.jpg)][4]  
 
   
 

@@ -32,7 +32,7 @@ Today, that is very much not the case. Knowledge is growing exponentially and th
 
 \[Graph from "[The Emerging Principles of Lifelong Learning][5]" by [@vgr][6]\]  
 
-![](http://kyle.mathews2000.com/files/lifelongLearning.png)  
+![](./lifelongLearning.png)  
 
   
 
@@ -61,13 +61,13 @@ I ran across [these two graphs][8] today which illustrate the problem well:
 
 **Housing bubble**  
 
-![](http://kyle.mathews2000.com/files/housing-bubble.jpg)  
+![](./housing-bubble.jpg)  
 
   
 
 **Higher Ed Bubble**  
 
-![](http://kyle.mathews2000.com/files/highered-bubble.jpg)  
+![](./highered-bubble.jpg)  
 
   
 

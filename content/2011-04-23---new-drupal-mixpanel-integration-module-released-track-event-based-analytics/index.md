@@ -17,7 +17,7 @@ Web analytics help you understand what visitors do on your website and what is w
 
 Screenshot of their data analysis tool:  
 
-![](http://eduglu.com/sites/eduglu.com/files/mixpanel-screenshot.png)  
+![](./mixpanel-screenshot.png)  
 
   
 
