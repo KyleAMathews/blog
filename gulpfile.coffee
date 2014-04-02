@@ -7,7 +7,7 @@ connect = require 'gulp-connect'
 # Load plugins
 $ = require('gulp-load-plugins')()
 
-gulp.task('build', ->
+gulp.task('md', ->
   gulp.src('content/**/*.md')
     .pipe($.frontMatter({
       property: 'meta'
@@ -20,11 +20,29 @@ gulp.task('build', ->
     ))
     # Remove date from URLs
     .pipe(map((file, cb) ->
-      file.path = file.base + file.meta.url.slice(1) + "/index.html"
+      file.path = file.base + file.path.split('---')[1]
       cb(null, file)
     ))
     .pipe(indexer())
-    .pipe(gulp.dest('public/'))
+    .pipe(gulp.dest('public'))
+)
+
+# Images
+gulp.task('images', ->
+  gulp.src(['content/**/*.png','content/**/*.jpg','content/**/*.gif'])
+    .pipe($.newer('public'))
+    .pipe($.imagemin({
+        optimizationLevel: 3,
+        progressive: true,
+        interlaced: true
+    }))
+    # Remove date from URLs
+    .pipe(map((file, cb) ->
+      file.path = file.base + file.path.split('---')[1]
+      cb(null, file)
+    ))
+    .pipe($.size())
+    .pipe(gulp.dest('public'))
 )
 
 # Connect
@@ -38,12 +56,13 @@ gulp.task 'serve', ['connect'], ->
   open("http://localhost:9000")
 
 gulp.task 'default', ->
-  gulp.start 'build'
+  gulp.start 'md'
 
-gulp.task 'watch', ['build', 'connect', 'serve'], ->
-  gulp.watch 'content/**/*.md', ['build']
+gulp.task 'watch', ['md', 'images', 'connect', 'serve'], ->
+  gulp.watch 'content/**/*.md', ['md']
+  gulp.watch(['content/**/*.png','content/**/*.jpg','content/**/*.gif'], ['images'])
 
-  gulp.watch 'content/**/*.md', (event) ->
+  gulp.watch 'content/**/*', (event) ->
     gulp.src(event.path)
       .pipe(connect.reload())
 
