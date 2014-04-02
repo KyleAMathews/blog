@@ -65,11 +65,3 @@ gulp.task 'watch', ['md', 'images', 'connect', 'serve'], ->
   gulp.watch 'content/**/*', (event) ->
     gulp.src(event.path)
       .pipe(connect.reload())
-
-
-## TODOs
-
-# HTML server for serving static files
-# Gulp watcher
-# Copy other images/css/js files over (js/css concatenation will come later)
-# Basic template for homepage + individual posts
