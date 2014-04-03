@@ -3,6 +3,9 @@ map = require 'map-stream'
 open = require 'open'
 indexer = require './indexer'
 connect = require 'gulp-connect'
+hljs = require('highlight.js')
+cheerio = require 'cheerio'
+_str = require 'underscore.string'
 
 # Setup ECT
 ECT = require('ect')
@@ -41,6 +44,26 @@ gulp.task('md', ->
             title: file.meta.title
           }
         ))
+      cb(null, file)
+    ))
+    # Highlight text.
+    .pipe(map((file, cb) ->
+      $$ = cheerio.load(file._contents.toString())
+      if $$('pre code').length > 0
+        $$('pre code').each( (i, el) ->
+          # Get the language (if available).
+          # Marked gives us a class with lang-* and highlightjs only wants *.
+          code = _str.unescapeHTML($$(el).html())
+          language = $$(el).attr('class').split('-')[1]
+          if language?
+            $$(el).html _str.trim(hljs.highlight(language, code).value)
+          else
+            $$(el).html hljs.highlightAuto(code).value
+
+          # Add hljs class to pre.
+          $$(el).parent().addClass('hljs')
+        )
+        file._contents = Buffer($$.html())
       cb(null, file)
     ))
     .pipe(gulp.dest('public'))

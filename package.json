@@ -22,7 +22,12 @@
     "gulp-size": "~0.2.0",
     "gulp-newer": "~0.3.0",
     "ect": "^0.5.9",
-    "gulp-compass": "^1.1.8"
+    "gulp-compass": "^1.1.8",
+    "highlight.js": "^8.0.0",
+    "install": "^0.1.7",
+    "npm": "^1.4.6",
+    "cheerio": "^0.14.0",
+    "underscore.string": "^2.3.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
