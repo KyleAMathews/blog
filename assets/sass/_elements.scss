@@ -1,0 +1,47 @@
+p {
+  @include word-break();
+  @include hyphens(auto);
+  @include margin-leader(0);
+  @include margin-trailer(1);
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  @include border-radius(3px);
+  background: gray(90%);
+  border: 1px solid gray(80%);
+  display: inline-block;
+  font-family: Inconsolata, monospace, serif;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 100%;
+  overflow: auto;
+  vertical-align: middle;
+  padding: 0;
+}
+
+pre {
+  margin: 0;
+  margin-bottom: rhythm(1);
+  padding: 0;
+  code {
+    background: none;
+    border: none;
+    overflow: initial;
+    padding: rhythm(1);
+  }
+  // For highlight.js
+  &.hljs {
+    padding: 0;
+  }
+}

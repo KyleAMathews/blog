@@ -89,17 +89,23 @@ gulp.task('images', ->
 
 # CSS
 gulp.task('css', ->
-  gulp.src(['assets/sass/*.sass'])
+  gulp.src(['assets/sass/*.sass', 'assets/sass/*.scss'])
     .pipe($.compass({
       css: 'public/assets'
       sass: 'assets/sass'
       image: 'assets/images'
-      style: 'compressed'
+      style: 'nested'
       comments: 'false'
       bundle_exec: true
       sourcemap: true
       time: true
+      require: ['susy', 'modular-scale', 'normalize-scss', 'sass-css-importer']
     }))
+    .on('error', (err) ->
+      console.log err
+    )
+    .pipe($.size())
+    .pipe(connect.reload())
 )
 
 # Connect
@@ -120,8 +126,8 @@ gulp.task 'build', ['images', 'md', 'css']
 gulp.task 'watch', ['md', 'images', 'css', 'connect', 'serve'], ->
   gulp.watch ['content/**/*.md', 'templates/*'], ['md']
   gulp.watch(['content/**/*.png','content/**/*.jpg','content/**/*.gif'], ['images'])
-  gulp.watch(['assets/sass/*.sass'], ['css'])
+  gulp.watch(['assets/sass/*'], ['css'])
 
-  gulp.watch ['content/**/*', 'assets/**/*'], (event) ->
+  gulp.watch ['content/**/*'], (event) ->
     gulp.src(event.path)
       .pipe(connect.reload())

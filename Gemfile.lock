@@ -23,6 +23,8 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
+    modular-scale (2.0.4)
+      compass (>= 0.12.0)
     multi_json (1.9.2)
     normalize-scss (3.0.0.alpha.2)
       compass-core (>= 1.0.0.alpha.13)
@@ -33,9 +35,13 @@ GEM
     rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
     sass (3.3.4)
+    sass-css-importer (1.0.0.beta.0)
+      sass (>= 3.1)
     sassy-maps (0.3.2)
       compass (~> 1.0.0.alpha.13)
       sass (~> 3.3.0.rc.2)
+    susy (2.1.1)
+      sass (~> 3.3.0)
 
 PLATFORMS
   ruby
@@ -43,5 +49,8 @@ PLATFORMS
 DEPENDENCIES
   breakpoint (~> 2.4.2)
   compass (~> 1.0.0.alpha.19)
+  modular-scale
   normalize-scss (~> 3.0.0.alpha.2)
   sass (~> 3.3.4)
+  sass-css-importer
+  susy (~> 2.1.1)
