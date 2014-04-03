@@ -1,2 +1,2 @@
-.hello{content:"world"}
+body{max-width:40em;margin-left:auto;margin-right:auto}body::after{content:" ";display:block;clear:both}
 /*# sourceMappingURL=main.css.map */

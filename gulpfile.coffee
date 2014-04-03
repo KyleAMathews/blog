@@ -34,7 +34,13 @@ gulp.task('md', ->
     .pipe(indexer())
     # Run posts through their template
     .pipe(map((file, cb) ->
-      file._contents = Buffer(renderer.render(file.meta.layout, post: file._contents.toString()))
+      file._contents = Buffer(
+        renderer.render(
+          file.meta.layout, {
+            post: file._contents.toString()
+            title: file.meta.title
+          }
+        ))
       cb(null, file)
     ))
     .pipe(gulp.dest('public'))
