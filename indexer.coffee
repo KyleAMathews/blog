@@ -29,6 +29,16 @@ module.exports = (site, options) ->
     homepage['meta'] = { layout: 'post' }
     files.push homepage
 
+    # Add styleguide
+    styleguide = new gutil.File({
+      base: path.join(__dirname, './content/'),
+      cwd: __dirname,
+      path: path.join(__dirname, './content/styleguide/index.html')
+    })
+    styleguide._contents = Buffer("")
+    styleguide['meta'] = { layout: 'styleguide' }
+    files.push styleguide
+
     for file in files
       @emit 'data', file
 
