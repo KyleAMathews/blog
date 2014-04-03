@@ -58,6 +58,21 @@ gulp.task('images', ->
     .pipe(gulp.dest('public'))
 )
 
+# CSS
+gulp.task('css', ->
+  gulp.src(['assets/sass/*.sass'])
+    .pipe($.compass({
+      css: 'public/assets'
+      sass: 'assets/sass'
+      image: 'assets/images'
+      style: 'compressed'
+      comments: 'false'
+      bundle_exec: true
+      sourcemap: true
+      time: true
+    }))
+)
+
 # Connect
 gulp.task 'connect', connect.server({
   root: ['public']
@@ -69,12 +84,15 @@ gulp.task 'serve', ['connect'], ->
   open("http://localhost:9000")
 
 gulp.task 'default', ->
-  gulp.start 'md'
+  gulp.start 'build'
 
-gulp.task 'watch', ['md', 'images', 'connect', 'serve'], ->
+gulp.task 'build', ['images', 'md', 'css']
+
+gulp.task 'watch', ['md', 'images', 'css', 'connect', 'serve'], ->
   gulp.watch ['content/**/*.md', 'templates/*'], ['md']
   gulp.watch(['content/**/*.png','content/**/*.jpg','content/**/*.gif'], ['images'])
+  gulp.watch(['assets/sass/*.sass'], ['css'])
 
-  gulp.watch 'content/**/*', (event) ->
+  gulp.watch ['content/**/*', 'assets/**/*'], (event) ->
     gulp.src(event.path)
       .pipe(connect.reload())
