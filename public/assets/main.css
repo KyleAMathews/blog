@@ -750,18 +750,20 @@ p {
   margin-bottom: 26px;
   margin-bottom: 1.3rem; }
 
-/* line 8, ../../assets/sass/_elements.scss */
+/* line 7, ../../assets/sass/_elements.scss */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #4472B9; }
   /* line 10, ../../assets/sass/_elements.scss */
-  a:hover {
-    text-decoration: underline; }
+  a:hover, a:focus {
+    text-decoration: underline;
+    color: inherit; }
 
-/* line 15, ../../assets/sass/_elements.scss */
+/* line 16, ../../assets/sass/_elements.scss */
 img {
   max-width: 100%; }
 
-/* line 19, ../../assets/sass/_elements.scss */
+/* line 20, ../../assets/sass/_elements.scss */
 code {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -777,22 +779,22 @@ code {
   vertical-align: middle;
   padding: 0; }
 
-/* line 33, ../../assets/sass/_elements.scss */
+/* line 34, ../../assets/sass/_elements.scss */
 pre {
   margin: 0;
   margin-bottom: 1.3rem;
   padding: 0; }
-  /* line 37, ../../assets/sass/_elements.scss */
+  /* line 38, ../../assets/sass/_elements.scss */
   pre code {
     background: none;
     border: none;
     overflow: initial;
     padding: 1.3rem; }
-  /* line 44, ../../assets/sass/_elements.scss */
+  /* line 45, ../../assets/sass/_elements.scss */
   pre.hljs {
     padding: 0; }
 
-/* line 49, ../../assets/sass/_elements.scss */
+/* line 50, ../../assets/sass/_elements.scss */
 blockquote {
   border-left-width: 5px;
   border-left-width: 0.225rem;
@@ -802,16 +804,16 @@ blockquote {
   border-color: #cccccc;
   margin: 0;
   margin-left: 1.3rem; }
-  /* line 54, ../../assets/sass/_elements.scss */
+  /* line 55, ../../assets/sass/_elements.scss */
   blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
     margin-top: 0; }
 
-/* line 59, ../../assets/sass/_elements.scss */
+/* line 60, ../../assets/sass/_elements.scss */
 ul, ol {
   padding: 0 0 0 1.95rem;
   margin: 1.3rem 0; }
 
-/* line 64, ../../assets/sass/_elements.scss */
+/* line 65, ../../assets/sass/_elements.scss */
 hr {
   margin-top: 26px;
   margin-top: 1.3rem;

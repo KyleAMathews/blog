@@ -4,11 +4,12 @@ p {
   @include margin-leader(0);
   @include margin-trailer(1);
 }
-
 a {
   text-decoration: none;
-  &:hover {
+  color: #4472B9;
+  &:hover, &:focus {
     text-decoration: underline;
+    color: inherit;
   }
 }
 
