@@ -648,8 +648,7 @@ small {
   line-height: 0.975rem; }
 
 body {
-  max-width: 640px;
-  max-width: 32rem;
+  max-width: 32em;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem;
@@ -663,8 +662,17 @@ body {
     display: block;
     clear: both; }
 
+p, li {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word; }
+
 p {
-  word-break: normal;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
@@ -688,15 +696,22 @@ code {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
   background: #e5e5e5;
   border: 1px solid #cccccc;
-  display: inline-block;
+  display: inline;
   font-family: Inconsolata, monospace, serif;
   font-size: 16px;
   line-height: 20px;
   max-width: 100%;
   overflow: auto;
-  vertical-align: middle;
   padding: 0; }
 
 pre {
@@ -706,8 +721,11 @@ pre {
   pre code {
     background: none;
     border: none;
+    display: inline-block;
     overflow: initial;
-    padding: 1.3rem; }
+    padding: 1.3rem;
+    white-space: inherit;
+    word-wrap: inherit; }
   pre.hljs {
     padding: 0; }
 
@@ -726,6 +744,8 @@ blockquote {
 ul, ol {
   padding: 0 0 0 1.95rem;
   margin: 1.3rem 0; }
+  ul ol, ul ul, ol ol, ol ul {
+    margin: 0; }
 
 hr {
   margin-top: 26px;

@@ -8,13 +8,4 @@ layout: post
 
 Presentation from one of my classes in Information Systems.
 
-[Enterprise 2.0][0]
-
-View SlideShare [presentation][1] or [Upload][2] your own. (tags: [blogs][3] [wikis][4])
-
-
-[0]: http://www.slideshare.net/kylemathews/enterprise-20-presentation-838583?type=powerpoint "Enterprise 2.0"
-[1]: http://www.slideshare.net/kylemathews/enterprise-20-presentation-838583?type=powerpoint "View Enterprise 2.0 on SlideShare"
-[2]: http://www.slideshare.net/upload?type=powerpoint
-[3]: http://slideshare.net/tag/blogs
-[4]: http://slideshare.net/tag/wikis
+<iframe src="http://www.slideshare.net/slideshow/embed_code/838583" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>

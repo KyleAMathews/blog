@@ -11,7 +11,7 @@ layout: post
 
 ### New release of Eduglu
 
-I'm pleased to announce the second release of [Eduglu][0]! Eduglu is a Drupal distribution designed to support [social learning][1] at institutions of higher learning. It's available for download now at [http://eduglu.com/download-eduglu][2]. Since the first release, We've squashed dozens of major and minor bugs and made the significant jump to the [Spaces 3][3] and [Context 3][4].
+I'm pleased to announce the second release of [Eduglu][0]! Eduglu is a Drupal distribution designed to support social learning at institutions of higher learning. It's available for download now at [http://eduglu.com/download-eduglu][2]. Since the first release, We've squashed dozens of major and minor bugs and made the significant jump to the [Spaces 3][3] and [Context 3][4].
 
 Eduglu helps learners connect with one another and form learning communities. Eduglu provides online spaces for groups to learn together.
 
@@ -39,7 +39,6 @@ Both are powerful learning tools that help students more easily share what they 
 
 
 [0]: http://eduglu.com
-[1]: http://kyle.mathews2000.com/search/node/social%20learning
 [2]: http://eduglu.com/download-eduglu
 [3]: http://drupal.org/project/spaces
 [4]: http://drupal.org/project/context

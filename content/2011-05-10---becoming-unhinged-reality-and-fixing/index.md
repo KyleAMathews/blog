@@ -1,5 +1,5 @@
 ---
-title: Becoming unhinged from reality -- and fixing that
+title: Becoming unhinged from reality—and fixing that
 tags:
   - john boyd
   - creative destruction

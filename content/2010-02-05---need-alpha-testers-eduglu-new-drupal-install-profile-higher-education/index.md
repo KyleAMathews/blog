@@ -46,4 +46,4 @@ Thanks all! It's going to be an exciting ride and I'm looking forward to it.
 [5]: http://drupal.org/project/context
 [6]: http://drupal.org/project/features
 [7]: http://sf2010.drupal.org/conference/sessions/introducing-eduglu-new-drupal-install-profile-higher-education
-[8]: http://kyle.mathews2000.com/contact
+[8]: mailto:mathews.kyle@gmail.com

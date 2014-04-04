@@ -1,5 +1,5 @@
 ---
-title: Why I blog -- Part 2
+title: Why I blog—Part 2
 tags:
   - blogging
   - internet-marketing
@@ -16,9 +16,7 @@ Keeping an intellectual journal is the main reason for writing my blog. My secon
 Along those lines I read a [blog post today from The Economist][1] website. The author was commenting on a [recent podcast on the economics of blogging by Tyler Cowen][2] (of [Marginal Revolution][3] fame).
 
 > While the direct economic return to authoring a blog may not appear to justify the effort, the prospect of actively demonstrating one's skillset for an interested public, many members of which work in talent-hungry organisations that pay real salaries, is an attractive one. Why waste time submitting CVs [I had to google this one, CV is resume in American-speak], when you could cultivate an audience of potential employers intimately familiar with your talents?
-> 
 > Interestingly, this effect could generate a filtering effect on the blogosphere quite opposed to the market for lemon model [proposed][4] by Dani Rodrik. If blog writers generally have employment in mind, we should expect those with strong resumés but lackluster ideas to abstain from extensive blogging, while those whose critical and analytical skills run ahead of the experience and education categories on their CVs should embrace blogging as a means to signal their exceptional fitness. We would expect those with most to gain from blogging to blog more.
-> 
 
 I've always found school boring and homework a less then optimal use of my time. So my grades reflect that. "Good students" use grades as a signaling mechanism. A student with good grades is telling potential employers, "I'm reasonably intelligent and can tolerate boredom" -- which is what's really required at school and most jobs.
 

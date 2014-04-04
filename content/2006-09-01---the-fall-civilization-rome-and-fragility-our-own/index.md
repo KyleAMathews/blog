@@ -1,5 +1,5 @@
 ---
-title: The fall of the civilization of Rome -- and the fragility of our own
+title: The fall of the civilization of Rome—and the fragility of our own
 tags:
   - history
 date: "2006-09-01T15:52:04.000Z"

@@ -1,5 +1,7 @@
+p, li {
+  @include force-wrap();
+}
 p {
-  @include word-break();
   @include hyphens(auto);
   @include margin-leader(0);
   @include margin-trailer(1);
@@ -19,15 +21,15 @@ img {
 
 code {
   @include border-radius(3px);
+  @include force-wrap();
   background: gray(90%);
   border: 1px solid gray(80%);
-  display: inline-block;
+  display: inline;
   font-family: Inconsolata, monospace, serif;
   font-size: 16px;
   line-height: 20px;
   max-width: 100%;
   overflow: auto;
-  vertical-align: middle;
   padding: 0;
 }
 
@@ -38,8 +40,11 @@ pre {
   code {
     background: none;
     border: none;
+    display: inline-block;
     overflow: initial;
     padding: rhythm(1);
+    white-space: inherit;
+    word-wrap: inherit;
   }
   // For highlight.js
   &.hljs {
@@ -60,6 +65,9 @@ blockquote {
 ul, ol {
   padding: 0 0 0 rhythm(1.5);
   margin: rhythm(1) 0;
+  ol, ul {
+   margin: 0;
+ }
 }
 
 hr {

@@ -42,9 +42,7 @@ There are not any open source tools that do the automated content filtering and 
 
 ### What experience do you or your organization have to successfully develop this project?
 
-I was a Google Summer of Code student this past summer where I wrote the Memetracker module. You can read my proposal here:
-
-/drupal-memetracker-module-my-google-summer-of-code-application
+I was a [Google Summer of Code student](/drupal-memetracker-module-my-google-summer-of-code-application) this past summer where I wrote the Memetracker module.
 
 I traveled to Drupalcon in Hungary and presented there on the Memetracker module and on content filtering in general. The session and Q&A can be viewed here:
 

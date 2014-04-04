@@ -12,6 +12,6 @@ I spent the morning converting my blog from [Wordpress][0] to [Drupal][1]. I fig
 
 [0]: http://wordpress.org
 [1]: http://drupal.org
-[2]: http://kyle.mathews2000.com/node/40
+[2]: /drupal-memetracker-module-my-google-summer-of-code-application
 [3]: http://www.popsci.com/
 [4]: http://www.theonion.com

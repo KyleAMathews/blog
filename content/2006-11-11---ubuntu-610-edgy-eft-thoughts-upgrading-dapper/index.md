@@ -9,27 +9,27 @@ layout: post
 
 Updated my dapper installation on my laptop to Edgy a while ago. It went well. I jotted down my impressions and installation steps:
 
-* faster boot - 56 seconds from shutting down computer restart and logging in -- probably 5-10 secs faster then with Dapper.  
--added tomboy notes / sticky notes / system monitor - adjusted to have CPU/memory/network / battery monitor / force quit /  
--wow, only 109 MB of ram used upon boot up. Huge difference -- Dapper was always around 150 MB upon boot up
+- faster boot - 56 seconds from shutting down computer restart and logging in--probably 5-10 secs faster then with Dapper.
+- added tomboy notes / sticky notes / system monitor - adjusted to have CPU/memory/network / battery monitor / force quit /
+- wow, only 109 MB of ram used upon boot up. Huge difference -- Dapper was always around 150 MB upon boot up
 
--Programs Installed  
-Adobe Acrobat 7.0  
-Agave - color scheme creator  
-Alien - converts RPMs to DEBs  
-Amarok - best music player for Linux  
-Beagle - desktop search  
-Ethereal - now called wireshark -- network sniffer  
-Inkscape - vector drawing program  
-Java SDK 5  
-K3B - best Linux CD burning software  
-LyX - WYSIWYM (What You See Is What You Mean) editor. GUI for LATEX  
-Scribus - excellent DTP (desktop publisher for Linux)  
-VLC - Plays anything you throw at it.  
-Webilder - downloads backgrounds from flickr and rotates them  
-Wine - (Wine Is Not an Emulator)  
-GFTP  
-Bluefish
+## Programs Installed
+- Adobe Acrobat 7.0
+- Agave - color scheme creator
+- Alien - converts RPMs to DEBs
+- Amarok - best music player for Linux
+- Beagle - desktop search
+- Ethereal - now called wireshark -- network sniffer
+- Inkscape - vector drawing program
+- Java SDK 5
+- K3B - best Linux CD burning software
+- LyX - WYSIWYM (What You See Is What You Mean) editor. GUI for LATEX
+- Scribus - excellent DTP (desktop publisher for Linux)
+- VLC - Plays anything you throw at it.
+- Webilder - downloads backgrounds from flickr and rotates them
+- Wine - (Wine Is Not an Emulator)
+- GFTP
+- Bluefish
 
 Firefox 2.0 is very cool - tab restore, search suggest/memory for google, individual tab delete. Seems to have eliminated memory leak -- used to be that after a few hours of using firefox memory usage would be over 250 MBs now (depending on how many tabs are open) is much less ~ 100 MBs
 

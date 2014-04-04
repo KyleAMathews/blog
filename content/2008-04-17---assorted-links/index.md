@@ -100,16 +100,11 @@ Popular blogger says more traffic now comes from "smart aggregators. As there is
 
 [Safe String Theory for the Web][22] -- Everything you ever wanted to know about handling strings on the web.
 
-[
-
-Willpower is like a muscle says research][24][23]
+[Willpower is like a muscle says research][23]
 
 New York Times article summarizes research that suggests your will power can be strengthened by exercising it, much as a muscle.
 
 > In psychological studies, even something as simple as using your nondominant hand to brush your teeth for two weeks can increase willpower capacity. People who stick to an exercise program for two months report reducing their impulsive spending, junk food intake, alcohol use and smoking. They also study more, watch less television and do more housework. Other forms of willpower training, like money-management classes, work as well.
-> 
-
-[20]: [http://island.byu.edu][24] the community site for the Information Systems major at [][25]
 
 
 [0]: http://www.boingboing.net/2007/06/21/clay-shirky-defends-.html
@@ -136,5 +131,3 @@ New York Times article summarizes research that suggests your will power can be 
 [21]: http://avc.blogs.com/a_vc/2008/03/where-my-traffi.html
 [22]: http://acko.net/blog/safe-string-theory-for-the-web
 [23]: http://www.nytimes.com/2008/04/02/opinion/02aamodt.html?_r=3&oref=slogin&oref=slogin&oref=login
-[24]: http://island.byu.edu
-[25]: %3C/p
