@@ -99,7 +99,6 @@ gulp.task('css', ->
       style: 'nested'
       comments: 'false'
       bundle_exec: true
-      sourcemap: true
       time: true
       require: ['susy', 'modular-scale', 'normalize-scss', 'sass-css-importer']
     }))
