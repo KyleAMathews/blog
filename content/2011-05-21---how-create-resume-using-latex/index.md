@@ -12,7 +12,7 @@ Googling found quite a few different Latex resume templates to start from and my
 I've attached the finished resume to this post. You can also see the source for the resume at [https://github.com/KyleAMathews/kjh-vita/blob/master/kyle-resume.tex][3]. Feel free to fork my version and modify to meet your needs. Most distributions of Latex should have all the dependencies you need. The three fonts I've used, Minion Pro, Myriad Pro, and Inconsolata are all freely available. The first two are distributed with Adobe Reader. The latter can be [downloaded here.][4]
 
 
-[0]: /blog/2011/04/22/eduglu-enters-deadpool
+[0]: /eduglu-enters-deadpool
 [1]: http://en.wikipedia.org/wiki/LaTeX
 [2]: http://kjhealy.github.com/kjh-vita/
 [3]: https://github.com/KyleAMathews/kjh-vita/blob/master/kyle-resume.tex
