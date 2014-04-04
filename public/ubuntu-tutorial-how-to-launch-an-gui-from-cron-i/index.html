@@ -14,12 +14,12 @@
         <![endif]-->
 
         <h1>Ubuntu Tutorial: How to launch an GUI from cron in Ubuntu</h1>
-<p>On Sunday, I spent a good half-hour with Google learning how to launch a GUI application in Ubuntu using cron. I wanted to write a brief post here explaining the process so as to help another weary Googler more quickly on their way.  </p>
-<p>My situation is this: I use a nifty little flashcard-like study program called <a href="http://mnemosyne-proj.sourceforge.net/">Mnemosyne</a>. I use it to study foreign languages and for school. Ideally I should run it daily — but I often forget, which slows my learning. So I decided to create a cron job which would run the program every day at 7 AM.  </p>
-<p>Using the <a href="http://en.wikipedia.org/wiki/Crontab">normal crontab syntax</a> I made this entry:  </p>
-<p>0 7 * * * mnemosyne<br>This, I thought, would run mnemosyne once a day at 7 AM. Unfortunately I was wrong. After much searching around I found the <a href="http://ubuntuforums.org/showthread.php?t=185993">solution on the Ubuntu forums</a> (always a great resource). My problem was that because cron doesn’t run in the X session (The program that controls all GUIs in Linux), when you try to run a GUI program, cron doesn’t know where to start it. To tell cron where to start the GUI, I changed my crontab entry as follows:<br>0 7 * * * export DISPLAY=:0 &amp;&amp; /usr/bin/mnemosyne  </p>
-<p>And finally success!  </p>
-<p>The <a href="http://ubuntuforums.org/showthread.php?t=185993">post on the Ubuntu Forums</a> I found explains all this and more and gives a number of examples.  </p>
+<p>On Sunday, I spent a good half-hour with Google learning how to launch a GUI application in Ubuntu using cron. I wanted to write a brief post here explaining the process so as to help another weary Googler more quickly on their way.</p>
+<p>My situation is this: I use a nifty little flashcard-like study program called <a href="http://mnemosyne-proj.sourceforge.net/">Mnemosyne</a>. I use it to study foreign languages and for school. Ideally I should run it daily — but I often forget, which slows my learning. So I decided to create a cron job which would run the program every day at 7 AM.</p>
+<p>Using the <a href="http://en.wikipedia.org/wiki/Crontab">normal crontab syntax</a> I made this entry:</p>
+<p>0 7 <em>mnemosyne<br>This, I thought, would run mnemosyne once a day at 7 AM. Unfortunately I was wrong. After much searching around I found the <a href="http://ubuntuforums.org/showthread.php?t=185993">solution on the Ubuntu forums</a> (always a great resource). My problem was that because cron doesn’t run in the X session (The program that controls all GUIs in Linux), when you try to run a GUI program, cron doesn’t know where to start it. To tell cron where to start the GUI, I changed my crontab entry as follows:<br>0 7</em> export DISPLAY=:0 &amp;&amp; /usr/bin/mnemosyne</p>
+<p>And finally success!</p>
+<p>The <a href="http://ubuntuforums.org/showthread.php?t=185993">post on the Ubuntu Forums</a> I found explains all this and more and gives a number of examples.</p>
 <p>Also, for those wanting a more general tutorial on crontab syntax, <a href="http://en.wikipedia.org/wiki/Crontab">see the crontab article on wikipedia.</a></p>
 
         <script src="js/main.js"></script>

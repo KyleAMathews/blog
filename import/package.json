@@ -5,7 +5,7 @@
   "main": "index.coffee",
   "dependencies": {
     "mysql": "~2.1.1",
-    "marked": "~0.3.2",
+    "marked": "^0.3.2",
     "html-md": "~3.0.2",
     "html-linkify": "~1.1.0",
     "moment": "~2.5.1",
@@ -14,9 +14,12 @@
     "richtypo": "~0.1.8",
     "cheerio": "~0.14.0",
     "underscore": "~1.6.0",
-    "request": "~2.34.0"
+    "request": "~2.34.0",
+    "async": "^0.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "htmltidy": "0.0.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -9,6 +9,9 @@ fs = require 'fs'
 cheerio = require 'cheerio'
 path = require 'path'
 request = require 'request'
+tidy = require('htmltidy').tidy
+marked = require 'marked'
+async = require 'async'
 
 connection = mysql.createConnection({
   host     : process.env.HOST
@@ -47,7 +50,7 @@ connection.query(query, (err, rows, fields) ->
   # TODO
   # linkify links (how to do it without double-linking?)
   # fetch images and rewrite links to be relative and create gulp task to optimze/resize/move images to public
-  for row in rows
+  async.eachSeries(rows, (row, cb) ->
     # Convert tags into an array.
     row.tags = row.tags.split('|') if row.tags?
 
@@ -62,12 +65,12 @@ connection.query(query, (err, rows, fields) ->
 
     # Download images
     $ = cheerio.load(row.body)
-    if $('img').length > 0
-      $('img').each (i, el) ->
-        link = el.attribs.src
-        destPath = "#{ directory }/#{ path.basename(link) }"
-        console.log "downloading #{ link } to #{ destPath }"
-        request(link).on('error', (err) -> console.log err).pipe(fs.createWriteStream(destPath))
+    #if $('img').length > 0
+      #$('img').each (i, el) ->
+        #link = el.attribs.src
+        #destPath = "#{ directory }/#{ path.basename(link) }"
+        #console.log "downloading #{ link } to #{ destPath }"
+        #request(link).on('error', (err) -> console.log err).pipe(fs.createWriteStream(destPath))
 
     # Rewrite image links to point to local relative path.
     if $('img').length > 0
@@ -78,45 +81,62 @@ connection.query(query, (err, rows, fields) ->
     row.body = $.html()
 
     # Convert body html to markdown
+    console.log '==== nothing done yet'
+    console.log row.body
     row.body = md(row.body)
+    html = marked(row.body)
+    html = _str.unescapeHTML(html)
+    console.log '==== HTML->md->html->unescaped'
+    console.log html
+    # Cleanup HTML
+    console.log '==== before tidy'
+    console.log html
+    tidy html, { indent: true, wrap: 0 }, (err, cleanhtml) ->
+      console.log '==== HTML tidied'
+      console.log cleanhtml
+      row.body = md(cleanhtml)
 
-    # Remove blog + date from URL.
-    row.url = row.url.replace(/blog\/\d{4}\/\d{2}\/\d{2}\/([a-zA-Z-\d]+)/g, "$1")
 
-    # Create directory for post w/ format YEAR-MONTH-DAY---sluggified-title-of-post
-    directory = "../content/#{ row.created.format('YYYY-MM-DD') }---#{ row.url }"
-    #fs.mkdirSync(directory)
-    #console.log("../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }")
+      # Remove blog + date from URL.
+      row.url = row.url.replace(/blog\/\d{4}\/\d{2}\/\d{2}\/([a-zA-Z-\d]+)/g, "$1")
 
-    ## Generate the markdown file
+      # Create directory for post w/ format YEAR-MONTH-DAY---sluggified-title-of-post
+      directory = "../content/#{ row.created.format('YYYY-MM-DD') }---#{ row.url }"
+      #fs.mkdirSync(directory)
+      #console.log("../content/#{ row.created.format('YYYY-MM-DD') }---#{ _str.slugify(row.title) }")
 
-    # Use JSON version of date.
-    row.date = row.created.toJSON()
-    delete row.created
+      ## Generate the markdown file
 
-    # The body doesn't go in the frontmatter.
-    body = row.body
-    delete row.body
+      # Use JSON version of date.
+      row.date = row.created.toJSON()
+      delete row.created
 
-    # Remove Drupalisms
-    if row.status is 0
-      row.draft = true
-    delete row.status
-    delete row.nid
-    delete row.url
+      # The body doesn't go in the frontmatter.
+      console.log row.body
+      body = row.body
+      delete row.body
 
-    # Uncategorized is so Wordpress.
-    if row.tags?[0] is "Uncategorized"
-      delete row.tags
-    row.layout = "post"
+      # Remove Drupalisms
+      if row.status is 0
+        row.draft = true
+      delete row.status
+      delete row.nid
+      delete row.url
 
-    output = "---\n"
-    output += yaml.safeDump(row)
-    output += "---\n\n"
-    output += body
+      # Uncategorized is so Wordpress.
+      if row.tags?[0] is "Uncategorized"
+        delete row.tags
+      row.layout = "post"
 
-    #console.log output
-    fs.writeFileSync("#{ directory }/index.md", output)
+      output = "---\n"
+      output += yaml.safeDump(row)
+      output += "---\n\n"
+      output += body
+
+      console.log output
+      fs.writeFileSync("#{ directory }/index.md", output)
+      cb()
+  )
 
   #console.log(rows)
 )

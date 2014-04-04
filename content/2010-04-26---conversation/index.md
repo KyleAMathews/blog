@@ -8,27 +8,14 @@ date: "2010-04-26T20:48:42.000Z"
 layout: post
 ---
 
-From British political philosopher Michael Oakeshott:  
+From British political philosopher Michael Oakeshott:
 
-
->   
-> 
-> Conversation is not . . . a contest where a winner gets a prize, . . . it is an endless, unrehearsed, intellectual adventure in which in imagination we enter a variety of modes of understanding the world and ourselves. And, we are not disconcerted by the differences, or dismayed by the inconclusiveness of it all.  
-> 
+> Conversation is not . . . a contest where a winner gets a prize, . . . it is an endless, unrehearsed, intellectual adventure in which in imagination we enter a variety of modes of understanding the world and ourselves. And, we are not disconcerted by the differences, or dismayed by the inconclusiveness of it all.
 > 
 
-  
+I really like that. Good conversation is good for the soul.
 
-  
-
-I really like that. Good conversation is good for the soul.  
-
-  
-
-Taken from [Andrew McAfee's][0] "[Enterprise 2.0][1]" book.  
-
-  
-
+Taken from [Andrew McAfee's][0] "[Enterprise 2.0][1]" book.
 
 
 [0]: http://andrewmcafee.org/
