@@ -14,15 +14,15 @@
         <![endif]-->
 
         <h1>Chatroom Feature for Drupal 6.x built with Node.js and Backbone.js</h1>
-<p>Recently, for fun and learning, I built a group chatroom feature for Drupal 6.x. I&#39;ve been learning and using <a href="http://nodejs.org">Node.js</a> and <a href="http://documentcloud.github.com/backbone/">Backbone.js</a> the past few months and building a chatroom seemed like a great project to stretch my skills.  </p>
-<p>I&#39;ve recently pronounced it &quot;finished&quot; and the <a href="https://github.com/KyleAMathews/Eduglu-Chatroom">code is available on Github</a>. There are a few obscure bugs left but by and large, it&#39;s plenty stable for those wanting a chatroom on Drupal 6.x.  </p>
+<p>Recently, for fun and learning, I built a group chatroom feature for Drupal 6.x. I’ve been learning and using <a href="http://nodejs.org">Node.js</a> and <a href="http://documentcloud.github.com/backbone/">Backbone.js</a> the past few months and building a chatroom seemed like a great project to stretch my skills.  </p>
+<p>I’ve recently pronounced it “finished” and the <a href="https://github.com/KyleAMathews/Eduglu-Chatroom">code is available on Github</a>. There are a few obscure bugs left but by and large, it’s plenty stable for those wanting a chatroom on Drupal 6.x.  </p>
 <p>The feature should work with any site using Spaces and Organic Groups. The demo site I setup, for example, is using a default installation of <a href="http://openatrium.com/">Open Atrium.</a>  </p>
 <h2 id="technology-stack">Technology stack</h2>
 <p>The chatroom is built using a now fairly standard set of technologies. For the backend, I used Node.js, <a href="http://redis.io">Redis</a>, and MySQL. I used <a href="http://socket.io">Socket.io</a> for sending the chat messages between clients and the server. I used <a href="http://brunchwithcoffee.com">Brunch</a> to build the frontend. Brunch bundles together a number of really nice tools for building single-page Javascript apps including <a href="http://jashkenas.github.com/coffee-script/">Coffeescript</a>, <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>, <a href="http://documentcloud.github.com/underscore/">Underscore.js</a>, <a href="https://github.com/sstephenson/stitch">Stitch</a>, and <a href="https://github.com/sstephenson/eco">Eco</a>.  </p>
 <h2 id="a-few-conclusions">A few conclusions</h2>
-<p>Backbone.js rocks. It makes creating highly interactive, responsive interfaces almost trivial while keeping your code neatly organized. It&#39;s a very neat round-up of the best patterns for creating Javascript applications.  </p>
-<p>Hand-rolling a way to securely connect Drupal and Node.js was a pain--probably the hardest part of building the feature. Use the <a href="http://drupal.org/project/nodejs">Node.js Integration module</a> if you&#39;re on Drupal 7.  </p>
-<p>Redis is really impressive. It has one of the shallowest learning curve of any technology I&#39;ve used. I was up and running with it in perhaps 15 minutes. Add that it&#39;s incredibly fast and you have a very handy tool to add to your toolset.  </p>
+<p>Backbone.js rocks. It makes creating highly interactive, responsive interfaces almost trivial while keeping your code neatly organized. It’s a very neat round-up of the best patterns for creating Javascript applications.  </p>
+<p>Hand-rolling a way to securely connect Drupal and Node.js was a pain—probably the hardest part of building the feature. Use the <a href="http://drupal.org/project/nodejs">Node.js Integration module</a> if you’re on Drupal 7.  </p>
+<p>Redis is really impressive. It has one of the shallowest learning curve of any technology I’ve used. I was up and running with it in perhaps 15 minutes. Add that it’s incredibly fast and you have a very handy tool to add to your toolset.  </p>
 <p>Note: the demo site that was linked from here is now off-line.</p>
 
         <script src="js/main.js"></script>

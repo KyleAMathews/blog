@@ -24,7 +24,9 @@ gulp.task('md', ->
       property: 'meta'
       remove: true
     }))
-    .pipe($.marked())
+    .pipe($.marked(
+      smartypants: true
+    ))
     .pipe(map((file, cb) ->
       file.path = file.path.replace(/md$/, 'html')
       cb(null, file)
