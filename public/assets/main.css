@@ -806,4 +806,7 @@ blockquote {
   blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
     margin-top: 0; }
 
-/*# sourceMappingURL=main.css.map */
+/* line 59, ../../assets/sass/_elements.scss */
+ul, ol {
+  padding: 0 0 0 1.95rem;
+  margin: 1.3rem 0; }

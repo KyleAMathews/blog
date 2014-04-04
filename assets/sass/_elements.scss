@@ -55,3 +55,8 @@ blockquote {
     margin-top: 0;
   }
 }
+
+ul, ol {
+  padding: 0 0 0 rhythm(1.5);
+  margin: rhythm(1) 0;
+}
