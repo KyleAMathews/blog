@@ -65,12 +65,12 @@ connection.query(query, (err, rows, fields) ->
 
     # Download images
     $ = cheerio.load(row.body)
-    #if $('img').length > 0
-      #$('img').each (i, el) ->
-        #link = el.attribs.src
-        #destPath = "#{ directory }/#{ path.basename(link) }"
-        #console.log "downloading #{ link } to #{ destPath }"
-        #request(link).on('error', (err) -> console.log err).pipe(fs.createWriteStream(destPath))
+    if $('img').length > 0
+      $('img').each (i, el) ->
+        link = el.attribs.src
+        destPath = "#{ directory }/#{ path.basename(link) }"
+        console.log "downloading #{ link } to #{ destPath }"
+        request(link).on('error', (err) -> console.log err).pipe(fs.createWriteStream(destPath))
 
     # Rewrite image links to point to local relative path.
     if $('img').length > 0
