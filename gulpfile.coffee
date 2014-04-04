@@ -97,7 +97,7 @@ gulp.task('css', ->
       sass: 'assets/sass'
       image: 'assets/images'
       style: 'nested'
-      comments: 'false'
+      comments: false
       bundle_exec: true
       time: true
       require: ['susy', 'modular-scale', 'normalize-scss', 'sass-css-importer']
