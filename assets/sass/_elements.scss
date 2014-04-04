@@ -60,3 +60,14 @@ ul, ol {
   padding: 0 0 0 rhythm(1.5);
   margin: rhythm(1) 0;
 }
+
+hr {
+  @include leader(1);
+  @include trailer(1);
+  background: gray(80%);
+  border: none;
+  clear: both;
+  float: none;
+  height: 1px;
+  width: 100%;
+}

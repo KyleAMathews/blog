@@ -810,3 +810,16 @@ blockquote {
 ul, ol {
   padding: 0 0 0 1.95rem;
   margin: 1.3rem 0; }
+
+/* line 64, ../../assets/sass/_elements.scss */
+hr {
+  margin-top: 26px;
+  margin-top: 1.3rem;
+  margin-bottom: 26px;
+  margin-bottom: 1.3rem;
+  background: #cccccc;
+  border: none;
+  clear: both;
+  float: none;
+  height: 1px;
+  width: 100%; }
