@@ -722,14 +722,13 @@ small {
 
 /* line 1, ../../assets/sass/_base.sass */
 body {
-  max-width: 700px;
-  max-width: 35rem;
+  max-width: 640px;
+  max-width: 32rem;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem;
   font-family: "Linux Libertine", Georgia, sans-serif;
   font-weight: 400;
-  background: #fcfcfc;
   color: #4c4c4c;
   text-rendering: optimizeLegibility;
   word-wrap: break; }
