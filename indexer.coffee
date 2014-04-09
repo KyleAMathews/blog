@@ -3,6 +3,7 @@ path = require 'path'
 _ = require 'underscore'
 gutil = require 'gulp-util'
 moment = require 'moment'
+Feed = require('feed')
 
 module.exports = (site, options) ->
 
@@ -18,7 +19,6 @@ module.exports = (site, options) ->
       date2 = moment(post2.meta.date)
       if date1.isBefore(date2) then 1 else -1
     )
-
     # Add home page
     homepage = new gutil.File({
       base: path.join(__dirname, './content/'),
@@ -27,7 +27,50 @@ module.exports = (site, options) ->
     })
     homepage._contents = Buffer(generateHomePage(files))
     homepage['meta'] = { layout: 'post' }
-    files.push homepage
+
+    # Add rss/atom feeds.
+    rss = new gutil.File({
+      base: path.join(__dirname, './content/'),
+      cwd: __dirname,
+      path: path.join(__dirname, './content/rss.xml')
+    })
+    atom = new gutil.File({
+      base: path.join(__dirname, './content/'),
+      cwd: __dirname,
+      path: path.join(__dirname, './content/atom.xml')
+    })
+    feed = new Feed({
+      title:       'Bricolage',
+      description: 'Feed for blog of Kyle Mathews',
+      link:        'http://bricolage.io/',
+      copyright:   'All rights reserved 2014, Kyle Mathews',
+      author: {
+          name:    'Kyle Mathews',
+          email:   'mathews.kyle@gmail.com',
+          link:    'http://bricolage.io'
+      }
+    })
+    for file in files.slice(0,10)
+      unless file.meta.title? then continue
+      feed.addItem({
+        title: file.meta.title
+        link: "http://bricolage.io/#{path.dirname(file.relative)}"
+        date: moment(file.meta.date).toDate()
+        content: file._contents.toString()
+        author: [{
+          name: "Kyle Mathews"
+          email: "mathews.kyle@gmail.com"
+          link: "http://bricolage.io"
+        }]
+      })
+
+    feed.addContributor({
+      name: 'Kyle Mathews'
+      email: 'mathews.kyle@gmail.com'
+      link: 'http://bricolage.io'
+    })
+    rss._contents = Buffer(feed.render('rss-2.0'))
+    atom._contents = Buffer(feed.render('atom-1.0'))
 
     # Add styleguide
     styleguide = new gutil.File({
@@ -37,6 +80,11 @@ module.exports = (site, options) ->
     })
     styleguide._contents = Buffer("")
     styleguide['meta'] = { layout: 'styleguide' }
+
+    # Add to files array our custom files.
+    files.push homepage
+    files.push rss
+    files.push atom
     files.push styleguide
 
     for file in files

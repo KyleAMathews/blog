@@ -39,13 +39,14 @@ gulp.task('md', ->
     .pipe(indexer())
     # Run posts through their template
     .pipe(map((file, cb) ->
-      file._contents = Buffer(
-        renderer.render(
-          file.meta.layout, {
-            post: file._contents.toString()
-            title: file.meta.title
-          }
-        ))
+      if file.meta?.layout?
+        file._contents = Buffer(
+          renderer.render(
+            file.meta.layout, {
+              post: file._contents.toString()
+              title: file.meta.title
+            }
+          ))
       cb(null, file)
     ))
     # Highlight text.
