@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "description": "'My blog'",
   "main": "cult watch",
-  "dependencies": {},
+  "dependencies": {
+    "git-rev": "^0.2.1",
+    "dirty": "^0.9.9",
+    "dockerode": "^1.2.9",
+    "tar-fs": "^0.3.1"
+  },
   "devDependencies": {
     "gulp": "~3.6.0",
     "gulp-front-matter": "~1.0.0",
