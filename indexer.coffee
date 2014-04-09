@@ -47,7 +47,6 @@ module.exports = (site, options) ->
       author: {
           name:    'Kyle Mathews',
           email:   'mathews.kyle@gmail.com',
-          link:    'http://bricolage.io'
       }
     })
     for file in files.slice(0,10)
@@ -101,7 +100,7 @@ generateHomePage = (files) ->
     if file.meta.draft
       continue
     date = moment(file.meta.date)
-    url = path.dirname(file.relative)
+    url = path.dirname(file.relative) + "/"
     homepage += "<a href='#{ url }'>#{ date.format('YYYY MM DD') } #{ file.meta.title }</a><br>"
 
   return homepage

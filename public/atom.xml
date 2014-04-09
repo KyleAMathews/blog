@@ -2,11 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2014-04-09T22:33:53Z</updated>
+    <updated>2014-04-09T23:14:50Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
-        <uri>http://bricolage.io</uri>
         <uri>http://bricolage.io</uri>
     </author>
     <link rel="alternate" href="http://bricolage.io/"/>
