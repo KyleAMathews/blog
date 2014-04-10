@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2014-04-10T23:25:18Z</updated>
+    <updated>2014-04-10T23:56:35Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -136,8 +136,10 @@
         <link href="http://bricolage.io/it-learners-who-inherit-future">
         </link>
         <updated>2011-07-25T04:59:38Z</updated>
-        <content type="html"><![CDATA[<p>“The central task of education is to implant a will and a facility for learning; it should produce not learned but learning people. The truly human society is a learning society, where grandparents, parents, and children are students together.”</p>
-<p>“In a time of drastic change it is the learners who inherit the future. The learned usually find themselves equipped to live in a world that no longer exists.”</p>
+        <content type="html"><![CDATA[<blockquote>
+<p>The central task of education is to implant a will and a facility for learning; it should produce not learned but learning people. The truly human society is a learning society, where grandparents, parents, and children are students together.</p>
+<p>In a time of drastic change it is the learners who inherit the future. The learned usually find themselves equipped to live in a world that no longer exists.</p>
+</blockquote>
 <p>—Eric Hoffer</p>
 ]]></content>
         <author>
