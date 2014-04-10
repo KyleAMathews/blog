@@ -52,15 +52,25 @@ generateHomePage = (files) ->
     cwd: __dirname,
     path: path.join(__dirname, './content/index.html')
   })
-  homepage['meta'] = { layout: 'post' }
+  homepage['meta'] = {
+    layout: 'frontpage'
+    posts: _.map(files, (file) -> file.meta)
+  }
 
+  groupedByYear = _.groupBy files, (file) ->
+    moment(file.meta.date).format('YYYY')
+  pairs = _.pairs groupedByYear
+  pairs = _.sortBy pairs, (pair) -> return pair[0]
+  pairs.reverse()
   content = ""
-  for file in files
-    if file.meta.draft
-      continue
-    date = moment(file.meta.date)
-    url = path.dirname(file.relative) + "/"
-    content += "<a href='#{ url }'>#{ date.format('YYYY MM DD') } #{ file.meta.title }</a><br>"
+  for [year, files] in pairs
+    content += "<h3>#{year}</h3><ul>"
+    for file in files
+      if file.meta.draft
+        continue
+      url = path.dirname(file.relative) + "/"
+      content += "<li><a href='#{ url }'>#{ file.meta.title }</a></li>"
+    content += "</ul>"
 
   homepage._contents = Buffer(content)
 

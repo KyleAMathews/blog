@@ -45,9 +45,10 @@ gulp.task('md', ->
         file._contents = Buffer(
           renderer.render(
             file.meta.layout, {
-              post: file._contents.toString()
+              body: file._contents.toString()
               title: file.meta.title
               date: moment(file.meta.date)
+              meta: file.meta
             }
           ))
       cb(null, file)
