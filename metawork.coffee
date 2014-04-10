@@ -68,7 +68,7 @@ generateHomePage = (files) ->
     for file in files
       if file.meta.draft
         continue
-      url = path.dirname(file.relative) + "/"
+      url = "/" + path.dirname(file.relative) + "/"
       content += "<li><a href='#{ url }'>#{ file.meta.title }</a></li>"
     content += "</ul>"
 
