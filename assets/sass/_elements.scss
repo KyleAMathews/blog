@@ -17,6 +17,10 @@ a {
 
 img {
   max-width: 100%;
+  &.float-left {
+    float: left;
+    margin-right: rhythm(0.5);
+  }
 }
 
 code {

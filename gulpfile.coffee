@@ -38,7 +38,7 @@ gulp.task('md', ->
       file.path = file.base + file.path.split('---')[1]
       cb(null, file)
     ))
-    .pipe(indexer())
+    .pipe(metawork())
     # Run posts through their template
     .pipe(map((file, cb) ->
       if file.meta?.layout?
@@ -47,6 +47,7 @@ gulp.task('md', ->
             file.meta.layout, {
               post: file._contents.toString()
               title: file.meta.title
+              date: moment(file.meta.date)
             }
           ))
       cb(null, file)
@@ -76,7 +77,12 @@ gulp.task('md', ->
 
 # Images
 gulp.task('images', ->
-  gulp.src(['content/**/*.png','content/**/*.jpg','content/**/*.gif'])
+  gulp.src([
+      'content/**/*.png'
+      'content/**/*.jpg'
+      'content/**/*.gif'
+    ]
+  )
     .pipe($.newer('public'))
     #.pipe($.imagemin({
         #optimizationLevel: 3,
@@ -90,6 +96,11 @@ gulp.task('images', ->
     ))
     .pipe($.size())
     .pipe(gulp.dest('public'))
+)
+gulp.task('asset-images', ->
+  gulp.src(['assets/images/*'])
+    .pipe($.size())
+    .pipe(gulp.dest('public/assets/images'))
 )
 
 # CSS
@@ -125,11 +136,12 @@ gulp.task 'serve', ['connect'], ->
 gulp.task 'default', ->
   gulp.start 'build'
 
-gulp.task 'build', ['images', 'md', 'css']
+gulp.task 'build', ['asset-images', 'images', 'md', 'css']
 
-gulp.task 'watch', ['md', 'images', 'css', 'connect', 'serve'], ->
+gulp.task 'watch', ['md', 'asset-images', 'images', 'css', 'connect'], ->
   gulp.watch ['content/**/*.md', 'templates/*'], ['md']
   gulp.watch(['content/**/*.png','content/**/*.jpg','content/**/*.gif'], ['images'])
+  gulp.watch(['asset/images/*'], ['asset-images'])
   gulp.watch(['assets/sass/*'], ['css'])
 
   gulp.watch ['content/**/*'], (event) ->

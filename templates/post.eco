@@ -1,3 +1,6 @@
 <% extend 'layout' %>
 <h1><%- @title %></h1>
 <%- @post %>
+<em>Posted <%- @date.format('MMMM D, YYYY') %></em>
+<hr>
+<p><img class="float-left" src="/assets/images/kyle-round-really-small-pantheon.jpg"><strong><a href="/">Kyle Mathews</a></strong> lives and works in San Francisco and builds beautiful things. <a target="_blank" href="http://twitter.com/kylemathews">You should follow him on Twitter</a></p>
