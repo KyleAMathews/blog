@@ -58,7 +58,7 @@ blockquote {
   margin: 0;
   margin-left: rhythm(0.5);
   @include breakpoint(max-width 500px) {
-    margin-left: rhythm(-0.6125);
+    margin-left: -15.5px;
   }
   h1,h2,h3,h4,h5,h6 {
     margin-top: 0;

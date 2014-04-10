@@ -743,7 +743,7 @@ blockquote {
   margin-left: 0.65rem; }
   @media (max-width: 500px) {
     blockquote {
-      margin-left: -0.79625rem; } }
+      margin-left: -15.5px; } }
   blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
     margin-top: 0; }
 
