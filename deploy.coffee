@@ -9,7 +9,7 @@ db.on 'load', ->
   metadata = db.get 'container'
   unless metadata? then metadata = {}
   needsUpgrade metadata.git_id, (upgrade, latestGitId) ->
-    unless upgrade
+    unless upgrade or process.argv[2] is "rebuild"
       console.log "Blog is up-to-date, no changes needed"
     else
       buildNewImage (imageId) ->
