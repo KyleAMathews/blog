@@ -53,10 +53,10 @@ pre {
 }
 
 blockquote {
-  @include apply-side-rhythm-border("left", 4.5px, 1);
+  @include apply-side-rhythm-border("left", 6.5px, 1);
   border-color: gray(80%);
   margin: 0;
-  margin-left: rhythm(1);
+  margin-left: rhythm(0.5);
   h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
   }
