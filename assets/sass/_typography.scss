@@ -1,5 +1,6 @@
 @import "modular-scale";
 @import "functions";
+@import "breakpoint";
 
 $base-font-size: 20px;
 $base-line-height: 26px;
@@ -62,7 +63,10 @@ $type-scale: (
 
 h1 {
   @include type-scale(xxlarge);
-  margin-top: rhythm(2);
+  margin-top: rhythm(0.5);
+  @include breakpoint(500px) {
+    margin-top: rhythm(2);
+  }
   margin-bottom: rhythm(0.5);
 }
 h2 {

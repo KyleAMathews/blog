@@ -598,8 +598,11 @@ h1 {
   font-size: 2.25rem;
   line-height: 47px;
   line-height: 2.34rem;
-  margin-top: 2.6rem;
+  margin-top: 0.65rem;
   margin-bottom: 0.65rem; }
+  @media (min-width: 500px) {
+    h1 {
+      margin-top: 2.6rem; } }
 
 h2 {
   font-size: 30px;
@@ -738,6 +741,9 @@ blockquote {
   border-color: #cccccc;
   margin: 0;
   margin-left: 0.65rem; }
+  @media (max-width: 500px) {
+    blockquote {
+      margin-left: -0.79625rem; } }
   blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
     margin-top: 0; }
 

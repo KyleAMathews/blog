@@ -3,3 +3,4 @@ node_modules/
 .sass-cache/
 temp.coffee
 deploy.db
+assets/sass/bower_components/

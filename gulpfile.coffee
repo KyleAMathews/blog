@@ -1,17 +1,19 @@
 gulp = require 'gulp'
 map = require 'map-stream'
 open = require 'open'
-indexer = require './indexer'
+metawork = require './metawork'
 connect = require 'gulp-connect'
 hljs = require('highlight.js')
 cheerio = require 'cheerio'
 _str = require 'underscore.string'
+path = require 'path'
+moment = require 'moment'
 
 # Setup ECT
 ECT = require('ect')
 renderer = ECT({
   root: __dirname + '/templates'
-  watch: true
+  cache: false
   ext: '.eco'
 })
 
@@ -101,7 +103,7 @@ gulp.task('css', ->
       comments: false
       bundle_exec: true
       time: true
-      require: ['susy', 'modular-scale', 'normalize-scss', 'sass-css-importer']
+      require: ['susy', 'modular-scale', 'normalize-scss', 'sass-css-importer', 'breakpoint']
     }))
     .on('error', (err) ->
       console.log err
