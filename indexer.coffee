@@ -28,12 +28,7 @@ module.exports = (site, options) ->
     homepage._contents = Buffer(generateHomePage(files))
     homepage['meta'] = { layout: 'post' }
 
-    # Add rss/atom feeds.
-    rss = new gutil.File({
-      base: path.join(__dirname, './content/'),
-      cwd: __dirname,
-      path: path.join(__dirname, './content/rss.xml')
-    })
+    # Add atom feeds.
     atom = new gutil.File({
       base: path.join(__dirname, './content/'),
       cwd: __dirname,
@@ -68,7 +63,6 @@ module.exports = (site, options) ->
       email: 'mathews.kyle@gmail.com'
       link: 'http://bricolage.io'
     })
-    rss._contents = Buffer(feed.render('rss-2.0'))
     atom._contents = Buffer(feed.render('atom-1.0'))
 
     # Add styleguide
@@ -82,7 +76,6 @@ module.exports = (site, options) ->
 
     # Add to files array our custom files.
     files.push homepage
-    files.push rss
     files.push atom
     files.push styleguide
 
