@@ -36,7 +36,7 @@ module.exports = (site, options) ->
     })
     feed = new Feed({
       title:       'Bricolage',
-      description: 'Feed for blog of Kyle Mathews',
+      description: 'A blog by Kyle Mathews',
       link:        'http://bricolage.io/',
       copyright:   'All rights reserved 2014, Kyle Mathews',
       author: {
