@@ -7,7 +7,8 @@
     "git-rev": "^0.2.1",
     "dirty": "^0.9.9",
     "dockerode": "^1.2.9",
-    "tar-fs": "^0.3.1"
+    "tar-fs": "^0.3.1",
+    "cytoscape": "^2.2.3"
   },
   "devDependencies": {
     "gulp": "~3.6.0",

@@ -1,17 +1,19 @@
 gulp = require 'gulp'
 map = require 'map-stream'
 open = require 'open'
-indexer = require './indexer'
+metawork = require './metawork'
 connect = require 'gulp-connect'
 hljs = require('highlight.js')
 cheerio = require 'cheerio'
 _str = require 'underscore.string'
+path = require 'path'
+moment = require 'moment'
 
 # Setup ECT
 ECT = require('ect')
 renderer = ECT({
   root: __dirname + '/templates'
-  watch: true
+  cache: false
   ext: '.eco'
 })
 
@@ -36,15 +38,21 @@ gulp.task('md', ->
       file.path = file.base + file.path.split('---')[1]
       cb(null, file)
     ))
-    .pipe(indexer())
+    .pipe(metawork())
     # Run posts through their template
     .pipe(map((file, cb) ->
       if file.meta?.layout?
+        console.log path.dirname(file.meta.readNext?.relative) + "/"
+        console.log _str.prune(file.meta.readNext?.meta.body, 200)
         file._contents = Buffer(
           renderer.render(
             file.meta.layout, {
               post: file._contents.toString()
               title: file.meta.title
+              date: moment(file.meta.date)
+              readNext: file.meta.readNext
+              readNextBody: _str.prune(file.meta.readNext?.meta.body, 200)
+              readNextUrl: "/" + path.dirname(file.meta.readNext?.relative) + "/"
             }
           ))
       cb(null, file)
@@ -125,7 +133,7 @@ gulp.task 'default', ->
 
 gulp.task 'build', ['images', 'md', 'css']
 
-gulp.task 'watch', ['md', 'images', 'css', 'connect', 'serve'], ->
+gulp.task 'watch', ['md', 'images', 'css', 'connect'], ->
   gulp.watch ['content/**/*.md', 'templates/*'], ['md']
   gulp.watch(['content/**/*.png','content/**/*.jpg','content/**/*.gif'], ['images'])
   gulp.watch(['assets/sass/*'], ['css'])

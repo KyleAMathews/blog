@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2014-04-10T16:04:41Z</updated>
+    <updated>2014-04-10T20:22:11Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
         <uri>http://bricolage.io</uri>
     </author>
     <link rel="alternate" href="http://bricolage.io/"/>
-    <subtitle>Feed for blog of Kyle Mathews</subtitle>
+    <subtitle>A blog by Kyle Mathews</subtitle>
     <rights>All rights reserved 2014, Kyle Mathews</rights>
     <generator>Feed for Node.js</generator>
     <contributor>
