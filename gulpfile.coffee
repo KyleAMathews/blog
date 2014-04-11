@@ -157,7 +157,7 @@ gulp.task 'serve', ['connect'], ->
 gulp.task 'default', ->
   gulp.start 'build'
 
-gulp.task 'build', ['asset-images', 'images', 'md', 'css']
+gulp.task 'build', ['asset-images', 'files', 'images', 'md', 'css']
 
 gulp.task 'watch', ['md', 'asset-images', 'files', 'images', 'css', 'connect'], ->
   gulp.watch ['content/**/*.md', 'templates/*'], ['md']

@@ -42,8 +42,7 @@ First it's designed to support social learning meaning it's designed to help/enc
 Second it's a platform giving the software two qualities:
 
 1. It gives people the freedom and tools to build onto the platform -- in the case of a social learning platform, people will primarily build learning communities.
-2. 
-[New patterns or structure will emerge within the system][3] that are unplanned and undirected
+2. [New patterns or structure will emerge within the system][3] that are unplanned and undirected
 
 The social learning platform should improve existing interactions and create new interactions within classrooms, within majors, and between multiple institutions such as nearby universities or members of the community (or in other words, create value in each of the quadrants within the [social software value matrix][2]).
 
@@ -64,14 +63,12 @@ I've seen the same sort of behavior on Island. I [wrote a post on this subject l
 Returning to Michael's article:
 
 > Historically, Enterprise 2.0 implementations have focused on collaborative tools [with] fairly high participation thresholds: blogs and wikis. That's not by design, it's by default. Until recently, those were the only Enterprise 2.0 tools that showed potential for high-value business use.
-> 
+
 > Today, Enterprise 2.0 participation is a whole different game. At the "low threshold" end of the curve, we have low-engagement tools like social messaging (internal "Twitter"), social bookmarking. By leading your implementation with these low-threshold tools, you lower the risk of implementation while still launching at the scale required for success.
-> 
 
 He goes on to describe an enthusiastic response to a recent webinar on his companies internal "twitter" app [Signals][10].
 
 > Signals was not just a useful tool, it was also a stepping stone that helped participants move to the right on the Participation curve (see image above). As participants started to get the hang of Signals, many started to ask about Socialtext's other collaborative features: What are workspaces? How do I use the Dashboard? How do I look up an individual?
-> 
 
 From what I've seen, most social software deployments in universities have preceded in a similar way to what Michael describes -- deploy high-value learning tools such as blogs and wikis in a small-pilot, evaluate their success, and make a go/no-go decision.
 
@@ -95,5 +92,5 @@ Your thoughts?
 [6]: http://ross.typepad.com/blog/2006/04/power_law_of_pa.html
 [7]: http://www.harrisinteractive.com/harris_poll/index.asp?PID=879
 [8]: http://www.pewinternet.org/Commentary/2005/May/New-data-on-blogs-and-blogging.aspx
-[9]: /power-law-graphs-from-classroom-community-websit
+[9]: /power-law-graphs-from-classroom-community-website
 [10]: http://www.socialtext.com/products/signals.php
