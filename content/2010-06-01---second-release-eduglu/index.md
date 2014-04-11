@@ -19,6 +19,8 @@ Our social learning platform ships with a number of powerful social learning app
 
 I recorded a quick screencast demoing an initial setup of Eduglu. Check it out to get a flavor for what Eduglu can do.
 
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/Z7HkN2W3vrI&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Z7HkN2W3vrI&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+
 ### Hosted Eduglu coming
 
 I'm also rather excited to announce that a fully supported hosted version of Eduglu is coming. Schools and other organizations will soon be able to easily sign-up for hosted Eduglu to meet the social learning needs of their organization. Head over to [eduglu.com][0] and leave your email address to hear when we open up for business and to provide early feedback.
