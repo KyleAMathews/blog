@@ -1,5 +1,5 @@
 ---
-title: "Notes from \"The Future of Teaching & Learning\" conference -- Tools and Technology Models"
+title: "Notes from \"The Future of Teaching & Learning\" conference — Tools and Technology Models"
 tags:
   - Education
   - education tools
@@ -10,8 +10,7 @@ layout: post
 Two questions from moderator:
 
 * What will the next generation of learning tools look like?
-* 
-What do Universities need to do to prepare?
+* What do Universities need to do to prepare?
 
 Marko Turpeinen from Helsinki Institute for Information Technology demoing [Sizzle][0].
 
