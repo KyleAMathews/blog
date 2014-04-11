@@ -98,10 +98,29 @@ gulp.task('images', ->
     .pipe($.size())
     .pipe(gulp.dest('public'))
 )
+
+# Copy random images in assets/images
 gulp.task('asset-images', ->
   gulp.src(['assets/images/*'])
     .pipe($.size())
     .pipe(gulp.dest('public/assets/images'))
+)
+
+# Copy random files in assets/files and within blog posts
+gulp.task('files', ->
+  gulp.src([
+      'content/**/*'
+      '!content/**/*.md'
+      '!content/**/*.png'
+      '!content/**/*.jpg'
+      '!content/**/*.gif'])
+    # Remove date from paths
+    .pipe(map((file, cb) ->
+      file.path = file.base + file.path.split('---')[1]
+      cb(null, file)
+    ))
+    .pipe($.size())
+    .pipe(gulp.dest('public'))
 )
 
 # CSS
@@ -139,11 +158,17 @@ gulp.task 'default', ->
 
 gulp.task 'build', ['asset-images', 'images', 'md', 'css']
 
-gulp.task 'watch', ['md', 'asset-images', 'images', 'css', 'connect'], ->
+gulp.task 'watch', ['md', 'asset-images', 'files', 'images', 'css', 'connect'], ->
   gulp.watch ['content/**/*.md', 'templates/*'], ['md']
   gulp.watch(['content/**/*.png','content/**/*.jpg','content/**/*.gif'], ['images'])
   gulp.watch(['asset/images/*'], ['asset-images'])
   gulp.watch(['assets/sass/*'], ['css'])
+  gulp.watch([
+      'content/**/*'
+      '!content/**/*.md'
+      '!content/**/*.png'
+      '!content/**/*.jpg'
+      '!content/**/*.gif'], ['files'])
 
   gulp.watch ['content/**/*'], (event) ->
     gulp.src(event.path)
