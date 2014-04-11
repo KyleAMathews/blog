@@ -61,7 +61,7 @@ gulp.task('md', ->
           # Get the language (if available).
           # Marked gives us a class with lang-* and highlightjs only wants *.
           code = _str.unescapeHTML($$(el).html())
-          language = $$(el).attr('class').split('-')[1]
+          language = $$(el).attr('class')?.split('-')[1]
           if language?
             $$(el).html _str.trim(hljs.highlight(language, code).value)
           else
