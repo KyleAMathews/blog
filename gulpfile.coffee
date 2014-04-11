@@ -165,6 +165,7 @@ gulp.task 'watch', ['md', 'asset-images', 'files', 'images', 'css', 'connect'], 
   gulp.watch(['asset/images/*'], ['asset-images'])
   gulp.watch(['assets/sass/*'], ['css'])
   gulp.watch([
+      'content/*'
       'content/**/*'
       '!content/**/*.png'
       '!content/**/*.jpg'
