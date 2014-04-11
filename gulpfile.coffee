@@ -109,13 +109,15 @@ gulp.task('asset-images', ->
 # Copy random files in assets/files and within blog posts
 gulp.task('files', ->
   gulp.src([
+      'content/*'
       'content/**/*'
       '!content/**/*.png'
       '!content/**/*.jpg'
       '!content/**/*.gif'])
     # Remove date from paths
     .pipe(map((file, cb) ->
-      file.path = file.base + file.path.split('---')[1]
+      if _str.contains(file.path, "---")
+        file.path = file.base + file.path.split('---')[1]
       cb(null, file)
     ))
     .pipe($.size())
