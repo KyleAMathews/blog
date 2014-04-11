@@ -110,7 +110,6 @@ gulp.task('asset-images', ->
 gulp.task('files', ->
   gulp.src([
       'content/**/*'
-      '!content/**/*.md'
       '!content/**/*.png'
       '!content/**/*.jpg'
       '!content/**/*.gif'])
@@ -165,7 +164,6 @@ gulp.task 'watch', ['md', 'asset-images', 'files', 'images', 'css', 'connect'], 
   gulp.watch(['assets/sass/*'], ['css'])
   gulp.watch([
       'content/**/*'
-      '!content/**/*.md'
       '!content/**/*.png'
       '!content/**/*.jpg'
       '!content/**/*.gif'], ['files'])
