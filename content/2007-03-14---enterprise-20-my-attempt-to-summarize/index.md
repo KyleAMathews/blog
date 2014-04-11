@@ -23,7 +23,7 @@ The vast user base of already installed Enterprise 2.0 software tools show the g
 
 Andrew McAfee, professor at Harvard Business School [defines Enterprise 2.0][0] as follows
 
-Enterprise 2.0 is the use of emergent social software platforms within companies, or between companies and their partners or customers.
+>Enterprise 2.0 is the use of emergent social software platforms within companies, or between companies and their partners or customers.
 
 'Freeform' in this case means that the software is most or all of the following:
 
