@@ -61,8 +61,12 @@ startNewContainer = (cb) ->
   docker.createContainer {
     Image: 'blog'
     ExposedPorts: '80/tcp'
+    Volumes: '/var/log/nginx': {}
   }, (err, container) ->
     container.start {
+      Binds: [
+        "/var/log/nginx/blog:/var/log/nginx"
+      ]
       PortBindings:
         "80/tcp": [{ HostPort: '80' }]
     }, (err, data) ->
