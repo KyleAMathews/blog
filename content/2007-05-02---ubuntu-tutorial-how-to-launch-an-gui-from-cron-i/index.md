@@ -1,5 +1,5 @@
 ---
-title: "Ubuntu Tutorial: How to launch an GUI from cron in Ubuntu"
+title: "Ubuntu Tutorial: How to launch a GUI from cron in Ubuntu"
 tags:
   - Linux
   - Ubuntu
@@ -13,9 +13,15 @@ My situation is this: I use a nifty little flashcard-like study program called [
 
 Using the [normal crontab syntax][1] I made this entry:
 
-0 7 _mnemosyne  
+````bash
+0 7 * * * mnemosyne
+````
+
 This, I thought, would run mnemosyne once a day at 7 AM. Unfortunately I was wrong. After much searching around I found the [solution on the Ubuntu forums][2] (always a great resource). My problem was that because cron doesn't run in the X session (The program that controls all GUIs in Linux), when you try to run a GUI program, cron doesn't know where to start it. To tell cron where to start the GUI, I changed my crontab entry as follows:  
-0 7_ export DISPLAY=:0 && /usr/bin/mnemosyne
+
+````bash
+0 7 * * * export DISPLAY=:0 && /usr/bin/mnemosyne
+````
 
 And finally success!
 
