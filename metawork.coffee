@@ -53,6 +53,7 @@ generateHomePage = (files) ->
     path: path.join(__dirname, './content/index.html')
   })
   homepage['meta'] = {
+    title: 'Bricolage'
     layout: 'frontpage'
     posts: _.map(files, (file) -> file.meta)
   }
@@ -122,6 +123,8 @@ generateStyleGuide = ->
     path: path.join(__dirname, './content/styleguide/index.html')
   })
   styleguide._contents = Buffer("")
-  styleguide['meta'] = { layout: 'styleguide' }
+  styleguide['meta'] = {
+    title: 'styleguide'
+    layout: 'styleguide' }
 
   return styleguide
