@@ -1,4 +1,10 @@
 <% extend 'layout' %>
+<% if @draft: %>
+  <div class="draft">
+    <h1 class="draft__header">Draft post</h1>
+    <p>Please do not distribute publicly</p>
+  </div>
+<% end %>
 <h1><%- @title %></h1>
 <%- @body %>
 <em>Posted <%- @date.format('MMMM D, YYYY') %></em>

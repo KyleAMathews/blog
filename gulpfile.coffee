@@ -48,7 +48,8 @@ gulp.task('md', ->
               body: file._contents.toString()
               title: file.meta.title
               date: moment(file.meta.date)
-              meta: file.meta
+              draft: file.meta.draft
+              tags: file.meta.tags
             }
           ))
       cb(null, file)
