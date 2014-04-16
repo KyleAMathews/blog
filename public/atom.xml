@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2014-04-16T23:19:43Z</updated>
+    <updated>2014-04-16T23:37:23Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -16,6 +16,36 @@
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
     </contributor>
+    <entry>
+        <title type="html"><![CDATA[New Beginnings]]></title>
+        <id>http://bricolage.io/new-beginnings</id>
+        <link href="http://bricolage.io/new-beginnings">
+        </link>
+        <updated>2014-04-16T22:40:32Z</updated>
+        <content type="html"><![CDATA[<p>Quick announcement post.</p>
+<p>First I’m leaving <a href="http://getpantheon.com">Pantheon</a>, the startup I’ve been working at the past two years.
+It’s been a fantastic run and I’ve loved working there. They have a great
+team and product and it’s been a pleasure helping build the best Drupal (and now Wordpress)
+professional website platform.</p>
+<p>Highlights include:</p>
+<ul>
+<li>Rebuilding the Pantheon dashboard from the ground up as a real-time single-page-app.</li>
+<li><a href="http://techcrunch.com/2013/07/10/pantheon-multidev/">Multidev</a> — cloud development environments for teams.
+Basically Git for the entire stack (files, DB, and code) not just code. It’s been a huge hit for customers with larger teams of developers.</li>
+<li><a href="https://www.getpantheon.com/pantheon-one">Pantheon One</a> — 
+a suite of tools for customers administering 100s to 1000s of websites.</li>
+</ul>
+<p>Now that I’ve left Pantheon, for the indefinite future I’ll be freelancing and working my way through a long list
+of side-projects and books that have been accumulating. <a href="mailto:mathews.kyle@gmail.com">Contact me</a> if you have interesting
+problems you’d like help with.</p>
+<p>I’m also back in the blogging game. I rebuilt this blog recently as a static site with a custom theme and new domain name. There’s a number of topics technical and otherwise I’ll be exploring here in future months.</p>
+]]></content>
+        <author>
+            <name>Kyle Mathews</name>
+            <email>mathews.kyle@gmail.com</email>
+            <uri>http://bricolage.io</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Humility and judgement]]></title>
         <id>http://bricolage.io/humility-and-judgement</id>
@@ -247,27 +277,6 @@
 <blockquote>
 <p>Of all organization men, the true executive is the one who remains most suspicious of The Organization. If there is one thing that characterizes him, it is a fierce desire to control his own destiny and, deep down, he resents yielding that control to The Organization, no matter how velvety its grip… he wants to dominate, not be dominated…Many people from the great reaches of middle management can become true believers in The Organization…But the most able are not vouchsafed this solace.</p>
 </blockquote>
-]]></content>
-        <author>
-            <name>Kyle Mathews</name>
-            <email>mathews.kyle@gmail.com</email>
-            <uri>http://bricolage.io</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New Drupal-Mixpanel integration module released to track event-based analytics]]></title>
-        <id>http://bricolage.io/new-drupal-mixpanel-integration-module-released-track-event-based-analytics</id>
-        <link href="http://bricolage.io/new-drupal-mixpanel-integration-module-released-track-event-based-analytics">
-        </link>
-        <updated>2011-04-23T00:23:01Z</updated>
-        <content type="html"><![CDATA[<p>As part of my work with my (<a href="/eduglu-enters-deadpool">now defunct</a>) startup Eduglu, I wrote a Drupal module that integrates with the popular analytics service Mixpanel.</p>
-<p>Web analytics help you understand what visitors do on your website and what is working and what is not. Mixpanel makes it easy to record what is happening on your site and provides powerful tools to make sense of all the data you collect. Mixpanel, combined with custom event tracking, helps answer questions like, which students are most active on the site? What material pages are most visited? And how engaged are students? In non-learning settings, Mixpanel can be used to answer questions like does anyone use this feature? Which features are most popular to new users? Which features are most popular with power users? And many more. Using Mixpanel gives you a wealth of new information about what’s happening on your site.</p>
-<p>Screenshot of their data analysis tool:</p>
-<p><img src="./mixpanel-screenshot.png" alt=""></p>
-<p>The Mixpanel module works well and has been used in production environments now for several months but there’s still a lot I’d like to add. Right now, the module records events from many of the core subsystems and popular contrib modules. Events such as when a user account is created, a node created, a comment created, someone joins a group, etc. It defines a simple API for other modules to set default information about a user, such as their role, if they’re a paying customer or not, their campaign source, etc. This information can be used for segmenting data during analysis.</p>
-<p>In the future I’d like to add Views 3 integration with their API so you’d be able to easily pull data from their API to create custom analytics dashboards on your site, <a href="http://mixpanel.com/platform/">Mixpanel Platform</a> integration, integrate with their <a href="http://blog.mixpanel.com/introduction-to-analytics-funnel-analysis">Funnel analysis tool</a>, automatic integration with the coming <a href="http://groups.drupal.org/node/99289">Onboarding module</a>, and provide out-of-the-box integration with more core and contrib modules.</p>
-<p>So please come over and help. Mixpanel is the easiest-to-use event-based analytics solution out there and quite affordable to boot. Add to that the Mixpanel platform and coming integration with Views and you have a powerful analytics package to offer to your clients or to build custom analytics for users of your Drupal-based web application.</p>
-<p>Download or clone at <a href="http://drupal.org/project/mixpanel"><a href="http://drupal.org/project/mixpanel">http://drupal.org/project/mixpanel</a></a></p>
 ]]></content>
         <author>
             <name>Kyle Mathews</name>
