@@ -7,7 +7,9 @@
     "git-rev": "^0.2.1",
     "dirty": "^0.9.9",
     "dockerode": "^1.2.9",
-    "tar-fs": "^0.3.2"
+    "tar-fs": "^0.3.2",
+    "mkdirp": "^0.3.5",
+    "js-yaml": "^3.0.2"
   },
   "devDependencies": {
     "gulp": "~3.6.0",
@@ -33,7 +35,8 @@
     "npm": "^1.4.6",
     "cheerio": "^0.14.0",
     "underscore.string": "^2.3.3",
-    "feed": "^0.2.6"
+    "feed": "^0.2.6",
+    "prompt": "^0.2.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
