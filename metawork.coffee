@@ -95,8 +95,9 @@ generateAtomFeed = (files) ->
         email:   'mathews.kyle@gmail.com',
     }
   })
-  for file in files.slice(0,10)
-    unless file.meta.title? then continue
+  for file in _.filter(files, (f) ->
+    f.meta.title? and not f.meta.draft
+  ).slice(0,10)
     feed.addItem({
       title: file.meta.title
       link: "http://bricolage.io/#{path.dirname(file.relative)}"
