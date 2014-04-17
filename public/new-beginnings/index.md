@@ -11,7 +11,7 @@ It's been a fantastic run and I've loved working there. They have a great
 team and product and it's been a pleasure helping build the best Drupal (and now Wordpress)
 professional website platform.
 
-Highlights include:
+Highlights include helping with:
 
 * Rebuilding the Pantheon dashboard from the ground up as a real-time single-page-app.
 * [Multidev](http://techcrunch.com/2013/07/10/pantheon-multidev/) — cloud development environments for teams.
