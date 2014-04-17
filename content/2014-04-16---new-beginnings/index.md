@@ -23,4 +23,4 @@ Now that I've left Pantheon, for the indefinite future I'll be freelancing and w
 of side-projects and books that have been accumulating. [Contact me](mailto:mathews.kyle@gmail.com) if you have interesting
 problems you'd like help with.
 
-I'm also back in the blogging game. I rebuilt this blog recently as a static site with a custom theme and new domain name. There's a number of topics technical and otherwise I'll be exploring here in future months.
+I'm also back in the blogging game. I rebuilt this blog recently as a static site with a custom theme and new domain name. There's a number of topics, technical and otherwise, I'll be exploring here in future months.

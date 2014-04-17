@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2014-04-17T00:52:13Z</updated>
+    <updated>2014-04-17T06:53:16Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -38,7 +38,7 @@ a suite of tools for customers administering 100s to 1000s of websites.</li>
 <p>Now that I’ve left Pantheon, for the indefinite future I’ll be freelancing and working my way through a long list
 of side-projects and books that have been accumulating. <a href="mailto:mathews.kyle@gmail.com">Contact me</a> if you have interesting
 problems you’d like help with.</p>
-<p>I’m also back in the blogging game. I rebuilt this blog recently as a static site with a custom theme and new domain name. There’s a number of topics technical and otherwise I’ll be exploring here in future months.</p>
+<p>I’m also back in the blogging game. I rebuilt this blog recently as a static site with a custom theme and new domain name. There’s a number of topics, technical and otherwise, I’ll be exploring here in future months.</p>
 ]]></content>
         <author>
             <name>Kyle Mathews</name>
