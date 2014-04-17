@@ -67,7 +67,7 @@ h1 {
   @include breakpoint(500px) {
     margin-top: rhythm(2);
   }
-  margin-bottom: rhythm(0.5);
+  margin-bottom: rhythm(1);
 }
 h2 {
   @include type-scale(xlarge);

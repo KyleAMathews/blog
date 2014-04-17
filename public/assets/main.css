@@ -599,7 +599,7 @@ h1 {
   line-height: 47px;
   line-height: 2.34rem;
   margin-top: 0.65rem;
-  margin-bottom: 0.65rem; }
+  margin-bottom: 1.3rem; }
   @media (min-width: 500px) {
     h1 {
       margin-top: 2.6rem; } }
