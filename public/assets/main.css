@@ -755,6 +755,8 @@ ul, ol {
   margin: 1.3rem 0; }
   ul ol, ul ul, ol ol, ol ul {
     margin: 0; }
+  ul li, ol li {
+    margin-bottom: 0.65rem; }
 
 hr {
   margin-top: 26px;

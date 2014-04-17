@@ -75,6 +75,9 @@ ul, ol {
   ol, ul {
     margin: 0;
   }
+  li {
+    margin-bottom: rhythm(0.5);
+  }
 }
 
 hr {
