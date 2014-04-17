@@ -8,7 +8,7 @@ date: "2009-02-22T01:48:22.000Z"
 layout: post
 ---
 
-*In preparation for [my upcoming session at Drupalcon][0], I'll be writing a short series of articles on social networking and learning theory. First up is an article on social objects.*
+*In preparation for [my upcoming session at Drupalcon][0], I'm writing a short series of articles on social networking and learning theory. First up is an article on social objects.*
 
 >The Social Object, in a nutshell, is the reason two people are talking to each other, as opposed to talking to somebody else.
 -- [Hugh Macleod][1]
