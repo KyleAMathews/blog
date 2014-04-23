@@ -28,7 +28,7 @@ it as I wanted a chance to play around with two other software tools, [Docker](d
 
 ## Building applications with Docker
 
-Docker has really captured mine and many other developer's imaginations. Its primary
+Docker has really captured mine and many other developers' imaginations. Its primary
 attraction to me is the utter simplicity it enables in packaging and deploying server applications.
 Coming from years of writing complicated Chef or Ansible scripts or tediously setting up servers
 by hand, being able to bundle all of an applications dependencies together is a breath of
