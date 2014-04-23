@@ -718,7 +718,7 @@ code {
   line-height: 20px;
   max-width: 100%;
   overflow: auto;
-  padding: 0; }
+  padding: 0 0.1625rem; }
 
 pre {
   margin: 0;
