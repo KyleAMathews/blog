@@ -35,7 +35,7 @@ You can see the meat of the logic for generating this site <a href="https://gith
 a very attractive option as it’s very fast and essentially infinitely scalable, but decided against
 it as I wanted a chance to play around with two other software tools, <a href="docker.io">Docker</a> and Nginx.</p>
 <h2 id="building-applications-with-docker">Building applications with Docker</h2>
-<p>Docker has really captured mine and many other developers imaginations. Its primary
+<p>Docker has really captured mine and many other developer’s imaginations. Its primary
 attraction to me is the utter simplicity it enables in packaging and deploying server applications.
 Coming from years of writing complicated Chef or Ansible scripts or tediously setting up servers
 by hand, being able to bundle all of an applications dependencies together is a breath of
@@ -65,7 +65,7 @@ a parallel version of this blog would be much more difficult with a global insta
 <p>Docker has an additional innovation which I love. Docker let’s you create base images
 which your application can build on. Since all static sites need about the same Nginx configuration,
 I created a <a href="https://github.com/KyleAMathews/docker-nginx">base Nginx Docker image</a>
-I can use (and anyone else) whenever I build a new static website.</p>
+I can use (and anyone else) whenever building a new static website.</p>
 <p>By encapsulating the Nginx configuration in an image, the Dockerfile (Docker’s DSL
 for defining image builds) <a href="https://github.com/KyleAMathews/blog/blob/master/Dockerfile">for this blog</a> is incredibly simple. Three lines in fact.</p>
 <pre class="hljs"><code class="lang-bash">FROM kyma/docker-nginx
@@ -76,7 +76,7 @@ the site’s files within the image at /var/www, and the third says to run Nginx
 the container is started.</p>
 <p>There’s tons of similar base images available on the public Docker image index for building <a href="https://index.docker.io/search?q=ruby">Ruby</a>,
 <a href="https://index.docker.io/search?q=python">Python</a>, <a href="https://index.docker.io/search?q=go">Go</a>, etc. applications.
-But it’s also trivial to create your own base images for your specific needs. For example, this is
+But it’s also trivial to create base images for your specific needs. For example, this is
 a <a href="https://github.com/KyleAMathews/docker-nodejs-base/blob/master/Dockerfile">base image I wrote with the tools I commonly use to build web frontends</a>.
 I’ve used it now for several side projects of mine.</p>
 <em>Posted April 23, 2014</em>

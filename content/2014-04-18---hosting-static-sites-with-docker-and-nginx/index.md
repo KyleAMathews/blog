@@ -28,7 +28,7 @@ it as I wanted a chance to play around with two other software tools, [Docker](d
 
 ## Building applications with Docker
 
-Docker has really captured mine and many other developers imaginations. Its primary
+Docker has really captured mine and many other developer's imaginations. Its primary
 attraction to me is the utter simplicity it enables in packaging and deploying server applications.
 Coming from years of writing complicated Chef or Ansible scripts or tediously setting up servers
 by hand, being able to bundle all of an applications dependencies together is a breath of
@@ -65,7 +65,7 @@ a parallel version of this blog would be much more difficult with a global insta
 Docker has an additional innovation which I love. Docker let's you create base images
 which your application can build on. Since all static sites need about the same Nginx configuration,
 I created a [base Nginx Docker image](https://github.com/KyleAMathews/docker-nginx)
-I can use (and anyone else) whenever I build a new static website.
+I can use (and anyone else) whenever building a new static website.
 
 By encapsulating the Nginx configuration in an image, the Dockerfile (Docker's DSL
 for defining image builds) [for this blog](https://github.com/KyleAMathews/blog/blob/master/Dockerfile) is incredibly simple. Three lines in fact.
@@ -82,6 +82,6 @@ the container is started.
 
 There's tons of similar base images available on the public Docker image index for building [Ruby](https://index.docker.io/search?q=ruby),
 [Python](https://index.docker.io/search?q=python), [Go](https://index.docker.io/search?q=go), etc. applications.
-But it's also trivial to create your own base images for your specific needs. For example, this is
+But it's also trivial to create base images for your specific needs. For example, this is
 a [base image I wrote with the tools I commonly use to build web frontends](https://github.com/KyleAMathews/docker-nodejs-base/blob/master/Dockerfile).
 I've used it now for several side projects of mine.
