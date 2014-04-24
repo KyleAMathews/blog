@@ -28,12 +28,12 @@ it as I wanted a chance to play around with two other software tools, [Docker](d
 
 ## Building applications with Docker
 
-Docker has really captured mine and many other developers' imaginations. Its primary
+Docker has really captured my and many other developers' imaginations. Its primary
 attraction to me is the utter simplicity it enables in packaging and deploying server applications.
 Coming from years of writing complicated Chef or Ansible scripts or tediously setting up servers
 by hand, being able to bundle all of an applications dependencies together is a breath of
 fresh air. [Global variables (and packages) are bad](http://c2.com/cgi/wiki?GlobalVariablesAreBad).
-Docker let's you completely ignore the "global state" of the server that's running
+Docker lets you completely ignore the "global state" of the server that's running
 your application. It's truly a "Write once, run anywhere" system. If it works on
 your laptop, it'll work in production.
 
@@ -62,7 +62,7 @@ a parallel version of this blog would be much more difficult with a global insta
 
 ## Docker layers
 
-Docker has an additional innovation which I love. Docker let's you create base images
+Docker has an additional innovation which I love. Docker lets you create base images
 which your application can build on. Since all static sites need about the same Nginx configuration,
 I created a [base Nginx Docker image](https://github.com/KyleAMathews/docker-nginx)
 I can use (and anyone else) whenever building a new static website.

@@ -35,12 +35,12 @@ You can see the meat of the logic for generating this site <a href="https://gith
 a very attractive option as it’s very fast and essentially infinitely scalable, but decided against
 it as I wanted a chance to play around with two other software tools, <a href="docker.io">Docker</a> and Nginx.</p>
 <h2 id="building-applications-with-docker">Building applications with Docker</h2>
-<p>Docker has really captured mine and many other developers’ imaginations. Its primary
+<p>Docker has really captured my and many other developers’ imaginations. Its primary
 attraction to me is the utter simplicity it enables in packaging and deploying server applications.
 Coming from years of writing complicated Chef or Ansible scripts or tediously setting up servers
 by hand, being able to bundle all of an applications dependencies together is a breath of
 fresh air. <a href="http://c2.com/cgi/wiki?GlobalVariablesAreBad">Global variables (and packages) are bad</a>.
-Docker let’s you completely ignore the “global state” of the server that’s running
+Docker lets you completely ignore the “global state” of the server that’s running
 your application. It’s truly a “Write once, run anywhere” system. If it works on
 your laptop, it’ll work in production.</p>
 <p>This changes how you think about the boundaries of your application.
@@ -62,7 +62,7 @@ same server but listening on a different port. I used this twin
 version of my blog to do the load testing and threw it away once the testing was finished. Setting up
 a parallel version of this blog would be much more difficult with a global installation of Nginx.</p>
 <h2 id="docker-layers">Docker layers</h2>
-<p>Docker has an additional innovation which I love. Docker let’s you create base images
+<p>Docker has an additional innovation which I love. Docker lets you create base images
 which your application can build on. Since all static sites need about the same Nginx configuration,
 I created a <a href="https://github.com/KyleAMathews/docker-nginx">base Nginx Docker image</a>
 I can use (and anyone else) whenever building a new static website.</p>
