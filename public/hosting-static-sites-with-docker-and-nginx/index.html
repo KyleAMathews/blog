@@ -14,13 +14,9 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-          <div class="draft">
-    <h1 class="draft__header">Draft post</h1>
-    <p>Please do not distribute publicly</p>
-  </div>
-<h1>Hosting static sites with Docker and Nginx</h1>
-<p>For most of its life, this blog has run on Drupal. But as I stopped several years ago
-doing Drupal development, maintaining (and even using) Drupal feels like more and more of a burden.
+        <h1>Hosting static sites with Docker and Nginx</h1>
+<p>For most of its life, this blog has run on Drupal. But as I no longer do Drupal
+development, maintaining (and even using) Drupal feels like more and more of a burden.
 So like the other <a href="https://twitter.com/paulg/status/402205795552489472">cool kids on the internet</a>
 I decided to convert my site to a static website. Easy to host, zero security updates, and completely customizable.</p>
 <p>I evaluated quite a few of the <a href="http://staticgen.com/">popular static site frameworks</a> out there e.g.
@@ -33,23 +29,23 @@ Props to GulpJS and the vast treasure-trove of Node.js modules in the <a href="h
 You can see the meat of the logic for generating this site <a href="https://github.com/KyleAMathews/blog/blob/master/gulpfile.coffee#L23-L78">at the blog’s repo</a>.</p>
 <p>The next task was how to host the site. I briefly considered using Amazon S3, which is
 a very attractive option as it’s very fast and essentially infinitely scalable, but decided against
-it as I wanted a chance to play around with two other software tools, <a href="docker.io">Docker</a> and Nginx.</p>
+it as I wanted a chance to play around with two other software tools, <a href="docker.io">Docker</a> and <a href="http://nginx.org/">Nginx</a>.</p>
 <h2 id="building-applications-with-docker">Building applications with Docker</h2>
 <p>Docker has really captured my and many other developers’ imaginations. Its primary
 attraction to me is the utter simplicity it enables in packaging and deploying server applications.
-Coming from years of writing complicated Chef or Ansible scripts or tediously setting up servers
-by hand, being able to bundle all of an applications dependencies together is a breath of
+Coming from years of writing complicated <a href="http://www.getchef.com/">Chef</a> or <a href="http://www.ansible.com/home">Ansible</a>
+scripts, being able to bundle each applications’ dependencies together is a breath of
 fresh air. <a href="http://c2.com/cgi/wiki?GlobalVariablesAreBad">Global variables (and packages) are bad</a>.
 Docker lets you completely ignore the “global state” of the server that’s running
 your application. It’s truly a “Write once, run anywhere” system. If it works on
-your laptop, it’ll work in production.</p>
+your laptop, it’ll work in production no matter where or what it’s installed with.</p>
 <p>This changes how you think about the boundaries of your application.
 Consider my case of hosting this static website. Typically you’d think of this blog
 as the collection of HTML, CSS, and images that make up the site.</p>
 <p>What you think your application is affects how you deploy it. If your application is a bundle of files then
 “deploying” means placing these files inside a software system that understands HTTP and can serve files, e.g. Apache or Nginx.</p>
 <p>Compare this to how I’m using Docker for this blog. Instead of using a global Nginx instance
-to serve my blog, I create a Docker container with Nginx <em>and</em> my blog’s files. Which makes my “blog application”
+to serve my blog, I create a Docker image with Nginx <em>and</em> my blog’s files. Which makes the resulting “blog application”
 an atomic unit that I can build, test, and run anywhere as many times as I want.</p>
 <p>This is a much more preferable outcome. Instead of a messy collection of files as my outcome,
 with Docker, I have a neat tidy Docker image. Now to to run a very high-performance blog, all I
@@ -64,8 +60,8 @@ a parallel version of this blog would be much more difficult with a global insta
 <h2 id="docker-layers">Docker layers</h2>
 <p>Docker has an additional innovation which I love. Docker lets you create base images
 which your application can build on. Since all static sites need about the same Nginx configuration,
-I created a <a href="https://github.com/KyleAMathews/docker-nginx">base Nginx Docker image</a>
-I can use (and anyone else) whenever building a new static website.</p>
+I created a <a href="https://github.com/KyleAMathews/docker-nginx">Nginx Docker image</a>
+I can use (and anyone else) as a base whenever building a new static website.</p>
 <p>By encapsulating the Nginx configuration in an image, the Dockerfile (Docker’s DSL
 for defining image builds) <a href="https://github.com/KyleAMathews/blog/blob/master/Dockerfile">for this blog</a> is incredibly simple. Three lines in fact.</p>
 <pre class="hljs"><code class="lang-bash">FROM kyma/docker-nginx
@@ -73,13 +69,13 @@ ADD public/ /var/www
 CMD <span class="hljs-string">'nginx'</span></code></pre>
 <p>The first line tells Docker to use my Nginx image as the base, the second says to add
 the site’s files within the image at /var/www, and the third says to run Nginx when
-the container is started.</p>
+a new container is started.</p>
 <p>There’s tons of similar base images available on the public Docker image index for building <a href="https://index.docker.io/search?q=ruby">Ruby</a>,
 <a href="https://index.docker.io/search?q=python">Python</a>, <a href="https://index.docker.io/search?q=go">Go</a>, etc. applications.
 But it’s also trivial to create base images for your specific needs. For example, this is
 a <a href="https://github.com/KyleAMathews/docker-nodejs-base/blob/master/Dockerfile">base image I wrote with the tools I commonly use to build web frontends</a>.
 I’ve used it now for several side projects of mine.</p>
-<em>Posted April 23, 2014</em>
+<em>Posted April 24, 2014</em>
 <hr>
 <p><img width="52px" height="52px" class="float-left" src="/assets/images/kyle-round-small-pantheon.jpg"><strong><a href="/">Kyle Mathews</a></strong> lives and works in San Francisco building beautiful things. <a target="_blank" href="http://twitter.com/kylemathews">You should follow him on Twitter</a></p>
 <br>

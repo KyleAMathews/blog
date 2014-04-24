@@ -1,14 +1,13 @@
 ---
 title: Hosting static sites with Docker and Nginx
-date: "2014-04-23T22:12:03.284Z"
+date: "2014-04-24T22:12:03.284Z"
 layout: post
-draft: true
 tags:
   - Docker
 ---
 
-For most of its life, this blog has run on Drupal. But as I stopped several years ago
-doing Drupal development, maintaining (and even using) Drupal feels like more and more of a burden.
+For most of its life, this blog has run on Drupal. But as I no longer do Drupal
+development, maintaining (and even using) Drupal feels like more and more of a burden.
 So like the other [cool kids on the internet](https://twitter.com/paulg/status/402205795552489472)
 I decided to convert my site to a static website. Easy to host, zero security updates, and completely customizable.
 
@@ -24,18 +23,18 @@ You can see the meat of the logic for generating this site [at the blog's repo](
 
 The next task was how to host the site. I briefly considered using Amazon S3, which is
 a very attractive option as it's very fast and essentially infinitely scalable, but decided against
-it as I wanted a chance to play around with two other software tools, [Docker](docker.io) and Nginx.
+it as I wanted a chance to play around with two other software tools, [Docker](docker.io) and [Nginx](http://nginx.org/).
 
 ## Building applications with Docker
 
 Docker has really captured my and many other developers' imaginations. Its primary
 attraction to me is the utter simplicity it enables in packaging and deploying server applications.
-Coming from years of writing complicated Chef or Ansible scripts or tediously setting up servers
-by hand, being able to bundle all of an applications dependencies together is a breath of
+Coming from years of writing complicated [Chef](http://www.getchef.com/) or [Ansible](http://www.ansible.com/home)
+scripts, being able to bundle each applications' dependencies together is a breath of
 fresh air. [Global variables (and packages) are bad](http://c2.com/cgi/wiki?GlobalVariablesAreBad).
 Docker lets you completely ignore the "global state" of the server that's running
 your application. It's truly a "Write once, run anywhere" system. If it works on
-your laptop, it'll work in production.
+your laptop, it'll work in production no matter where or what it's installed with.
 
 This changes how you think about the boundaries of your application.
 Consider my case of hosting this static website. Typically you'd think of this blog
@@ -45,7 +44,7 @@ What you think your application is affects how you deploy it. If your applicatio
 "deploying" means placing these files inside a software system that understands HTTP and can serve files, e.g. Apache or Nginx.
 
 Compare this to how I'm using Docker for this blog. Instead of using a global Nginx instance
-to serve my blog, I create a Docker container with Nginx *and* my blog's files. Which makes my "blog application"
+to serve my blog, I create a Docker image with Nginx *and* my blog's files. Which makes the resulting "blog application"
 an atomic unit that I can build, test, and run anywhere as many times as I want.
 
 This is a much more preferable outcome. Instead of a messy collection of files as my outcome,
@@ -64,8 +63,8 @@ a parallel version of this blog would be much more difficult with a global insta
 
 Docker has an additional innovation which I love. Docker lets you create base images
 which your application can build on. Since all static sites need about the same Nginx configuration,
-I created a [base Nginx Docker image](https://github.com/KyleAMathews/docker-nginx)
-I can use (and anyone else) whenever building a new static website.
+I created a [Nginx Docker image](https://github.com/KyleAMathews/docker-nginx)
+I can use (and anyone else) as a base whenever building a new static website.
 
 By encapsulating the Nginx configuration in an image, the Dockerfile (Docker's DSL
 for defining image builds) [for this blog](https://github.com/KyleAMathews/blog/blob/master/Dockerfile) is incredibly simple. Three lines in fact.
@@ -78,7 +77,7 @@ CMD 'nginx'
 
 The first line tells Docker to use my Nginx image as the base, the second says to add
 the site's files within the image at /var/www, and the third says to run Nginx when
-the container is started.
+a new container is started.
 
 There's tons of similar base images available on the public Docker image index for building [Ruby](https://index.docker.io/search?q=ruby),
 [Python](https://index.docker.io/search?q=python), [Go](https://index.docker.io/search?q=go), etc. applications.
