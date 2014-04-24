@@ -14,7 +14,7 @@ I decided to convert my site to a static website. Easy to host, zero security up
 I evaluated quite a few of the [popular static site frameworks](http://staticgen.com/) out there e.g.
 [Jekyll](http://jekyllrb.com/) and [Docpad](http://docpad.org/) but none of them
 really attracted me. It seemed the problem of generating an HTML site was small enough
-that with [GulpJS](gulpjs.com), a number of [NPM modules](https://github.com/KyleAMathews/blog/blob/master/package.json),
+that with [GulpJS](http://gulpjs.com), a number of [NPM modules](https://github.com/KyleAMathews/blog/blob/master/package.json),
 and some glue code I could easily build my own static site generator.
 
 And as hoped, building a custom static site generator turned out to be straightforward.
@@ -23,7 +23,7 @@ You can see the meat of the logic for generating this site [at the blog's repo](
 
 The next task was how to host the site. I briefly considered using Amazon S3, which is
 a very attractive option as it's very fast and essentially infinitely scalable, but decided against
-it as I wanted a chance to play around with two other software tools, [Docker](docker.io) and [Nginx](http://nginx.org/).
+it as I wanted a chance to play around with two other software tools, [Docker](http://docker.io) and [Nginx](http://nginx.org/).
 
 ## Building applications with Docker
 

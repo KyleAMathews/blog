@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2014-04-24T22:11:28Z</updated>
+    <updated>2014-04-24T23:40:43Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -29,14 +29,14 @@ I decided to convert my site to a static website. Easy to host, zero security up
 <p>I evaluated quite a few of the <a href="http://staticgen.com/">popular static site frameworks</a> out there e.g.
 <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://docpad.org/">Docpad</a> but none of them
 really attracted me. It seemed the problem of generating an HTML site was small enough
-that with <a href="gulpjs.com">GulpJS</a>, a number of <a href="https://github.com/KyleAMathews/blog/blob/master/package.json">NPM modules</a>,
+that with <a href="http://gulpjs.com">GulpJS</a>, a number of <a href="https://github.com/KyleAMathews/blog/blob/master/package.json">NPM modules</a>,
 and some glue code I could easily build my own static site generator.</p>
 <p>And as hoped, building a custom static site generator turned out to be straightforward.
 Props to GulpJS and the vast treasure-trove of Node.js modules in the <a href="https://www.npmjs.org/">NPM repository</a>.
 You can see the meat of the logic for generating this site <a href="https://github.com/KyleAMathews/blog/blob/master/gulpfile.coffee#L23-L78">at the blog’s repo</a>.</p>
 <p>The next task was how to host the site. I briefly considered using Amazon S3, which is
 a very attractive option as it’s very fast and essentially infinitely scalable, but decided against
-it as I wanted a chance to play around with two other software tools, <a href="docker.io">Docker</a> and <a href="http://nginx.org/">Nginx</a>.</p>
+it as I wanted a chance to play around with two other software tools, <a href="http://docker.io">Docker</a> and <a href="http://nginx.org/">Nginx</a>.</p>
 <h2 id="building-applications-with-docker">Building applications with Docker</h2>
 <p>Docker has really captured my and many other developers’ imaginations. Its primary
 attraction to me is the utter simplicity it enables in packaging and deploying server applications.
