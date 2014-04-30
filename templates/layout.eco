@@ -12,7 +12,6 @@
         <meta name="twitter:site" content="@kylemathews">
         <meta name="twitter:title" content="<%- @title %>">
         <meta name="twitter:description" content="<%- @summary %>">
-        <meta name="twitter:creator" content="@kylemathews">
 
         <!-- Open Graph data -->
         <meta property="og:title" content="<%- @title %>" />
