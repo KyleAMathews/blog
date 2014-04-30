@@ -54,7 +54,7 @@ gulp.task('md', ->
               body: file._contents.toString()
               summary: file.meta.summary
               title: file.meta.title
-              url: "http://bricolage.io/#{path.dirname(file.relative)}"
+              url: "http://bricolage.io/#{path.dirname(file.relative)}/"
               date: moment(file.meta.date)
               draft: file.meta.draft
               tags: file.meta.tags

@@ -100,7 +100,7 @@ generateAtomFeed = (files) ->
   ).slice(0,10)
     feed.addItem({
       title: file.meta.title
-      link: "http://bricolage.io/#{path.dirname(file.relative)}"
+      link: "http://bricolage.io/#{path.dirname(file.relative)}/"
       date: moment(file.meta.date).toDate()
       content: file._contents.toString()
       author: [{
