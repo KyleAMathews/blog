@@ -38,6 +38,12 @@ gulp.task('md', ->
       file.path = file.base + file.path.split('---')[1]
       cb(null, file)
     ))
+    # Generate summary.
+    .pipe(map((file, cb) ->
+      $$ = cheerio.load(file._contents.toString())
+      file.meta.summary = _str.prune($$('*').text(), 150)
+      cb(null, file)
+    ))
     .pipe(metawork())
     # Run posts through their template
     .pipe(map((file, cb) ->
@@ -46,7 +52,9 @@ gulp.task('md', ->
           renderer.render(
             file.meta.layout, {
               body: file._contents.toString()
+              summary: file.meta.summary
               title: file.meta.title
+              url: "http://bricolage.io/#{path.dirname(file.relative)}"
               date: moment(file.meta.date)
               draft: file.meta.draft
               tags: file.meta.tags
