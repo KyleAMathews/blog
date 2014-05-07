@@ -58,22 +58,13 @@ generateHomePage = (files) ->
     posts: _.map(files, (file) -> file.meta)
   }
 
-  groupedByYear = _.groupBy files, (file) ->
-    if file.meta.draft then return "drafts"
-    moment(file.meta.date).format('YYYY')
-  pairs = _.pairs groupedByYear
-  pairs = _.sortBy pairs, (pair) -> return pair[0]
-  pairs.reverse()
-  content = ""
-  for [year, files] in pairs
-    if year is "drafts" then continue
-    content += "<h3>#{year}</h3><ul>"
-    for file in files
-      if file.meta.draft
-        continue
-      url = "/" + path.dirname(file.relative) + "/"
-      content += "<li><a href='#{ url }'>#{ file.meta.title }</a></li>"
-    content += "</ul>"
+  content = "<ul>"
+  for file in files
+    if file.meta.draft
+      continue
+    url = "/" + path.dirname(file.relative) + "/"
+    content += "<li><a href='#{ url }'>#{ file.meta.title }</a></li>"
+  content += "</ul>"
 
   homepage._contents = Buffer(content)
 
