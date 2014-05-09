@@ -11,7 +11,7 @@ Googling found quite a few different Latex résumé templates to start from and 
 
 [Download a copy of the finished résumé](./kyle-mathews-resume_0.pdf). You can also see the source for the résumé at [https://github.com/KyleAMathews/kjh-vita/blob/master/kyle-resume.tex][3]. Feel free to fork my version and modify to meet your needs. Most distributions of Latex should have all the dependencies you need. The three fonts I've used, Minion Pro, Myriad Pro, and Inconsolata are all freely available. The first two are distributed with Adobe Reader. The latter can be [downloaded here.][4]
 
-#### Update — just use http://sharelatex.com
+### Update — just use http://sharelatex.com
 Since I wrote this post several years ago a new online Latex service [Sharelatex](http://sharelatex.com) has been created. They have a fantastic selection of [Resume/CV Latex templates](https://www.sharelatex.com/templates/cv-or-resume) and couldn't be easier to use. Just [pick one of the templates](https://www.sharelatex.com/templates/cv-or-resume) and start adding your information through their online editor.
 
 
