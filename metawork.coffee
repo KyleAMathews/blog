@@ -40,6 +40,8 @@ module.exports = (site, options) ->
     files.push styleguide
 
     for file in files
+      if file.meta?
+        file.meta.files = files
       @emit 'data', file
 
     @emit 'end'
@@ -56,14 +58,14 @@ generateHomePage = (files) ->
     title: 'Bricolage'
     layout: 'frontpage'
     posts: _.map(files, (file) -> file.meta)
+    urlFragment: '/'
   }
 
   content = "<ul>"
   for file in files
     if file.meta.draft
       continue
-    url = "/" + path.dirname(file.relative) + "/"
-    content += "<li><a href='#{ url }'>#{ file.meta.title }</a></li>"
+    content += "<li><a href='#{ file.meta.urlFragment }'>#{ file.meta.title }</a></li>"
   content += "</ul>"
 
   homepage._contents = Buffer(content)
@@ -119,6 +121,8 @@ generateStyleGuide = ->
   styleguide._contents = Buffer("")
   styleguide['meta'] = {
     title: 'styleguide'
-    layout: 'styleguide' }
+    layout: 'styleguide'
+    urlFragment: '/styleguide/'
+  }
 
   return styleguide

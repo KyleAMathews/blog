@@ -44,6 +44,11 @@ gulp.task('md', ->
       file.meta.summary = _str.prune($$('*').text(), 150)
       cb(null, file)
     ))
+    # Set the URL for each post.
+    .pipe(map((file, cb) ->
+      file.meta.urlFragment = "/" + path.dirname(file.relative) + "/"
+      cb(null, file)
+    ))
     .pipe(metawork())
     # Run posts through their template
     .pipe(map((file, cb) ->
@@ -54,7 +59,7 @@ gulp.task('md', ->
               body: file._contents.toString()
               summary: file.meta.summary
               title: file.meta.title
-              url: "http://bricolage.io/#{path.dirname(file.relative)}/"
+              url: "http://bricolage.io#{file.meta.urlFragment}"
               date: moment(file.meta.date)
               draft: file.meta.draft
               tags: file.meta.tags
