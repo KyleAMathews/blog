@@ -2,6 +2,7 @@
 title: New Beginnings
 date: "2014-04-16T22:40:32.169Z"
 layout: post
+readNext: "/hosting-static-sites-with-docker-and-nginx/"
 ---
 
 Quick announcement post.

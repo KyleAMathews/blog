@@ -6,6 +6,7 @@ connect = require 'gulp-connect'
 hljs = require('highlight.js')
 cheerio = require 'cheerio'
 _str = require 'underscore.string'
+_ = require 'underscore'
 path = require 'path'
 moment = require 'moment'
 
@@ -63,6 +64,13 @@ gulp.task('md', ->
               date: moment(file.meta.date)
               draft: file.meta.draft
               tags: file.meta.tags
+              readNext: do ->
+                if file.meta.readNext?
+                  return _.find file.meta.files, (f) ->
+                    f.meta?.urlFragment is file.meta.readNext
+                else
+                  return false
+
             }
           ))
       cb(null, file)

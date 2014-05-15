@@ -9,6 +9,22 @@
 <%- @body %>
 <em>Posted <%- @date.format('MMMM D, YYYY') %></em>
 <hr>
+<% if @readNext: %>
+<div class="read-next">
+  <h4 class="read-next__header">READ THIS NEXT:</h4>
+  <h2 class="read-next__title">
+    <a href="<%- @readNext.meta.urlFragment %>">
+      <%- @readNext.meta.title %>
+    </a>
+  </h2>
+  <p>
+    <a class="link--no-color" href="<%- @readNext.meta.urlFragment %>">
+      <%- @readNext.meta.summary %>
+    </a>
+  </p>
+</div>
+<hr>
+<% end %>
 <p><img width="52px" height="52px" class="float-left" src="/assets/images/kyle-round-small-pantheon.jpg"><strong><a href="/">Kyle Mathews</a></strong> lives and works in San Francisco building beautiful things. <a target="_blank" href="http://twitter.com/kylemathews">You should follow him on Twitter</a></p>
 <br>
 <br>

@@ -680,6 +680,20 @@ body {
     line-height: 6rem;
     color: #dddddd; }
 
+.read-next__header {
+  margin-top: 1.3rem; }
+.read-next__title {
+  margin-top: 0; }
+
+.link--no-color {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit; }
+  .link--no-color:active, .link--no-color:focus {
+    outline: none; }
+  .link--no-color:hover {
+    text-decoration: none; }
+
 p, li {
   word-wrap: break-word; }
 

@@ -2,6 +2,7 @@
 title: Hosting static sites with Docker and Nginx
 date: "2014-04-24T22:12:03.284Z"
 layout: post
+readNext: "/building-your-own-tools/"
 tags:
   - Docker
 ---

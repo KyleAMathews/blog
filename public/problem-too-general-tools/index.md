@@ -4,6 +4,7 @@ tags:
   - entrepreneurship
 date: "2010-06-02T19:49:23.000Z"
 layout: post
+readNext: "/how-design-social-networking-site-using-social-objects/"
 ---
 
 There was a nugget of a comment today on the Lean Startup Circle from William Pietri:

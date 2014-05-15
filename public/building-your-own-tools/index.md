@@ -4,6 +4,7 @@ tags:
   - tools
 date: "2011-10-28T08:00:37.000Z"
 layout: post
+readNext: "/problem-too-general-tools/"
 ---
 
 I was explaining to someone in IRC earlier this week about why I was [building my own project management software][0] and said it was basically because managing my projects and tasks (or more abstractly, what I pay attention to) is so critical to everything else I do that I want to control the software behind it.
