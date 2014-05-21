@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2014-05-15T16:07:26Z</updated>
+    <updated>2014-05-21T00:05:47Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -16,6 +16,36 @@
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
     </contributor>
+    <entry>
+        <title type="html"><![CDATA[Tools to help administer your Facebook Groups]]></title>
+        <id>http://bricolage.io/export-data-from-your-facebook-groups/</id>
+        <link href="http://bricolage.io/export-data-from-your-facebook-groups/">
+        </link>
+        <updated>2014-05-20T23:46:37Z</updated>
+        <content type="html"><![CDATA[<p>I’m an administrator for an active Facebook group. There’s about a 100 or so of us
+that regularly post and discuss various issues. As most members live in or have some
+connection to Silicon Valley, discussions tend to center around startup/technology issues.</p>
+<p>Despite regular calls to try other group discussion solutions, we’ve never moved on.
+Facebook Groups, while underpowered in many ways, has the key advantage that they’re on, well, Facebook.
+Facebook is the common dominator of online social networks. Almost everyone has an
+account and visits it at least once in a while. Which is great for helping keep
+a group active. Asking a new member of the group to add yet another social network
+to their online browsing routine seems like too big of hurdle.</p>
+<p>So while the group has been a great success, the almost complete lack of adminstrative and analytics
+tools can be frustrating. So recently I’ve started a project to work around this.
+I’ve written two paired tools. The first, <code>facebook-export</code> handles connecting to Facebook’s API
+and downloading member and posts information. The second, <code>facebook-analyze</code>, provides
+several simple tools to help you understand and administer your groups.</p>
+<p>Hopefully this is helpful to some of you. For installation and usage instructions, see
+the <a href="https://github.com/KyleAMathews/facebook-export">Github repo</a>. Feedback and
+pull requests welcome.</p>
+]]></content>
+        <author>
+            <name>Kyle Mathews</name>
+            <email>mathews.kyle@gmail.com</email>
+            <uri>http://bricolage.io</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hosting static sites with Docker and Nginx]]></title>
         <id>http://bricolage.io/hosting-static-sites-with-docker-and-nginx/</id>
@@ -317,24 +347,6 @@ problems you’d like help with.</p>
 <p><a href="./kyle-mathews-resume_0.pdf">Download a copy of the finished résumé</a>. You can also see the source for the résumé at <a href="https://github.com/KyleAMathews/kjh-vita/blob/master/kyle-resume.tex"><a href="https://github.com/KyleAMathews/kjh-vita/blob/master/kyle-resume.tex">https://github.com/KyleAMathews/kjh-vita/blob/master/kyle-resume.tex</a></a>. Feel free to fork my version and modify to meet your needs. Most distributions of Latex should have all the dependencies you need. The three fonts I’ve used, Minion Pro, Myriad Pro, and Inconsolata are all freely available. The first two are distributed with Adobe Reader. The latter can be <a href="http://www.levien.com/type/myfonts/inconsolata.html">downloaded here.</a></p>
 <h3 id="update-just-use-http-sharelatex-com">Update — just use <a href="http://sharelatex.com">http://sharelatex.com</a></h3>
 <p>Since I wrote this post several years ago a new online Latex service <a href="http://sharelatex.com">Sharelatex</a> has been created. They have a fantastic selection of <a href="https://www.sharelatex.com/templates/cv-or-resume">Resume/CV Latex templates</a> and couldn’t be easier to use. Just <a href="https://www.sharelatex.com/templates/cv-or-resume">pick one of the templates</a> and start adding your information through their online editor.</p>
-]]></content>
-        <author>
-            <name>Kyle Mathews</name>
-            <email>mathews.kyle@gmail.com</email>
-            <uri>http://bricolage.io</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Becoming unhinged from reality—and fixing that]]></title>
-        <id>http://bricolage.io/becoming-unhinged-reality-and-fixing/</id>
-        <link href="http://bricolage.io/becoming-unhinged-reality-and-fixing/">
-        </link>
-        <updated>2011-05-10T20:01:57Z</updated>
-        <content type="html"><![CDATA[<p>This is from <a href="http://www.amazon.com/Boyd-Fighter-Pilot-Who-Changed/dp/0316796883/ref=sr_1_3?s=books&amp;ie=UTF8&amp;qid=1305057501&amp;sr=1-3">a most excellent biography of a most interesting person, John Boyd</a>.</p>
-<blockquote>
-<p>The danger is that if our mental processes become focused on our internal dogmas and isolated from the unfolding, constantly dynamic outside world, we experience mismatches between our mental images and reality. Then confusion and disorder and uncertainty not only result but continue to increase. Ultimately, as disorder increases, chaos can result. Boyd showed why this is a natural process and why the only alternative is to do a destructive deduction and rebuild one’s mental image to correspond to the new reality.</p>
-</blockquote>
-<p>Also related is the idea of “creative destruction”. You can find a good <a href="http://www.ribbonfarm.com/2008/02/06/creative-destruction-portrait-of-an-idea/">discussion/history of the idea over at Ribbonfarm.com</a>.</p>
 ]]></content>
         <author>
             <name>Kyle Mathews</name>
