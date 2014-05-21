@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2014-05-21T00:05:47Z</updated>
+    <updated>2014-05-21T00:09:35Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -18,8 +18,8 @@
     </contributor>
     <entry>
         <title type="html"><![CDATA[Tools to help administer your Facebook Groups]]></title>
-        <id>http://bricolage.io/export-data-from-your-facebook-groups/</id>
-        <link href="http://bricolage.io/export-data-from-your-facebook-groups/">
+        <id>http://bricolage.io/tools-administer-facebook-groups/</id>
+        <link href="http://bricolage.io/tools-administer-facebook-groups/">
         </link>
         <updated>2014-05-20T23:46:37Z</updated>
         <content type="html"><![CDATA[<p>I’m an administrator for an active Facebook group. There’s about a 100 or so of us
