@@ -216,7 +216,7 @@ problems you’d like help with.</p>
         <link href="http://bricolage.io/simplegtd/">
         </link>
         <updated>2011-10-07T18:59:39Z</updated>
-        <content type="html"><![CDATA[<p>I’m starting work soon on building a new open source <a href="http://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> web app that I’m tentatively calling <a href="https://github.com/KyleAMathews/simple-gtd">SimpleGTD</a>. I’ve tried a good chunk of the GTD apps out there and have been dissatisfied with each of them for one reason or another.</p>
+        <content type="html"><![CDATA[<p>I’m starting work soon on building a new open source <a href="http://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> web app that I’m tentatively calling <a href="https://github.com/KyleAMathews/makersgtd">SimpleGTD</a>. I’ve tried a good chunk of the GTD apps out there and have been dissatisfied with each of them for one reason or another.</p>
 <h2 id="motivations">Motivations</h2>
 <p>I have a few reasons for starting this project.</p>
 <p>First is I really like the GTD system. When it’s running well, I really do feel more organized and able to focus on my priorities. But I’ve never been able to find a system that was maintainable long-term. I’ve tried many that worked for a time but each gradually required more and more effort to maintain until eventually I had to quit using them. I’ve thought a fair bit about why they’ve failed and I believe I can create an app that will actually work long-term.</p>

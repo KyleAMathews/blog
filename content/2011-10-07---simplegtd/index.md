@@ -88,7 +88,7 @@ Once I get a usable prototype built, I'd love beta testers. Please contact me if
 
 
 [0]: http://en.wikipedia.org/wiki/Getting_Things_Done
-[1]: https://github.com/KyleAMathews/simple-gtd
+[1]: https://github.com/KyleAMathews/makersgtd
 [2]: http://thinkvitamin.com/web-apps/fred-wilsons-10-golden-principles-of-successful-web-apps/
 [3]: http://www.dragosroua.com/staying-gtd-over-the-hype/
 [4]: https://plus.google.com/114723964985237592593/posts/hsVEEpov6Ti
