@@ -4,7 +4,6 @@ _ = require 'underscore'
 gutil = require 'gulp-util'
 moment = require 'moment'
 Feed = require('feed')
-cytoscape = require('cytoscape')
 
 module.exports = (site, options) ->
 

@@ -56,7 +56,7 @@
 <span class="hljs-comment">/*
  * Override theme_calendar_ical_icon() so we can override the url produced.
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">phptemplate_calendar_ical_icon</span><span class="hljs-params">(<span class="hljs-variable">$url</span>)</span> {</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">phptemplate_calendar_ical_icon</span><span class="hljs-params">(<span class="hljs-variable">$url</span>)</span> </span>{
   <span class="hljs-comment">// Pull out array of Term IDs from the url.</span>
   <span class="hljs-variable">$search</span> = preg_match_all(<span class="hljs-string">"/tid\[([0-9])*\]/"</span>, <span class="hljs-variable">$url</span>, <span class="hljs-variable">$matches</span>);
   <span class="hljs-variable">$tids</span> = <span class="hljs-variable">$matches</span>[<span class="hljs-number">1</span>];

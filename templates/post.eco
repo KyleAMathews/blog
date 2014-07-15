@@ -13,7 +13,7 @@
 <div class="read-next">
   <h4 class="read-next__header">READ THIS NEXT:</h4>
   <h2 class="read-next__title">
-    <a href="<%- @readNext.meta.urlFragment %>">
+    <a href="<%- @readNext.meta.urlFragment %>?readNext">
       <%- @readNext.meta.title %>
     </a>
   </h2>
