@@ -30,10 +30,8 @@ Any online community, like the ones I create for school, generates lots of conte
 In researching ways that online communities help participants find the most interesting content/conversations, I've found three patterns which help.
 
 1. First is the [small-world pattern][10]. Via [Organic Groups][11], you split conversations by topic. Members congregate around only the groups they are interested in.
-2. 
-Second is the [Twitter pattern][12]. Using [buddylist][13] or [user_relationships][14], members follow friends or people who's ideas they find interesting.
-3. 
-The third pattern is for members to read the most interesting memes as they are somehow determined by the community (this is where my module will help out).
+2. Second is the [Twitter pattern][12]. Using [buddylist][13] or [user_relationships][14], members follow friends or people who's ideas they find interesting.
+3. The third pattern is for members to read the most interesting memes as they are somehow determined by the community (this is where my module will help out).
 
 Drupal sites normally implement the third pattern by having human editors manually promote the most interesting content to the front page. But I've found this solution to be inadequate. Human editors miss many interesting pieces of content, are prone to bias, and the solution is labor intensive. Also, promoting content to the front page doesn't group the content by conversation or meme, an important usability improvement.
 
@@ -48,16 +46,11 @@ My proposal then is to write a memetracker module that will fulfill the same rol
 ### Potential users of my module can be placed in a few classes:
 
 1. Those building community sites using Drupal. They face the same problem I related in my story earlier -- how to help their users sift through new content and to find interesting conversations to follow and join in.
-2. 
-Those who want to build sites that support an existing online community. They would use [FeedAPI][15] to pull content from any number of relevant sources and then use memetracker to display interesting content and conversations from that community.
-3. 
-Users who use Memetracker as a personal news aggregator. They'd add news sources they are interested in and memetracker would learn their interests and filter and display only the news they are interested in.
-4. 
-Organizations who use Memetracker as an internal news gathering application pulling together content created by employees internally and outside news that's of interest to the company.
-5. 
-Those who want to create a sitemap-like page for their site. Memetracker would create a page that showed all content ever created on the site and group by meme and order by popularity.
-6. 
-Organizations who want to create a branded news site. [Utah Tech Council][16] could put up a memetracker aggregating local newspapers and blogs that discuss Utah technology news. The [Save the Dolphins Foundation][17] could aggregate dolphin news from different news sources. Memetracker would help these organizations by drawing repeat visitors to view the aggregated content. It would be an advantage to Drupal as more sites would use Drupal to use the memetracking functionality.
+2. Those who want to build sites that support an existing online community. They would use [FeedAPI][15] to pull content from any number of relevant sources and then use memetracker to display interesting content and conversations from that community.
+3. Users who use Memetracker as a personal news aggregator. They'd add news sources they are interested in and memetracker would learn their interests and filter and display only the news they are interested in.
+4. Organizations who use Memetracker as an internal news gathering application pulling together content created by employees internally and outside news that's of interest to the company.
+5. Those who want to create a sitemap-like page for their site. Memetracker would create a page that showed all content ever created on the site and group by meme and order by popularity.
+6. Organizations who want to create a branded news site. [Utah Tech Council][16] could put up a memetracker aggregating local newspapers and blogs that discuss Utah technology news. The [Save the Dolphins Foundation][17] could aggregate dolphin news from different news sources. Memetracker would help these organizations by drawing repeat visitors to view the aggregated content. It would be an advantage to Drupal as more sites would use Drupal to use the memetracking functionality.
 
 The memetracker module will be especially useful to open source communities. Open source projects rely entirely on internet communication technologies to coordinate their efforts. Many commentators have linked the explosion of the open source to the opening of the Internet to the general population. Memetracking and aggregation sites in general are another step in the evolution of communication technologies on the internet. My memetracker module will allow any open source community, large or small, to put up a simple Drupal site and start aggregating developer blogs, forums, mailing lists, etc. into a centralized place.
 
@@ -84,14 +77,10 @@ In my example, say the algorithm identifies 10 meme clusters in the 300 pieces o
 You've set the memetracker to only display ~50 memes at a time as the memetracker is tracking a smaller community. This means the memetracker has to discard 250 links from the display page. It does this filtering by various means.
 
 1. The memetracker is biased toward keeping meme clusters (remember the goal is to display the most interesting content -- if two people thought a meme worth writing about, odds are that meme is more interesting to the general community than a meme that only one person talked about) So the memetracker will weight meme clusters higher.
-2. 
-It will use a form of authority ranking for the different sources. If one blogger consistently writes interesting content that many people click on to read, then the memetracker will rank any new content by that blogger higher than new content by a less interesting blogger.
-3. 
-You'll filter out topics not interesting to the community. Baysian logic is a possible way to do this. Baysian logic is often used for spam filtering. So just as spam filters learn that emails with "XXX" or "Hot chicks" probably are spam. If the community consistently clicks to read content about Drupal and not Plone, a new article about Drupal will be displayed and the Plone article won't.
-4. 
-The meme tracker will use click momentum. By this I mean it'll take a measure of how many times the content has been clicked on in the last while. If an article is being clicked on a lot, that suggests the article is more interesting to the community and should be moved up on the page.
-5. 
-I will implement a hook that will let other modules set simple rules to affect the filtering and ordering of memes. For example, if content from one source must always be displayed, say blog entries from the CEO (regardless of how interesting the CEO's blog actually is), you could set a rule that content from this source will always be kept and not filtered out.
+2. It will use a form of authority ranking for the different sources. If one blogger consistently writes interesting content that many people click on to read, then the memetracker will rank any new content by that blogger higher than new content by a less interesting blogger.
+3. You'll filter out topics not interesting to the community. Baysian logic is a possible way to do this. Baysian logic is often used for spam filtering. So just as spam filters learn that emails with "XXX" or "Hot chicks" probably are spam. If the community consistently clicks to read content about Drupal and not Plone, a new article about Drupal will be displayed and the Plone article won't.
+4. The meme tracker will use click momentum. By this I mean it'll take a measure of how many times the content has been clicked on in the last while. If an article is being clicked on a lot, that suggests the article is more interesting to the community and should be moved up on the page.
+5. I will implement a hook that will let other modules set simple rules to affect the filtering and ordering of memes. For example, if content from one source must always be displayed, say blog entries from the CEO (regardless of how interesting the CEO's blog actually is), you could set a rule that content from this source will always be kept and not filtered out.
 
 So once the memetracker has grouped and filtered content down to the proper level. It'll pass data to the UI code to be rendered and pushed out to the browser.
 
@@ -103,9 +92,7 @@ Admins will be able to define meme browsing pages in a process similar to creati
 
 Individual meme browsing pages will look similar to Techmeme with main articles, discussion, and related content:
 
-Screenshot from [Techmeme][2] -- My memetracker UI will look similar.[
-
-][2][2]
+Screenshot from [Techmeme][2] -- My memetracker UI will look similar.[][2][2]
 
 ![techmeme example](./techmeme.png)
 
@@ -117,7 +104,7 @@ There is some overlap in functionality but a large difference is in purpose. [Ot
 
 The SoC application template asks what aspects of my proposal depend on further research or experiments. The machine learning portion of my proposal, much more than any other part fits this criteria. Machine learning is actively researched and many algorithms are now well understood. However, deciding on the correct algorithms that will fit the constraints of a web application (fast response times, low resource usage) will take considerable research and experimentation. But while the specifics are still unknown, the general direction I'll take is clear.
 
-The general machine learning technique I'll use is called [reinforcement learning][21]. Reinforcement learning is that the algorithm learns by making a guess and then gets feedback. If the guess is good, that "state" of the algorithm is reinforced, if the guess is bad, that "state" is weakened. The algorithm gradually learns what states are most appropriate to a given situation. So in the case of the memetracker, it will guess what memes are interesting to the community and what order to place the memes on the page. Then based on feedback from the community (I.e. if links are clicked on or not clicked on) the memetracker will learn gradually how to select and display the most interesting content.
+The general machine learning technique I'll use is called [reinforcement learning][21]. Reinforcement learning is that the algorithm learns by making a guess and then gets feedback. If the guess is good, that "state" of the algorithm is reinforced, if the guess is bad, that "state" is weakened. The algorithm gradually learns what states are most appropriate to a given situation. So in the case of the memetracker, it will guess what memes are interesting to the community and what order to place the memes on the page. Then based on feedback from the community (i.e. if links are clicked on or not clicked on) the memetracker will learn gradually how to select and display the most interesting content.
 
 There are two major machine learning problems to be solved. Filtering out uninteresting content and clustering or grouping content into memes.
 
@@ -146,14 +133,10 @@ This module will provide a wrapper for the machine learning algorithm library.
 This module will have several major components:
 
 * Meme browsing UI -- this will be the primary view for browsing memes. It will be refreshed each cron run with new content.
-* 
-Panels-like meme browsing page creator -- You will be able to create any number of memebrowsing pages. When you create a new memebrowsing page, you set how long memes stay active, you set how many memes to show, and can weight the display / ranking of memes in a variety of ways.
-* 
-Two hooks:
-
-* The first hook will allow other modules to modify how content is ranked. I gave an example in the project details section of how a company could modify the score of their CEO's blog. Another potential use case is an ecommerce store might analyze content for text that mentioned their products and rank those higher.
-* 
-The second hook will allow other modules to add functionality to meme browsing pages. Modules would define little ajax buttons to be added next to memes. There could be for example a send article to friend button, a save to delicious button, a bookmark button, a digg button, and other buttons that let you interact with the content.
+* Panels-like meme browsing page creator -- You will be able to create any number of memebrowsing pages. When you create a new memebrowsing page, you set how long memes stay active, you set how many memes to show, and can weight the display / ranking of memes in a variety of ways.
+* Two hooks:
+  * The first hook will allow other modules to modify how content is ranked. I gave an example in the project details section of how a company could modify the score of their CEO's blog. Another potential use case is an ecommerce store might analyze content for text that mentioned their products and rank those higher.
+  * The second hook will allow other modules to add functionality to meme browsing pages. Modules would define little ajax buttons to be added next to memes. There could be for example a send article to friend button, a save to delicious button, a bookmark button, a digg button, and other buttons that let you interact with the content.
 
 ### Set of APIs
 

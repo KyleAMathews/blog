@@ -1,5 +1,5 @@
 ---
-title: Why I blog — Part 2
+title: Why I blog—Part 2
 tags:
   - blogging
   - internet-marketing

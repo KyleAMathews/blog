@@ -10,9 +10,9 @@ layout: post
 I'd been thinking about blogging for a long time but what finally pushed me over the edge was this [post][0]. The author, Scott McLemee, wrote about what he's learned from a pamphlet by C. Wright Mill "On Intellectual Craftsmanship". Here's the key quote,
 
 > What Mills calls "intellectual craftsmanship" involves more than the ability to produce work that can pass peer review. "Scholarship is a choice of how to live," he writes, "as well as a choice of career." It is (if I may be excused for borrowing another [old Greek word][1]) an _ethos._ That is, a structure of habits that sustains and embodies a quality of mind, a tendency of character.
-
+>
 > "Whether he knows it or not," Mills goes on to say, "the intellectual workman forms his own self as he works towards the perfection of his craft." The notion of having a "career" is subordinate to --- even a side-effect of --- this process of inner shaping. "To realize his own potentialities, and any opportunities that come his way," the scholar "constructs a character which has its core the qualities of the good workman."
-
+>
 > For Mills, there is a kind of bench where all of this crafting takes place. He calls it "the file." I'm not sure this is the happiest of expressions. It's simple enough, but Mills uses it in his own sense."
 
 Mills suggests that aspiring young intellectuals keep what he calls, "the file," or the term I like, "intellectual journal." Here are collected reading notes, stray ideas, and complications or successes in research. It serves as a journal as you analyze and sort through ideas. Mill writes that the process of collecting and sifting through your notes and ideas leads to more systematic thinking as well as more directed and thorough learning.
@@ -29,7 +29,7 @@ So how does this bring us back to Mill's file? For many years, there has been a 
 
 My hope is this blog will provide the motivation and discipline to write so as to help me develop the habits of the mind of an intellectual craftsman.
 
-Update: Other people seem to be thinking along the same lines: [here][2] and [here][3]. Also, [here][4] is a link to a PDF of Mill's orginal essay, "On Intellectual Craftsmanship".[][2]
+**Update:** Other people seem to be thinking along the same lines: [here][2] and [here][3]. Also, [here][4] is a link to a PDF of Mill's orginal essay, "On Intellectual Craftsmanship".[][2]
 
 
 [0]: http://www.insidehighered.com/views/2005/11/22/mclemee

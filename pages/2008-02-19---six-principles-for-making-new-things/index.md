@@ -13,11 +13,11 @@ Paul Graham posted a new essay today entitled "[Six Principles for Making New Th
 Here's the juicy bit:
 
 > I like to find (a) simple solutions (b) to overlooked problems (c) that actually need to be solved, and (d) deliver them as informally as possible, (e) starting with a very crude version 1, then (f) iterating rapidly.
-> 
 
 [Read the rest.][0]
 
-To add a few thoughts.  
+To add a few thoughts.
+
 When I think of overlooked problems I think of a bell curve. Most people/companies/countries are average: thinking average thoughts and doing things in an average way. Their average thoughts/actions lead to average results. If you want exceptional results, you have to act and think in ways that are exceptional. Average=dead, the [edge is where the action][1] is at.
 
 

@@ -15,10 +15,9 @@ professional website platform.
 Highlights include helping with:
 
 * Rebuilding the Pantheon dashboard from the ground up as a real-time single-page-app.
-* [Multidev](http://techcrunch.com/2013/07/10/pantheon-multidev/) — cloud development environments for teams.
+* [Multidev](http://techcrunch.com/2013/07/10/pantheon-multidev/)—cloud development environments for teams.
 Basically Git for the entire stack (files, DB, and code) not just code. It's been a huge hit for customers with larger teams of developers.
-* [Pantheon One](https://www.getpantheon.com/pantheon-one) — 
-a suite of tools for customers administering 100s to 1000s of websites.
+* [Pantheon One](https://www.getpantheon.com/pantheon-one)—a suite of tools for customers administering 100s to 1000s of websites.
 
 Now that I've left Pantheon, for the indefinite future I'll be freelancing and working my way through a long list
 of side-projects and books that have been accumulating. [Contact me](mailto:mathews.kyle@gmail.com) if you have interesting

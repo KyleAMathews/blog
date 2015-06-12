@@ -23,7 +23,9 @@ So this first alpha is a chance for us to talk about what Eduglu should be. Once
 [Let's get started!][1]
 
 ## Screencast of installation and initial setup of Eduglu
-<object width="660" height="525"><param name="movie" value="http://www.youtube.com/v/-5SLfDKxTi8&hl=en_US&fs=1&rel=0&hd=1&border=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/-5SLfDKxTi8&hl=en_US&fs=1&rel=0&hd=1&border=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="660" height="525"></embed></object>
+<p>
+  <object width="660" height="525"><param name="movie" value="http://www.youtube.com/v/-5SLfDKxTi8&hl=en_US&fs=1&rel=0&hd=1&border=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/-5SLfDKxTi8&hl=en_US&fs=1&rel=0&hd=1&border=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="660" height="525"></embed></object>
+</p>
 
 
 [0]: http://community.eduglu.org/release-announcement/node/8

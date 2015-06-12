@@ -18,19 +18,19 @@ I thought I'd repeat some of his arguments because it agrees nicely with an argu
 But first to his article:
 
 > There's an orthodoxy in Enterprise 2.0 circles about how you're supposed to run an implementation. The orthodoxy goes something like this: Start with small-scale pilots, define your business objectives, watch the pilots closely, evaluate their success, make a go/no-go decision.
-
+>
 > As far as I can tell it's what everyone thinks. In fact, it's what I used to think. Unfortunately, it's dead wrong. The orthodoxy is wrong for a very simple reason: Size matters. By constraining the size of your pilot, you significantly alter the way your company can and will use the tools.
-
+>
 > I'm not opposed to pilots for most enterprise IT solutions. Companies like to pilot new technologies with small populations before they roll them out enterprise-wide. That approach makes a lot of sense for transactional systems like order management, project management, purchasing, ERP, and so on. By piloting with a small group, you reduce implementation risk. You get a read on the value of the solution, and you get feedback which you can use to make modifications while those modifications are still relatively easy and inexpensive.
-
+>
 > But social software is different from traditional IT. Traditional IT enables individuals to carry out well-defined, highly standardized transactions. Users go into the system to process transactions--to transfer funds, purchase supplies, track inventory, etc. The nature of these transactions, and the system's ability to enable them, do not vary much according to the number of people using the system. Whether 100 people are entering orders or 10,000 people are entering orders, the transactions themselves doesn't really change. What that means is that a representative small-scale sample is an accurate predictor of adoption and value at full scale.
-
+>
 > But Enterprise 2.0 tools are different from traditional IT systems. Traditional IT enables **transactions**; Enterprise 2.0 enables **interactions**.
-
+>
 > ...
-
+>
 > That doesn't mean small-scale Enterprise 2.0 pilots can't succeed. They can, and many do. But even when pilots succeed, they have limited ability to predict how the organization goes on to use the capabilities once they are rolled out enterprise-wide. Pilots typically fall into the lower left-hand corner of the [Social Software Value Matrix][2]: improve existing interactions within existing silos. That includes things like project team workspaces, departmental workspaces, and technical knowledgebases. When organizations really embrace Enterprise 2.0, however, they almost always play in multiple sections of the Value Matrix, launching solutions like collaborative intranets, ideation portals, private extranets, Those solutions, almost by definition, require scale.
-
+>
 > Scale is the oxygen that feeds collaboration. That's why collaborative tools like Facebook, and Twitter have taken off so spectacularly on the public web: With over a billion people on the Internet, the opportunities for interpersonal interaction are unbelievably high.
 
 Ok, fair enough. Social software needs other people in order to work properly (imagine Facebook if it was just you there). What does that have to do with deploying a social learning platform at a university?
@@ -63,7 +63,7 @@ I've seen the same sort of behavior on Island. I [wrote a post on this subject l
 Returning to Michael's article:
 
 > Historically, Enterprise 2.0 implementations have focused on collaborative tools [with] fairly high participation thresholds: blogs and wikis. That's not by design, it's by default. Until recently, those were the only Enterprise 2.0 tools that showed potential for high-value business use.
-
+>
 > Today, Enterprise 2.0 participation is a whole different game. At the "low threshold" end of the curve, we have low-engagement tools like social messaging (internal "Twitter"), social bookmarking. By leading your implementation with these low-threshold tools, you lower the risk of implementation while still launching at the scale required for success.
 
 He goes on to describe an enthusiastic response to a recent webinar on his companies internal "twitter" app [Signals][10].

@@ -27,27 +27,22 @@ Thought experiment how universities would work without actual courses. An intere
 [Vygotsky's Social Development Theory][3] -- [more here][4]
 
 > Every function in the child's cultural development appears twice: first, on the social level, and later, on the individual level; first, between people (interpsychological) and then inside the child (intrapsychological). This applies equally to voluntary attention, to logical memory, and to the formation of concepts. All the higher functions originate as actual relationships between individuals.
-> 
 
 [How to become great?][5] Research suggests:
 
 1. Focus on technique as opposed to outcome.
-2. 
-Set specific goals.
-3. 
-Get good, prompt feedback, and use it.
+2. Set specific goals.
+3. Get good, prompt feedback, and use it.
 
 [Thoughts, quotes, questions about how web2.0 is challenging traditional methods of education][6]
 
 [Bandura Social Learning Theory][7]
 
 > Learning would be exceedingly laborious, not to mention hazardous, if people had to rely solely on the effects of their own actions to inform them what to do. Fortunately, most human behavior is learned observationally through modeling: from observing others one forms an idea of how new behaviors are performed, and on later occasions this coded information serves as a guide for action.
-> 
 
 [Lave's Situated Learning Theory][8]
 
 > Lave argues that learning as it normally occurs is a function of the activity, context and culture in which it occurs (i.e., it is situated). This contrasts with most classroom learning activities which involve knowledge which is abstract and out of context. Social interaction is a critical component of situated learning -- learners become involved in a "community of practice" which embodies certain beliefs and behaviors to be acquired. As the beginner or newcomer moves from the periphery of this community to its center, they become more active and engaged within the culture and hence assume the role of expert or old-timer. Furthermore, situated learning is usually unintentional rather than deliberate. These ideas are what Lave & Wenger (1991) call the process of "legitimate peripheral participation."
-> 
 
 [Syllabus for Virtual community/social media class at Stanford][9] -- Loads of links to great resources.
 
@@ -68,19 +63,15 @@ Seth Godin asks why bother having a resume. He says "I think if you're remarkabl
 The four are:
 
 1. collaborative intelligence
-2. 
-participatory knowledge base
-3. 
-flexible client collaboration
-4. 
-business social networks
+2. participatory knowledge base
+3. flexible client collaboration
+4. business social networks
 
 [How to think: Managing brain resources in an age of complexity][15]
 
 Great, great suggestions on how to think. Read the whole thing. One sample point:
 
 > **Make your mistakes quickly.** You may mess things up on the first try, but do it fast, and then move on. Document what led to the error so that you learn what to recognize, and then move on. Get the mistakes out of the way. As Shakespeare put it, "Our doubts are traitors, and make us lose the good we oft might win, by fearing to attempt.
-> 
 
 [Wikipatterns -- Design patterns for wikis][16] -- Great resource
 

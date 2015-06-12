@@ -37,8 +37,7 @@ So this has left me, Eduglu, and other Drupal distros in a nice spot. Many peopl
 So I have two items now on my roadmap for Eduglu.
 
 1. Refine and evangelize the platform and
-2. 
-Develop killer apps.
+2. Develop killer apps.
 
 And while predicting in advance what is or isn't a "killer app" is difficult, I have a few ideas up my sleeve. First on the list is a realtime notetaking app built with Drupal and [Etherpad][7]. Students will be able to take notes together, attach audio recordings of the lecture and other media files, and save all of this to the class website where it'll it can be referred to in the future.
 

@@ -18,11 +18,11 @@ The quiz feature isn't enabled by default so to make it available to groups on y
 
 * A searchable group membership directory. Group members can now easily browse/search the faces/names of their fellow group members
 
-![](./membership_directory.png)
+![Screenshot of Eduglu membership directory](./membership_directory.png)
 
 * Group admin tools for managing members. It's now easy to add and remove members from your groups as well as to promote and demote members to be group admin status.
 
-![](./group-members-admin-tool.png)
+![Screenshot of Eduglu group memberes admin tool](./group-members-admin-tool.png)
 
 If you have feedback or find bugs, join us in the Drupal.org issue queue at drupal.org/project/eduglu and at the community.eduglu.org site.
 

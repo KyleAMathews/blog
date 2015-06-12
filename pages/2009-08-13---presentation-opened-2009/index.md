@@ -12,11 +12,16 @@ I presented at the OpenEd Conference this year in Vancouver BC. Great fun.
 ### Video
 
 My section starts ~20 minutes in.
-<embed flashvars="loc=%2F&amp;autoplay=false&amp;vid=1978484" width="480" height="386" allowfullscreen="true" allowscriptaccess="always" src="http://www.ustream.tv/flash/video/1978484" type="application/x-shockwave-flash" />
+
+<p>
+  <embed flashvars="loc=%2F&amp;autoplay=false&amp;vid=1978484" width="480" height="386" allowfullscreen="true" allowscriptaccess="always" src="http://www.ustream.tv/flash/video/1978484" type="application/x-shockwave-flash" />
+</p>
 
 ### Slides
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/1857718" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>
+  <iframe src="http://www.slideshare.net/slideshow/embed_code/1857718" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+</p>
 
 ### Resources listed in the presentation:
 

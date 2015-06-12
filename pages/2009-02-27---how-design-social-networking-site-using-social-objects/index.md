@@ -21,9 +21,9 @@ Jyri Engestrom, founder of [Jaiku][3], answered this question in his blog post, 
 He argues:
 
 > the term 'social networking' makes little sense if we leave out the objects that mediate the ties between people. Think about the object as the reason why people affiliate with each specific other and not just anyone. For instance, if the object is a job, it will connect me to one set of people whereas a date will link me to a radically different group. This is common sense but unfortunately it's not included in the image of the network diagram that most people imagine when they hear the term 'social network.' The fallacy is to think that social networks are just made up of people. They're not; social networks consist of people who are connected by a shared object.
-> 
+>
 > The social networking services that really work are the ones that are built around objects. And, in my experience, their developers intuitively 'get' the object-centered sociality way of thinking about social life. Flickr, for example, has turned photos into objects of sociality. On del.icio.us the objects are the URLs. EVDB, Upcoming.org, and evnt focus on events as objects.
-> 
+>
 
 Jyri wrote further that networking sites not based on social objects tend to not work as they are built on a flawed model for human interaction.
 

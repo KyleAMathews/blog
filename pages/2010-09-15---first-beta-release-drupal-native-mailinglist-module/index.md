@@ -20,16 +20,11 @@ OG Mailinglist was started as a student project at BYU for the site I built ther
 OG Mailinglist has a rich array of features. Current features include:
 
 * Full integration with Organic Groups.
-* 
-Each group has its own email address.
-* 
-You can create and reply to posts via email as well as through the web site.
-* 
-Full HTML Digests. They are loosely modeled after Google Group's digest emails and are very readable.
-* 
-Emails include the list-id header to make filtering easy in your email client.
-* 
-Low latency. Emails arriving at your site are resent immediately instead of waiting for the next cron run. Other group members will typically receive your email within one minute of you sending it. This can greatly speed up group conversations on time sensitive issues.
+* Each group has its own email address.
+* You can create and reply to posts via email as well as through the web site.
+* Full HTML Digests. They are loosely modeled after Google Group's digest emails and are very readable.
+* Emails include the list-id header to make filtering easy in your email client.
+* Low latency. Emails arriving at your site are resent immediately instead of waiting for the next cron run. Other group members will typically receive your email within one minute of you sending it. This can greatly speed up group conversations on time sensitive issues.
 
 ### Requirements
 

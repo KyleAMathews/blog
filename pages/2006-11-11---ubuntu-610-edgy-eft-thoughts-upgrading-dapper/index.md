@@ -1,5 +1,5 @@
 ---
-title: Ubuntu 6.10 - Edgy Eft - thoughts on upgrading from Dapper
+title: Ubuntu 6.10—Edgy Eft—thoughts on upgrading from Dapper
 tags:
   - Linux
   - Ubuntu

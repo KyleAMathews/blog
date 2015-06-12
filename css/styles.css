@@ -5,3 +5,7 @@ blockquote {
   margin-right: 0;
   padding-right: 0;
 }
+
+p img {
+  margin: 0
+}

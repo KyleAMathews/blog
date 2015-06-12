@@ -41,12 +41,9 @@ It's far to easy to focus on the tools we use rather than the value we're trying
 A social learning platform can add value to educational institutions in four contexts (See Michael's post [The Social Software Value Matrix][10] for more):
 
 1. Within the classroom
-2. 
-Within departments
-3. 
-Within the institution
-4. 
-Across multiple institutions
+2. Within departments
+3. Within the institution
+4. Across multiple institutions
 
 Socialtext recently released a white paper on the [6 Ways to Get Business Value from Social Software][11]. They discuss there how social software can greatly improve the formal and informal processes in each of the contexts that social software operates in.
 
