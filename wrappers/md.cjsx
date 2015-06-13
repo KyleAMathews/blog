@@ -31,7 +31,11 @@ module.exports = React.createClass
           }}
         />
         <ReadNext post={post} {...@props}/>
-        <p>
+        <p
+          style={{
+            marginBottom: rhythm(6)
+          }}
+        >
           <img
             src="/kyle-round-small-pantheon.jpg"
             style={{
