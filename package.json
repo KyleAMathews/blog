@@ -10,6 +10,7 @@
     "markdown-it": "^4.2.2",
     "moment": "^2.10.3",
     "react": "^0.13.3",
+    "react-disqus-thread": "^0.2.2",
     "react-document-title": "^1.0.2",
     "react-responsive-grid": "^0.2.0",
     "react-router": "^0.13.3",

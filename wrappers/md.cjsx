@@ -2,6 +2,7 @@ React = require 'react'
 require '../css/zenburn.css'
 moment = require 'moment'
 DocumentTitle = require 'react-document-title'
+DisqusThread = require 'react-disqus-thread'
 
 ReadNext = require '../components/ReadNext'
 
@@ -43,5 +44,11 @@ module.exports = React.createClass
           />
           <strong>{@props.config.authorName}</strong> lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
         </p>
+        <DisqusThread
+          shortname="bricolage.io"
+          identifier={@props.page.path}
+          title={post.title}
+          url={"http://bricolage.io#{@props.page.path}"}
+        />
       </div>
     </DocumentTitle>
