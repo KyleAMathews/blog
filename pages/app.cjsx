@@ -2,6 +2,7 @@ React = require 'react'
 Router = require 'react-router'
 {RouteHandler, Link} = Router
 {Container, Grid, Breakpoint, Span} = require 'react-responsive-grid'
+DocumentTitle = require 'react-document-title'
 Typography = require 'typography'
 require '../css/styles.css'
 
@@ -45,13 +46,14 @@ module.exports = React.createClass
         </h3>
       )
 
-    <Container
-      style={{
-        maxWidth: rhythm(24)
-        padding: "#{rhythm(2)} #{rhythm(1/2)}"
-      }}
-    >
-      {header}
-      <RouteHandler typography={typography} {...@props}/>
-    </Container>
-
+    <DocumentTitle title="Kyle Mathews">
+      <Container
+        style={{
+          maxWidth: rhythm(24)
+          padding: "#{rhythm(2)} #{rhythm(1/2)}"
+        }}
+      >
+        {header}
+        <RouteHandler typography={typography} {...@props}/>
+      </Container>
+    </DocumentTitle>

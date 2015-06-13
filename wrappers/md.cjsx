@@ -13,7 +13,7 @@ module.exports = React.createClass
     {rhythm} = @props.typography
     post = @props.page.data
 
-    <DocumentTitle title="Name of blog | #{post.title}">
+    <DocumentTitle title="#{post.title} | Kyle Mathews">
       <div className="markdown">
         <h1>{post.title}</h1>
         <div dangerouslySetInnerHTML={{__html: post.body}}/>
