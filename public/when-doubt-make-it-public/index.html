@@ -1,48 +1,194 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>When in Doubt, Make it Public | Kyle Mathews</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="I recently (re)read a great post on Coding Horror which pointed me towards an article by Jason Kottke who noted that many successful web2.0 projects..." />
+<html lang="en" data-reactid=".11nhnp31zb4" data-react-checksum="-801654970"><head data-reactid=".11nhnp31zb4.0"><meta charset="utf-8" data-reactid=".11nhnp31zb4.0.0"><meta http-equiv="X-UA-Compatible" content="IE=edge" data-reactid=".11nhnp31zb4.0.1"><meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" data-reactid=".11nhnp31zb4.0.2"><title data-reactid=".11nhnp31zb4.0.3">Default title</title><link rel="shortcut icon" data-reactid=".11nhnp31zb4.0.4"><style id="react-typography" data-reactid=".11nhnp31zb4.0.5">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
-        <!-- Twitter Card data -->
-        <meta property="twitter:account_id" content="10907062" />
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@kylemathews">
-        <meta name="twitter:title" content="When in Doubt, Make it Public">
-        <meta name="twitter:description" content="I recently (re)read a great post on Coding Horror which pointed me towards an article by Jason Kottke who noted that many successful web2.0 projects...">
+html {
+  box-sizing: border-box;
+  font-size: 112.5%;
+  line-height: 1.58333em;
+  overflow-y: scroll;
+}
 
-        <!-- Open Graph data -->
-        <meta property="og:title" content="When in Doubt, Make it Public" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://bricolage.io/when-doubt-make-it-public/" />
-        <meta property="og:description" content="I recently (re)read a great post on Coding Horror which pointed me towards an article by Jason Kottke who noted that many successful web2.0 projects..." />
-        <meta property="og:site_name" content="Bricolage — a blog by Kyle Mathews" />
-        <meta property="fb:admins" content="17830631" />
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-        <link rel="stylesheet" href="/assets/main.css">
-        <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Clear+Sans:700,700i/Linux+Libertine:400,400i,700/Inconsolata:500">
-        <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Blog atom feed">
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+body {
+  color: hsl(0,0%,20%);
+  font-family: georgia, serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
 
-        <h1>When in Doubt, Make it Public</h1>
-<p>I recently (re)read a <a href="http://www.codinghorror.com/blog/archives/000840.html">great post on Coding Horror</a> which pointed me towards an article by <a href="http://www.kottke.org/07/03/public-and-permanent/">Jason Kottke who noted that many successful web2.0 projects</a> are a result of taking “something that everyone does with their friends and make it public and permanent. (Permanent as in permalinked.)”</p>
+/* Make image responsive by default */
+img {
+  max-width: 100%;
+}
+
+/* All block elements get one rhythm of bottom margin. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dl,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+blockquote,
+form,
+noscript,
+iframe,
+img,
+hr {
+  margin: 0;
+  margin-bottom: 1.58333rem;
+  padding: 0;
+}
+
+blockquote {
+  margin: 1.58333rem 3.95833rem;
+}
+
+b,
+strong {
+  font-weight: 700
+}
+
+hr {
+  background: hsl(0,0%,80%);
+  border: none;
+  height: 1px;
+  margin-bottom: calc(1.58333rem - 1px);
+}
+
+ol,
+ul {
+  list-style-position: outside;
+  margin-left: 1.58333rem;
+}
+
+ul li,
+ol li {
+  padding-left: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-size: 0.85rem;
+  line-height: 1.58333rem;
+}
+
+table {
+  font-size: 1rem;
+  line-height: 2.375rem;
+  width: 100%;
+}
+
+thead {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0,0%,20%);
+  font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.82843rem;
+  line-height: 3.16667rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+h3 {
+  font-size: 1.41421rem;
+  line-height: 2.375rem;
+}
+
+h4 {
+  font-size: 1.25992rem;
+  line-height: 1.58333rem;
+}
+
+h5 {
+  font-size: 1.12246rem;
+  line-height: 1.58333rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.58333rem;
+}@media only screen and (max-width: 768px) {
+h1 {
+  font-size: 1.728rem;
+  line-height: 2.375rem;
+}
+
+h2 {
+  font-size: 1.44rem;
+  line-height: 2.375rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.58333rem;
+}
+
+h4 {
+  font-size: 1.12924rem;
+  line-height: 1.58333rem;
+}
+
+h5 {
+  font-size: 1.06266rem;
+  line-height: 1.58333rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.58333rem;
+}}
+
+</style><style data-reactid=".11nhnp31zb4.0.6">body {
+  color: rgb(66,66,66);
+}
+h1,h2,h3,h4,h5,h6 {
+  color: rgb(44,44,44);
+}
+a {
+  color: rgb(42,93,173);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}</style></head><body class="landing-page" data-reactid=".11nhnp31zb4.1"><div id="react-mount" data-reactid=".11nhnp31zb4.1.0"><div style="max-width:38rem;margin-left:auto;margin-right:auto;padding:3.16667rem 0.79167rem;" data-reactid=".ykjtlgw740" data-react-checksum="-1868023816"><h3 data-reactid=".ykjtlgw740.0:0"><a style="text-decoration:none;color:inherit;" class="" href="/" data-reactid=".ykjtlgw740.0:0.0">Bricolage</a></h3><div class="markdown" data-reactid=".ykjtlgw740.0:1"><h1 data-reactid=".ykjtlgw740.0:1.0">When in Doubt, Make it Public</h1><div data-reactid=".ykjtlgw740.0:1.1"><p>I recently (re)read a <a href="http://www.codinghorror.com/blog/archives/000840.html">great post on Coding Horror</a> which pointed me towards an article by <a href="http://www.kottke.org/07/03/public-and-permanent/">Jason Kottke who noted that many successful web2.0 projects</a> are a result of taking “something that everyone does with their friends and make it public and permanent. (Permanent as in permalinked.)”</p>
 <p>Some examples:</p>
 <blockquote>
 <p><strong><a href="http://blogger.com">Blogger</a> = public email messages.</strong> (1999) Instead of “Dear Bob, Check out this movie.” it’s “Dear People I May or May Not Know Who Are Interested in Film Noir, check out this movie. If you like it, maybe we can be friends.”</p>
-<p><strong><a href="http://flickr.com">Flickr</a> = public photo sharing.</strong> (2004) Flickr co-founder Caterina Fake said in a recent interview: “When we started the company, there were dozens of other photosharing companies such as Shutterfly, but on those sites there was no such thing as a public photograph — it didn’t even exist as a concept — so the idea of something ‘public’ changed the whole idea of Flickr.”</p>
+<p><strong><a href="http://flickr.com">Flickr</a> = public photo sharing.</strong> (2004) Flickr co-founder Caterina Fake said in a recent interview: “When we started the company, there were dozens of other photosharing companies such as Shutterfly, but on those sites there was no such thing as a public photograph – it didn’t even exist as a concept – so the idea of something ‘public’ changed the whole idea of Flickr.”</p>
 <p><strong><a href="http://youtube.com">YouTube</a> = public home videos.</strong> (2005) Bob Saget was onto something.</p>
 <p><strong><a href="http://twitter.com">Twitter</a> = public IM.</strong> (2006) I don’t think it’s any coincidence that one of the people responsible for Blogger is also responsible for Twitter.</p>
 </blockquote>
 <p>I love these examples because that’s exactly the same thing I’m trying to do with the social learning platform I’m building. Taking what was previously private (classroom discussions/instruction, hallway debate) and making it public, open, and permanent.</p>
 <p>This is has many many powerful effects (all of which I won’t mention right now). But one quick recent example of this principle.</p>
-<p>One of the classes at BYU using Island this semester is ISys 401 Systems Analysis. The teacher recently got an email from a student — and instead of answering the question through email, he decided to <a href="https://island.byu.edu/content/hw-3-backlog-question">make his answer public and post it to the class group.</a></p>
+<p>One of the classes at BYU using Island this semester is ISys 401 Systems Analysis. The teacher recently got an email from a student – and instead of answering the question through email, he decided to <a href="https://island.byu.edu/content/hw-3-backlog-question">make his answer public and post it to the class group.</a></p>
 <p>The student wrote:</p>
 <blockquote>
 <p>Question:</p>
@@ -52,38 +198,5 @@
 <p>[Member of the ISys Core]</p>
 </blockquote>
 <p>Then Dr. Liddle went on to answer the question.</p>
-<p>Whether Dr. Liddle answered the student’s question through email or through posting it to the class group — the action had the same effect — the original student’s question was answered. But what else happened as a result of making it public?</p>
-<em>Posted September 9, 2009</em>
-<hr>
-<p><img width="52px" height="52px" class="float-left" src="/assets/images/kyle-round-small-pantheon.jpg"><strong><a href="/">Kyle Mathews</a></strong> lives and works in San Francisco building beautiful things. <a target="_blank" href="http://twitter.com/kylemathews">You should follow him on Twitter</a></p>
-<br>
-<br>
-<br>
-<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'kylemathews';
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-774017-3', 'bricolage.io');
-          ga('require', 'displayfeatures');
-          ga('send', 'pageview');
-
-        </script>
-    </body>
-</html>
-<!-- Generated by Gulp — http://gulpjs.com. View source at https://github.com/KyleAMathews/blog -->
+<p>Whether Dr. Liddle answered the student’s question through email or through posting it to the class group – the action had the same effect – the original student’s question was answered. But what else happened as a result of making it public?</p>
+</div><em style="display:block;margin-bottom:3.16667rem;" data-reactid=".ykjtlgw740.0:1.2"><span data-reactid=".ykjtlgw740.0:1.2.0">Posted </span><span data-reactid=".ykjtlgw740.0:1.2.1">September 9, 2009</span></em><hr style="margin-bottom:3.16667rem;" data-reactid=".ykjtlgw740.0:1.3"><noscript data-reactid=".ykjtlgw740.0:1.4"></noscript><p data-reactid=".ykjtlgw740.0:1.5"><img src="/kyle-round-small-pantheon.jpg" style="float:left;margin-right:0.39583rem;margin-bottom:0;width:3.16667rem;height:3.16667rem;" data-reactid=".ykjtlgw740.0:1.5.0"><strong data-reactid=".ykjtlgw740.0:1.5.1">Kyle Mathews</strong><span data-reactid=".ykjtlgw740.0:1.5.2"> lives and works in San Francisco building useful things. </span><a href="https://twitter.com/kylemathews" data-reactid=".ykjtlgw740.0:1.5.3">You should follow him on Twitter</a></p></div><span style="display:block;clear:both;" data-reactid=".ykjtlgw740.1"> </span></div></div><script src="/bundle.js" data-reactid=".11nhnp31zb4.1.1"></script></body></html>

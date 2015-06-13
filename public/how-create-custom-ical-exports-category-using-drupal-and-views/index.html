@@ -1,38 +1,184 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>How to create custom ical exports by category using Drupal and the Views and Calendar modules | Kyle Mathews</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Lately I&#x2019;ve been helping out a web development team at BYU develop a new calendaring system in Drupal to replace our existing all-in-one calendar. It...">
+<html lang="en" data-reactid=".1jmtu5w4zcw" data-react-checksum="-1696471655"><head data-reactid=".1jmtu5w4zcw.0"><meta charset="utf-8" data-reactid=".1jmtu5w4zcw.0.0"><meta http-equiv="X-UA-Compatible" content="IE=edge" data-reactid=".1jmtu5w4zcw.0.1"><meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" data-reactid=".1jmtu5w4zcw.0.2"><title data-reactid=".1jmtu5w4zcw.0.3">Default title</title><link rel="shortcut icon" data-reactid=".1jmtu5w4zcw.0.4"><style id="react-typography" data-reactid=".1jmtu5w4zcw.0.5">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
-        <!-- Twitter Card data -->
-        <meta property="twitter:account_id" content="10907062">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@kylemathews">
-        <meta name="twitter:title" content="How to create custom ical exports by category using Drupal and the Views and Calendar modules">
-        <meta name="twitter:description" content="Lately I&#x2019;ve been helping out a web development team at BYU develop a new calendaring system in Drupal to replace our existing all-in-one calendar. It...">
+html {
+  box-sizing: border-box;
+  font-size: 112.5%;
+  line-height: 1.58333em;
+  overflow-y: scroll;
+}
 
-        <!-- Open Graph data -->
-        <meta property="og:title" content="How to create custom ical exports by category using Drupal and the Views and Calendar modules">
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="http://bricolage.io/how-create-custom-ical-exports-category-using-drupal-and-views/">
-        <meta property="og:description" content="Lately I&#x2019;ve been helping out a web development team at BYU develop a new calendaring system in Drupal to replace our existing all-in-one calendar. It...">
-        <meta property="og:site_name" content="Bricolage &#x2014; a blog by Kyle Mathews">
-        <meta property="fb:admins" content="17830631">
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-        <link rel="stylesheet" href="/assets/main.css">
-        <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Clear+Sans:700,700i/Linux+Libertine:400,400i,700/Inconsolata:500">
-        <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Blog atom feed">
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+body {
+  color: hsl(0,0%,20%);
+  font-family: georgia, serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
 
-        <h1>How to create custom ical exports by category using Drupal and the Views and Calendar modules</h1>
-<p>Lately I’ve been helping out a web development team at BYU develop a new calendaring system in Drupal to replace our <a href="http://byunews.byu.edu/calendar/">existing all-in-one calendar</a>. It’s an ambitious project that’s leveraging quite a few different modules from the Drupalsphere.</p>
+/* Make image responsive by default */
+img {
+  max-width: 100%;
+}
+
+/* All block elements get one rhythm of bottom margin. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dl,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+blockquote,
+form,
+noscript,
+iframe,
+img,
+hr {
+  margin: 0;
+  margin-bottom: 1.58333rem;
+  padding: 0;
+}
+
+blockquote {
+  margin: 1.58333rem 3.95833rem;
+}
+
+b,
+strong {
+  font-weight: 700
+}
+
+hr {
+  background: hsl(0,0%,80%);
+  border: none;
+  height: 1px;
+  margin-bottom: calc(1.58333rem - 1px);
+}
+
+ol,
+ul {
+  list-style-position: outside;
+  margin-left: 1.58333rem;
+}
+
+ul li,
+ol li {
+  padding-left: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-size: 0.85rem;
+  line-height: 1.58333rem;
+}
+
+table {
+  font-size: 1rem;
+  line-height: 2.375rem;
+  width: 100%;
+}
+
+thead {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0,0%,20%);
+  font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.82843rem;
+  line-height: 3.16667rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+h3 {
+  font-size: 1.41421rem;
+  line-height: 2.375rem;
+}
+
+h4 {
+  font-size: 1.25992rem;
+  line-height: 1.58333rem;
+}
+
+h5 {
+  font-size: 1.12246rem;
+  line-height: 1.58333rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.58333rem;
+}@media only screen and (max-width: 768px) {
+h1 {
+  font-size: 1.728rem;
+  line-height: 2.375rem;
+}
+
+h2 {
+  font-size: 1.44rem;
+  line-height: 2.375rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.58333rem;
+}
+
+h4 {
+  font-size: 1.12924rem;
+  line-height: 1.58333rem;
+}
+
+h5 {
+  font-size: 1.06266rem;
+  line-height: 1.58333rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.58333rem;
+}}
+
+</style><style data-reactid=".1jmtu5w4zcw.0.6">body {
+  color: rgb(66,66,66);
+}
+h1,h2,h3,h4,h5,h6 {
+  color: rgb(44,44,44);
+}
+a {
+  color: rgb(42,93,173);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}</style></head><body class="landing-page" data-reactid=".1jmtu5w4zcw.1"><div id="react-mount" data-reactid=".1jmtu5w4zcw.1.0"><div style="max-width:38rem;margin-left:auto;margin-right:auto;padding:3.16667rem 0.79167rem;" data-reactid=".wfgarszrwg" data-react-checksum="620191603"><h3 data-reactid=".wfgarszrwg.0:0"><a style="text-decoration:none;color:inherit;" class="" href="/" data-reactid=".wfgarszrwg.0:0.0">Bricolage</a></h3><div class="markdown" data-reactid=".wfgarszrwg.0:1"><h1 data-reactid=".wfgarszrwg.0:1.0">How to create custom ical exports by category using Drupal and the Views and Calendar modules</h1><div data-reactid=".wfgarszrwg.0:1.1"><p>Lately I’ve been helping out a web development team at BYU develop a new calendaring system in Drupal to replace our <a href="http://byunews.byu.edu/calendar/">existing all-in-one calendar</a>. It’s an ambitious project that’s leveraging quite a few different modules from the Drupalsphere.</p>
 <p>Some of the features include:</p>
 <ul>
 <li>Import ical feeds.</li>
@@ -43,7 +189,7 @@
 <p>Here’s a screenshot of the UI as of last night:</p>
 <p><img src="./tooltip.png" alt=""></p>
 <p>I wanted to blog about how we created our ical exports by category as I couldn’t find any documentation about this and it doesn’t work out of the box.</p>
-<p>The default view from Calendar includes an ical display. This, by default, filters ical feeds by date — e.g. only include events in the ical feed after a certain date. This works fine.</p>
+<p>The default view from Calendar includes an ical display. This, by default, filters ical feeds by date – e.g. only include events in the ical feed after a certain date. This works fine.</p>
 <p>The problem we ran into is how to filter the ical feed by taxonomy terms. In Views we created a taxonomy term filter and exposed that to users so they can created custom calendar views of different event categories. That worked wonderfully. The problem was that when you downloaded the ical feed from the filtered calendar view, it included all events, not just events from the categories you’d selected.</p>
 <p>After examining the url for the ical feed we found the problem.</p>
 <p>The default ical URL that’s generated looks like this:</p>
@@ -52,7 +198,7 @@
 <p>Digging into the taxonomy term argument, I discovered it expected arguments in the form of <code>1+2+3</code> or <code>1,2,3</code>. <code>1+2+3</code> meaning Views would return events that had terms <code>1 OR 2 OR 3</code> and <code>1,2,3</code> meaning Views would return events that had terms <code>1 AND 2 AND 3</code>. For example, <code>aiocalendar/calendar/ical/2009-10/1+4+6</code> would return an ical feed of all events from October 2009 onward that had term ids of <code>1 or 4 or 6</code>.</p>
 <p>I jumped to the command line and tested my theory by using wget and some handcrafted urls and it worked! The ical feeds I was getting only included events from categories I included as arguments in the URL.</p>
 <p>Now the trick was to override the ical url generated to replace it with one in the correct format. I found the theme function in the Calendar module where the the ical feed icon was generated, copied that to my module, and rewrote the url using some regex kungfu (read more <a href="http://drupal.org/node/11811">on overriding theme functions</a> in the <a href="http://drupal.org/handbooks">Drupal handbook</a>).</p>
-<pre class="hljs"><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<pre><code class="language-php"><span class="hljs-preprocessor">&lt;?php</span>
 <span class="hljs-comment">/*
  * Override theme_calendar_ical_icon() so we can override the url produced.
  */</span>
@@ -81,40 +227,8 @@
     <span class="hljs-keyword">return</span> <span class="hljs-string">'&lt;div style="text-align:right"&gt;&lt;a href="'</span>. check_url(<span class="hljs-variable">$url</span>) .<span class="hljs-string">'" class="ical-icon" title="ical"&gt;'</span>. <span class="hljs-variable">$image</span> .<span class="hljs-string">'&lt;/a&gt;&lt;/div&gt;'</span>;
   }
 }
-<span class="hljs-preprocessor">?&gt;</span></code></pre>
-<p>We’ll be releasing our calendar, custom code and all, as a feature on BYU’s own feature server once the new calendar is released to production. But you can grab a development copy of it now at <a href="https://island.byu.edu/content/first-upload-calendar-feature"><a href="https://island.byu.edu/content/first-upload-calendar-feature">https://island.byu.edu/content/first-upload-calendar-feature</a></a></p>
+<span class="hljs-preprocessor">?&gt;</span>
+</code></pre>
+<p>We’ll be releasing our calendar, custom code and all, as a feature on BYU’s own feature server once the new calendar is released to production. But you can grab a development copy of it now at <a href="https://island.byu.edu/content/first-upload-calendar-feature">https://island.byu.edu/content/first-upload-calendar-feature</a></p>
 <p>The BYU Drupal community is collaborating to improve our calendar feature as it solves nicely a common need on the many department web sites deployed on campus. If you’d like to join the <a href="https://island.byu.edu/group/drupal-calendar">Drupal Calendar group</a> to participate, <a href="mailto:mathews.kyle@gmail.com">contact me</a>, and I’ll create an account for you on our groups site.</p>
-<em>Posted October 6, 2009</em>
-<hr>
-<p><img width="52px" height="52px" class="float-left" src="/assets/images/kyle-round-small-pantheon.jpg"><strong><a href="/">Kyle Mathews</a></strong> lives and works in San Francisco building beautiful things. <a target="_blank" href="http://twitter.com/kylemathews">You should follow him on Twitter</a></p>
-<br>
-<br>
-<br>
-<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'kylemathews';
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-774017-3', 'bricolage.io');
-          ga('require', 'displayfeatures');
-          ga('send', 'pageview');
-
-        </script>
-    </body>
-</html>
-<!-- Generated by Gulp — http://gulpjs.com. View source at https://github.com/KyleAMathews/blog -->
+</div><em style="display:block;margin-bottom:3.16667rem;" data-reactid=".wfgarszrwg.0:1.2"><span data-reactid=".wfgarszrwg.0:1.2.0">Posted </span><span data-reactid=".wfgarszrwg.0:1.2.1">October 6, 2009</span></em><hr style="margin-bottom:3.16667rem;" data-reactid=".wfgarszrwg.0:1.3"><noscript data-reactid=".wfgarszrwg.0:1.4"></noscript><p data-reactid=".wfgarszrwg.0:1.5"><img src="/kyle-round-small-pantheon.jpg" style="float:left;margin-right:0.39583rem;margin-bottom:0;width:3.16667rem;height:3.16667rem;" data-reactid=".wfgarszrwg.0:1.5.0"><strong data-reactid=".wfgarszrwg.0:1.5.1">Kyle Mathews</strong><span data-reactid=".wfgarszrwg.0:1.5.2"> lives and works in San Francisco building useful things. </span><a href="https://twitter.com/kylemathews" data-reactid=".wfgarszrwg.0:1.5.3">You should follow him on Twitter</a></p></div><span style="display:block;clear:both;" data-reactid=".wfgarszrwg.1"> </span></div></div><script src="/bundle.js" data-reactid=".1jmtu5w4zcw.1.1"></script></body></html>

@@ -1,38 +1,184 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>How we ran a micro-lab course | Kyle Mathews</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="This is the second part of a (most likely) three-part series of posts I’m harvesting from a journal article Tim Olsen and I wrote earlier this year..." />
+<html lang="en" data-reactid=".bk93442328" data-react-checksum="1406604979"><head data-reactid=".bk93442328.0"><meta charset="utf-8" data-reactid=".bk93442328.0.0"><meta http-equiv="X-UA-Compatible" content="IE=edge" data-reactid=".bk93442328.0.1"><meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" data-reactid=".bk93442328.0.2"><title data-reactid=".bk93442328.0.3">Default title</title><link rel="shortcut icon" data-reactid=".bk93442328.0.4"><style id="react-typography" data-reactid=".bk93442328.0.5">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
-        <!-- Twitter Card data -->
-        <meta property="twitter:account_id" content="10907062" />
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@kylemathews">
-        <meta name="twitter:title" content="How we ran a micro-lab course">
-        <meta name="twitter:description" content="This is the second part of a (most likely) three-part series of posts I’m harvesting from a journal article Tim Olsen and I wrote earlier this year...">
+html {
+  box-sizing: border-box;
+  font-size: 112.5%;
+  line-height: 1.58333em;
+  overflow-y: scroll;
+}
 
-        <!-- Open Graph data -->
-        <meta property="og:title" content="How we ran a micro-lab course" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://bricolage.io/how-we-ran-micro-lab-course/" />
-        <meta property="og:description" content="This is the second part of a (most likely) three-part series of posts I’m harvesting from a journal article Tim Olsen and I wrote earlier this year..." />
-        <meta property="og:site_name" content="Bricolage — a blog by Kyle Mathews" />
-        <meta property="fb:admins" content="17830631" />
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-        <link rel="stylesheet" href="/assets/main.css">
-        <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Clear+Sans:700,700i/Linux+Libertine:400,400i,700/Inconsolata:500">
-        <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Blog atom feed">
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+body {
+  color: hsl(0,0%,20%);
+  font-family: georgia, serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
 
-        <h1>How we ran a micro-lab course</h1>
-<p>This is the second part of a (most likely) three-part series of posts I’m harvesting from a journal article Tim Olsen and I wrote earlier this year. You might want to read the first post for context, <a href="/organizing-university-learning-moving-beyond-classroom">Organizing University Learning: Moving Beyond the Course to Micro-labs</a>, before continuing here.</p>
+/* Make image responsive by default */
+img {
+  max-width: 100%;
+}
+
+/* All block elements get one rhythm of bottom margin. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dl,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+blockquote,
+form,
+noscript,
+iframe,
+img,
+hr {
+  margin: 0;
+  margin-bottom: 1.58333rem;
+  padding: 0;
+}
+
+blockquote {
+  margin: 1.58333rem 3.95833rem;
+}
+
+b,
+strong {
+  font-weight: 700
+}
+
+hr {
+  background: hsl(0,0%,80%);
+  border: none;
+  height: 1px;
+  margin-bottom: calc(1.58333rem - 1px);
+}
+
+ol,
+ul {
+  list-style-position: outside;
+  margin-left: 1.58333rem;
+}
+
+ul li,
+ol li {
+  padding-left: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-size: 0.85rem;
+  line-height: 1.58333rem;
+}
+
+table {
+  font-size: 1rem;
+  line-height: 2.375rem;
+  width: 100%;
+}
+
+thead {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0,0%,20%);
+  font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.82843rem;
+  line-height: 3.16667rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+h3 {
+  font-size: 1.41421rem;
+  line-height: 2.375rem;
+}
+
+h4 {
+  font-size: 1.25992rem;
+  line-height: 1.58333rem;
+}
+
+h5 {
+  font-size: 1.12246rem;
+  line-height: 1.58333rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.58333rem;
+}@media only screen and (max-width: 768px) {
+h1 {
+  font-size: 1.728rem;
+  line-height: 2.375rem;
+}
+
+h2 {
+  font-size: 1.44rem;
+  line-height: 2.375rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.58333rem;
+}
+
+h4 {
+  font-size: 1.12924rem;
+  line-height: 1.58333rem;
+}
+
+h5 {
+  font-size: 1.06266rem;
+  line-height: 1.58333rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.58333rem;
+}}
+
+</style><style data-reactid=".bk93442328.0.6">body {
+  color: rgb(66,66,66);
+}
+h1,h2,h3,h4,h5,h6 {
+  color: rgb(44,44,44);
+}
+a {
+  color: rgb(42,93,173);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}</style></head><body class="landing-page" data-reactid=".bk93442328.1"><div id="react-mount" data-reactid=".bk93442328.1.0"><div style="max-width:38rem;margin-left:auto;margin-right:auto;padding:3.16667rem 0.79167rem;" data-reactid=".1lzvu37bb40" data-react-checksum="-108550971"><h3 data-reactid=".1lzvu37bb40.0:0"><a style="text-decoration:none;color:inherit;" class="" href="/" data-reactid=".1lzvu37bb40.0:0.0">Bricolage</a></h3><div class="markdown" data-reactid=".1lzvu37bb40.0:1"><h1 data-reactid=".1lzvu37bb40.0:1.0">How we ran a micro-lab course</h1><div data-reactid=".1lzvu37bb40.0:1.1"><p>This is the second part of a (most likely) three-part series of posts I’m harvesting from a journal article Tim Olsen and I wrote earlier this year. You might want to read the first post for context, <a href="/organizing-university-learning-moving-beyond-classroom">Organizing University Learning: Moving Beyond the Course to Micro-labs</a>, before continuing here.</p>
 <p>This post is taken from the section of the paper where we describe our experience running a micro-lab course (with <a href="http://warp.byu.edu/site/">Conan Albrecht</a> as the head teacher) in the <a href="http://marriottschool.byu.edu/bsisys/">Information Systems department</a> at <a href="http://byu.edu">BYU</a>.</p>
 <p>First a review of the micro labs concept taken from the <a href="/organizing-university-learning-moving-beyond-classroom">first post</a>:</p>
 <blockquote>
@@ -40,26 +186,26 @@
 <p>Micro-labs are a proposed university course architecture which supports and incorporates “web 2.0” informal learning principles, enabling students to entirely create their own curriculum with the goal of contributing all objects created by learning back to a learning community of practice, and an Internet audience. This course design seeks to harness both the student’s natural (intrinsic) desire to learn and the ease of access to knowledge created by advances in communication technologies.</p>
 </blockquote>
 <p>In our micro-lab course, the students were asked to do four projects through the course of the semester. Each project had four steps. Students 1) create and post on the class website a learning contract specifying what they wish to learn, their process for learning, and planned deliverables. This contract is 2) revised with feedback from the instructor and fellow students. Students 3) complete the proposed learning contract and 4) share the completed deliverables by posting them to the class website and delivering an ignite-style presentation to the class (and if you’re curious, all learning contracts, project deliverables, and public discussion can be see on the <a href="https://island.byu.edu/unclass/content/winter-2009-projects">class website</a>).</p>
-<h2 id="1-formation-of-learning-contract">1. Formation of Learning Contract</h2>
+<h2>1. Formation of Learning Contract</h2>
 <p>The project proposals were written by a student or a group of students, and defines what they wish to learn during the 3-4 week period of each project. Proposals can be a “learning project”, where students research a topic and write up a report, or a “building project”, where the student defines what they will create. Examples of learning projects include a <a href="https://island.byu.edu/unclass/wiki/jee5-learning-write">report on Java Enterprise Edition 5</a>, or <a href="https://island.byu.edu/cloud-computing/wiki/amazon-web-services-overview">wiki pages describing Amazon web services.</a> Building projects include making an <a href="https://island.byu.edu/unclass/content/android-web-service-app-my-weather-running-and-full-source-code">Android application</a>, a <a href="https://island.byu.edu/unclass/wiki/visual-lyrics-phase-2">lyrics visualization plug-in for iTunes</a>, or an <a href="https://island.byu.edu/unclass/wiki/text-messaging-sms-gateway-interactivity">SMS gateway</a>. During the last week of each project, students start to prepare learning contracts for the next iteration.</p>
 <p>An obvious feature of the learning contract is that it is written entirely by the student. This allows for intrinsic motivation, as is illustrated in this student quote: “I was able to learn a lot about and use a bunch of technologies that I never would have been able to otherwise. I feel like I learned more than in a normal class, and because I got to choose what I wanted to learn, I would usually have trouble putting down my unclass project work to take care of my other homework.”</p>
 <p>The ambiguous nature of how much work should go into a contract was a source of frustration for students. One student describes the initial disorganization and lack of set expectation: “We didn’t have any initial standard to set our projects to. I wasn’t sure if I had to build something huge to be considered complete, and I wasn’t sure what was expected of the presentations. I chalk all of that up to a learning experience though. I wasn’t given a ceiling so I was inclined to take my projects as far as I could, primarily because they were fun.” This quote raises an interesting research question: If students (instead of teachers) are allowed to set a learning contract for a course, are the students more ambitious?</p>
-<h2 id="2-students-incorporate-feedback-into-proposals-">2. Students Incorporate Feedback into Proposals.</h2>
+<h2>2. Students Incorporate Feedback into Proposals.</h2>
 <p>Students post their learning contract to the class website to elicit feedback from the instructor and other students. This enables other students to see and learn from the feedback from the instructor. It also allows for the possible recruitment of other students to participate in the learning project. Once the contract is revised, the instructor approves the project and the students’ grade is bound to the satisfactory completion of the project.</p>
-<h2 id="3-contract-fulfillment">3. Contract fulfillment</h2>
+<h2>3. Contract fulfillment</h2>
 <p>Students work individually or in teams to complete their learning contracts. They are challenged with the task of finding their own learning resources, and may ask the instructor and other students for direction. This is seen as a key feature of the design. As students find their own learning resources they are able to select resources which they find most helpful. Research suggests that students and experts possess different cognitive structures (Ericsson, Charness, Feltovich, &amp; Robert R. Hoffman, 2006). Experts are able compare a new situation to what they have experienced before through pattern recognition and are then able to recognize nuances and focus on important, rather than unessential elements.</p>
 <p>Novices do not yet have a rich experience base, and as such learning is sequential (R. R. Hoffman, Shadbolt, Burton, &amp; Klein, 1995). We suggest that as students possess similar cognitive architectures they are better able to relate to novices in their class and outside of their class. As the process of learning becomes “transparent” and open through the use of technology students are able to use resources created by other novices to grapple with new subjects.</p>
-<h3 id="what-resources-did-the-students-use-">What resources did the students use?</h3>
+<h3>What resources did the students use?</h3>
 <p>If, as we suggest, students are better able to learn from learning objects created by novices (instead of experts), allowing the students to incorporate and find their own learning objects is a logical design for a course. Yet, from our experience, doing this can be very difficult for teachers. Data from the students gave surprising results on what resources were used to complete projects, and how they were found.</p>
 <p>We were surprised by how many students used social networks to find learning resources. One student remarked, “Usually I would just start on a project, and when I came to the parts I didn’t know as much about I would search using Google and talk to friends who I thought might be knowledgeable on the subject.” As the course progressed student’s utilized the social network created through the class blog and wiki which was used to share knowledge that students had developed through the course of completing projects. This is illustrated through the following student comment.</p>
 <blockquote>
 <p>It was very helpful to use island and the respective blogs resulting from other student’s completed projects as a resource for my projects. I could remember certain things that the other class members were doing from their projects and ask them questions via instant messaging or island [the course website]. Because the class members took ownership of their projects I found them all to be very knowledgeable about the subjects they studied. This helped build a very nice knowledge base.</p>
 </blockquote>
 <p>Another student mentioned other professors and students as well as people he had met on the internet through blogs as means through which he found educational resources. Most students mentioned that they contributed to the class blog as well as other students blogs, or their own blogs.</p>
-<h2 id="4-share-learning-deliverable">4. Share learning deliverable</h2>
+<h2>4. Share learning deliverable</h2>
 <p>Student’s share what they learn in two ways. First they post it on the course website so that other students can read and comment on it. Second, they create an “ignite presentation” which consists of a 5 minute power point presentation of 20 slides in which the slides automatically advance every 15 seconds. This is intended to be a rapid way of transmitting ideas in an engaging and entertaining manner.</p>
 <p>By making the student learning deliverables available publicly on the Internet, it encourages student accountability for learning and creates learning objects that classmates and future students can access and build upon for their learning projects. These public traces of work are also useful as mentioned because students, by seeing what other students are working on, learn which students are expert in what and are able to use them as learning resources for those subjects. Another advantage is it helps market the class, major, and university to current and potential students. As these future students come to explore the college or university they will be able to “lurk” and see the projects and potential colleagues which they would be working with.</p>
-<h2 id="assessment">Assessment</h2>
+<h2>Assessment</h2>
 <p>Given the unusual nature of the class, assessment was handled differently. The majority (70%) of the points came from completely the contract as agreed upon in the learning contract. The remainder of the points were awarded for either extra work done on projects or where students helped other students in some way. This following is <a href="https://island.byu.edu/unclass/wiki/unclasssyllabus">the assessment portion of the class syllabus</a>:</p>
 <ul>
 <li>70% of your grade will come from the completion of your project. Items to be graded include:</li>
@@ -80,37 +226,4 @@
 <p>Two students mentioned that the grading procedure was the worst part of the class: “There was no fair assessment of the work we did.” “The [biggest problem with the course] was trying to figure out a grading metric for the class.”</p>
 <p>As this was our first time involved with this type of course, we were unsure what would unfold. We were pleased to watch the class become a success, and see self-directed learning, and peer-teaching. Strong connections quickly formed between students which enabling them to access learning resources found throughout the community. We’re sure our course design could be significantly improved but we are thrilled it was successful as it was.</p>
 <p>Ericsson, K. A., Charness, N., Feltovich, P. J., &amp; Hoffman, R. R. (2006). The Cambridge Handbook of Expertise and Expert Performance (1st ed.). Cambridge University Press.</p>
-<em>Posted October 30, 2009</em>
-<hr>
-<p><img width="52px" height="52px" class="float-left" src="/assets/images/kyle-round-small-pantheon.jpg"><strong><a href="/">Kyle Mathews</a></strong> lives and works in San Francisco building beautiful things. <a target="_blank" href="http://twitter.com/kylemathews">You should follow him on Twitter</a></p>
-<br>
-<br>
-<br>
-<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'kylemathews';
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-774017-3', 'bricolage.io');
-          ga('require', 'displayfeatures');
-          ga('send', 'pageview');
-
-        </script>
-    </body>
-</html>
-<!-- Generated by Gulp — http://gulpjs.com. View source at https://github.com/KyleAMathews/blog -->
+</div><em style="display:block;margin-bottom:3.16667rem;" data-reactid=".1lzvu37bb40.0:1.2"><span data-reactid=".1lzvu37bb40.0:1.2.0">Posted </span><span data-reactid=".1lzvu37bb40.0:1.2.1">October 30, 2009</span></em><hr style="margin-bottom:3.16667rem;" data-reactid=".1lzvu37bb40.0:1.3"><noscript data-reactid=".1lzvu37bb40.0:1.4"></noscript><p data-reactid=".1lzvu37bb40.0:1.5"><img src="/kyle-round-small-pantheon.jpg" style="float:left;margin-right:0.39583rem;margin-bottom:0;width:3.16667rem;height:3.16667rem;" data-reactid=".1lzvu37bb40.0:1.5.0"><strong data-reactid=".1lzvu37bb40.0:1.5.1">Kyle Mathews</strong><span data-reactid=".1lzvu37bb40.0:1.5.2"> lives and works in San Francisco building useful things. </span><a href="https://twitter.com/kylemathews" data-reactid=".1lzvu37bb40.0:1.5.3">You should follow him on Twitter</a></p></div><span style="display:block;clear:both;" data-reactid=".1lzvu37bb40.1"> </span></div></div><script src="/bundle.js" data-reactid=".bk93442328.1.1"></script></body></html>
