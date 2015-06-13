@@ -45,8 +45,7 @@ module.exports = React.createClass
           <strong>{@props.config.authorName}</strong> lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
         </p>
         <DisqusThread
-          shortname="bricolage.io"
-          identifier={@props.page.path}
+          shortname="kylemathews"
           title={post.title}
           url={"http://bricolage.io#{@props.page.path}"}
         />
