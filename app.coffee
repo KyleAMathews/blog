@@ -7,3 +7,7 @@ exports.loadContext = (callback) ->
     )
 
   callback context
+
+exports.rewritePath = (parsedFilePath, metadata) ->
+  if metadata.ext is "md"
+    return "/" + parsedFilePath.dirname.split('---')[1] + "/"
