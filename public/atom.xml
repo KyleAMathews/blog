@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bricolage</title>
     <link>http://bricolage.io/</link>
-    <updated>2015-06-13T23:28:47Z</updated>
+    <updated>2015-06-16T20:31:53Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -18,8 +18,8 @@
     </contributor>
     <entry>
         <title type="html"><![CDATA[Tools to help administer your Facebook Groups]]></title>
-        <id>http://bricolage.io/tools-administer-facebook-groups/</id>
-        <link href="http://bricolage.io/tools-administer-facebook-groups/">
+        <id>http://bricolage.io/2014-05-20---tools-administer-facebook-groups/</id>
+        <link href="http://bricolage.io/2014-05-20---tools-administer-facebook-groups/">
         </link>
         <updated>2014-05-20T23:46:37Z</updated>
         <content type="html"><![CDATA[<p>I’m an administrator for an active Facebook group. There’s about a 100 or so of us
@@ -48,8 +48,8 @@ pull requests welcome.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hosting static sites with Docker and Nginx]]></title>
-        <id>http://bricolage.io/hosting-static-sites-with-docker-and-nginx/</id>
-        <link href="http://bricolage.io/hosting-static-sites-with-docker-and-nginx/">
+        <id>http://bricolage.io/2014-04-18---hosting-static-sites-with-docker-and-nginx/</id>
+        <link href="http://bricolage.io/2014-04-18---hosting-static-sites-with-docker-and-nginx/">
         </link>
         <updated>2014-04-24T22:12:03Z</updated>
         <content type="html"><![CDATA[<p>For most of its life, this blog has run on Drupal. But as I no longer do Drupal
@@ -122,8 +122,8 @@ I’ve used it now for several side projects of mine.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[New Beginnings]]></title>
-        <id>http://bricolage.io/new-beginnings/</id>
-        <link href="http://bricolage.io/new-beginnings/">
+        <id>http://bricolage.io/2014-04-16---new-beginnings/</id>
+        <link href="http://bricolage.io/2014-04-16---new-beginnings/">
         </link>
         <updated>2014-04-16T22:40:32Z</updated>
         <content type="html"><![CDATA[<p>Quick announcement post.</p>
@@ -151,8 +151,8 @@ problems you’d like help with.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Humility and judgement]]></title>
-        <id>http://bricolage.io/humility-and-judgement/</id>
-        <link href="http://bricolage.io/humility-and-judgement/">
+        <id>http://bricolage.io/2011-12-30---humility-and-judgement/</id>
+        <link href="http://bricolage.io/2011-12-30---humility-and-judgement/">
         </link>
         <updated>2011-12-30T03:48:00Z</updated>
         <content type="html"><![CDATA[<p>Ran across a lovely quote tonight. It expresses well a basic tenet of mine, that
@@ -198,8 +198,8 @@ path, it is he and not the traditionalist who is suffering from an illusion.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Building your own tools]]></title>
-        <id>http://bricolage.io/building-your-own-tools/</id>
-        <link href="http://bricolage.io/building-your-own-tools/">
+        <id>http://bricolage.io/2011-10-28---building-your-own-tools/</id>
+        <link href="http://bricolage.io/2011-10-28---building-your-own-tools/">
         </link>
         <updated>2011-10-28T08:00:37Z</updated>
         <content type="html"><![CDATA[<p>I was explaining to someone in IRC earlier this week about why I was <a href="/simplegtd">building my own project management software</a> and said it was basically because managing my projects and tasks (or more abstractly, what I pay attention to) is so critical to everything else I do that I want to control the software behind it.</p>
@@ -216,8 +216,8 @@ path, it is he and not the traditionalist who is suffering from an illusion.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Chatroom Feature for Drupal 6.x built with Node.js and Backbone.js]]></title>
-        <id>http://bricolage.io/chatroom-feature-drupal-6x-built-nodejs-and-backbonejs/</id>
-        <link href="http://bricolage.io/chatroom-feature-drupal-6x-built-nodejs-and-backbonejs/">
+        <id>http://bricolage.io/2011-10-12---chatroom-feature-drupal-6x-built-nodejs-and-backbonejs/</id>
+        <link href="http://bricolage.io/2011-10-12---chatroom-feature-drupal-6x-built-nodejs-and-backbonejs/">
         </link>
         <updated>2011-10-12T19:47:34Z</updated>
         <content type="html"><![CDATA[<p>Recently, for fun and learning, I built a group chatroom feature for Drupal 6.x. I’ve been learning and using <a href="http://nodejs.org">Node.js</a> and <a href="http://documentcloud.github.com/backbone/">Backbone.js</a> the past few months and building a chatroom seemed like a great project to stretch my skills.</p>
@@ -239,8 +239,8 @@ path, it is he and not the traditionalist who is suffering from an illusion.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[SimpleGTD]]></title>
-        <id>http://bricolage.io/simplegtd/</id>
-        <link href="http://bricolage.io/simplegtd/">
+        <id>http://bricolage.io/2011-10-07---simplegtd/</id>
+        <link href="http://bricolage.io/2011-10-07---simplegtd/">
         </link>
         <updated>2011-10-07T18:59:39Z</updated>
         <content type="html"><![CDATA[<p>I’m starting work soon on building a new open source <a href="http://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> web app that I’m tentatively calling <a href="https://github.com/KyleAMathews/makersgtd">SimpleGTD</a>. I’ve tried a good chunk of the GTD apps out there and have been dissatisfied with each of them for one reason or another.</p>
@@ -292,8 +292,8 @@ path, it is he and not the traditionalist who is suffering from an illusion.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[It is the learners who inherit the future]]></title>
-        <id>http://bricolage.io/it-learners-who-inherit-future/</id>
-        <link href="http://bricolage.io/it-learners-who-inherit-future/">
+        <id>http://bricolage.io/2011-07-25---it-learners-who-inherit-future/</id>
+        <link href="http://bricolage.io/2011-07-25---it-learners-who-inherit-future/">
         </link>
         <updated>2011-07-25T04:59:38Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -315,8 +315,8 @@ world that no longer exists.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Developing faith in God]]></title>
-        <id>http://bricolage.io/developing-faith-god/</id>
-        <link href="http://bricolage.io/developing-faith-god/">
+        <id>http://bricolage.io/2011-06-26---developing-faith-god/</id>
+        <link href="http://bricolage.io/2011-06-26---developing-faith-god/">
         </link>
         <updated>2011-06-26T23:30:50Z</updated>
         <content type="html"><![CDATA[<p><em>The following is a talk I recently gave at the local <a href="http://lds.org">LDS church</a> I attend. Our church doesn’t have paid ministry meaning everyone who attends occasionally takes their turn preaching and exhorting.</em></p>
@@ -370,8 +370,8 @@ world that no longer exists.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to create a résumé using Latex]]></title>
-        <id>http://bricolage.io/how-create-resume-using-latex/</id>
-        <link href="http://bricolage.io/how-create-resume-using-latex/">
+        <id>http://bricolage.io/2011-05-21---how-create-resume-using-latex/</id>
+        <link href="http://bricolage.io/2011-05-21---how-create-resume-using-latex/">
         </link>
         <updated>2011-05-21T02:22:02Z</updated>
         <content type="html"><![CDATA[<p>Since <a href="/eduglu-enters-deadpool/">recent changes in my life</a> have forced me to look for new employment, I’ve had to relearn the long-forgotten art of writing a résumé. Since the actual process of writing a résumé is fairly straightforward, and boring, I decided to spice things up by figuring out how to do it in <a href="http://en.wikipedia.org/wiki/LaTeX">Latex</a>, a recent hobby of mine.</p>
