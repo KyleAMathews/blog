@@ -12,10 +12,12 @@ module.exports = React.createClass
   render: ->
     if @props.page
       description = prune(@props.page.data?.body.replace(/<[^>]*>/g, ''), 200)
-      if @props.page.path is "/"
+      if @props.page?.path is "/"
         title = "Kyle Mathews"
-      else
+      else if @props.page?.data?.title?
         title = @props.page.data.title + " | Kyle Mathews"
+      else
+        title = "Kyle Mathews"
 
     <html lang="en">
       <head>
@@ -33,7 +35,7 @@ module.exports = React.createClass
 
         <meta property="og:title" content={title}/>
         <meta property="og:type" content="article"/>
-        <meta property="og:url" content="http://bricolage.io#{@props.page.path}"/>
+        <meta property="og:url" content="http://bricolage.io#{@props.page?.path}"/>
         <meta property="og:description" content={description}/>
         <meta property="og:site_name" content="Bricolage — a blog by Kyle Mathews"/>
         <meta property="fb:admins" content="17830631"/>
@@ -58,5 +60,16 @@ module.exports = React.createClass
       <body className="landing-page">
         <div id="react-mount" dangerouslySetInnerHTML={{__html: @props.body}} />
         <script src="/bundle.js"/>
+        <script dangerouslySetInnerHTML={{__html: """
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-774017-3', 'auto');
+            ga('send', 'pageview');
+          """}}
+        />
+
       </body>
     </html>
