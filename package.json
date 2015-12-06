@@ -5,16 +5,17 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "feed": "^0.2.6",
-    "front-matter": "^1.0.0",
-    "lodash": "^3.9.3",
-    "markdown-it": "^4.2.2",
-    "moment": "^2.10.3",
-    "react": "^0.13.3",
-    "react-disqus-thread": "^0.2.2",
-    "react-document-title": "^1.0.2",
-    "react-responsive-grid": "^0.2.0",
-    "react-router": "^0.13.3",
-    "typography": "^0.3.5",
-    "underscore.string": "^3.1.1"
+    "front-matter": "^2.0.1",
+    "lodash": "^3.10.1",
+    "markdown-it": "^5.0.2",
+    "moment": "^2.10.6",
+    "react": "^0.14.3",
+    "react-disqus-thread": "^0.3.1",
+    "react-document-title": "^2.0.1",
+    "react-dom": "^0.14.3",
+    "react-responsive-grid": "^0.3.0",
+    "react-router": "^0.13.5",
+    "typography": "^0.6.2",
+    "underscore.string": "^3.2.2"
   }
 }
