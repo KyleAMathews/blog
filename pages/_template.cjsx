@@ -3,15 +3,14 @@ Router = require 'react-router'
 {RouteHandler, Link} = Router
 {Container, Grid, Breakpoint, Span} = require 'react-responsive-grid'
 DocumentTitle = require 'react-document-title'
-Typography = require 'typography'
 require '../css/styles.css'
 
-typography = Typography()
-{rhythm, fontSizeToMS} = typography
+{rhythm, fontSizeToMS} = require 'blog-typography'
+{config} = require 'config'
 
 module.exports = React.createClass
   render: ->
-    if @props.state.path is "/"
+    if @props.location.pathname is "/"
       header = (
         <h1
           style={{
@@ -27,7 +26,7 @@ module.exports = React.createClass
             }}
             to="/"
           >
-            {@props.config.blogTitle}
+            {config.blogTitle}
           </Link>
         </h1>
       )
@@ -41,7 +40,7 @@ module.exports = React.createClass
             }}
             to="/"
           >
-            {@props.config.blogTitle}
+            {config.blogTitle}
           </Link>
         </h3>
       )
@@ -54,6 +53,6 @@ module.exports = React.createClass
         }}
       >
         {header}
-        <RouteHandler typography={typography} {...@props}/>
+        {this.props.children}
       </Container>
     </DocumentTitle>

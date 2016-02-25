@@ -2,8 +2,8 @@ React = require 'react'
 Typography = require 'typography'
 prune = require 'underscore.string/prune'
 
-typography = new Typography()
-{TypographyStyle} = typography
+{TypographyStyle} = require 'blog-typography'
+{link} = require 'gatsby-helpers'
 
 module.exports = React.createClass
   getDefaultProps: ->
@@ -18,6 +18,9 @@ module.exports = React.createClass
         title = @props.page.data.title + " | Kyle Mathews"
       else
         title = "Kyle Mathews"
+
+    if process.env.NODE_ENV is "production"
+      cssLink = <link rel="stylesheet" href={link('/styles.css')} />
 
     <html lang="en">
       <head>
@@ -41,6 +44,7 @@ module.exports = React.createClass
         <meta property="fb:admins" content="17830631"/>
         <link rel="shortcut icon" href={@props.favicon}/>
         <TypographyStyle/>
+        {cssLink}
         <style dangerouslySetInnerHTML={{__html: """
           body {
             color: rgb(66,66,66);

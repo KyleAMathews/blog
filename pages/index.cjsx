@@ -1,7 +1,10 @@
 React = require 'react'
 Router = require 'react-router'
 {RouteHandler, Link} = Router
-sortBy = require 'lodash/collection/sortBy'
+sortBy = require 'lodash/sortBy'
+
+{rhythm} = require 'blog-typography'
+{config} = require 'config'
 
 module.exports = React.createClass
   statics:
@@ -9,9 +12,8 @@ module.exports = React.createClass
       yo: true
 
   render: ->
-    {rhythm} = @props.typography
     pageLinks = []
-    for page in sortBy(@props.pages, (page) -> page.data?.date).reverse()
+    for page in sortBy(@props.route.pages, (page) -> page.data?.date).reverse()
       title = page.data?.title || page.path
       if page.path? and page.path isnt "/" and not page.data?.draft
         pageLinks.push (
@@ -41,7 +43,7 @@ module.exports = React.createClass
             height: rhythm(2)
           }}
         />
-        Written by <strong>{@props.config.authorName}</strong> who lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
+        Written by <strong>{config.authorName}</strong> who lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
       </p>
       <ul>
         {pageLinks}

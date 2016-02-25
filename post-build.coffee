@@ -1,6 +1,6 @@
 Feed = require('feed')
-filter = require 'lodash/collection/filter'
-sortBy = require 'lodash/collection/sortBy'
+filter = require 'lodash/filter'
+sortBy = require 'lodash/sortBy'
 moment = require 'moment'
 MarkdownIt = require 'markdown-it'
 fs = require 'fs'

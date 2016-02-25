@@ -5,13 +5,14 @@ DocumentTitle = require 'react-document-title'
 DisqusThread = require 'react-disqus-thread'
 
 ReadNext = require '../components/ReadNext'
+{rhythm} = require 'blog-typography'
+{config} = require 'config'
 
 module.exports = React.createClass
   displayName: "MarkdownWrapper"
 
   render: ->
-    {rhythm} = @props.typography
-    post = @props.page.data
+    post = @props.route.page.data
 
     <DocumentTitle title="#{post.title} | Kyle Mathews">
       <div className="markdown">
@@ -46,12 +47,12 @@ module.exports = React.createClass
               height: rhythm(2)
             }}
           />
-          <strong>{@props.config.authorName}</strong> lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
+          <strong>{config.authorName}</strong> lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
         </p>
         <DisqusThread
           shortname="kylemathews"
           title={post.title}
-          url={"http://bricolage.io#{@props.page.path}"}
+          url={"http://bricolage.io#{@props.route.page.path}"}
         />
       </div>
     </DocumentTitle>
