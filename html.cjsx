@@ -3,7 +3,7 @@ Typography = require 'typography'
 prune = require 'underscore.string/prune'
 
 {TypographyStyle} = require 'blog-typography'
-{link} = require 'gatsby-helpers'
+{prefixLink} = require 'gatsby-helpers'
 
 module.exports = React.createClass
   getDefaultProps: ->
@@ -20,7 +20,7 @@ module.exports = React.createClass
         title = "Kyle Mathews"
 
     if process.env.NODE_ENV is "production"
-      cssLink = <link rel="stylesheet" href={link('/styles.css')} />
+      cssLink = <link rel="stylesheet" href={prefixLink('/styles.css')} />
 
     <html lang="en">
       <head>
