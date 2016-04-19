@@ -1,5 +1,5 @@
 exports.rewritePath = (parsedFilePath, metadata) => {
-  if (metadata.file.ext === "md") {
+  if (parsedFilePath.ext === "md") {
     return `/${parsedFilePath.dirname.split('---')[1]}/`
   }
 }
