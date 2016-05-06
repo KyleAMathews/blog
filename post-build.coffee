@@ -21,7 +21,8 @@ generateAtomFeed = (pages) ->
     title:       'Bricolage',
     description: 'A blog by Kyle Mathews',
     link:        'http://bricolage.io/',
-    copyright:   'All rights reserved 2015, Kyle Mathews',
+    id:        'http://bricolage.io/',
+    copyright:   'All rights reserved 2016, Kyle Mathews',
     author: {
       name:    'Kyle Mathews',
       email:   'mathews.kyle@gmail.com',
@@ -36,6 +37,7 @@ generateAtomFeed = (pages) ->
   ).slice(0,10)
     feed.addItem({
       title: page.data.title
+      id: "http://bricolage.io#{page.path}"
       link: "http://bricolage.io#{page.path}"
       date: moment(page.data.date).toDate()
       content: md.render(
