@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://bricolage.io/</id>
     <title>Bricolage</title>
-    <link>http://bricolage.io/</link>
-    <updated>2016-02-25T19:25:54Z</updated>
+    <updated>2016-05-06T22:53:29Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -80,9 +80,9 @@ your laptop, it’ll work in production no matter where or what it’s installed
 Consider my case of hosting this static website. Typically you’d think of this blog
 as the collection of HTML, CSS, and images that make up the site.</p>
 <p>What you think your application is affects how you deploy it. If your application is a bundle of files then
-“deploying” means placing these files inside a software system that understands HTTP and can serve files, e.g. Apache or Nginx.</p>
+&quot;deploying&quot; means placing these files inside a software system that understands HTTP and can serve files, e.g. Apache or Nginx.</p>
 <p>Compare this to how I’m using Docker for this blog. Instead of using a global Nginx instance
-to serve my blog, I create a Docker image with Nginx <em>and</em> my blog’s files. Which makes the resulting “blog application”
+to serve my blog, I create a Docker image with Nginx <em>and</em> my blog’s files. Which makes the resulting &quot;blog application&quot;
 an atomic unit that I can build, test, and run anywhere as many times as I want.</p>
 <p>This is a much more preferable outcome. Instead of a messy collection of files as my outcome,
 with Docker, I have a neat tidy Docker image. Now to to run a very high-performance blog, all I
