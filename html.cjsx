@@ -20,7 +20,7 @@ module.exports = React.createClass
         title = "Kyle Mathews"
 
     if process.env.NODE_ENV is "production"
-      cssLink = <link rel="stylesheet" href={prefixLink('/styles.css')} />
+      css = <style dangerouslySetInnerHTML={{__html: require('!raw!./public/styles.css')}} />
 
     <html lang="en">
       <head>
@@ -44,7 +44,7 @@ module.exports = React.createClass
         <meta property="fb:admins" content="17830631"/>
         <link rel="shortcut icon" href={@props.favicon}/>
         <TypographyStyle/>
-        {cssLink}
+        {css}
         <style dangerouslySetInnerHTML={{__html: """
           body {
             color: rgb(66,66,66);

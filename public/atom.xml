@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://bricolage.io/</id>
     <title>Bricolage</title>
-    <updated>2016-05-06T22:53:29Z</updated>
+    <updated>2016-05-11T05:41:35Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -10,7 +10,7 @@
     </author>
     <link rel="alternate" href="http://bricolage.io/"/>
     <subtitle>A blog by Kyle Mathews</subtitle>
-    <rights>All rights reserved 2015, Kyle Mathews</rights>
+    <rights>All rights reserved 2016, Kyle Mathews</rights>
     <generator>Feed for Node.js</generator>
     <contributor>
         <name>Kyle Mathews</name>

@@ -3,3 +3,5 @@ exports.rewritePath = (parsedFilePath, metadata) => {
     return `/${parsedFilePath.dirname.split('---')[1]}/`
   }
 }
+
+exports.postBuild = require('./post-build')
