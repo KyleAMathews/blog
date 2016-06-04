@@ -1,0 +1,7 @@
+bricolage.io
+
+root /root/blog/public
+
+gzip
+log /var/log/caddy/access.log
+search
