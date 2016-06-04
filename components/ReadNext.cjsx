@@ -24,9 +24,9 @@ module.exports = React.createClass
       <h6
         style={{
           margin: 0
-          fontSize: fontSizeToMS(-1).fontSize
-          lineHeight: fontSizeToMS(-1).lineHeight
-          letterSpacing: -0.5
+          fontSize: fontSizeToMS(-0.5).fontSize
+          lineHeight: fontSizeToMS(-0.5).lineHeight
+          letterSpacing: -0.25
         }}
       >
         READ THIS NEXT:
