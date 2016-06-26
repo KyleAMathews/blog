@@ -23,7 +23,14 @@ module.exports = React.createClass
               marginBottom: rhythm(1/4)
             }}
           >
-            <Link to={page.path}>{title}</Link>
+            <Link
+              style={{
+                textDecoration: 'none'
+              }}
+              to={page.path}
+            >
+              {title}
+            </Link>
           </li>
         )
 

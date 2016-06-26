@@ -14,7 +14,7 @@ layout: post
 
 I've been reading and thinking a lot lately about how to drive more adoption of the social learning platform I'm building here at BYU, [https://island.byu.edu][0], and wanted to summarize some of the highlights of what I've learned. All of the patterns come directly from [Ross Mayfield][1] and [Michael Idinopulos's][2] writings so a big shout out to the great work they're doing at [Socialtext][3].
 
-## Pattern 1: Launch Broad then Deep
+#### Pattern 1: Launch Broad then Deep
 
 I wrote extensively about this pattern about a month ago in my post [Deploying Social Software in Universities: Go Broad then Deep][4]. The crux of the argument is that when deploying social software, you should first aim to get wide adoption, sign up as many people as possible, before trying to facilitate deeper, more complex engagement between your users. Social software without people is useless or as [Michael Idinopulos puts it][5], "Scale is the oxygen that feeds collaboration." In the competitive web2.0 world, the simplest tool almost always will win.
 
@@ -22,7 +22,7 @@ Once you've achieved broad adoption, the next step is to go deep. To quote Micha
 
 So launch simply and broadly. Let students and teachers adjust to having a web-enabled learning environment. Then go deep by building into the social learning platform higher-value tools such as blogs, wikis, and other collaborative learning tools and workflows.
 
-## Pattern 2: Help Learners Climb the Participation Curve
+#### Pattern 2: Help Learners Climb the Participation Curve
 
 Ross Mayfield came up with a beautiful concept a number of years ago called the "[Power Law of Participation][6]"
 
@@ -34,7 +34,7 @@ The essence of the model is that in any community, the vast majority of the memb
 
 Software adoption can be thought of in two dimensions, broad and deep. If your learners are successfully engaging in higher value / engagement tasks on your site, this deep adoption is occurring.
 
-## Pattern 3: Focus on Creating Value
+#### Pattern 3: Focus on Creating Value
 
 It's far to easy to focus on the tools we use rather than the value we're trying to create (See Jon Mott's blog, "[The End in Mind][8]" for an extended discussion on this subject). Adoption will increase if we focus on more creating value ([making our users awesome][9]) and less on the specific tools we are building/using.
 

@@ -9,7 +9,8 @@ layout: post
 
 I love it when someone writes what I'm thinking about writing. Saves me time.
 
-Paul Graham posted a new essay today entitled "[Six Principles for Making New Things][0]."  
+Paul Graham posted a new essay today entitled "[Six Principles for Making New Things][0]."
+
 Here's the juicy bit:
 
 > I like to find (a) simple solutions (b) to overlooked problems (c) that actually need to be solved, and (d) deliver them as informally as possible, (e) starting with a very crude version 1, then (f) iterating rapidly.

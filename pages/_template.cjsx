@@ -17,11 +17,13 @@ module.exports = React.createClass
             fontSize: fontSizeToMS(1.5).fontSize
             lineHeight: fontSizeToMS(1.5).lineHeight
             marginBottom: rhythm(1.5)
+            marginTop: 0
           }}
         >
           <Link
             style={{
               textDecoration: 'none'
+              boxShadow: 'none'
               color: 'inherit'
             }}
             to="/"
@@ -32,23 +34,28 @@ module.exports = React.createClass
       )
     else
       header = (
-        <h3>
+        <h4
+          style={{
+            marginTop: 0
+          }}
+        >
           <Link
             style={{
               textDecoration: 'none'
+              boxShadow: 'none'
               color: 'inherit'
             }}
             to="/"
           >
             {config.blogTitle}
           </Link>
-        </h3>
+        </h4>
       )
 
     <DocumentTitle title="Kyle Mathews">
       <Container
         style={{
-          maxWidth: rhythm(24)
+          maxWidth: '750px'
           padding: "#{rhythm(2)} #{rhythm(1/2)}"
         }}
       >

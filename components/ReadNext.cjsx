@@ -34,6 +34,7 @@ module.exports = React.createClass
       <h3
         style={{
           marginBottom: rhythm(1/4)
+          marginTop: 0
         }}
       >
         <Link

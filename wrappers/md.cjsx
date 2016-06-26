@@ -16,7 +16,13 @@ module.exports = React.createClass
 
     <DocumentTitle title="#{post.title} | Kyle Mathews">
       <div className="markdown">
-        <h1>{post.title}</h1>
+        <h1
+          style={{
+            marginTop: 0
+          }}
+        >
+          {post.title}
+        </h1>
         <div dangerouslySetInnerHTML={{__html: post.body}}/>
         <em
           style={{
