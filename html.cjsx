@@ -1,8 +1,8 @@
 React = require 'react'
-Typography = require 'typography'
 prune = require 'underscore.string/prune'
 
-{GoogleFont, TypographyStyle} = require 'blog-typography'
+{GoogleFont, TypographyStyle} = require('typography-react')
+typography = require './blog-typography'
 {prefixLink} = require 'gatsby-helpers'
 
 module.exports = React.createClass
@@ -43,8 +43,8 @@ module.exports = React.createClass
         <meta property="og:site_name" content="Bricolage — a blog by Kyle Mathews"/>
         <meta property="fb:admins" content="17830631"/>
         <link rel="shortcut icon" href={@props.favicon}/>
-        <TypographyStyle />
-        <GoogleFont />
+        <TypographyStyle typography={typography} />
+        <GoogleFont typography={typography} />
         {css}
       </head>
       <body className="landing-page">
