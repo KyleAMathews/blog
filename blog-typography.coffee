@@ -4,6 +4,22 @@ React = require 'react'
 
 #theme = require('typography-theme-moraga').default
 theme = require('typography-theme-irving').default
+#theme = require('typography-theme-github').default
+codePlugin = require('typography-plugin-code').default
+theme.plugins = [
+  new codePlugin(),
+]
+theme.overrideThemeStyles = () -> ({
+  'tt,code': {
+    fontSize: '70%',
+  },
+  pre: {
+    fontSize: '1em',
+  },
+})
+#theme = require('typography-theme-moraga').default
+#theme['@media only screen and (max-width: 768px)'].blockquote.marginLeft = "-21px"
+console.log(theme)
 
 typography = new Typography(theme)
 {GoogleFont} = require('typography-react')

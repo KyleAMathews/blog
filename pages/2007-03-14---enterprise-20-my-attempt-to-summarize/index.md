@@ -58,7 +58,7 @@ Employees of DrKW also find the wiki useful to plan presentations. They report t
 
 Both DrKW and Novell and many others find that the tools of "Enterprise 2.0" make collaboration more flexible and efficient. Below is a closer look at the software that makes up "Enterprise 2.0":
 
-## Internal Blogs
+#### Internal Blogs
 Most now are familiar with blogs. These easy-to-use communication device are widely used on the Internet by from everyone from politicians, to family groups, to newspapers. As of 14 March 2007, Technorati, an online blog search engine, [is tracking 71.2 million blogs][9]. Blogs as a collaboration tool are widely used on the Internet but are also starting to gain traction as a tool for internal communication within organizations.
 
 [Matías Dutto, a management consultant specializing in social technologies][10], wrote the following reasons for supporting internal blogging:
@@ -80,7 +80,7 @@ Enterprise quality blogging software includes:
 * [Moveable Type][15] (paid)
 * [KnowHow][16] (paid/open source) -- enterprise version of WordPress
 
-## Wikis
+#### Wikis
 The most famous example of the wiki is Wikipedia. [Wikipedia defines a wiki as][17] "a website that allows the visitors themselves to easily add, remove, and otherwise edit and change available content, typically without the need for registration. This ease of interaction and operation makes a wiki an effective tool for mass collaborative authoring."
 
 Enterprise quality wiki software includes:
@@ -90,7 +90,7 @@ Enterprise quality wiki software includes:
 * [Confluence][20] (paid)
 * Also, [WikiMatrix][21] provides a tool for comparing between 100s of other wiki engines.
 
-## Customer Relationship Management (CRM)
+#### Customer Relationship Management (CRM)
 
 [Wikipedia defines CRMs as follows][22]:
 
@@ -102,7 +102,7 @@ Enterprise quality CRM software includes:
 * [vTiger][24] (paid and open source)
 * [Salesforce][25] (paid)
 
-## Lightweight Project Management:
+#### Lightweight Project Management:
 
 A rebellion against all 1000lb project management software. Most software of this class are web based, inexpensive, and integrates well with existing tools.
 

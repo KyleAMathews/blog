@@ -5,45 +5,6 @@ based on dark.css by Ivan Sagalaev
 
 */
 
-.markdown pre {
-  display: block;
-  background: #3F3F3F;
-  color: #DCDCDC;
-  overflow-y: hidden;
-}
-
-.markdown pre code {
-  background: none;
-  border: none;
-  border-radius: 3px;
-  display: inline-block;
-  overflow: inherit;
-  padding: 1.58333rem;
-  white-space: inherit;
-  word-wrap: normal;
-}
-
-code {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
-  word-wrap: break-word;
-  background: #e5e5e5;
-  border: 1px solid #cccccc;
-  display: inline;
-  font-family: Inconsolata, monospace, serif;
-  max-width: 100%;
-  overflow: auto;
-  padding: 0 0.1625rem;
-}
-
 .hljs-keyword,
 .hljs-tag,
 .css .hljs-class,
