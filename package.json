@@ -21,6 +21,7 @@
     "underscore.string": "^3.2.2"
   },
   "devDependencies": {
-    "babel-preset-react-hmre": "^1.1.1"
+    "babel-preset-react-hmre": "^1.1.1",
+    "image-webpack-loader": "^2.0.0"
   }
 }

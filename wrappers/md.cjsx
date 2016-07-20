@@ -3,6 +3,7 @@ require '../css/zenburn.css'
 moment = require 'moment'
 DocumentTitle = require 'react-document-title'
 DisqusThread = require 'react-disqus-thread'
+profilePic = require('../pages/kyle-round-small-pantheon.jpg')
 
 ReadNext = require '../components/ReadNext'
 {rhythm} = require 'blog-typography'
@@ -44,7 +45,7 @@ module.exports = React.createClass
           }}
         >
           <img
-            src="/kyle-round-small-pantheon.jpg"
+            src={profilePic}
             style={{
               float: 'left'
               marginRight: rhythm(1/4)

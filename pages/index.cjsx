@@ -2,6 +2,7 @@ React = require 'react'
 Router = require 'react-router'
 {RouteHandler, Link} = Router
 sortBy = require 'lodash/sortBy'
+profilePic = require('./kyle-round-small-pantheon.jpg')
 
 {rhythm} = require 'blog-typography'
 {config} = require 'config'
@@ -41,7 +42,7 @@ module.exports = React.createClass
         }}
       >
         <img
-          src="./kyle-round-small-pantheon.jpg"
+          src={profilePic}
           style={{
             float: 'left'
             marginRight: rhythm(1/4)
