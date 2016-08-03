@@ -21,8 +21,8 @@ generateAtomFeed = (pages) ->
   feed = new Feed({
     title:       'Bricolage',
     description: 'A blog by Kyle Mathews',
-    link:        'http://bricolage.io/',
-    id:        'http://bricolage.io/',
+    link:        'https://bricolage.io/',
+    id:        'https://bricolage.io/',
     copyright:   'All rights reserved 2016, Kyle Mathews',
     author: {
       name:    'Kyle Mathews',
@@ -38,8 +38,8 @@ generateAtomFeed = (pages) ->
   ).slice(0,10)
     feed.addItem({
       title: page.data.title
-      id: "http://bricolage.io#{page.path}"
-      link: "http://bricolage.io#{page.path}"
+      id: "https://bricolage.io#{page.path}"
+      link: "https://bricolage.io#{page.path}"
       date: moment(page.data.date).toDate()
       content: md.render(
         frontmatter(
@@ -52,14 +52,14 @@ generateAtomFeed = (pages) ->
       author: [{
         name: "Kyle Mathews"
         email: "mathews.kyle@gmail.com"
-        link: "http://bricolage.io"
+        link: "https://bricolage.io"
       }]
     })
 
   feed.addContributor({
     name: 'Kyle Mathews'
     email: 'mathews.kyle@gmail.com'
-    link: 'http://bricolage.io'
+    link: 'https://bricolage.io'
   })
 
   fs.writeFileSync "#{__dirname}/public/atom.xml", feed.render('atom-1.0')
