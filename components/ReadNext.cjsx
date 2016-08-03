@@ -5,7 +5,7 @@ prune = require 'underscore.string/prune'
 includes = require 'underscore.string/include'
 find = require 'lodash/find'
 
-{rhythm, fontSizeToMS} = require 'blog-typography'
+{rhythm, adjustFontSizeToMSValue} = require 'blog-typography'
 
 module.exports = React.createClass
 
@@ -24,8 +24,8 @@ module.exports = React.createClass
       <h6
         style={{
           margin: 0
-          fontSize: fontSizeToMS(-0.5).fontSize
-          lineHeight: fontSizeToMS(-0.5).lineHeight
+          fontSize: adjustFontSizeToMSValue(-0.5).fontSize
+          lineHeight: adjustFontSizeToMSValue(-0.5).lineHeight
           letterSpacing: -0.25
         }}
       >

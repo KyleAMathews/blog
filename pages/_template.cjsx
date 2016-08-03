@@ -5,7 +5,7 @@ Router = require 'react-router'
 DocumentTitle = require 'react-document-title'
 require '../css/styles.css'
 
-{rhythm, fontSizeToMS} = require 'blog-typography'
+{rhythm, adjustFontSizeToMSValue} = require 'blog-typography'
 {config} = require 'config'
 
 module.exports = React.createClass
@@ -14,8 +14,8 @@ module.exports = React.createClass
       header = (
         <h1
           style={{
-            fontSize: fontSizeToMS(1.5).fontSize
-            lineHeight: fontSizeToMS(1.5).lineHeight
+            fontSize: adjustFontSizeToMSValue(1.5).fontSize
+            lineHeight: adjustFontSizeToMSValue(1.5).lineHeight
             marginBottom: rhythm(1.5)
             marginTop: 0
           }}
