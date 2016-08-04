@@ -26,7 +26,7 @@ module.exports = React.createClass
       <head>
         <meta charSet="utf-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name='viewport' content='user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0'/>
+        <meta name='viewport' content='user-scalable=no width=device-width, initial-scale=1.0'/>
         <title>{title}</title>
         <meta name="description" content={description}/>
 
@@ -43,6 +43,7 @@ module.exports = React.createClass
         <meta property="og:site_name" content="Bricolage — a blog by Kyle Mathews"/>
         <meta property="fb:admins" content="17830631"/>
         <link rel="shortcut icon" href={@props.favicon}/>
+        <link rel="alternate" type="application/atom+xml" href="/atom.xml" />
         <TypographyStyle typography={typography} />
         <GoogleFont typography={typography} />
         {css}
