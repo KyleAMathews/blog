@@ -8,10 +8,6 @@ profilePic = require('./kyle-round-small-pantheon.jpg')
 {config} = require 'config'
 
 module.exports = React.createClass
-  statics:
-    data: ->
-      yo: true
-
   render: ->
     pageLinks = []
     for page in sortBy(@props.route.pages, (page) -> page.data?.date).reverse()

@@ -1,18 +1,16 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
+import ReadNext from '../components/ReadNext'
 import { rhythm } from 'utils/typography'
 import Bio from 'components/Bio'
 import { graphql } from 'gatsby-helpers'
-import { Link } from 'react-router'
 
-const profilePic = require('./kyle-round-small-pantheon.jpg')
-
-class BlogIndexRoute extends React.Component {
+class CategoryIndexRoute extends React.Component {
   render () {
+    const postEdge = this.props.allMarkdown
     const config = this.props.config
-    const posts = this.props.allMarkdown
 
-    const pageLinks = posts.edges.map((post) => (
+    const pageLinks = postEdge.edges.map((post) => (
       <li
         key={post.node.path}
         style={{
@@ -31,7 +29,7 @@ class BlogIndexRoute extends React.Component {
     ))
 
     return (
-      <DocumentTitle title={`${config.siteTitle}`}>
+      <DocumentTitle title={`Posts tagged with ${postEdge.tag} | ${config.siteTitle}`}>
         <DefaultSiteWrapper>
           <div>
             <p
@@ -63,19 +61,52 @@ class BlogIndexRoute extends React.Component {
   }
 }
 
-export default graphql.createContainer(BlogIndexRoute, () => (`
+export const provideRoutes = (cb) => {
+  const _ = require('lodash')
+  graphql.execute(`
+    {
+      allMarkdown {
+        edges {
+          node {
+            id
+            tags
+          }
+        }
+      }
+    }
+    `, (err, blogPosts) => {
+      if (err) { return cb(err) }
+
+      // Create array of all tags
+      let tags = []
+      _.each(blogposts.edges, (post) => tags.concat(post.node.tags))
+      tags = _.uniq(tags)
+
+      cb(null, tags.map((tag) => ({
+        tag: tag,
+        path: _.kebabCase(tag),
+      })))
+    })
+}
+
+export default graphql.createContainer(CategoryIndexRoute, (tag) => (`
   {
     config {
       siteTitle
       authorName
     }
-    allMarkdown(first: 9999, sortBy: "createdAt") {
+    allMarkdown(filterByField: { field: 'tag', filter: "${post.tag}" }) {
+      filter
       edges {
         node {
-          path
           title
+          path
+          createdAt {
+            formated(formatString: "MMMM D, YYYY")
+          }
         }
       }
     }
   }
 `))
+

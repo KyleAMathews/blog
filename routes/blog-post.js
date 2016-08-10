@@ -38,8 +38,8 @@ class BlogPostRoute extends React.Component {
   }
 }
 
-export const provideRoutes = () => {
-  const blogPosts = graphql.execute(`
+export const provideRoutes = (cb) => {
+  graphql.execute(`
     {
       allMarkdown {
         edges {
@@ -50,11 +50,12 @@ export const provideRoutes = () => {
         }
       }
     }
-  `)
-
-  return blogPosts.edges.map((post) => ({
-    ...post.node
-  }))
+    `, (err, blogPosts) => {
+      if (err) { return cb(err) }
+      cb(null, blogPosts.edges.map((post) => ({
+        ...post.node
+      }))
+    })
 }
 
 export default graphql.createContainer(BlogPostRoute, (post) => (`
