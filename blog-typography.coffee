@@ -3,8 +3,9 @@ ReactDOM = require 'react-dom/server'
 React = require 'react'
 
 #theme = require('typography-theme-moraga').default
-theme = require('typography-theme-irving').default
-#theme = require('typography-theme-github').default
+#theme = require('typography-theme-irving').default
+#theme = require('typography-theme-alton').default
+theme = require('typography-theme-de-young').default
 codePlugin = require('typography-plugin-code').default
 theme.plugins = [
   new codePlugin(),

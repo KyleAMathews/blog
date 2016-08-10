@@ -1,7 +1,7 @@
 React = require 'react'
 prune = require 'underscore.string/prune'
 
-{GoogleFont, TypographyStyle} = require('typography-react')
+{GoogleFont, TypographyStyle} = require('react-typography')
 typography = require './blog-typography'
 {prefixLink} = require 'gatsby-helpers'
 
