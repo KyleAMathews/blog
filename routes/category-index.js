@@ -101,9 +101,6 @@ export default graphql.createContainer(CategoryIndexRoute, (tag) => (`
         node {
           title
           path
-          createdAt {
-            formated(formatString: "MMMM D, YYYY")
-          }
         }
       }
     }
