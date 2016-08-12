@@ -4,7 +4,6 @@ tags:
   - Learning
   - Writing
 date: "2006-08-12T22:52:44.000Z"
-layout: post
 ---
 
 I'd been thinking about blogging for a long time but what finally pushed me over the edge was this [post][0]. The author, Scott McLemee, wrote about what he's learned from a pamphlet by C. Wright Mill "On Intellectual Craftsmanship". Here's the key quote,
