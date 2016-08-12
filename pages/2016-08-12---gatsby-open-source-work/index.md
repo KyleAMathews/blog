@@ -14,11 +14,16 @@ to work more on some of my open source projects! Two in particular,
 [Gatsby.js](https://github.com/gatsbyjs/gatsby) and
 [Typography.js](https://github.com/kyleamathews/typography.js).
 
+*Gatsby.js* is a React.js static site generator that marries ease of
+use with modern web technologies. *Typography.js* is a toolkit for
+building websites with beautiful typography.
+
 So now I'm looking for both direct sponsorship and
 consulting/contracting opportunities around Gatsby & Typography.js!
 [Please contact me](mailto:mathews.kyle@gmail.com) if you're thinking
 about using Gatsby/Typography.js in a major way or have interesting
-and/or high-value projects you'd like help on.
+and/or high-value projects you'd like help on. Web agencies and larger
+companies looking for new toolchains would be great fits.
 
 Both these projects are very exciting and meaningful to me. I've been
 building websites and web apps for a long time now and they both are a
