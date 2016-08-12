@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bricolage.io/</id>
     <title>Bricolage</title>
-    <updated>2016-08-12T19:30:45Z</updated>
+    <updated>2016-08-12T19:36:09Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -30,13 +30,14 @@ to work more on some of my open source projects! Two in particular,
 <a href="https://github.com/kyleamathews/typography.js">Typography.js</a>.</p>
 <p><em>Gatsby.js</em> is a React.js static site generator that marries ease of
 use with modern web technologies. <em>Typography.js</em> is a toolkit for
-building websites with beautiful typography.</p>
+building websites with beautiful typography. This site uses both
+Gatsby.js &amp; Typography.js!</p>
 <p>So now I’m looking for both direct sponsorship and
 consulting/contracting opportunities around Gatsby &amp; Typography.js!
 <a href="mailto:mathews.kyle@gmail.com">Please contact me</a> if you’re thinking
 about using Gatsby/Typography.js in a major way or have interesting
 and/or high-value projects you’d like help on. Web agencies and larger
-companies looking for new toolchains would be great fits.</p>
+companies looking for new web toolchains would be great fits.</p>
 <p>Both these projects are very exciting and meaningful to me. I’ve been
 building websites and web apps for a long time now and they both are a
 compilation of a decade+ of thought about what is the perfect toolset
