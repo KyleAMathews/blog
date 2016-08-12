@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bricolage.io/</id>
     <title>Bricolage</title>
-    <updated>2016-08-10T05:09:26Z</updated>
+    <updated>2016-08-12T18:03:47Z</updated>
     <author>
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
@@ -16,6 +16,84 @@
         <name>Kyle Mathews</name>
         <email>mathews.kyle@gmail.com</email>
     </contributor>
+    <entry>
+        <title type="html"><![CDATA[Working full-time on Gatsby]]></title>
+        <id>https://bricolage.io/gatsby-open-source-work/</id>
+        <link href="https://bricolage.io/gatsby-open-source-work/">
+        </link>
+        <updated>2016-08-12T17:52:44Z</updated>
+        <content type="html"><![CDATA[<p>After several years of working on a startup, I’ve recently quit. The
+reasons are quite boring, poor product traction and we ran out of money,
+so I won’t go into that here. But the exciting part is that I’m now free
+to work more on some of my open source projects! Two in particular,
+<a href="https://github.com/gatsbyjs/gatsby">Gatsby.js</a> and
+<a href="https://github.com/kyleamathews/typography.js">Typography.js</a>.</p>
+<p>So now I’m looking for both direct sponsorship and
+consulting/contracting opportunities around Gatsby &amp; Typography.js!
+<a href="mailto:mathews.kyle@gmail.com">Please contact me</a> if you’re thinking
+about using Gatsby/Typography.js in a major way or have interesting
+and/or high-value projects you’d like help on.</p>
+<p>Both these projects are very exciting and meaningful to me. I’ve been
+building websites and web apps for a long time now and they both are a
+compilation of a decade+ of thought about what is the perfect toolset
+for building for the web.</p>
+<p>They both were also, interestingly, by-products of working on my startup
+RelateRocket. Gatsby started when I needed to create a website for
+RelateRocket and wanted to avoid using anything other than React.js.
+Typography.js started when we were thinking about building a product
+that’d automatically create personalized landing pages for sales reps to
+send and I started thinking about how to easily/quickly emulate the
+typography and other design choices from our customers’ websites. It is
+satisfying that although the startup didn’t succeed that phoenix-like,
+something of value has risen from the ashes.</p>
+<p>Now that my full attention is on Gatsby, I have a number of ideas
+I’m working on that I’m really excited about.</p>
+<ul>
+<li><strong>Service workers &amp; offline support</strong>. Service workers are perhaps the
+most exciting technology that’s come to the web in the past several
+years. It makes possible (finally) sophisticated client caching plus
+true offline support. I’m adding excellent on-by-default support to
+Gatsby for Service Workers and a great offline experience.</li>
+<li><strong>Code splitting</strong> A great website loads really fast. Code splitting
+is a technique for ensuring that every page loads with <em>only</em> the code
+that’s necessary for that page.</li>
+<li><strong>Themes &amp; Plugins</strong> Wordpress &amp; Jekyll are both great examples of
+open source communities with robust theme &amp; plugins ecosystems. I’d
+love something like that to develop around Gatsby.</li>
+<li><strong>Website &amp; Documentation/Tutorials</strong> Somewhat ironically for a
+website building tool, Gatsby doesn’t yet have a website. This will be
+fixed plus I’ll be writting high-quality documentation and tutorials.</li>
+<li><strong>Pull instead of Push</strong> This last idea is a bit abstract but super
+powerful. Currently data in Gatsby (like pretty much every static site
+generator) is <em>pushed</em> into templates to be rendered into HTML. This is
+a simple pattern and works great for many use cases. But when you start
+working on more complex sites, you really start to miss the flexibility
+of building a database-driven site. With a database, all your data is
+available to query against in any fashion that you’d like. Whatever bits
+of data you need to assemble a page, you can <em>pull</em> in. You want to
+create author pages showing their bio &amp; last 5 posts? It’s just a query
+away. I want this same flexibility for Gatsby. I want to be able to
+query my markdown files and treat them as a database of sorts. I’ve hit
+on what I think is an excellent way to do this and am prototyping the
+code. Expect to hear more on this soon. Ping me if you’d like an early
+demo. It’s using <a href="http://graphql.org">GraphQL</a> under the hood and the
+collocated queries pattern developed by
+<a href="https://facebook.github.io/relay/">Relay</a>. I couldn’t be more excited
+about this feature. It’ll open up so many useful and powerful options.</li>
+</ul>
+<p>The web is an incredible place. I’m so happy I get to help build it. If
+Gatsby or Typography.js excite you, I’d love you to join in helping
+design &amp; document &amp; build them.</p>
+<p>Also a quick endnote. I noticed while writing this that my <a href="https://bricolage.io/first-post/">first blog
+post</a> was a bit over 10 years ago!
+Happy anniversary blog! :-)</p>
+]]></content>
+        <author>
+            <name>Kyle Mathews</name>
+            <email>mathews.kyle@gmail.com</email>
+            <uri>https://bricolage.io</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Tools to help administer your Facebook Groups]]></title>
         <id>https://bricolage.io/tools-administer-facebook-groups/</id>
@@ -361,24 +439,6 @@ world that no longer exists.</p>
 </blockquote>
 <p>I felt this chastisement also applied to me. I thought I had to endure the trouble I was facing by myself and was not relying on the Lord for strength as I ought. Humbled, I prayed that the Lord would strengthen me. From then on through the end of the experience, when the trouble threatened to overwhelm me, I would stop and pray, ‘‘Lord, I can’t do this by myself, please help me’’, and soon, I found that my burdens too became much easier to bear.</p>
 <p>I testify that the Lord does exist. That He does love us. That He is merciful and kind and just. And that He can and will fulfill every promise He has made. And that as we learn of Him, learn of His will for us, and align our lives with His will, our confidence in Him will wax strong and we will be richly blessed all of our days.</p>
-]]></content>
-        <author>
-            <name>Kyle Mathews</name>
-            <email>mathews.kyle@gmail.com</email>
-            <uri>https://bricolage.io</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to create a résumé using Latex]]></title>
-        <id>https://bricolage.io/how-create-resume-using-latex/</id>
-        <link href="https://bricolage.io/how-create-resume-using-latex/">
-        </link>
-        <updated>2011-05-21T02:22:02Z</updated>
-        <content type="html"><![CDATA[<p>Since <a href="/eduglu-enters-deadpool/">recent changes in my life</a> have forced me to look for new employment, I’ve had to relearn the long-forgotten art of writing a résumé. Since the actual process of writing a résumé is fairly straightforward, and boring, I decided to spice things up by figuring out how to do it in <a href="http://en.wikipedia.org/wiki/LaTeX">Latex</a>, a recent hobby of mine.</p>
-<p>Googling found quite a few different Latex résumé templates to start from and my favorite by far was <a href="http://kjhealy.github.com/kjh-vita/">this one</a>, conveniently already on Github. So I quickly forked the example résumé and modified it to fit my needs. I was very happy how it turned out and think it looks miles better than any previous Microsoft Word template résumé I’ve produced.</p>
-<p><a href="./kyle-mathews-resume_0.pdf">Download a copy of the finished résumé</a>. You can also see the source for the résumé at <a href="https://github.com/KyleAMathews/kjh-vita/blob/master/kyle-resume.tex">https://github.com/KyleAMathews/kjh-vita/blob/master/kyle-resume.tex</a>. Feel free to fork my version and modify to meet your needs. Most distributions of Latex should have all the dependencies you need. The three fonts I’ve used, Minion Pro, Myriad Pro, and Inconsolata are all freely available. The first two are distributed with Adobe Reader. The latter can be <a href="http://www.levien.com/type/myfonts/inconsolata.html">downloaded here.</a></p>
-<h3>Update — just use <a href="http://sharelatex.com">http://sharelatex.com</a></h3>
-<p>Since I wrote this post several years ago a new online Latex service <a href="http://sharelatex.com">Sharelatex</a> has been created. They have a fantastic selection of <a href="https://www.sharelatex.com/templates/cv-or-resume">Resume/CV Latex templates</a> and couldn’t be easier to use. Just <a href="https://www.sharelatex.com/templates/cv-or-resume">pick one of the templates</a> and start adding your information through their online editor.</p>
 ]]></content>
         <author>
             <name>Kyle Mathews</name>
