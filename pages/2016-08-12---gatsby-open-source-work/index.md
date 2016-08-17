@@ -19,19 +19,19 @@ use with modern web technologies. *Typography.js* is a toolkit for
 building websites with beautiful typography. This site uses both
 Gatsby.js & Typography.js!
 
-So now I'm looking for both direct sponsorship and
-consulting/contracting opportunities around Gatsby & Typography.js!
-[Please contact me](mailto:mathews.kyle@gmail.com) if you're thinking
-about using Gatsby/Typography.js in a major way or have interesting
-and/or high-value projects you'd like help on. Web agencies and larger
+I'm looking for both direct sponsorship and consulting/contracting
+opportunities for these projects. [Please contact
+me](mailto:mathews.kyle@gmail.com) if you're thinking about using
+Gatsby/Typography.js in a major way or have interesting and/or
+high-value projects you'd like help on. Web agencies and larger
 companies looking for new web toolchains would be great fits.
 
 Both these projects are very exciting and meaningful to me. I've been
 building websites and web apps for a long time now and they both are a
-compilation of a decade+ of thought about what is the perfect toolset
-for building for the web.
+compilation of a decade+ of thought about and experimentation into what
+is the perfect toolset for building for the web.
 
-They both were also, interestingly, by-products of working on my startup
+They were also both, interestingly, by-products of working on my startup
 RelateRocket. Gatsby started when I needed to create a website for
 RelateRocket and wanted to avoid using anything other than React.js.
 Typography.js started when we were thinking about building a product
@@ -57,7 +57,7 @@ that's necessary for that page.
 love something like that to develop around Gatsby.
 * **Website & Documentation/Tutorials** Somewhat ironically for a
   website building tool, Gatsby doesn't yet have a website. This will be
-fixed plus I'll be writting high-quality documentation and tutorials.
+fixed plus I'll be writing high-quality documentation and tutorials.
 * **Pull instead of Push** This last idea is a bit abstract but super
   powerful. Currently data in Gatsby (like pretty much every static site
 generator) is *pushed* into templates to be rendered into HTML. This is
