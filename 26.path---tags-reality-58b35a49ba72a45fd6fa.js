@@ -1,0 +1,2 @@
+webpackJsonp([26],{399:function(e,t){e.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2011-05-10---becoming-unhinged-reality-and-fixing/index.md",path:"/becoming-unhinged-reality-and-fixing/",frontmatter:{title:"Becoming unhinged from reality—and fixing that"}}}]}},pathContext:{path:"/tags/reality/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"reality"}}}});
+//# sourceMappingURL=26.path---tags-reality-58b35a49ba72a45fd6fa.js.map

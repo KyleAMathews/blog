@@ -1,0 +1,2 @@
+webpackJsonp([93],{332:function(t,a){t.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2009-07-27---startup-chronicles-1/index.md",path:"/startup-chronicles-1/",frontmatter:{title:"Startup Chronicles #1"}}}]}},pathContext:{path:"/tags/startup/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"startup"}}}});
+//# sourceMappingURL=93.path---tags-startup-605f482b17380890f857.js.map

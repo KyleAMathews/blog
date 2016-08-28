@@ -1,0 +1,2 @@
+webpackJsonp([56],{369:function(t,s){t.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2008-07-01---a-unit-testing-success-story/index.md",path:"/a-unit-testing-success-story/",frontmatter:{title:"A unit testing success story"}}}]}},pathContext:{path:"/tags/unit-testing/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"unit testing"}}}});
+//# sourceMappingURL=56.path---tags-unit-testing-cb46589d417cb29965b8.js.map

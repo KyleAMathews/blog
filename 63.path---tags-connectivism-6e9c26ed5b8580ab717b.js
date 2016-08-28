@@ -1,0 +1,2 @@
+webpackJsonp([63],{362:function(a,e){a.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2009-10-30---how-we-ran-micro-lab-course/index.md",path:"/how-we-ran-micro-lab-course/",frontmatter:{title:"How we ran a micro-lab course"}}}]}},pathContext:{path:"/tags/connectivism/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"connectivism"}}}});
+//# sourceMappingURL=63.path---tags-connectivism-6e9c26ed5b8580ab717b.js.map

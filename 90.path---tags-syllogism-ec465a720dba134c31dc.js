@@ -1,0 +1,2 @@
+webpackJsonp([90],{335:function(t,a){t.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2010-02-02---education-syllogism/index.md",path:"/education-syllogism/",frontmatter:{title:"An Education Syllogism"}}}]}},pathContext:{path:"/tags/syllogism/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"syllogism"}}}});
+//# sourceMappingURL=90.path---tags-syllogism-ec465a720dba134c31dc.js.map

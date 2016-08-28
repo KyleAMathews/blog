@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://bricolage.io/</id>
+    <title>Bricolage</title>
+    <updated>2016-08-28T01:43:30Z</updated>
+    <author>
+        <name>Kyle Mathews</name>
+        <email>mathews.kyle@gmail.com</email>
+        <uri>https://bricolage.io</uri>
+    </author>
+    <link rel="alternate" href="https://bricolage.io/"/>
+    <subtitle>A blog by Kyle Mathews</subtitle>
+    <rights>All rights reserved 2016, Kyle Mathews</rights>
+    <generator>Feed for Node.js</generator>
+    <contributor>
+        <name>Kyle Mathews</name>
+        <email>mathews.kyle@gmail.com</email>
+    </contributor>
+</feed>
