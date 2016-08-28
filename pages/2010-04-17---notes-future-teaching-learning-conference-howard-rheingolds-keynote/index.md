@@ -2,7 +2,6 @@
 title: "Notes from \"The Future of Teaching & Learning\" conference — Howard Rheingold's keynote"
 tags:
   - Education
-  - Eduglu
   - future of learning
   - teaching
   - socialmediaclassroom

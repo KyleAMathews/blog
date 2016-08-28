@@ -2,7 +2,6 @@
 title: New Drupal-Mixpanel integration module released to track event-based analytics
 tags:
   - drupal
-  - drupal planet
 date: "2011-04-23T00:23:01.000Z"
 layout: post
 ---

@@ -1,0 +1,2 @@
+webpackJsonp([151],{274:function(a,t){a.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2010-11-04---roadmaps-platforms-and-killer-apps/index.md",path:"/roadmaps-platforms-and-killer-apps/",frontmatter:{title:"Eduglu, Roadmaps, platforms, and killer apps",draft:null}}}]}},pathContext:{path:"/tags/platforms/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"platforms"}}}});
+//# sourceMappingURL=151.path---tags-platforms-bb808f07.js.map

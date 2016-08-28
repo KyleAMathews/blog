@@ -13,7 +13,6 @@ md = MarkdownIt({
 })
 
 module.exports = (pages, callback) ->
-  console.log("running post-build")
   generateAtomFeed(pages)
   callback()
 

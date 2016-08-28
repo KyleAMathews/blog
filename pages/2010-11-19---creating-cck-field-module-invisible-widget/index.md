@@ -2,9 +2,7 @@
 title: "Creating a CCK Field module with an \"invisible\" widget"
 tags:
   - drupal
-  - drupal planet
   - etherpad
-  - drupal modules
 date: "2010-11-19T00:14:48.000Z"
 layout: post
 ---

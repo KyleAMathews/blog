@@ -5,6 +5,11 @@ prune = require 'underscore.string/prune'
 typography = require './blog-typography'
 {prefixLink} = require 'gatsby-helpers'
 
+try
+  stats = require './public/stats.json'
+try
+  chunkManifest = require './public/chunk-manifest.json'
+
 module.exports = React.createClass
   getDefaultProps: ->
     body: ""
@@ -18,9 +23,20 @@ module.exports = React.createClass
         title = @props.page.data.title + " | Kyle Mathews"
       else
         title = "Kyle Mathews"
+    # TODO unwind DocumentTitle
+    scripts = []
+    if process.env.NODE_ENV is "production"
+      scripts.push(<script src={"/#{stats.assetsByChunkName['commons'][0]}"}/>)
+      scripts.push(<script src={"/#{stats.assetsByChunkName['routes'][0]}"}/>)
+      scripts.push(<script src={"/#{stats.assetsByChunkName["route-component---#{@props.componentName}"][0]}"}/>)
+      scripts.push(<script src={"/#{stats.assetsByChunkName[@props.pathJSFile][0]}"}/>)
+    else
+      scripts.push(<script src="/commons.js" />)
 
     if process.env.NODE_ENV is "production"
       css = <style dangerouslySetInnerHTML={{__html: require('!raw!./public/styles.css')}} />
+      pathScript = <script dangerouslySetInnerHTML={{__html: require("!raw!./public/#{stats.assetsByChunkName[@props.pathJSFile][0]}")}} />
+      routeComponentScript = <script dangerouslySetInnerHTML={{__html: require("!raw!./public/#{stats.assetsByChunkName["route-component---#{@props.componentName}"][0]}")}} />
 
     <html lang="en">
       <head>
@@ -50,7 +66,7 @@ module.exports = React.createClass
       </head>
       <body className="landing-page">
         <div id="react-mount" dangerouslySetInnerHTML={{__html: @props.body}} />
-        <script src="/bundle.js"/>
+        {scripts}
         <script dangerouslySetInnerHTML={{__html: """
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -64,3 +80,5 @@ module.exports = React.createClass
 
       </body>
     </html>
+
+        #<script dangerouslySetInnerHTML={{__html: "window.webpackManifest = #{JSON.stringify(chunkManifest)}" }} />

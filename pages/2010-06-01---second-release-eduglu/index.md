@@ -2,7 +2,6 @@
 title: Second release of Eduglu
 tags:
   - Education
-  - drupal planet
   - social learning
   - Eduglu
 date: "2010-06-01T21:06:28.000Z"

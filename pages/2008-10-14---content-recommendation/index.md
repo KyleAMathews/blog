@@ -2,7 +2,6 @@
 title: Content Recommendation
 tags:
   - memetracker
-  - drupal planet
   - content recommendation
 date: "2008-10-14T00:26:11.000Z"
 draft: true

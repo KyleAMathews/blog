@@ -2,10 +2,8 @@
 title: Chatroom Feature for Drupal 6.x built with Node.js and Backbone.js
 tags:
   - drupal
-  - drupal planet
   - backbone.js
   - node.js
-  - experiments
 date: "2011-10-12T19:47:34.000Z"
 layout: post
 ---

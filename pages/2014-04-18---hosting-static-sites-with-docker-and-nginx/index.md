@@ -5,6 +5,9 @@ layout: post
 readNext: "/building-your-own-tools/"
 tags:
   - Docker
+  - Open Source
+  - node.js
+  - gulp.js
 ---
 
 For most of its life, this blog has run on Drupal. But as I no longer do Drupal

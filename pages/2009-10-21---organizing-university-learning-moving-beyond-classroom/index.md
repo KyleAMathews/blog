@@ -7,7 +7,7 @@ tags:
   - social learning
   - micro-labs
   - universities
-  - courses
+  - course design
 date: "2009-10-21T17:43:27.000Z"
 layout: post
 ---

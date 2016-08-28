@@ -2,11 +2,6 @@
 title: How to create custom ical exports by category using Drupal and the Views and Calendar modules
 tags:
   - drupal
-  - drupal planet
-  - taxonomy
-  - ical
-  - views
-  - ical export
 date: "2009-10-06T15:32:34.000Z"
 layout: post
 ---

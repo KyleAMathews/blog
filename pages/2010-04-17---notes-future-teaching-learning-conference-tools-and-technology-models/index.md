@@ -2,7 +2,6 @@
 title: "Notes from \"The Future of Teaching & Learning\" conference — Tools and Technology Models"
 tags:
   - Education
-  - education tools
 date: "2010-04-17T19:39:34.000Z"
 layout: post
 ---

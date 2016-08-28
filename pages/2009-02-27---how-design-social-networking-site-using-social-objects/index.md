@@ -2,7 +2,6 @@
 title: How to design a social networking site using social objects
 tags:
   - social software
-  - drupal planet
   - social objects
   - social networking
 date: "2009-02-27T18:20:59.000Z"

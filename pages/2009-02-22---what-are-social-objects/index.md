@@ -2,7 +2,6 @@
 title: What are Social Objects?
 tags:
   - social software
-  - drupal planet
   - social objects
 date: "2009-02-22T01:48:22.000Z"
 layout: post

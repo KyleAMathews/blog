@@ -3,9 +3,7 @@ title: A unit testing success story
 tags:
   - drupal
   - google summer of code
-  - drupal planet
   - unit testing
-  - simpletest
 date: "2008-07-01T21:46:58.000Z"
 layout: post
 ---

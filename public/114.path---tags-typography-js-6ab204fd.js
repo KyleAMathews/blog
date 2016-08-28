@@ -1,0 +1,2 @@
+webpackJsonp([114],{311:function(t,a){t.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2016-08-12---gatsby-open-source-work/index.md",path:"/gatsby-open-source-work/",frontmatter:{title:"Working full-time on Gatsby",draft:null}}}]}},pathContext:{path:"/tags/typography-js/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"typography.js"}}}});
+//# sourceMappingURL=114.path---tags-typography-js-6ab204fd.js.map

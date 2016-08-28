@@ -1,0 +1,2 @@
+webpackJsonp([26],{399:function(e,a){e.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2007-04-19---seo-search-engine-optimization-basics/index.md",path:"/seo-search-engine-optimization-basics/",frontmatter:{title:"SEO (Search Engine Optimization) Basics",draft:null}}}]}},pathContext:{path:"/tags/seo/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"seo"}}}});
+//# sourceMappingURL=26.path---tags-seo-422f4196.js.map

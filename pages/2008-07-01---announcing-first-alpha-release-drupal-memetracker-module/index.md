@@ -3,8 +3,6 @@ title: Announcing the first alpha release of the Drupal Memetracker module
 tags:
   - drupal
   - memetracker
-  - drupal planet
-  - code release
 date: "2008-07-01T21:26:22.000Z"
 layout: post
 ---

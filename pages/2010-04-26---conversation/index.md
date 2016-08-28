@@ -3,7 +3,7 @@ title: Conversation
 tags:
   - Education
   - social learning
-  - Eduglu
+  - conversation
 date: "2010-04-26T20:48:42.000Z"
 layout: post
 ---

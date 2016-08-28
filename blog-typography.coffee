@@ -20,7 +20,6 @@ theme.overrideThemeStyles = () -> ({
 })
 #theme = require('typography-theme-moraga').default
 #theme['@media only screen and (max-width: 768px)'].blockquote.marginLeft = "-21px"
-console.log(theme)
 
 typography = new Typography(theme)
 {GoogleFont} = require('typography-react')

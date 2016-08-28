@@ -1,0 +1,2 @@
+webpackJsonp([130],{295:function(a,t){a.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2009-11-12---marshall-mcluhan-education/index.md",path:"/marshall-mcluhan-education/",frontmatter:{title:"Marshall McLuhan on education",draft:null}}}]}},pathContext:{path:"/tags/marshall-mcluhan/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"marshall mcluhan"}}}});
+//# sourceMappingURL=130.path---tags-marshall-mcluhan-9579d65e.js.map

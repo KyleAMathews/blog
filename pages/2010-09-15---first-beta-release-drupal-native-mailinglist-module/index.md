@@ -2,7 +2,6 @@
 title: First beta release for Drupal-native mailinglist module
 tags:
   - drupal
-  - drupal planet
   - Eduglu
   - OG Mailinglist
 date: "2010-09-15T22:49:54.000Z"

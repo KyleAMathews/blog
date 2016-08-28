@@ -34,7 +34,7 @@ module.exports = React.createClass
       )
     else
       header = (
-        <h4
+        <h3
           style={{
             marginTop: 0
           }}
@@ -49,7 +49,7 @@ module.exports = React.createClass
           >
             {config.blogTitle}
           </Link>
-        </h4>
+        </h3>
       )
 
     <DocumentTitle title="Kyle Mathews">

@@ -3,9 +3,7 @@ title: "Looking for Alpha Testers for Eduglu, a new Drupal Install Profile for H
 tags:
   - drupal
   - Education
-  - drupal planet
   - social learning
-  - Drupal Install Profiles
   - Eduglu
 date: "2010-02-05T18:47:56.000Z"
 layout: post

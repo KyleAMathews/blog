@@ -3,9 +3,7 @@ title: Knight News Challenge application to improve Memetracker and Content Reco
 tags:
   - drupal
   - memetracker
-  - drupal planet
   - knight news challenge
-  - content recommendation engine
 date: "2008-11-02T06:47:27.000Z"
 layout: post
 ---
