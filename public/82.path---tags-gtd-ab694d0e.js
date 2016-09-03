@@ -1,2 +1,0 @@
-webpackJsonp([82],{343:function(t,e){t.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2011-10-07---simplegtd/index.md",path:"/simplegtd/",frontmatter:{title:"SimpleGTD",draft:null}}}]}},pathContext:{path:"/tags/gtd/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"gtd"}}}});
-//# sourceMappingURL=82.path---tags-gtd-ab694d0e.js.map

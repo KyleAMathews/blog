@@ -1,2 +1,0 @@
-webpackJsonp([75],{350:function(t,a){t.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2014-04-18---hosting-static-sites-with-docker-and-nginx/index.md",path:"/hosting-static-sites-with-docker-and-nginx/",frontmatter:{title:"Hosting static sites with Docker and Nginx",draft:null}}}]}},pathContext:{path:"/tags/docker/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"docker"}}}});
-//# sourceMappingURL=75.path---tags-docker-4d119197.js.map

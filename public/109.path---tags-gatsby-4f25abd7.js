@@ -1,2 +1,0 @@
-webpackJsonp([109],{316:function(t,a){t.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2016-08-12---gatsby-open-source-work/index.md",path:"/gatsby-open-source-work/",frontmatter:{title:"Working full-time on Gatsby",draft:null}}}]}},pathContext:{path:"/tags/gatsby/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"gatsby"}}}});
-//# sourceMappingURL=109.path---tags-gatsby-4f25abd7.js.map

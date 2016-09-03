@@ -1,2 +1,0 @@
-webpackJsonp([9],{416:function(t,e){t.exports={data:{config:{siteMetadata:{title:"Bricolage"}},allMarkdown:{totalCount:1,edges:[{node:{id:"/Users/kylemathews/programs/blog/pages/2011-12-30---humility-and-judgement/index.md",path:"/humility-and-judgement/",frontmatter:{title:"Humility and judgement",draft:null}}}]}},pathContext:{path:"/tags/humility/",component:"/Users/kylemathews/programs/blog/pages/tag-page.js",tag:"humility"}}}});
-//# sourceMappingURL=9.path---tags-humility-ae2c7ebb.js.map
