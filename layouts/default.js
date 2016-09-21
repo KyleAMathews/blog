@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import typography from '../blog-typography'
 import { Container } from 'react-responsive-grid'
+import DocumentTitle from 'react-document-title'
 const rhythm = typography.rhythm
 const adjustFontSizeToMSValue = typography.adjustFontSizeToMSValue
 import includes from 'lodash/includes'
@@ -12,8 +13,8 @@ class Wrapper extends React.Component {
     let header
     // Check if the location is either the front page or a tags page.
     // If so, use a big header, otherwise use a smaller one.
-    if (includes(['/', '/tags/'], this.props.pathContext.path) ||
-        includes(this.props.pathContext.path, '/tags/')
+    if (includes(['/', '/tags/'], this.props.location.pathname) ||
+        includes(this.props.location.pathname, '/tags/')
        ) {
       header = (
         <Link
@@ -49,17 +50,19 @@ class Wrapper extends React.Component {
       )
     }
     return (
-      <Container
-        style={{
-          padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
-          maxWidth: 750,
-        }}
-      >
-        <div>
-          {header}
-        </div>
-        {this.props.children}
-      </Container>
+      <DocumentTitle title="Bricolage">
+        <Container
+          style={{
+            padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
+            maxWidth: 750,
+          }}
+        >
+          <div>
+            {header}
+          </div>
+          {this.props.children}
+        </Container>
+      </DocumentTitle>
     )
   }
 }

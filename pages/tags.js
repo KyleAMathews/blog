@@ -1,7 +1,6 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { Link } from 'react-router'
-import DefaultSiteWrapper from '../components/DefaultSiteWrapper'
 import get from 'lodash/get'
 import uniq from 'lodash/uniq'
 import groupBy from 'lodash/groupBy'
@@ -10,9 +9,8 @@ import sortBy from 'lodash/sortBy'
 
 class TagsPageRoute extends React.Component {
   render () {
-    console.log(this.props)
     const posts = this.props.data.allMarkdown.edges
-    const title = get(this.props, 'data.config.siteMetadata.title')
+    const title = get(this.props, 'data.site.siteMetadata.title')
     let allTags = posts.reduce((tags, post) => {
       if (post.node.frontmatter.draft !== true && post.node.frontmatter.tags) {
         tags = tags.concat(post.node.frontmatter.tags)
@@ -42,14 +40,14 @@ class TagsPageRoute extends React.Component {
 
     return (
       <DocumentTitle title={title}>
-        <DefaultSiteWrapper {...this.props}>
+        <div>
           <div>
             <h1>Tags</h1>
             <ul>
               {tagLinks}
             </ul>
           </div>
-        </DefaultSiteWrapper>
+        </div>
       </DocumentTitle>
     )
   }
@@ -57,9 +55,9 @@ class TagsPageRoute extends React.Component {
 
 export default TagsPageRoute
 
-export const routeQuery = `
+export const pageQuery = `
   {
-    config {
+    site {
       siteMetadata {
         title
       }

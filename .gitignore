@@ -4,7 +4,6 @@ node_modules/
 temp.coffee
 deploy.db
 assets/sass/bower_components/
-.gatsby-context.js
 .build/
-.gatsby-intermediate-build/
 public/
+.intermediate-representation/

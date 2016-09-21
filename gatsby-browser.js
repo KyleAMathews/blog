@@ -1,8 +1,8 @@
 // Send pageview event to Google Analytics on page change.
-exports.onRouteChange = (state, page, pages) => {
+exports.onRouteUpdate = (location) => {
   if (typeof ga !== 'undefined') {
     ga('send', 'pageview', {
-      page: state.path,
+      page: location.pathname,
     })
   }
 }

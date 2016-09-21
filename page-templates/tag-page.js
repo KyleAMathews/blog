@@ -2,12 +2,11 @@ import React from 'react'
 import { Link } from 'react-router'
 import DocumentTitle from 'react-document-title'
 import get from 'lodash/get'
-import DefaultSiteWrapper from '../components/DefaultSiteWrapper'
 
 class TagRoute extends React.Component {
   render () {
     const posts = this.props.data.allMarkdown.edges
-    const title = get(this.props, 'data.config.siteMetadata.title')
+    const title = get(this.props, 'data.site.siteMetadata.title')
     const postLinks = posts.map((post) => {
       if (post.node.frontmatter.draft !== true) {
         return (
@@ -26,7 +25,7 @@ class TagRoute extends React.Component {
 
     return (
       <DocumentTitle title={title}>
-        <DefaultSiteWrapper {...this.props}>
+        <div>
           <h1>
             {this.props.data.allMarkdown.totalCount}
             {' '}posts tagged with “{this.props.pathContext.tag}”
@@ -35,7 +34,7 @@ class TagRoute extends React.Component {
           <p>
             <Link to="/tags/">Browse all tags</Link>
           </p>
-        </DefaultSiteWrapper>
+        </div>
       </DocumentTitle>
     )
   }
@@ -43,14 +42,14 @@ class TagRoute extends React.Component {
 
 export default TagRoute
 
-export const routeQuery = `
-  {
-    config {
+export const pageQuery = `
+  query TagPage($tag: String) {
+    site {
       siteMetadata {
         title
       }
     }
-    allMarkdown(first: 1000, tag: "<%= tag %>") {
+    allMarkdown(first: 1000, tag: $tag) {
       totalCount
       edges {
         node {
@@ -65,4 +64,3 @@ export const routeQuery = `
     }
   }
 `
-

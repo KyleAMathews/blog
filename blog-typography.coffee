@@ -1,5 +1,4 @@
 Typography = require 'typography'
-ReactDOM = require 'react-dom/server'
 React = require 'react'
 
 #theme = require('typography-theme-moraga').default
@@ -10,6 +9,10 @@ codePlugin = require('typography-plugin-code').default
 theme.plugins = [
   new codePlugin(),
 ]
+#theme.bodyFontFamily = ['Alegreya']
+#theme.headerFontFamily = ['League Spartan']
+#theme.headerWeight = 900
+#theme.boldWeight = 900
 theme.overrideThemeStyles = () -> ({
   'tt,code': {
     fontSize: '70%',
@@ -26,6 +29,7 @@ typography = new Typography(theme)
 
 # Hot reload typography in development.
 if process.env.NODE_ENV isnt 'production'
+  ReactDOM = require 'react-dom/server'
   typography.injectStyles()
   if typeof document isnt 'undefined'
     googleFonts = ReactDOM.renderToStaticMarkup(React.createFactory(GoogleFont)({typography: typography}))

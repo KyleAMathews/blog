@@ -1,12 +1,11 @@
 import React from 'react'
-import DefaultSiteWrapper from '../components/DefaultSiteWrapper'
 import DocumentTitle from 'react-document-title'
 import { Link } from 'react-router'
 import kebabCase from 'lodash/kebabCase'
 import get from 'lodash/get'
 import typography from '../blog-typography'
 const { rhythm, adjustFontSizeToMSValue } = typography
-const profilePic = require('./kyle-round-small-pantheon.jpg')
+const profilePic = require('../images/kyle-round-small-pantheon.jpg')
 import ReadNext from '../components/ReadNext'
 const DisqusThread = require('react-disqus-thread')
 //import { query } from '../components/ReadNext'
@@ -23,7 +22,7 @@ readNext {
 class BlogPostRoute extends React.Component {
   render () {
     const post = this.props.data.markdown
-    const siteTitle = get(this.props, 'data.config.siteMetadata.title')
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     let tags
     let tagsSection
@@ -57,7 +56,7 @@ class BlogPostRoute extends React.Component {
 
     return (
       <DocumentTitle title={`${siteTitle} | ${post.frontmatter.title}`}>
-        <DefaultSiteWrapper {...this.props}>
+        <div>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.bodyHTML }} />
           {tagsSection}
@@ -91,14 +90,14 @@ class BlogPostRoute extends React.Component {
                 height: rhythm(2),
               }}
             />
-            <strong>{this.props.data.config.siteMetadata.author}</strong> lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
+            <strong>{this.props.data.site.siteMetadata.author}</strong> lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
           </p>
           <DisqusThread
             shortname="kylemathews"
             title={post.title}
             url={`https://bricolage.io${this.props.location.pathname}`}
           />
-        </DefaultSiteWrapper>
+        </div>
       </DocumentTitle>
     )
   }
@@ -106,15 +105,15 @@ class BlogPostRoute extends React.Component {
 
 export default BlogPostRoute
 
-export const routeQuery = `
-  {
-    config {
+export const pageQuery = `
+  query BlogPostByPath($path: String!) {
+    site {
       siteMetadata {
         title
         author
       }
     }
-    markdown(path: "<%= path %>") {
+    markdown(path: $path) {
       id
       bodyHTML
       frontmatter {
