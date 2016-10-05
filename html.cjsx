@@ -50,6 +50,7 @@ module.exports = React.createClass
         <TypographyStyle typography={typography} />
         <GoogleFont typography={typography} />
         <HTMLStyles />
+        {@props.headComponents}
       </head>
       <body className="landing-page">
         <div id="react-mount" dangerouslySetInnerHTML={{__html: @props.body}} />
