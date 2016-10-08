@@ -5,6 +5,7 @@ React = require 'react'
 #theme = require('typography-theme-irving').default
 #theme = require('typography-theme-alton').default
 theme = require('typography-theme-de-young').default
+theme.baseLineHeight = 1.6
 codePlugin = require('typography-plugin-code').default
 theme.plugins = [
   new codePlugin(),
