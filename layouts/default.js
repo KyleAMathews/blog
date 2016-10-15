@@ -6,7 +6,7 @@ import DocumentTitle from 'react-document-title'
 const rhythm = typography.rhythm
 const scale = typography.scale
 import includes from 'lodash/includes'
-import '../css/zenburn.css'
+import '../styles/zenburn.css'
 
 class Wrapper extends React.Component {
   render () {
