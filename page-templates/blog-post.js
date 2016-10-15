@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 import kebabCase from 'lodash/kebabCase'
 import get from 'lodash/get'
 import typography from '../blog-typography'
-const { rhythm, adjustFontSizeToMSValue } = typography
+const { rhythm, scale } = typography
 const profilePic = require('../images/kyle-round-small-pantheon.jpg')
 import ReadNext from '../components/ReadNext'
 const DisqusThread = require('react-disqus-thread')
@@ -44,7 +44,7 @@ class BlogPostRoute extends React.Component {
       tagsSection = (
         <em
           style={{
-            ...adjustFontSizeToMSValue(-1/5),
+            ...scale(-1/5),
             display: 'block',
             marginBottom: rhythm(1),
           }}
@@ -62,7 +62,7 @@ class BlogPostRoute extends React.Component {
           {tagsSection}
           <p
             style={{
-              ...adjustFontSizeToMSValue(-1/5),
+              ...scale(-1/5),
               display: 'block',
               marginBottom: rhythm(1),
             }}

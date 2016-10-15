@@ -4,7 +4,7 @@ import typography from '../blog-typography'
 import { Container } from 'react-responsive-grid'
 import DocumentTitle from 'react-document-title'
 const rhythm = typography.rhythm
-const adjustFontSizeToMSValue = typography.adjustFontSizeToMSValue
+const scale = typography.scale
 import includes from 'lodash/includes'
 import '../css/zenburn.css'
 
@@ -27,7 +27,7 @@ class Wrapper extends React.Component {
         >
           <h1
             style={{
-              ...adjustFontSizeToMSValue(1.5),
+              ...scale(1.5),
               marginBottom: rhythm(1.5),
             }}
           >

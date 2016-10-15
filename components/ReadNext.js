@@ -1,7 +1,7 @@
 const React = require('react')
 const { Link } = require('react-router')
 
-const { rhythm, adjustFontSizeToMSValue } = require('blog-typography')
+const { rhythm, scale } = require('blog-typography')
 
 const Component = React.createClass({
   render () {
@@ -13,7 +13,7 @@ const Component = React.createClass({
         <div>
           <h6
             style={{
-              ...adjustFontSizeToMSValue(-0.5),
+              ...scale(-0.5),
               margin: 0,
               letterSpacing: -0.25,
             }}

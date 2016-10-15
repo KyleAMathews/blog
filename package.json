@@ -17,12 +17,12 @@
     "react-disqus-thread": "^0.4.0",
     "react-document-title": "^2.0.1",
     "react-responsive-grid": "^0.3.0",
-    "react-typography": "^0.12.0",
-    "typography": "^0.13.1",
-    "typography-plugin-code": "^0.13.1",
+    "react-typography": "^0.14.0",
+    "typography": "^0.14.0",
+    "typography-plugin-code": "^0.14.0",
     "typography-react": "^0.10.4",
-    "typography-theme-de-young": "^0.13.2",
-    "typography-theme-irving": "^0.13.0",
+    "typography-theme-de-young": "^0.14.0",
+    "typography-theme-irving": "^0.14.0",
     "underscore.string": "^3.2.2"
   },
   "devDependencies": {
