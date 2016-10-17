@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import Promise from 'bluebird'
+import path from 'path'
 
 exports.rewritePath = (parsedFilePath, metadata) => {
   if (parsedFilePath.ext === 'md') {
@@ -10,8 +11,8 @@ exports.rewritePath = (parsedFilePath, metadata) => {
 exports.createPages = ({ graphql }) => (
   new Promise((resolve, reject) => {
     const pages = []
-    const blogPost = '/Users/kylemathews/programs/blog/page-templates/blog-post.js'
-    const tagPages = '/Users/kylemathews/programs/blog/page-templates/tag-page.js'
+    const blogPost = path.resolve('page-templates/blog-post.js')
+    const tagPages = path.resolve('page-templates/tag-page.js')
     graphql(`
       {
         allMarkdown(first: 1000) {
