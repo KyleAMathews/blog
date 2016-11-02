@@ -54,11 +54,13 @@ exports.createPages = ({ graphql }) => (
       })
       tags = _.uniq(tags)
       tags.forEach((tag) => {
-        const path = `/tags/${_.kebabCase(tag)}/`
+        const tagPath = `/tags/${_.kebabCase(tag)}/`
         pages.push({
-          path,
+          path: tagPath,
           component: tagPages,
-          tag,
+          context: {
+            tag,
+          },
         })
       })
 
