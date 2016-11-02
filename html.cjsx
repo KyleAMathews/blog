@@ -48,7 +48,6 @@ module.exports = React.createClass
         <link rel="shortcut icon" href={@props.favicon}/>
         <link rel="alternate" type="application/atom+xml" href="/atom.xml" />
         <TypographyStyle typography={typography} />
-        <GoogleFont typography={typography} />
         <HTMLStyles />
         {@props.headComponents}
       </head>

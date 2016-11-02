@@ -7,6 +7,8 @@ const rhythm = typography.rhythm
 const scale = typography.scale
 import includes from 'lodash/includes'
 import '../styles/zenburn.css'
+import 'typeface-alegreya'
+import 'typeface-alegreya-sans'
 
 class Wrapper extends React.Component {
   render () {

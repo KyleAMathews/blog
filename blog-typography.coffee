@@ -26,15 +26,10 @@ theme.overrideThemeStyles = () -> ({
 #theme['@media only screen and (max-width: 768px)'].blockquote.marginLeft = "-21px"
 
 typography = new Typography(theme)
-{GoogleFont} = require('typography-react')
 
 # Hot reload typography in development.
 if process.env.NODE_ENV isnt 'production'
   ReactDOM = require 'react-dom/server'
   typography.injectStyles()
-  if typeof document isnt 'undefined'
-    googleFonts = ReactDOM.renderToStaticMarkup(React.createFactory(GoogleFont)({typography: typography}))
-    head = document.getElementsByTagName('head')[0]
-    head.insertAdjacentHTML('beforeend', googleFonts)
 
 module.exports = typography
