@@ -1,6 +1,7 @@
 import _ from 'lodash'
 import Promise from 'bluebird'
 import path from 'path'
+import { GraphQLString, GraphQLObjectType } from 'graphql'
 
 exports.rewritePath = (parsedFilePath, metadata) => {
   if (parsedFilePath.ext === 'md') {
@@ -67,3 +68,22 @@ exports.createPages = ({ graphql }) => (
 )
 
 exports.postBuild = require('./post-build')
+
+exports.modifyGraphQLFields = ({ types }) => {
+  types.test = {
+    type: new GraphQLObjectType({
+      name: 'test',
+      description: 'just testing',
+      fields: () => ({
+        hello: {
+          type: GraphQLString,
+        },
+      }),
+    }),
+    resolve (root, args) {
+      return { hello: 'world' }
+    },
+  }
+
+  return types
+}
