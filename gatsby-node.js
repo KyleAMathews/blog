@@ -70,22 +70,3 @@ exports.createPages = ({ graphql }) => (
 )
 
 exports.postBuild = require('./post-build')
-
-exports.modifyGraphQLFields = ({ types }) => {
-  types.test = {
-    type: new GraphQLObjectType({
-      name: 'test',
-      description: 'just testing',
-      fields: () => ({
-        hello: {
-          type: GraphQLString,
-        },
-      }),
-    }),
-    resolve (root, args) {
-      return { hello: 'world' }
-    },
-  }
-
-  return types
-}

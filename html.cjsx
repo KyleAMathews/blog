@@ -4,7 +4,6 @@ prune = require 'underscore.string/prune'
 {GoogleFont, TypographyStyle} = require('react-typography')
 typography = require './blog-typography'
 {prefixLink} = require 'gatsby-helpers'
-HTMLScripts = require 'html-scripts'
 HTMLStyles = require 'html-styles'
 
 try
@@ -53,7 +52,7 @@ module.exports = React.createClass
       </head>
       <body className="landing-page">
         <div id="react-mount" dangerouslySetInnerHTML={{__html: @props.body}} />
-        <HTMLScripts scripts={@props.scripts} />
+        {@props.postBodyComponents}
         <script dangerouslySetInnerHTML={{__html: """
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
