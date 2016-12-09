@@ -1,8 +1,8 @@
 ---
 title: Proposal for Open Studies (Un)course
 tags:
-  - Education
-  - Learning
+  - education
+  - learning
   - byu
   - island
 date: "2008-10-25T00:33:29.000Z"

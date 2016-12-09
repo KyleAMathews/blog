@@ -1,7 +1,7 @@
 ---
 title: "When in Doubt, Make it Public"
 tags:
-  - Education
+  - education
   - social learning
 date: "2009-09-10T00:15:20.000Z"
 layout: post

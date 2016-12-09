@@ -2,9 +2,9 @@
 title: "Looking for Alpha Testers for Eduglu, a new Drupal Install Profile for Higher Education"
 tags:
   - drupal
-  - Education
+  - education
   - social learning
-  - Eduglu
+  - eduglu
 date: "2010-02-05T18:47:56.000Z"
 layout: post
 ---

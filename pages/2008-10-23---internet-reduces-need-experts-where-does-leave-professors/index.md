@@ -1,7 +1,7 @@
 ---
 title: Internet reduces need for experts. Where does this leave professors?
 tags:
-  - Education
+  - education
   - internet
   - experts
 date: "2008-10-23T20:06:34.000Z"

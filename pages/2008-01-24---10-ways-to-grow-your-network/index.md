@@ -3,7 +3,7 @@ title: 10 Ways to Grow your Network
 tags:
   - entrepreneurship
   - innovation
-  - Learning
+  - learning
 date: "2008-01-24T00:50:26.000Z"
 layout: post
 ---

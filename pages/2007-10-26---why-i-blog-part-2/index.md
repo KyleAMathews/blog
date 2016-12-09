@@ -3,8 +3,8 @@ title: Why I blog—Part 2
 tags:
   - blogging
   - internet-marketing
-  - Learning
-  - Writing
+  - learning
+  - writing
 date: "2007-10-26T04:57:56.000Z"
 layout: post
 ---

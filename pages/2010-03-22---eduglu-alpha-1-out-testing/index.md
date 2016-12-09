@@ -2,10 +2,10 @@
 title: My social learning Drupal distribution Eduglu is out for testing
 tags:
   - drupal
-  - Education
-  - Learning
+  - education
+  - learning
   - social learning
-  - Eduglu
+  - eduglu
 date: "2010-03-22T20:19:25.000Z"
 layout: post
 ---

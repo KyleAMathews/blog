@@ -2,8 +2,8 @@
 title: "It's the culture, some insights on organizational learning"
 tags:
   - drupal
-  - Education
-  - Learning
+  - education
+  - learning
   - organizational learning
   - open source
   - organizational behavior

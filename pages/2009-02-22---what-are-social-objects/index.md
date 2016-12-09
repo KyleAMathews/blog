@@ -5,7 +5,7 @@ tags:
   - social objects
 date: "2009-02-22T01:48:22.000Z"
 layout: post
-readNext: "/how-design-social-networking-site-using-social-objects/"
+readNext___file: ../2009-02-27---how-design-social-networking-site-using-social-objects/index.md
 ---
 
 *In preparation for [my upcoming session at Drupalcon][0], I'm writing a short series of articles on social networking and learning theory. First up is an article on social objects.*

@@ -1,9 +1,9 @@
 ---
 title: My educational philosophy
 tags:
-  - Education
+  - education
   - entrepreneurship
-  - Learning
+  - learning
 date: "2008-09-10T14:43:20.000Z"
 layout: post
 ---

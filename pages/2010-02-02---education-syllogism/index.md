@@ -1,8 +1,8 @@
 ---
 title: An Education Syllogism
 tags:
-  - Education
-  - Learning
+  - education
+  - learning
   - social media
   - social networking
   - social learning

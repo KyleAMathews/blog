@@ -1,10 +1,11 @@
 ---
 title: Working full-time on Gatsby
 tags:
-  - Open Source
-  - Gatsby
-  - Typography.js
-date: 2016-08-12T17:52:44.000Z
+  - open source
+  - gatsby
+  - typography.js
+date: "2016-08-12T17:52:44.000Z"
+draft: false
 ---
 
 After several years of working on a startup, I've recently quit. The

@@ -1,7 +1,7 @@
 ---
 title: Conversation
 tags:
-  - Education
+  - education
   - social learning
   - conversation
 date: "2010-04-26T20:48:42.000Z"

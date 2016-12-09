@@ -1,7 +1,7 @@
 ---
 title: Veracity is the heart of morality
 tags:
-  - Education
+  - education
 date: "2010-09-23T04:43:53.000Z"
 layout: post
 ---

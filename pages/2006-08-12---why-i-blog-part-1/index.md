@@ -1,8 +1,8 @@
 ---
 title: Why I blog—Part 1
 tags:
-  - Learning
-  - Writing
+  - learning
+  - writing
 date: "2006-08-12T22:52:44.000Z"
 ---
 

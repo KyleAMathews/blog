@@ -1,7 +1,7 @@
 ---
 title: Writing and The Power of Stories
 tags:
-  - Writing
+  - writing
 date: "2007-02-24T22:47:21.000Z"
 layout: post
 ---

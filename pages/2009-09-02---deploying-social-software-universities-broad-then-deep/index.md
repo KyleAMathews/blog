@@ -1,10 +1,10 @@
 ---
 title: "Deploying Social Software in Universities: Go Broad then Deep"
 tags:
-  - Education
+  - education
   - elearning2.0
   - enterprise2.0
-  - Learning
+  - learning
   - social software
   - social learning
 date: "2009-09-02T23:53:44.000Z"

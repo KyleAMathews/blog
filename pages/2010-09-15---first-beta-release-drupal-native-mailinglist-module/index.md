@@ -2,8 +2,8 @@
 title: First beta release for Drupal-native mailinglist module
 tags:
   - drupal
-  - Eduglu
-  - OG Mailinglist
+  - eduglu
+  - og mailinglist
 date: "2010-09-15T22:49:54.000Z"
 layout: post
 ---

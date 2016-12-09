@@ -1,33 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router'
 import DocumentTitle from 'react-document-title'
-import get from 'lodash/get'
 
 class TagRoute extends React.Component {
   render () {
-    const posts = this.props.data.allMarkdown.edges
-    const title = get(this.props, 'data.site.siteMetadata.title')
+    console.log(this.props)
+    const posts = this.props.data.allMarkdownRemark.edges
+    const title = this.props.data.site.siteMetadata.title
     const postLinks = posts.map((post) => {
-      if (post.node.frontmatter.draft !== true) {
-        return (
-          <li key={post.node.path}>
-            <Link
-              to={post.node.path}
-            >
-              {post.node.frontmatter.title}
-            </Link>
-          </li>
-        )
-      } else {
-        return null
-      }
+      return (
+        <li key={post.node.path}>
+          <Link
+            to={post.node.path}
+          >
+            {post.node.frontmatter.title}
+          </Link>
+        </li>
+      )
     })
 
     return (
       <DocumentTitle title={title}>
         <div>
           <h1>
-            {this.props.data.allMarkdown.totalCount}
+            {this.props.data.allMarkdownRemark.totalCount}
             {' '}posts tagged with “{this.props.pathContext.tag}”
           </h1>
           <ul>{postLinks}</ul>
@@ -49,15 +45,27 @@ export const pageQuery = `
         title
       }
     }
-    allMarkdown(first: 1000, tag: $tag) {
+    allMarkdownRemark (
+      first: 1000,
+      sortBy: {
+        fields: [frontmatter___date]
+        order: DESC
+      },
+      frontmatter: {
+        draft: {
+          ne: true
+        }
+        tags: {
+          in: [$tag]
+        }
+      }
+    ) {
       totalCount
       edges {
         node {
-          id
           path
           frontmatter {
             title
-            draft
           }
         }
       }

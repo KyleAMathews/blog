@@ -2,7 +2,7 @@
 title: Eduglu Alpha 6 released
 tags:
   - drupal
-  - Eduglu
+  - eduglu
 date: "2010-09-24T18:56:43.000Z"
 layout: post
 ---

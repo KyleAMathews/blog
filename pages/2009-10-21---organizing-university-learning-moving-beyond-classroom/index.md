@@ -1,8 +1,8 @@
 ---
 title: "Organizing University Learning: Moving Beyond the Course to Micro-labs"
 tags:
-  - Education
-  - Learning
+  - education
+  - learning
   - social networking
   - social learning
   - micro-labs

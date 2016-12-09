@@ -2,7 +2,7 @@
 title: Eduglu enters the deadpool
 date: "2011-04-22T23:03:50.000Z"
 tags:
-  - Eduglu
+  - eduglu
 ---
 
 I just posted this on the [Eduglu community site][0]. Reposted here without further comment:

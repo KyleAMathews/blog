@@ -1,7 +1,7 @@
 ---
 title: Learning in the open
 tags:
-  - Education
+  - education
   - social learning
 date: "2009-10-07T17:28:58.000Z"
 layout: post
