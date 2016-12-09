@@ -10,24 +10,29 @@ import ReadNext from '../components/ReadNext'
 const DisqusThread = require('react-disqus-thread')
 //import { query } from '../components/ReadNext'
 const query = `
-readNext {
-  path
-  excerpt(pruneLength: 200)
-  frontmatter {
-    title
+readNext___file {
+  children {
+    ... on MarkdownRemark {
+      path
+      excerpt(pruneLength: 200)
+      frontmatter {
+        title
+      }
+    }
   }
 }
 `
 
 class BlogPostRoute extends React.Component {
   render () {
-    const post = this.props.data.markdown
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const post = this.props.data.markdownRemark
+    console.log(post)
+    const siteTitle = this.props.data.site.siteMetadata.title
 
     let tags
     let tagsSection
-    if (this.props.data.markdown.frontmatter.tags) {
-      const tagsArray = this.props.data.markdown.frontmatter.tags
+    if (this.props.data.markdownRemark.frontmatter.tags) {
+      const tagsArray = this.props.data.markdownRemark.frontmatter.tags
       tags = tagsArray.map((tag, i) => {
         const divider = i < tagsArray.length - 1 && <span>{' | '}</span>
         return (
@@ -58,7 +63,7 @@ class BlogPostRoute extends React.Component {
       <DocumentTitle title={`${siteTitle} | ${post.frontmatter.title}`}>
         <div>
           <h1>{post.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.bodyHTML }} />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
           {tagsSection}
           <p
             style={{
@@ -74,7 +79,7 @@ class BlogPostRoute extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <ReadNext nextPost={post.frontmatter.readNext} />
+          <ReadNext nextPost={get(post, `frontmatter.readNext.children[0]`)} />
           <p
             style={{
               marginBottom: rhythm(6),
@@ -113,14 +118,13 @@ export const pageQuery = `
         author
       }
     }
-    markdown(path: $path) {
-      id
-      bodyHTML
+    markdownRemark(path: { eq: $path }) {
+      html
       frontmatter {
-        ${query}
         title
         tags
         date(formatString: "MMMM DD, YYYY")
+        readNext: ${query}
       }
     }
   }

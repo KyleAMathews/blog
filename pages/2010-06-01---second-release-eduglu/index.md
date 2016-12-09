@@ -1,9 +1,9 @@
 ---
 title: Second release of Eduglu
 tags:
-  - Education
+  - education
   - social learning
-  - Eduglu
+  - eduglu
 date: "2010-06-01T21:06:28.000Z"
 layout: post
 ---

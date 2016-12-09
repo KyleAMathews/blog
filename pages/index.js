@@ -1,34 +1,17 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { Link } from 'react-router'
-import get from 'lodash/get'
 import typography from '../blog-typography'
+import 'styles/styles.css'
+
 const rhythm = typography.rhythm
 const profilePic = require('../images/kyle-round-small-pantheon.jpg')
+console.log(profilePic)
 
 class BlogIndexRoute extends React.Component {
   render () {
-    const posts = this.props.data.allMarkdown.edges
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-
-    const pageLinks = posts.map((post) => {
-      if (post.node.frontmatter.draft !== true) {
-        return (
-          <li
-            key={post.node.path}
-          >
-            <Link
-              style={{
-                textDecoration: 'none',
-              }}
-              to={post.node.path}
-            >
-              {post.node.frontmatter.title}
-            </Link>
-          </li>
-        )
-      }
-    })
+    const posts = this.props.data.allMarkdownRemark.edges
+    const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
       <DocumentTitle title={siteTitle}>
@@ -52,7 +35,20 @@ class BlogIndexRoute extends React.Component {
             in San Francisco building useful things. You should <a href="https://twitter.com/kylemathews">follow him on Twitter</a>
           </p>
           <ul>
-            {pageLinks}
+            {posts.map((post) => (
+              <li
+                key={post.node.path}
+              >
+                <Link
+                  style={{
+                    textDecoration: 'none',
+                  }}
+                  to={post.node.path}
+                >
+                  {post.node.frontmatter.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </DocumentTitle>
@@ -70,13 +66,23 @@ export const pageQuery = `
         author
       }
     }
-    allMarkdown(first: 2000) {
+    allMarkdownRemark(
+      first: 2000,
+      sortBy: {
+        fields: [frontmatter___date]
+        order: DESC
+      },
+      frontmatter: {
+        draft: {
+          ne: true
+        }
+      }
+    ) {
       edges {
         node {
           path
           frontmatter {
             title
-            draft
           }
         }
       }

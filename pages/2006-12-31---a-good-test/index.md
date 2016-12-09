@@ -1,8 +1,8 @@
 ---
 title: A Good Test
 tags:
-  - Education
-  - Learning
+  - education
+  - learning
 date: "2006-12-31T06:37:26.000Z"
 layout: post
 ---

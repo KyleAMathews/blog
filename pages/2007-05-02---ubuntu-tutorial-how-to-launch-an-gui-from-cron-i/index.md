@@ -1,11 +1,11 @@
 ---
 title: "Ubuntu Tutorial: How to launch a GUI from cron in Ubuntu"
 tags:
-  - Linux
-  - Ubuntu
+  - linux
+  - ubuntu
 date: "2007-05-02T04:07:15.000Z"
 layout: post
-readNext: "/hosting-static-sites-with-docker-and-nginx/"
+readNext___file: ../2014-04-18---hosting-static-sites-with-docker-and-nginx/index.md
 ---
 
 On Sunday, I spent a good half-hour with Google learning how to launch a GUI application in Ubuntu using cron. I wanted to write a brief post here explaining the process so as to help another weary Googler more quickly on their way.

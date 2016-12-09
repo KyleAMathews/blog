@@ -1,9 +1,9 @@
 ---
 title: What is the key metric to measure Learning2.0?
 tags:
-  - Education
+  - education
   - elearning2.0
-  - Learning
+  - learning
   - conversation
   - byu
 date: "2008-07-18T21:57:59.000Z"

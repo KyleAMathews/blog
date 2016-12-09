@@ -1,7 +1,7 @@
 ---
 title: "Two's Company, Three's a crowd: Why better social software is needed to support (small) group interactions"
 tags:
-  - Education
+  - education
   - elearning2.0
   - social software
 date: "2007-08-09T16:39:34.000Z"

@@ -6,7 +6,7 @@ tags:
   - social networking
 date: "2009-02-27T18:20:59.000Z"
 layout: post
-readNext: "/what-are-social-objects/"
+readNext___file: ../2009-02-22---what-are-social-objects/index.md
 ---
 
 This is the second in a series of articles I'm writing to help me prep for my [session next week at Drupalcon][0]. The first article was my attempt to [define social objects][1]. This article outlines how to use social object theory to design better social networking sites.

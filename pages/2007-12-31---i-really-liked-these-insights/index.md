@@ -1,11 +1,10 @@
 ---
 title: I really liked these insights
 tags:
-  - Education
+  - education
   - entrepreneurship
   - innovation
-  - Learning
-  - Uncategorized
+  - learning
 date: "2007-12-31T21:25:54.000Z"
 layout: post
 ---

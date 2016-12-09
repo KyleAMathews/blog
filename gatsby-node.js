@@ -1,55 +1,52 @@
-import _ from 'lodash'
-import Promise from 'bluebird'
-import path from 'path'
-import { GraphQLString, GraphQLObjectType } from 'graphql'
+const _ = require('lodash')
+const Promise = require('bluebird')
+const path = require('path')
+const select = require(`unist-util-select`)
+const parseFilepath = require('parse-filepath')
 
-exports.rewritePath = (parsedFilePath, metadata) => {
-  if (parsedFilePath.ext === 'md') {
-    return `/${parsedFilePath.dirname.split('---')[1]}/`
-  }
-}
+exports.createPages = ({ args }) => {
+  const { graphql } = args
 
-exports.createPages = ({ graphql }) => (
-  new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const pages = []
     const blogPost = path.resolve('page-templates/blog-post.js')
     const tagPages = path.resolve('page-templates/tag-page.js')
     graphql(`
       {
-        allMarkdown(first: 1000) {
+        allMarkdownRemark(first: 1000, frontmatter: { draft: { ne: true }}) {
           edges {
             node {
               path
               frontmatter {
                 tags
-                draft
               }
             }
           }
         }
       }
     `)
-    .then(result => {
+    .then((result) => {
       if (result.errors) {
         console.log(result.errors)
         reject(result.errors)
       }
 
       // Create blog posts pages.
-      _.each(result.data.allMarkdown.edges, (edge) => {
-        if (edge.node.frontmatter.draft !== true) {
-          pages.push({
-            path: edge.node.path, // required
-            component: blogPost,
-          })
-        }
+      _.each(result.data.allMarkdownRemark.edges, (edge) => {
+        pages.push({
+          path: edge.node.path, // required
+          component: blogPost,
+          context: {
+            path: edge.node.path,
+          },
+        })
       })
 
       // Tag pages.
       let tags = []
-      _.each(result.data.allMarkdown.edges, (edge) => {
-        if (edge.node.frontmatter.draft !== true && edge.node.frontmatter.tags) {
-          tags = tags.concat(edge.node.frontmatter.tags.map((tag) => tag.toLowerCase()))
+      _.each(result.data.allMarkdownRemark.edges, (edge) => {
+        if (_.get(edge, 'node.frontmatter.tags')) {
+          tags = tags.concat(edge.node.frontmatter.tags)
         }
       })
       tags = _.uniq(tags)
@@ -67,6 +64,21 @@ exports.createPages = ({ graphql }) => (
       resolve(pages)
     })
   })
-)
+}
 
-exports.postBuild = require('./post-build')
+//exports.postBuild = require('./post-build')
+
+// Add custom url pathname for blog posts.
+exports.modifyAST = ({ args }) => {
+  const { ast } = args
+  const files = select(ast, 'File')
+  files.forEach((file) => {
+    const parsedFilePath = parseFilepath(file.sourceFile)
+    file.customUrlPathname = `/${parsedFilePath.dirname.split('---')[1]}/`
+    const markdownNode = select(file, `Markdown`)[0]
+    if (markdownNode) {
+      markdownNode.path = `/${parsedFilePath.dirname.split('---')[1]}/`
+    }
+  })
+  return files
+}

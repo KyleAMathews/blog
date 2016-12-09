@@ -1,8 +1,8 @@
 ---
 title: Reflections on OpenEd09
 tags:
-  - Education
-  - Learning
+  - education
+  - learning
   - social learning
   - opened09
 date: "2009-08-25T17:12:26.000Z"

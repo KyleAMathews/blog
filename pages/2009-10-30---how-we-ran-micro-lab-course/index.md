@@ -1,7 +1,7 @@
 ---
 title: How we ran a micro-lab course
 tags:
-  - Education
+  - education
   - social learning
   - micro-labs
   - connectivism

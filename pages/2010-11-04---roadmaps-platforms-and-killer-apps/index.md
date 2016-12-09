@@ -2,7 +2,7 @@
 title: "Eduglu, Roadmaps, platforms, and killer apps"
 tags:
   - drupal
-  - Eduglu
+  - eduglu
   - platforms
 date: "2010-11-04T23:10:52.000Z"
 layout: post

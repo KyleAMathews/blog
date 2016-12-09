@@ -2,7 +2,7 @@
 title: Take Risks to Open Options
 tags:
   - entrepreneurship
-  - Learning
+  - learning
 date: "2007-02-15T06:20:32.000Z"
 layout: post
 ---

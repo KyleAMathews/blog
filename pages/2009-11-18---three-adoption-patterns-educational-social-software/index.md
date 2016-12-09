@@ -1,10 +1,10 @@
 ---
 title: Three adoption patterns for educational social software
 tags:
-  - Education
+  - education
   - elearning2.0
   - enterprise2.0
-  - Learning
+  - learning
   - social software
   - organizational behavior
   - micro-labs

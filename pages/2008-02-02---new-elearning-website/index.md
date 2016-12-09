@@ -2,9 +2,9 @@
 title: New elearning website
 tags:
   - drupal
-  - Education
+  - education
   - elearning2.0
-  - Learning
+  - learning
   - social software
 date: "2008-02-02T17:58:14.000Z"
 layout: post

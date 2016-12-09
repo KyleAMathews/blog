@@ -2,10 +2,10 @@
 title: Hosting static sites with Docker and Nginx
 date: "2014-04-24T22:12:03.284Z"
 layout: post
-readNext: "/building-your-own-tools/"
+readNext___file: ../2011-10-28---building-your-own-tools/index.md
 tags:
-  - Docker
-  - Open Source
+  - docker
+  - open source
   - node.js
   - gulp.js
 ---

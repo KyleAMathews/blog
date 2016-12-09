@@ -1,10 +1,10 @@
 ---
 title: Three worldwide education trends behind Eduglu
 tags:
-  - Education
+  - education
   - elearning2.0
-  - Learning
-  - Eduglu
+  - learning
+  - eduglu
   - launchup
 date: "2010-08-31T22:01:23.000Z"
 draft: true

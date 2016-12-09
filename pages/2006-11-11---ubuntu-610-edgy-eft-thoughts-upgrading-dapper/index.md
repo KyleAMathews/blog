@@ -1,8 +1,8 @@
 ---
 title: Ubuntu 6.10—Edgy Eft—thoughts on upgrading from Dapper
 tags:
-  - Linux
-  - Ubuntu
+  - linux
+  - ubuntu
 date: "2006-11-11T03:42:01.000Z"
 layout: post
 ---

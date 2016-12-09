@@ -3,7 +3,7 @@ title: SEO (Search Engine Optimization) Basics
 tags:
   - entrepreneurship
   - internet-marketing
-  - SEO
+  - seo
 date: "2007-04-19T22:00:37.000Z"
 layout: post
 ---

@@ -2,10 +2,10 @@
 title: Power Law Graphs from classroom community website
 tags:
   - drupal
-  - Education
+  - education
   - elearning2.0
-  - Learning
-  - Power Law
+  - learning
+  - power law
   - social software
 date: "2008-02-15T18:18:04.000Z"
 layout: post

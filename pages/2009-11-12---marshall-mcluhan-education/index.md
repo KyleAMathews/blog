@@ -1,10 +1,10 @@
 ---
 title: Marshall McLuhan on education
 tags:
-  - Education
+  - education
   - social media
   - social learning
-  - Marshall McLuhan
+  - marshall mcLuhan
 date: "2009-11-12T16:17:57.000Z"
 layout: post
 ---

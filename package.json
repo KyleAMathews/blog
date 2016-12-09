@@ -5,15 +5,21 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-add-module-exports": "^0.2.0",
-    "babel-preset-babili": "0.0.1",
+    "babel-preset-babili": "^0.0.9",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.13.0",
     "bluebird": "^3.4.6",
     "es6-object-assign": "^1.0.3",
-    "gatsby": "1.0.0-alpha10",
+    "gatsby": "1.0.0-alpha11-alpha.444221ce",
+    "gatsby-graphql-utils": "1.0.0-alpha11-alpha.444221ce",
+    "gatsby-parser-markdown": "1.0.0-alpha11-alpha.444221ce",
+    "gatsby-source-filesystem": "1.0.0-alpha11-alpha.444221ce",
+    "gatsby-typegen-filesystem": "1.0.0-alpha11-alpha.444221ce",
+    "gatsby-typegen-remark": "1.0.0-alpha11-alpha.444221ce",
+    "graphql": "^0.8.2",
     "lodash": "^4.15.0",
-    "moment": "^2.14.1",
+    "moment": "^2.17.1",
     "react-disqus-thread": "^0.4.0",
     "react-document-title": "^2.0.1",
     "react-responsive-grid": "^0.3.0",
@@ -23,12 +29,7 @@
     "typography": "^0.15.0",
     "typography-plugin-code": "^0.15.0",
     "typography-theme-de-young": "^0.15.0",
-    "typography-theme-irving": "^0.15.0",
-    "underscore.string": "^3.2.2"
+    "underscore.string": "^3.3.4"
   },
-  "devDependencies": {
-    "babel-preset-react-hmre": "^1.1.1",
-    "gh-pages": "^0.11.0",
-    "image-webpack-loader": "^2.0.0"
-  }
+  "devDependencies": {}
 }

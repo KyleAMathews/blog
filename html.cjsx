@@ -14,7 +14,6 @@ module.exports = React.createClass
     body: ""
 
   render: ->
-    console.log(@)
     if @props.page
       description = prune(@props.page.data?.body.replace(/<[^>]*>/g, ''), 200)
       if @props.page?.path is "/"
