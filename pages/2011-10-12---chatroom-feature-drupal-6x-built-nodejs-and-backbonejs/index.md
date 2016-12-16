@@ -30,7 +30,7 @@ Note: the demo site that was linked from here is now off-line.
 
 
 [0]: http://nodejs.org
-[1]: http://documentcloud.github.com/backbone/
+[1]: http://backbonejs.org/
 [2]: https://github.com/KyleAMathews/Eduglu-Chatroom
 [3]: http://openatrium.com/
 [4]: http://redis.io
