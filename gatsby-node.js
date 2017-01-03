@@ -9,8 +9,8 @@ exports.createPages = ({ args }) => {
 
   return new Promise((resolve, reject) => {
     const pages = []
-    const blogPost = path.resolve('page-templates/blog-post.js')
-    const tagPages = path.resolve('page-templates/tag-page.js')
+    const blogPost = path.resolve('pages/template-blog-post.js')
+    const tagPages = path.resolve('pages/template-tag-page.js')
     graphql(`
       {
         allMarkdownRemark(first: 1000, frontmatter: { draft: { ne: true }}) {
@@ -75,7 +75,7 @@ exports.modifyAST = ({ args }) => {
   files.forEach((file) => {
     const parsedFilePath = parseFilepath(file.sourceFile)
     file.customUrlPathname = `/${parsedFilePath.dirname.split('---')[1]}/`
-    const markdownNode = select(file, `Markdown`)[0]
+    const markdownNode = select(file, `MarkdownRemark`)[0]
     if (markdownNode) {
       markdownNode.path = `/${parsedFilePath.dirname.split('---')[1]}/`
     }

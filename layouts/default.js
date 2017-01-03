@@ -1,14 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router'
-import typography from '../blog-typography'
-import { Container } from 'react-responsive-grid'
-import DocumentTitle from 'react-document-title'
+import typography from 'utils/typography'
+import Helmet from 'react-helmet'
 const rhythm = typography.rhythm
 const scale = typography.scale
 import includes from 'lodash/includes'
-import '../styles/zenburn.css'
 import 'typeface-alegreya'
 import 'typeface-alegreya-sans'
+import 'css/prism-coy.css'
 
 class Wrapper extends React.Component {
   render () {
@@ -52,19 +51,22 @@ class Wrapper extends React.Component {
       )
     }
     return (
-      <DocumentTitle title="Bricolage">
-        <Container
-          style={{
-            padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
-            maxWidth: 750,
-          }}
-        >
-          <div>
-            {header}
-          </div>
-          {this.props.children}
-        </Container>
-      </DocumentTitle>
+      <div
+        style={{
+          padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
+          maxWidth: 750,
+          margin: `0 auto`,
+        }}
+      >
+        <Helmet
+          title="Bricolage"
+          titleTemplate="Bricolage | %s"
+        />
+        <div>
+          {header}
+        </div>
+        {this.props.children}
+      </div>
     )
   }
 }

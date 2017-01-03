@@ -1,12 +1,10 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { Link } from 'react-router'
-import typography from '../blog-typography'
-import 'styles/styles.css'
+import typography from 'utils/typography'
 
 const rhythm = typography.rhythm
 const profilePic = require('../images/kyle-round-small-pantheon.jpg')
-console.log(profilePic)
 
 class BlogIndexRoute extends React.Component {
   render () {
