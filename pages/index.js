@@ -1,7 +1,7 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { Link } from 'react-router'
-import typography from '../blog-typography'
+import typography from 'utils/typography'
 import 'styles/styles.css'
 
 const rhythm = typography.rhythm

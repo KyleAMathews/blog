@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import typography from '../blog-typography'
+import typography from 'utils/typography'
 import { Container } from 'react-responsive-grid'
 import DocumentTitle from 'react-document-title'
 const rhythm = typography.rhythm

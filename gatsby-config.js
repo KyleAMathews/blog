@@ -1,4 +1,5 @@
-const filesystemSourcePlugin = require.resolve(`gatsby-source-filesystem`)
+const visit = require(`unist-util-visit`)
+const select = require(`unist-util-select`)
 
 module.exports = {
   siteMetadata: {
@@ -8,13 +9,29 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: filesystemSourcePlugin,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/pages/`,
+        path: `${__dirname}/pages`,
       },
     },
-    require.resolve('gatsby-parser-markdown'),
-    require.resolve('gatsby-typegen-remark'),
-    require.resolve('gatsby-typegen-filesystem'),
+    `gatsby-parser-remark`,
+    `gatsby-parser-sharp`,
+    {
+      resolve: `gatsby-typegen-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-typegen-remark-responsive-image`,
+            options: {
+              maxWidth: 700,
+            },
+          },
+          'gatsby-typegen-remark-prismjs',
+          'gatsby-typegen-remark-copy-linked-files',
+        ],
+      },
+    },
+    `gatsby-typegen-filesystem`,
+    `gatsby-typegen-sharp`,
   ],
 }

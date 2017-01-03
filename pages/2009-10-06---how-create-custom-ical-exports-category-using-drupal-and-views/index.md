@@ -29,7 +29,9 @@ After examining the url for the ical feed we found the problem.
 
 The default ical URL that's generated looks like this:
 
-`/aiocalendar/calendar/ical/2009-10?tid[2]=2&tid[1]=1&tid[3]=3&tid[4]=4&tid[5]=5&tid[6]=6&tid[7]=7`
+```
+/aiocalendar/calendar/ical/2009-10?tid[2]=2&tid[1]=1&tid[3]=3&tid[4]=4&tid[5]=5&tid[6]=6&tid[7]=7
+```
 
 Views takes each url segment separated by a forward slash as arguments. `calendar/ical` tells views to return an ical representation of the calendar. `2009-10` tells views to only include events from October 2009 onward. But the next bit, `?tid[2][2]=2&tid[1][1]=1&tid[3][3]=3&tid[4][4]=4&tid[5]=5&tid[6][5]=6&tid[7][6]=7`, a list of term IDs that were currently active on the calendar view, weren't working at helping Views produced a filtered ical feed.
 

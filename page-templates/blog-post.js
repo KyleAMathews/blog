@@ -3,11 +3,12 @@ import DocumentTitle from 'react-document-title'
 import { Link } from 'react-router'
 import kebabCase from 'lodash/kebabCase'
 import get from 'lodash/get'
-import typography from '../blog-typography'
+import typography from 'utils/typography'
 const { rhythm, scale } = typography
 const profilePic = require('../images/kyle-round-small-pantheon.jpg')
 import ReadNext from '../components/ReadNext'
 const DisqusThread = require('react-disqus-thread')
+import 'css/prism-coy.css'
 //import { query } from '../components/ReadNext'
 const query = `
 readNext___file {

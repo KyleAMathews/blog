@@ -75,7 +75,7 @@ exports.modifyAST = ({ args }) => {
   files.forEach((file) => {
     const parsedFilePath = parseFilepath(file.sourceFile)
     file.customUrlPathname = `/${parsedFilePath.dirname.split('---')[1]}/`
-    const markdownNode = select(file, `Markdown`)[0]
+    const markdownNode = select(file, `MarkdownRemark`)[0]
     if (markdownNode) {
       markdownNode.path = `/${parsedFilePath.dirname.split('---')[1]}/`
     }
