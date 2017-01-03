@@ -24,20 +24,15 @@
     "gatsby-typegen-remark-responsive-image": "1.0.0-alpha11-alpha.da03570a",
     "gatsby-typegen-sharp": "1.0.0-alpha11-alpha.da03570a",
     "glamor": "^2.20.20",
-    "graphql": "^0.8.2",
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
     "react-disqus-thread": "^0.4.0",
-    "react-document-title": "^2.0.1",
     "react-helmet": "^3.3.0",
-    "react-responsive-grid": "^0.3.0",
     "react-typography": "^0.15.0",
     "typeface-alegreya": "0.0.2",
     "typeface-alegreya-sans": "0.0.2",
     "typography": "^0.15.0",
-    "typography-plugin-code": "^0.15.2",
-    "typography-theme-de-young": "^0.15.0",
-    "underscore.string": "^3.3.4"
+    "typography-plugin-code": "^0.15.2"
   },
   "devDependencies": {}
 }

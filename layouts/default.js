@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import typography from 'utils/typography'
-import DocumentTitle from 'react-document-title'
+import Helmet from 'react-helmet'
 const rhythm = typography.rhythm
 const scale = typography.scale
 import includes from 'lodash/includes'
@@ -51,20 +51,22 @@ class Wrapper extends React.Component {
       )
     }
     return (
-      <DocumentTitle title="Bricolage">
-        <div
-          style={{
-            padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
-            maxWidth: 750,
-            margin: `0 auto`,
-          }}
-        >
-          <div>
-            {header}
-          </div>
-          {this.props.children}
+      <div
+        style={{
+          padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
+          maxWidth: 750,
+          margin: `0 auto`,
+        }}
+      >
+        <Helmet
+          title="Bricolage"
+          titleTemplate="Bricolage | %s"
+        />
+        <div>
+          {header}
         </div>
-      </DocumentTitle>
+        {this.props.children}
+      </div>
     )
   }
 }
