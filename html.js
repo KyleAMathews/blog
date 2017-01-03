@@ -3,11 +3,14 @@ import { GoogleFont, TypographyStyle } from 'react-typography'
 import Helmet from 'react-helmet'
 
 import typography from './utils/typography'
-import HTMLStyles from 'html-styles'
+import HTMLStyles from './.intermediate-representation/html-styles'
 
 module.exports = React.createClass({
   render () {
-    const head = Helmet.rewind()
+    //const head = Helmet.rewind()
+          //{head.title.toComponent()}
+          //{head.meta.toComponent()}
+          //{head.link.toComponent()}
 
     return (
       <html lang="en">
@@ -21,9 +24,6 @@ module.exports = React.createClass({
           {this.props.headComponents}
           <TypographyStyle typography={typography} />
           <HTMLStyles />
-          {head.title.toComponent()}
-          {head.meta.toComponent()}
-          {head.link.toComponent()}
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />

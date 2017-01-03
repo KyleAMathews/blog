@@ -9,8 +9,8 @@ exports.createPages = ({ args }) => {
 
   return new Promise((resolve, reject) => {
     const pages = []
-    const blogPost = path.resolve('page-templates/blog-post.js')
-    const tagPages = path.resolve('page-templates/tag-page.js')
+    const blogPost = path.resolve('pages/template-blog-post.js')
+    const tagPages = path.resolve('pages/template-tag-page.js')
     graphql(`
       {
         allMarkdownRemark(first: 1000, frontmatter: { draft: { ne: true }}) {

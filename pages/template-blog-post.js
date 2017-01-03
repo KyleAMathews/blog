@@ -8,7 +8,6 @@ const { rhythm, scale } = typography
 const profilePic = require('../images/kyle-round-small-pantheon.jpg')
 import ReadNext from '../components/ReadNext'
 const DisqusThread = require('react-disqus-thread')
-import 'css/prism-coy.css'
 //import { query } from '../components/ReadNext'
 const query = `
 readNext___file {
@@ -27,7 +26,7 @@ readNext___file {
 class BlogPostRoute extends React.Component {
   render () {
     const post = this.props.data.markdownRemark
-    console.log(post)
+    //console.log(post)
     const siteTitle = this.props.data.site.siteMetadata.title
 
     let tags

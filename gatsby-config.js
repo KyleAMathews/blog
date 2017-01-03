@@ -1,6 +1,3 @@
-const visit = require(`unist-util-visit`)
-const select = require(`unist-util-select`)
-
 module.exports = {
   siteMetadata: {
     title: 'Bricolage',

@@ -4,7 +4,7 @@ import DocumentTitle from 'react-document-title'
 
 class TagRoute extends React.Component {
   render () {
-    console.log(this.props)
+    //console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
     const title = this.props.data.site.siteMetadata.title
     const postLinks = posts.map((post) => {
