@@ -13,7 +13,7 @@ exports.createPages = ({ args }) => {
     const tagPages = path.resolve('pages/template-tag-page.js')
     graphql(`
       {
-        allMarkdownRemark(first: 1000, frontmatter: { draft: { ne: true }}) {
+        allMarkdownRemark(limit: 1000, frontmatter: { draft: { ne: true }}) {
           edges {
             node {
               path

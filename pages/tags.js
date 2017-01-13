@@ -46,7 +46,7 @@ export const pageQuery = `
       }
     }
     allMarkdownRemark(
-      first: 2000,
+      limit: 2000,
       frontmatter: {
         draft: {
           ne: true
