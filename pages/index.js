@@ -65,7 +65,7 @@ export const pageQuery = `
       }
     }
     allMarkdownRemark(
-      first: 2000,
+      limit: 2000,
       sortBy: {
         fields: [frontmatter___date]
         order: DESC
