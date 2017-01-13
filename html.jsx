@@ -3,7 +3,7 @@ import { GoogleFont, TypographyStyle } from 'react-typography'
 import Helmet from 'react-helmet'
 
 import typography from './utils/typography'
-import HTMLStyles from './.intermediate-representation/html-styles'
+import HTMLStyles from '.intermediate-representation/html-styles'
 
 module.exports = React.createClass({
   render () {
