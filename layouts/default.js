@@ -4,7 +4,6 @@ import typography from 'utils/typography'
 import Helmet from 'react-helmet'
 const rhythm = typography.rhythm
 const scale = typography.scale
-import includes from 'lodash/includes'
 import 'typeface-alegreya'
 import 'typeface-alegreya-sans'
 import 'css/prism-coy.css'
@@ -14,8 +13,8 @@ class Wrapper extends React.Component {
     let header
     // Check if the location is either the front page or a tags page.
     // If so, use a big header, otherwise use a smaller one.
-    if (includes(['/', '/tags/'], this.props.location.pathname) ||
-        includes(this.props.location.pathname, '/tags/')
+    if (['/', '/tags/'].indexOf(this.props.location.pathname) !== -1 ||
+        this.props.location.pathname.indexOf('/tags/') !== -1
        ) {
       header = (
         <Link

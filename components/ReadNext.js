@@ -6,7 +6,11 @@ const { rhythm, scale } = require('utils/typography')
 const Component = React.createClass({
   render () {
     //console.log(this.props)
-    const { nextPost } = this.props
+    let { nextPost } = this.props
+    if (nextPost && nextPost.children && nextPost.children[0]) {
+      nextPost = nextPost.children[0]
+    }
+
     if (!nextPost) {
       return null
     } else {

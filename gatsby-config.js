@@ -20,7 +20,7 @@ module.exports = {
           {
             resolve: `gatsby-typegen-remark-responsive-image`,
             options: {
-              maxWidth: 700,
+              maxWidth: 710,
             },
           },
           'gatsby-typegen-remark-prismjs',
@@ -30,5 +30,12 @@ module.exports = {
     },
     `gatsby-typegen-filesystem`,
     `gatsby-typegen-sharp`,
+    `gatsby-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-774017-3`,
+      },
+    },
   ],
 }

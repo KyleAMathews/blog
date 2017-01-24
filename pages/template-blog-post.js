@@ -1,8 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'react-router'
-import kebabCase from 'lodash/kebabCase'
-import get from 'lodash/get'
 import typography from 'utils/typography'
 const { rhythm, scale } = typography
 const profilePic = require('../images/kyle-round-small-pantheon.jpg')
@@ -30,16 +28,16 @@ class BlogPostRoute extends React.Component {
 
     let tags
     let tagsSection
-    if (this.props.data.markdownRemark.frontmatter.tags) {
-      const tagsArray = this.props.data.markdownRemark.frontmatter.tags
+    if (this.props.data.markdownRemark.frontmatter.tagSlugs) {
+      const tagsArray = this.props.data.markdownRemark.frontmatter.tagSlugs
       tags = tagsArray.map((tag, i) => {
         const divider = i < tagsArray.length - 1 && <span>{' | '}</span>
         return (
           <span key={tag}>
             <Link
-              to={`/tags/${kebabCase(tag)}/`}
+              to={tag}
             >
-              {tag}
+              {this.props.data.markdownRemark.frontmatter.tags[i]}
             </Link>
             {divider}
           </span>
@@ -83,7 +81,7 @@ class BlogPostRoute extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <ReadNext nextPost={get(post, `frontmatter.readNext.children[0]`)} />
+        <ReadNext nextPost={post.frontmatter.readNext} />
         <p
           style={{
             marginBottom: rhythm(6),
@@ -126,6 +124,7 @@ export const pageQuery = `
       frontmatter {
         title
         tags
+        tagSlugs
         date(formatString: "MMMM DD, YYYY")
         readNext: ${query}
       }

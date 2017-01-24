@@ -78,6 +78,11 @@ exports.modifyAST = ({ args }) => {
     const markdownNode = select(file, `MarkdownRemark`)[0]
     if (markdownNode) {
       markdownNode.path = `/${parsedFilePath.dirname.split('---')[1]}/`
+      if (markdownNode.frontmatter.tags) {
+        markdownNode.frontmatter.tagSlugs = markdownNode.frontmatter.tags.map(
+          (tag) => `/tags/${_.kebabCase(tag)}/`
+        )
+      }
     }
   })
   return files
