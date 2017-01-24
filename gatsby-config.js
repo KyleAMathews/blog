@@ -30,5 +30,6 @@ module.exports = {
     },
     `gatsby-typegen-filesystem`,
     `gatsby-typegen-sharp`,
+    `gatsby-plugin-preact`,
   ],
 }
