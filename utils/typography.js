@@ -6,10 +6,21 @@ theme.plugins = [
   new CodePlugin(),
 ]
 theme.baseLineHeight = 1.45
-theme.blockMarginBottom = 0.66
-theme.overrideThemeStyles = () => ({
+theme.blockMarginBottom = 0.85
+theme.overrideThemeStyles = ({ rhythm }) => ({
   'h1,h2,h3,h4,h5,h6': {
     lineHeight: 1,
+  },
+  'h1,h2,h3,h4': {
+    lineHeight: 1,
+    marginTop: rhythm(3/2),
+    marginBottom: rhythm(1/2),
+  },
+  ul: {
+    marginTop: rhythm(1/2),
+  },
+  'li > p': {
+    marginBottom: rhythm(1/2),
   },
   'tt,code': {
     fontSize: '70%',

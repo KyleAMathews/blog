@@ -25,6 +25,7 @@ module.exports = {
           },
           'gatsby-typegen-remark-prismjs',
           'gatsby-typegen-remark-copy-linked-files',
+          'gatsby-typegen-remark-smartypants',
         ],
       },
     },

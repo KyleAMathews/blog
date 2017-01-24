@@ -19,6 +19,7 @@
     "gatsby-typegen-remark-copy-linked-files": "1.0.0-alpha11-alpha.9e7a535a",
     "gatsby-typegen-remark-prismjs": "1.0.0-alpha11-alpha.9e7a535a",
     "gatsby-typegen-remark-responsive-image": "1.0.0-alpha11-alpha.9e7a535a",
+    "gatsby-typegen-remark-smartypants": "^1.0.0-alpha11-alpha.68e8f9a1",
     "gatsby-typegen-sharp": "1.0.0-alpha11-alpha.9e7a535a",
     "glamor": "^2.20.20",
     "lodash": "^4.17.4",
@@ -28,9 +29,9 @@
     "react-typography": "^0.15.0",
     "typeface-alegreya": "0.0.2",
     "typeface-alegreya-sans": "0.0.2",
-    "typography": "^0.15.4",
+    "typography": "latest",
     "typography-plugin-code": "^0.15.2",
-    "typography-theme-de-young": "^0.15.0"
+    "typography-theme-de-young": "latest"
   },
   "devDependencies": {}
 }
