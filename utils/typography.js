@@ -26,7 +26,7 @@ theme.overrideThemeStyles = ({ rhythm }) => ({
     marginBottom: rhythm(1/2),
   },
   'tt,code': {
-    fontSize: '70%',
+    fontSize: '85%',
   },
   pre: {
     lineHeight: 1.22,
