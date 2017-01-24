@@ -29,6 +29,7 @@ class Wrapper extends React.Component {
             style={{
               ...scale(1.5),
               marginBottom: rhythm(1.5),
+              marginTop: 0,
             }}
           >
             Bricolage
@@ -45,7 +46,13 @@ class Wrapper extends React.Component {
           }}
           to="/"
         >
-          <h3>Bricolage</h3>
+          <h3
+            style={{
+              marginTop: 0,
+            }}
+          >
+            Bricolage
+          </h3>
         </Link>
       )
     }
