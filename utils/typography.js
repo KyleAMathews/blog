@@ -16,6 +16,9 @@ theme.overrideThemeStyles = ({ rhythm }) => ({
     marginTop: rhythm(3/2),
     marginBottom: rhythm(1/2),
   },
+  'blockquote > h1, blockquote > h2, blockquote > h3, blockquote > h4': {
+    marginTop: 0,
+  },
   ul: {
     marginTop: rhythm(1/2),
   },
