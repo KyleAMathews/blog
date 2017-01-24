@@ -60,7 +60,7 @@ class Wrapper extends React.Component {
       <div
         style={{
           padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
-          maxWidth: 750,
+          maxWidth: rhythm(22),
           margin: `0 auto`,
         }}
       >

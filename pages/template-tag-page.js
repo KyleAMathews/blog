@@ -22,10 +22,10 @@ class TagRoute extends React.Component {
     return (
       <DocumentTitle title={title}>
         <div>
-          <h1>
+          <h2>
             {this.props.data.allMarkdownRemark.totalCount}
             {' '}posts tagged with “{this.props.pathContext.tag}”
-          </h1>
+          </h2>
           <ul>{postLinks}</ul>
           <p>
             <Link to="/tags/">Browse all tags</Link>

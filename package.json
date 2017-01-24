@@ -18,6 +18,7 @@
     "gatsby-typegen-remark": "1.0.0-alpha11-alpha.9e7a535a",
     "gatsby-typegen-remark-copy-linked-files": "1.0.0-alpha11-alpha.9e7a535a",
     "gatsby-typegen-remark-prismjs": "1.0.0-alpha11-alpha.9e7a535a",
+    "gatsby-typegen-remark-responsive-iframe": "^1.0.0-alpha11-alpha.68e8f9a1",
     "gatsby-typegen-remark-responsive-image": "1.0.0-alpha11-alpha.9e7a535a",
     "gatsby-typegen-remark-smartypants": "^1.0.0-alpha11-alpha.68e8f9a1",
     "gatsby-typegen-sharp": "1.0.0-alpha11-alpha.9e7a535a",

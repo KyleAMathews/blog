@@ -36,7 +36,7 @@ attraction to me is the utter simplicity it enables in packaging and deploying s
 Coming from years of writing complicated [Chef](http://www.getchef.com/) or [Ansible](http://www.ansible.com/home)
 scripts, being able to bundle each applications' dependencies together is a breath of
 fresh air. [Global variables (and packages) are bad](http://c2.com/cgi/wiki?GlobalVariablesAreBad).
-Docker lets you completely ignore the "global state" of the server that's running
+Docker lets you completely ignore the *global state* of the server that's running
 your application. It's truly a "Write once, run anywhere" system. If it works on
 your laptop, it'll work in production no matter where or what it's installed with.
 

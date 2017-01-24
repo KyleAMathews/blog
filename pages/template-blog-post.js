@@ -5,7 +5,6 @@ import typography from 'utils/typography'
 const { rhythm, scale } = typography
 const profilePic = require('../images/kyle-round-small-pantheon.jpg')
 import ReadNext from '../components/ReadNext'
-const DisqusThread = require('react-disqus-thread')
 //import { query } from '../components/ReadNext'
 const query = `
 readNext___file {
@@ -84,12 +83,13 @@ class BlogPostRoute extends React.Component {
         <ReadNext nextPost={post.frontmatter.readNext} />
         <p
           style={{
-            marginBottom: rhythm(6),
+            marginBottom: rhythm(2),
           }}
         >
           <img
             src={profilePic}
             style={{
+              borderRadius: `100%`,
               float: 'left',
               marginRight: rhythm(1/4),
               marginBottom: 0,

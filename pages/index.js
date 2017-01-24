@@ -16,12 +16,13 @@ class BlogIndexRoute extends React.Component {
         <div>
           <p
             style={{
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(2),
             }}
           >
             <img
               src={profilePic}
               style={{
+                borderRadius: `100%`,
                 float: 'left',
                 marginRight: rhythm(1/4),
                 marginBottom: 0,
@@ -32,7 +33,11 @@ class BlogIndexRoute extends React.Component {
             Written by <strong>{this.props.data.site.siteMetadata.author}</strong> who lives and works
             in San Francisco building useful things. You should <a href="https://twitter.com/kylemathews">follow him on Twitter</a>
           </p>
-          <ul>
+          <ul
+            style={{
+              marginBottom: 0,
+            }}
+          >
             {posts.map((post) => (
               <li
                 key={post.node.path}

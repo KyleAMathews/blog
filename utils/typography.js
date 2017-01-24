@@ -5,16 +5,28 @@ const CodePlugin = require('typography-plugin-code').default
 theme.plugins = [
   new CodePlugin(),
 ]
-theme.baseLineHeight = 1.45
-theme.blockMarginBottom = 0.85
+theme.baseLineHeight = 1.43
+theme.blockMarginBottom = 0.75
 theme.overrideThemeStyles = ({ rhythm }) => ({
+  h1: {
+    color: `hsla(0,0%,0%,0.70)`,
+  },
+  h2: {
+    color: `hsla(0,0%,0%,0.775)`,
+  },
+  h3: {
+    color: `hsla(0,0%,0%,0.85)`,
+  },
   'h1,h2,h3,h4,h5,h6': {
     lineHeight: 1,
   },
   'h1,h2,h3,h4': {
     lineHeight: 1,
-    marginTop: rhythm(3/2),
+    marginTop: rhythm(1),
     marginBottom: rhythm(1/2),
+  },
+  'h4,h5,h6': {
+    textTransformation: `uppercase`,
   },
   'blockquote > h1, blockquote > h2, blockquote > h3, blockquote > h4': {
     marginTop: 0,
