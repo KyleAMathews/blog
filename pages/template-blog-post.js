@@ -99,11 +99,6 @@ class BlogPostRoute extends React.Component {
           />
           <strong>{this.props.data.site.siteMetadata.author}</strong> lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
         </p>
-        <DisqusThread
-          shortname="kylemathews"
-          title={post.title}
-          url={`https://bricolage.io${this.props.location.pathname}`}
-        />
       </div>
     )
   }
