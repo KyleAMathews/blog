@@ -37,6 +37,9 @@ theme.overrideThemeStyles = ({ rhythm }) => ({
   'li > p': {
     marginBottom: rhythm(1/2),
   },
+  'p code': {
+    fontSize: '78%',
+  },
   'tt,code': {
     fontSize: '85%',
   },
