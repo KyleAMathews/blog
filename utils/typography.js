@@ -9,7 +9,7 @@ theme.baseLineHeight = 1.43
 theme.blockMarginBottom = 0.75
 theme.overrideThemeStyles = ({ rhythm }) => ({
   h1: {
-    color: `hsla(0,0%,0%,0.70)`,
+    color: `hsla(0,0%,0%,0.75)`,
   },
   h2: {
     color: `hsla(0,0%,0%,0.775)`,
