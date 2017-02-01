@@ -8,9 +8,9 @@ readNext: /gatsby-open-source-work/
 
 Once upon a time, I thought self-hosting web fonts was intimidating. It
 seemed nice but the complexities were too much.  I needed to create a
-bunch of weird files (eot?), weird css syntax (bullet proof what?), etc.
-Much easier to drop a little Google Fonts `<link>` in my html's `<head>`
-and call it a day.
+bunch of weird files (eot?), write weird css syntax (bullet proof
+what?), etc. Much easier to drop a little Google Fonts `<link>` in my
+html's `<head>` and call it a day.
 
 But as time went on, I found some really nice advantages to hosting your
 fonts.
@@ -87,9 +87,9 @@ ways](/gatsby-open-source-work/) to dramatically improve our various
 web-dev workflows. When something becomes 10x faster or easier, this
 frees us to build new and better things.
 
-And just as Typefaces couldn't exist without the tools it builds on, now
-that we have automated this part of our workflow, it opens the door for
-[automating futher font-loading
+And just as Typefaces builds on previous automations, now that we have
+automated this part of our workflow, it opens the door for [automating
+futher font-loading
 optimizations](https://www.zachleat.com/web/comprehensive-webfonts/).
 
 Let me know what you think and please [come over to
@@ -97,6 +97,6 @@ Github](/gatsby-open-source-work/) to check out the project (and help
 out if you'd like).
 
 And if you're using Google Fonts & webpack, save your users some time
-(or stop driving them away) and swap-in Typefaces.
+(or stop driving them away) by swapping in Typefaces.
 
 https://github.com/KyleAMathews/typefaces
