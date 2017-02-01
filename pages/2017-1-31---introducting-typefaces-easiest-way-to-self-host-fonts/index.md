@@ -21,7 +21,8 @@ request*. [In my
 testing](https://github.com/reactiflux/reactiflux.com/pull/21), I've
 found replacing Google Fonts with a self-hosted font can improve a
 site's speedindex by ~300 miliseconds on desktop and 1+ seconds on 3g.
-This is a big deal.
+This is a big deal. YMMV on exact numbers but directionally, self-hosting
+is faster *and* importantly opens the door for further optimizations.
 * Your *fonts load offline*. It's annoying to start working on a web
 project on the train or airplane and see your interface screwed up
 because you can't access Google fonts. I remember once being in this
