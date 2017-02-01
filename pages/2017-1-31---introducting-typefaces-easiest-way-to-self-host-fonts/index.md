@@ -26,8 +26,7 @@ This is a big deal.
 project on the train or airplane and see your interface screwed up
 because you can't access Google fonts. I remember once being in this
 situation and doing everything possible to avoid reloading a project as
-I knew I'd lose the fonts and then wouldn't be able to keep working on
-parts of the interface.
+I knew I'd lose the fonts and be forced to stop working.
 * *Go beyond Google Fonts*. Some of my favorite typefaces aren't on
 Google Fonts like [Clear Sans](https://01.org/clear-SANS), [Cooper
 Hewitt](https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/),
@@ -44,7 +43,7 @@ and
 
 ## The awakening
 
-Last fall, a client wanted me to use some commercial typefaces for a
+Last fall, a client asked me to use some commercial typefaces for a
 [Gatsby](https://github.com/gatsbyjs/gatsby) site I was building. After
 reading up on the process, I realized that
 [webpack](https://webpack.js.org) actually did most of the work.  You
@@ -87,13 +86,13 @@ ways](/gatsby-open-source-work/) to dramatically improve our various
 web-dev workflows. When something becomes 10x faster or easier, this
 frees us to build new and better things.
 
-Building for the web involves dozens of interconnected workflows. The
-last 3-5 years have seen workflow after workflow get automated. And the
-exciting thing is that each new automation enables workflows downstream
-from it to be automated as well.  So just as Typefaces builds on
-previous automations such as Webpack and NPM, now that we have automated
-this part of our workflow (self-hosting), it opens the door for
-[automating futher font-loading
+Building for the web involves navigating dozens of interconnected
+workflows. The last few years have seen workflow after workflow get
+automated. And the exciting thing is that each new automation enables
+workflows up and down-stream from it to be automated as well.  So just
+as Typefaces builds on previous automations such as Webpack and NPM, now
+that we have automated this part of our workflow (self-hosting), it
+opens the door for [automating futher font-loading
 optimizations](https://www.zachleat.com/web/comprehensive-webfonts/).
 
 Let me know what you think and please [come over to
