@@ -32,7 +32,7 @@
     "typeface-alegreya-sans": "0.0.2",
     "typography": "latest",
     "typography-plugin-code": "^0.15.2",
-    "typography-theme-de-young": "latest"
+    "typography-theme-de-young": "^0.15.7"
   },
   "devDependencies": {}
 }

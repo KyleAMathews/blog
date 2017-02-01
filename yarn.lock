@@ -7486,9 +7486,9 @@ typography-plugin-code@^0.15.2:
     gray-percentage "^2.0.0"
     lodash "^4.13.1"
 
-typography-theme-de-young@latest:
-  version "0.15.5"
-  resolved "https://registry.yarnpkg.com/typography-theme-de-young/-/typography-theme-de-young-0.15.5.tgz#4b912618bd85b599e8246146fe1911641ae85fe4"
+typography-theme-de-young@^0.15.7:
+  version "0.15.7"
+  resolved "https://registry.yarnpkg.com/typography-theme-de-young/-/typography-theme-de-young-0.15.7.tgz#744fb33f33cc2d9aa5fec2366d51c50f2e0cc34f"
   dependencies:
     compass-vertical-rhythm "^1.2.1"
     gray-percentage "^2.0.0"
