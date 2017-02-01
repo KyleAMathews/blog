@@ -44,5 +44,6 @@ module.exports = {
         trackingId: `UA-774017-3`,
       },
     },
+    `gatsby-plugin-preact`,
   ],
 }
