@@ -44,7 +44,7 @@ and
 
 ## The awakening
 
-Last fall, a client wanted some paid typefaces for a
+Last fall, a client wanted me to use some commercial typefaces for a
 [Gatsby](https://github.com/gatsbyjs/gatsby) site I was building. After
 reading up on the process, I realized that
 [webpack](https://webpack.js.org) actually did most of the work.  You
@@ -57,7 +57,7 @@ through NPM. The last 4-5 years of my life have seen the steady
 accumulation of more and more package.json files with longer and longer
 lists of NPM package dependencies for my various node and web projects.
 Which I absolutely love. Compared to the bad ol' days of checking in
-dependencies of dubious origin (or worse, having to follow a somewhat
+dependencies of dubious origin (or worse, having to follow a generally
 out-of-date INSTALL.md), managing everything with NPM is beautiful.
 
 With typefaces as NPM packages, you could do something like `npm install
@@ -87,9 +87,13 @@ ways](/gatsby-open-source-work/) to dramatically improve our various
 web-dev workflows. When something becomes 10x faster or easier, this
 frees us to build new and better things.
 
-And just as Typefaces builds on previous automations, now that we have
-automated this part of our workflow, it opens the door for [automating
-futher font-loading
+Building for the web involves dozens of interconnected workflows. The
+last 3-5 years have seen workflow after workflow get automated. And the
+exciting thing is that each new automation enables workflows downstream
+from it to be automated as well.  So just as Typefaces builds on
+previous automations such as Webpack and NPM, now that we have automated
+this part of our workflow (self-hosting), it opens the door for
+[automating futher font-loading
 optimizations](https://www.zachleat.com/web/comprehensive-webfonts/).
 
 Let me know what you think and please [come over to
