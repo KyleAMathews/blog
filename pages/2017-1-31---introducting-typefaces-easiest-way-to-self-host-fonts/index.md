@@ -6,11 +6,11 @@ date: "2017-01-31"
 readNext: /gatsby-open-source-work/
 ---
 
-Once upon a time, I thought self-hosting web fonts was
-intimidating. It seemed nice but the complexities were too much.  I
-needed to create a bunch of weird files (eot?), weird css syntax
-(bullet proof what?), etc. Much easier to drop a little Google Fonts
-`<link>` in my html's `<head>` and call it a day.
+Once upon a time, I thought self-hosting web fonts was intimidating. It
+seemed nice but the complexities were too much.  I needed to create a
+bunch of weird files (eot?), weird css syntax (bullet proof what?), etc.
+Much easier to drop a little Google Fonts `<link>` in my html's `<head>`
+and call it a day.
 
 But as time went on, I found some really nice advantages to hosting your
 fonts.
@@ -28,8 +28,11 @@ because you can't access Google fonts. I remember once being in this
 situation and doing everything possible to avoid reloading a project as
 I knew I'd lose the fonts and then wouldn't be able to keep working on
 parts of the interface.
-* *Go beyond Google Fonts*. Some of my favorite typefaces aren't on Google
-  Fonts like Clear Sans, Cooper Hewitt, and Aleo.
+* *Go beyond Google Fonts*. Some of my favorite typefaces aren't on
+Google Fonts like [Clear Sans](https://01.org/clear-SANS), [Cooper
+Hewitt](https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/),
+and
+[Aleo](https://www.behance.net/gallery/8018673/ALEO-Free-Font-Family).
 
 *Cool typefaces not on Google Fonts*
 
@@ -57,16 +60,20 @@ Which I absolutely love. Compared to the bad ol' days of checking in
 dependencies of dubious origin (or worse, having to follow a somewhat
 out-of-date INSTALL.md), managing everything with NPM is beautiful.
 
-With typefaces as NPM packages, you could do something like `npm
-install --save typeface-open-sans` which would install a package
-containing both the font-face css and font files and then in your
-project's entry file add `require('typeface-open-sans)` and things
-would just work.
+With typefaces as NPM packages, you could do something like `npm install
+--save typeface-open-sans` which would install a package containing both
+the font-face css and font files and then in your project's entry file
+add `require('typeface-open-sans)` and... you're done.
+
+Perhaps if self-hosting fonts wasn't so annoying I'd do it more...
 
 So I wrote a quick and dirty script to create packages for the typefaces
-used on this blog (Alegreya and Alegreya Sans) and... it worked! I added
-a few more typefaces for some other projects and things were looking
-really good.
+used on this blog
+([Alegreya](http://www.huertatipografica.com/en/fonts/alegreya-ht-pro)
+and [Alegreya
+Sans](http://www.huertatipografica.com/en/fonts/alegreya-sans-ht))
+and... it worked! I added a few more typefaces for some other projects
+and things were looking really good.
 
 Then I put the project aside for several months as I was focusing on
 making some major feature additions to Gatsby (blog post coming soon)
@@ -75,10 +82,6 @@ Google Fonts package creator script and added a Font Squirrel package
 creator script as well and this morning published ~825 new typeface
 packages to NPM.
 
-INSERT CASE STUDY FOR REACTIFLUX
-
-(also fix srcset generation so no decimals)
-
 I'm super excited about this. I really enjoy finding [high-leverage
 ways](/gatsby-open-source-work/) to dramatically improve our various
 web-dev workflows. When something becomes 10x faster or easier, this
@@ -86,7 +89,8 @@ frees us to build new and better things.
 
 And just as Typefaces couldn't exist without the tools it builds on, now
 that we have automated this part of our workflow, it opens the door for
-[automating futher font-loading optimizations INSERT LINK]().
+[automating futher font-loading
+optimizations](https://www.zachleat.com/web/comprehensive-webfonts/).
 
 Let me know what you think and please [come over to
 Github](/gatsby-open-source-work/) to check out the project (and help
