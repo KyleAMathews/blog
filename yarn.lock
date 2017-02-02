@@ -1615,13 +1615,13 @@ comma-separated-tokens@^1.0.1:
   dependencies:
     trim "0.0.1"
 
-commander@2.9.0, commander@2.9.x, commander@^2.9.0:
+commander@2.9.0, commander@2.9.x, commander@^2.8.1, commander@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commander@^2.8.1, commander@~2.8.1:
+commander@~2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.8.1.tgz#06be367febfda0c330aa1e2a072d3dc9762425d4"
   dependencies:
@@ -2639,7 +2639,7 @@ fbjs@0.1.0-alpha.10:
     promise "^7.0.3"
     whatwg-fetch "^0.9.0"
 
-fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.8:
+fbjs@^0.8.1, fbjs@^0.8.4:
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.8.tgz#02f1b6e0ea0d46c24e0b51a2d24df069563a5ad6"
   dependencies:
@@ -2903,12 +2903,6 @@ gatsby-parser-sharp@1.0.0-alpha11-alpha.fabe2335:
     bluebird "^3.4.6"
     unist-util-select "^1.5.0"
 
-gatsby-plugin-glamor@1.0.0-alpha11-alpha.fabe2335:
-  version "1.0.0-alpha11-alpha.fabe2335"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-glamor/-/gatsby-plugin-glamor-1.0.0-alpha11-alpha.fabe2335.tgz#aff63a79a86f96fd1629e19993d50a67548698ba"
-  dependencies:
-    glamor "^2.20.20"
-
 gatsby-plugin-google-analytics@1.0.0-alpha11-alpha.fabe2335:
   version "1.0.0-alpha11-alpha.fabe2335"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.0-alpha11-alpha.fabe2335.tgz#a7523031d01f55c4a97c17aa6f1a80a55f31e545"
@@ -2922,24 +2916,9 @@ gatsby-plugin-preact@1.0.0-alpha11-alpha.fabe2335:
     preact "^7.1.0"
     preact-compat "^3.11.0"
 
-gatsby-sharp@1.0.0-alpha11-alpha.fabe2335:
+gatsby-sharp@1.0.0-alpha11-alpha.fabe2335, gatsby-sharp@^1.0.0-alpha11-alpha.00fcfe90:
   version "1.0.0-alpha11-alpha.fabe2335"
   resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.0.0-alpha11-alpha.fabe2335.tgz#2ad8d35e6f2f05df5ec0d5bd3a3ac9066c897eb5"
-  dependencies:
-    async "^2.1.4"
-    bluebird "^3.4.7"
-    image-size "^0.5.1"
-    imagemin "^5.2.2"
-    imagemin-pngquant "^5.0.0"
-    lodash "^4.17.3"
-    progress "^1.1.8"
-    qs "^6.3.0"
-    queue "^4.0.1"
-    sharp "^0.17.1"
-
-gatsby-sharp@^1.0.0-alpha11-alpha.00fcfe90:
-  version "1.0.0-alpha11-alpha.9e7a535a"
-  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.0.0-alpha11-alpha.9e7a535a.tgz#06b983e7d0c462a7c6a3cc6d08824fe67f4d3ab2"
   dependencies:
     async "^2.1.4"
     bluebird "^3.4.7"
@@ -3228,14 +3207,6 @@ getpass@^0.1.1:
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.6.tgz#283ffd9fc1256840875311c1b60e8c40187110e6"
   dependencies:
     assert-plus "^1.0.0"
-
-glamor@^2.20.20:
-  version "2.20.20"
-  resolved "https://registry.yarnpkg.com/glamor/-/glamor-2.20.20.tgz#546cb86bfae760b0fd5c019ba859007d08e6238f"
-  dependencies:
-    babel-runtime "^6.18.0"
-    fbjs "^0.8.8"
-    object-assign "^4.1.0"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -4977,7 +4948,7 @@ modularscale@^1.0.2:
   dependencies:
     lodash.isnumber "^3.0.0"
 
-moment@2.x.x, moment@^2.16.0, moment@^2.17.1:
+moment@2.x.x, moment@^2.16.0:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
 
@@ -6265,10 +6236,6 @@ react-deep-force-update@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.0.1.tgz#4f7f6c12c3e7de42f345992a3c518236fa1ecad3"
 
-react-disqus-thread@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/react-disqus-thread/-/react-disqus-thread-0.4.0.tgz#7fd63786ea5034fb5df25facd7f4c49d1204ad03"
-
 react-document-title@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/react-document-title/-/react-document-title-2.0.2.tgz#1e42b672d300f8f90d8d05544b0d71f0ca7860aa"
@@ -7551,9 +7518,9 @@ typography-theme-de-young@^0.15.7:
     gray-percentage "^2.0.0"
     typography-breakpoint-constants "^0.14.0"
 
-typography@latest:
-  version "0.15.5"
-  resolved "https://registry.yarnpkg.com/typography/-/typography-0.15.5.tgz#efc1deb9cd3e735cf6eedd41de385c83bd340129"
+typography@0.15.x:
+  version "0.15.8"
+  resolved "https://registry.yarnpkg.com/typography/-/typography-0.15.8.tgz#5b8ba60243a7b4f11f86098070f6924c569c04cf"
   dependencies:
     compass-vertical-rhythm "^1.3.0"
     decamelize "^1.2.0"
