@@ -2,7 +2,6 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const select = require(`unist-util-select`)
-const parseFilepath = require('parse-filepath')
 
 exports.createPages = ({ args }) => {
   const { graphql } = args
@@ -16,7 +15,7 @@ exports.createPages = ({ args }) => {
         allMarkdownRemark(limit: 1000, frontmatter: { draft: { ne: true }}) {
           edges {
             node {
-              path
+              slug
               frontmatter {
                 tags
               }
@@ -34,10 +33,10 @@ exports.createPages = ({ args }) => {
       // Create blog posts pages.
       _.each(result.data.allMarkdownRemark.edges, (edge) => {
         pages.push({
-          path: edge.node.path, // required
+          path: edge.node.slug, // required
           component: blogPost,
           context: {
-            path: edge.node.path,
+            slug: edge.node.slug,
           },
         })
       })
@@ -73,11 +72,12 @@ exports.modifyAST = ({ args }) => {
   const { ast } = args
   const files = select(ast, 'File')
   files.forEach((file) => {
-    const parsedFilePath = parseFilepath(file.sourceFile)
-    file.customUrlPathname = `/${parsedFilePath.dirname.split('---')[1]}/`
+    const parsedFilePath = path.parse(file.absolutePath)
+    const slug = `/${parsedFilePath.dir.split('---')[1]}/`
+    file.slug = slug
     const markdownNode = select(file, `MarkdownRemark`)[0]
     if (markdownNode) {
-      markdownNode.path = `/${parsedFilePath.dirname.split('---')[1]}/`
+      markdownNode.slug = slug
       if (markdownNode.frontmatter.tags) {
         markdownNode.frontmatter.tagSlugs = markdownNode.frontmatter.tags.map(
           (tag) => `/tags/${_.kebabCase(tag)}/`

@@ -1,5 +1,5 @@
 const React = require('react')
-const { Link } = require('react-router')
+const Link = require('gatsby-link')
 
 const { rhythm, scale } = require('utils/typography')
 

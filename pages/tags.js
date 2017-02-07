@@ -1,6 +1,6 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
-import { Link } from 'react-router'
+import Link from 'gatsby-link'
 import kebabCase from 'lodash/kebabCase'
 
 class TagsPageRoute extends React.Component {

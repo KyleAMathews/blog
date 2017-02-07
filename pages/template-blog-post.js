@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'react-router'
+import Link from 'gatsby-link'
 import typography from 'utils/typography'
 const { rhythm, scale } = typography
 const profilePic = require('../images/kyle-round-small-pantheon.jpg')
@@ -10,7 +10,7 @@ const query = `
 readNext___file {
   children {
     ... on MarkdownRemark {
-      path
+      slug
       excerpt(pruneLength: 200)
       frontmatter {
         title
@@ -83,7 +83,7 @@ class BlogPostRoute extends React.Component {
         <ReadNext nextPost={post.frontmatter.readNext} />
         <p
           style={{
-            marginBottom: rhythm(2),
+            marginBottom: 0,
           }}
         >
           <img
@@ -107,13 +107,13 @@ class BlogPostRoute extends React.Component {
 export default BlogPostRoute
 
 export const pageQuery = `
-  query BlogPostByPath($path: String!) {
+  query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         author
       }
     }
-    markdownRemark(path: { eq: $path }) {
+    markdownRemark(slug: { eq: $slug }) {
       html
       excerpt
       frontmatter {

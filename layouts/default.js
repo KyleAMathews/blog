@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import Link from 'gatsby-link'
 import typography from 'utils/typography'
 import Helmet from 'react-helmet'
 const rhythm = typography.rhythm
@@ -28,7 +28,7 @@ class Wrapper extends React.Component {
           <h1
             style={{
               ...scale(1.5),
-              marginBottom: rhythm(1.5),
+              marginBottom: rhythm(1),
               marginTop: 0,
             }}
           >

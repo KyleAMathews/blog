@@ -1,6 +1,6 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
-import { Link } from 'react-router'
+import Link from 'gatsby-link'
 import typography from 'utils/typography'
 
 const rhythm = typography.rhythm
@@ -16,7 +16,7 @@ class BlogIndexRoute extends React.Component {
         <div>
           <p
             style={{
-              marginBottom: rhythm(2),
+              marginBottom: rhythm(1.5),
             }}
           >
             <img
@@ -40,13 +40,13 @@ class BlogIndexRoute extends React.Component {
           >
             {posts.map((post) => (
               <li
-                key={post.node.path}
+                key={post.node.slug}
               >
                 <Link
                   style={{
                     textDecoration: 'none',
                   }}
-                  to={post.node.path}
+                  to={post.node.slug}
                 >
                   {post.node.frontmatter.title}
                 </Link>
@@ -83,7 +83,7 @@ export const pageQuery = `
     ) {
       edges {
         node {
-          path
+          slug
           frontmatter {
             title
           }

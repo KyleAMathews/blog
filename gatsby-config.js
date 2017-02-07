@@ -9,6 +9,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/pages`,
+        name: 'pages',
       },
     },
     `gatsby-parser-remark`,
@@ -37,7 +38,7 @@ module.exports = {
     },
     `gatsby-typegen-filesystem`,
     `gatsby-typegen-sharp`,
-    `gatsby-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

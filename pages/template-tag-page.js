@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import Link from 'gatsby-link'
 import DocumentTitle from 'react-document-title'
 
 class TagRoute extends React.Component {
@@ -9,9 +9,9 @@ class TagRoute extends React.Component {
     const title = this.props.data.site.siteMetadata.title
     const postLinks = posts.map((post) => {
       return (
-        <li key={post.node.path}>
+        <li key={post.node.slug}>
           <Link
-            to={post.node.path}
+            to={post.node.slug}
           >
             {post.node.frontmatter.title}
           </Link>
@@ -63,7 +63,7 @@ export const pageQuery = `
       totalCount
       edges {
         node {
-          path
+          slug
           frontmatter {
             title
           }
