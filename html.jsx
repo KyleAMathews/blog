@@ -1,13 +1,25 @@
 import React from 'react'
-import { GoogleFont, TypographyStyle } from 'react-typography'
+import { TypographyStyle } from 'react-typography'
 import Helmet from 'react-helmet'
 
 import typography from './utils/typography'
-import HTMLStyles from '.intermediate-representation/html-styles'
+
+let stylesStr
+if (process.env.NODE_ENV === `production`) {
+  try {
+    stylesStr = require(`!raw-loader!./public/styles.css`)
+  } catch (e) {
+    console.log(e)
+  }
+}
 
 module.exports = React.createClass({
   render () {
     const head = Helmet.rewind()
+    let css
+    if (process.env.NODE_ENV === `production`) {
+      css = <style id="gatsby-inlined-css" dangerouslySetInnerHTML={{ __html: stylesStr }} />
+    }
 
     return (
       <html lang="en">
@@ -20,7 +32,7 @@ module.exports = React.createClass({
           />
           {this.props.headComponents}
           <TypographyStyle typography={typography} />
-          <HTMLStyles />
+          {css}
           {head.title.toComponent()}
           {head.meta.toComponent()}
           {head.link.toComponent()}
