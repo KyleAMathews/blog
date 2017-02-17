@@ -25,6 +25,7 @@
     "lodash": "^4.17.4",
     "react-helmet": "^3.3.0",
     "react-typography": "^0.15.0",
+    "sw-precache": "^5.0.0",
     "typeface-alegreya": "0.0.2",
     "typeface-alegreya-sans": "0.0.2",
     "typography": "0.15.x",
