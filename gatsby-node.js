@@ -90,19 +90,26 @@ exports.modifyAST = ({ args }) => {
 }
 
 exports.postBuild = () => {
-  const rootDir = `public`
+  return new Promise((resolve, reject) => {
+    const rootDir = `public`
 
-  const options = {
-    staticFileGlobs: [`${rootDir}/**/*.{js,woff2}`, `${rootDir}/index.html`],
-    stripPrefix: rootDir,
-    cacheId: `kyle-blog`,
-    dontCacheBustUrlsMatching: /(.*.woff2|.*.js)/,
-    //runtimeCaching: [{
-      //urlPattern: /.*.,
-    //}],
-    skipWaiting: false,
-  }
+    const options = {
+      staticFileGlobs: [`${rootDir}/**/*.{js,woff2}`, `${rootDir}/index.html`],
+      stripPrefix: rootDir,
+      cacheId: `kyle-blog`,
+      dontCacheBustUrlsMatching: /(.*.woff2|.*.js)/,
+      //runtimeCaching: [{
+        //urlPattern: /.*.,
+      //}],
+      skipWaiting: false,
+    }
 
-  precache.write(`public/sw.js`, options)
-  return true
+    precache.write(`public/sw.js`, options, (err) => {
+      if (err) {
+        reject(err)
+      } else {
+        resolve()
+      }
+    })
+  })
 }
