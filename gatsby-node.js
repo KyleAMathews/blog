@@ -2,6 +2,7 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const select = require(`unist-util-select`)
+const precache = require(`sw-precache`)
 
 exports.createPages = ({ args }) => {
   const { graphql } = args
@@ -86,4 +87,22 @@ exports.modifyAST = ({ args }) => {
     }
   })
   return files
+}
+
+exports.postBuild = () => {
+  const rootDir = `public`
+
+  const options = {
+    staticFileGlobs: [`${rootDir}/**/*.{js,woff2}`, `${rootDir}/index.html`],
+    stripPrefix: rootDir,
+    cacheId: `kyle-blog`,
+    dontCacheBustUrlsMatching: /(.*.woff2|.*.js)/,
+    //runtimeCaching: [{
+      //urlPattern: /.*.,
+    //}],
+    skipWaiting: false,
+  }
+
+  precache.write(`public/sw.js`, options)
+  return true
 }

@@ -40,6 +40,19 @@ module.exports = React.createClass({
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           {this.props.postBodyComponents}
+          <script
+            dangerouslySetInnerHTML={{ __html: `
+              if ('serviceWorker' in navigator) {
+                // Delay registration until after the page has loaded, to ensure that
+                // our precaching requests don't degrade the first visit experience.
+                // See https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/registration
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js');
+                })
+              }
+            `,
+            }}
+          />
         </body>
       </html>
     )
