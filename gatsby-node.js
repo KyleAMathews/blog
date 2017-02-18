@@ -98,9 +98,20 @@ exports.postBuild = () => {
       stripPrefix: rootDir,
       cacheId: `kyle-blog`,
       dontCacheBustUrlsMatching: /(.*.woff2|.*.js)/,
-      //runtimeCaching: [{
-        //urlPattern: /.*.,
-      //}],
+      runtimeCaching: [
+        {
+          urlPattern: /.*.png/,
+          handler: 'fastest',
+        },
+        {
+          urlPattern: /.*.jpg/,
+          handler: 'fastest',
+        },
+        {
+          urlPattern: /.*.jpeg/,
+          handler: 'fastest',
+        },
+      ],
       skipWaiting: false,
     }
 
