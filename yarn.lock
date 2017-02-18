@@ -2922,41 +2922,41 @@ function-bind@^1.0.2:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
 
-gatsby-link@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.0.0-alpha12-alpha.faff3fa9.tgz#3009ebb3632452bc850eeed03dc279c4c9b61a6c"
+gatsby-link@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.0.0-alpha12-alpha.a82bd105.tgz#774677fe33a36610db52229cdf30de7a58bd6041"
 
-gatsby-parser-remark@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-parser-remark/-/gatsby-parser-remark-1.0.0-alpha12-alpha.faff3fa9.tgz#2cc4a0e0edacedba5fd16f398b00aaa225080d5c"
+gatsby-parser-remark@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-parser-remark/-/gatsby-parser-remark-1.0.0-alpha12-alpha.a82bd105.tgz#ee663b8412ebe5ed4dbff19e67362e79d30ca07a"
   dependencies:
     bluebird "^3.4.6"
     gray-matter "^2.1.0"
     unist-util-select "^1.5.0"
 
-gatsby-parser-sharp@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-parser-sharp/-/gatsby-parser-sharp-1.0.0-alpha12-alpha.faff3fa9.tgz#841929a90f2020f504a3b450aa85a3f752e56198"
+gatsby-parser-sharp@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-parser-sharp/-/gatsby-parser-sharp-1.0.0-alpha12-alpha.a82bd105.tgz#91afaa928d9650e61c1d4c0f1a179b5ae3a6280b"
   dependencies:
     bluebird "^3.4.6"
     unist-util-select "^1.5.0"
 
-gatsby-plugin-google-analytics@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.0-alpha12-alpha.faff3fa9.tgz#4f78c79607bfbea146b3c6d026dcb3a2073a2588"
+gatsby-plugin-google-analytics@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.0-alpha12-alpha.a82bd105.tgz#c5ff3fa720c46d0158f6381f927f6595099ab70f"
   dependencies:
     react-ga "^2.1.2"
 
-gatsby-plugin-preact@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-1.0.0-alpha12-alpha.faff3fa9.tgz#55e8098905e279a14fcff72081fd9d16cb2a021e"
+gatsby-plugin-preact@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-1.0.0-alpha12-alpha.a82bd105.tgz#22c87335bc85ac291e102e72a5eb91d7d1f052c4"
   dependencies:
     preact "^7.1.0"
     preact-compat "^3.11.0"
 
-gatsby-plugin-sharp@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.0.0-alpha12-alpha.faff3fa9.tgz#2cf92178086b2ac0188c415f1ba1ea00bb7f38ea"
+gatsby-plugin-sharp@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.0.0-alpha12-alpha.a82bd105.tgz#bc3281bd572123e50151d8e6d2c8cd114462716e"
   dependencies:
     async "^2.1.4"
     bluebird "^3.4.7"
@@ -2969,9 +2969,9 @@ gatsby-plugin-sharp@1.0.0-alpha12-alpha.faff3fa9:
     queue "^4.0.1"
     sharp "^0.17.1"
 
-gatsby-source-filesystem@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.0.0-alpha12-alpha.faff3fa9.tgz#f17fb2540a2dddd13d9fdb1bcceb9fdf9edd01f1"
+gatsby-source-filesystem@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.0.0-alpha12-alpha.a82bd105.tgz#03410ca9eb25a3de975b264c5e1ac1ec8740d471"
   dependencies:
     async "^2.1.2"
     babel-cli "^6.18.0"
@@ -2990,57 +2990,57 @@ gatsby-source-filesystem@1.0.0-alpha12-alpha.faff3fa9:
     slash "^1.0.0"
     unist-builder "^1.0.2"
 
-gatsby-typegen-filesystem@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-typegen-filesystem/-/gatsby-typegen-filesystem-1.0.0-alpha12-alpha.faff3fa9.tgz#8e47043a145b2530b1f999f9aa9f8b020b77b849"
+gatsby-typegen-filesystem@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-typegen-filesystem/-/gatsby-typegen-filesystem-1.0.0-alpha12-alpha.a82bd105.tgz#7024d14c5bd12e9b4e06ac22c0910e5ab9f038ca"
   dependencies:
     unist-util-select "^1.5.0"
 
-gatsby-typegen-remark-copy-linked-files@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-copy-linked-files/-/gatsby-typegen-remark-copy-linked-files-1.0.0-alpha12-alpha.faff3fa9.tgz#eb11dd87d3198771e6d0e636335e05a810ba56fa"
+gatsby-typegen-remark-copy-linked-files@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-copy-linked-files/-/gatsby-typegen-remark-copy-linked-files-1.0.0-alpha12-alpha.a82bd105.tgz#f88f296cac11c8605a6eef9ebb578208b805800e"
   dependencies:
     fs-extra "^1.0.0"
     is-relative-url "^2.0.0"
     lodash "^4.17.3"
     unist-util-visit "^1.1.1"
 
-gatsby-typegen-remark-prismjs@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-prismjs/-/gatsby-typegen-remark-prismjs-1.0.0-alpha12-alpha.faff3fa9.tgz#14b1c9f0028c5c12751674fc362577d4ea0ddcdd"
+gatsby-typegen-remark-prismjs@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-prismjs/-/gatsby-typegen-remark-prismjs-1.0.0-alpha12-alpha.a82bd105.tgz#0b60bbeeea5f3f0117eb1e6bab041381e5af12c2"
   dependencies:
     prismjs "^1.6.0"
     unist-util-visit "^1.1.1"
 
-gatsby-typegen-remark-responsive-iframe@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-responsive-iframe/-/gatsby-typegen-remark-responsive-iframe-1.0.0-alpha12-alpha.faff3fa9.tgz#ebc598727fd5c9e73f9eff7838c25964da5a43aa"
+gatsby-typegen-remark-responsive-iframe@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-responsive-iframe/-/gatsby-typegen-remark-responsive-iframe-1.0.0-alpha12-alpha.a82bd105.tgz#f2858eac252a793c915505dd7507ba012101aac9"
   dependencies:
     bluebird "^3.4.7"
     cheerio "^0.22.0"
     lodash "^4.17.4"
     unist-util-visit "^1.1.1"
 
-gatsby-typegen-remark-responsive-image@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-responsive-image/-/gatsby-typegen-remark-responsive-image-1.0.0-alpha12-alpha.faff3fa9.tgz#3718f5709fd9fedb428dd8e6f9d2b7bb2ed4d2aa"
+gatsby-typegen-remark-responsive-image@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-responsive-image/-/gatsby-typegen-remark-responsive-image-1.0.0-alpha12-alpha.a82bd105.tgz#68898adc596c29369f2a8ee659b30e9830faf803"
   dependencies:
     image-size "^0.5.1"
     is-relative-url "^2.0.0"
     lodash "^4.17.3"
     unist-util-select "^1.5.0"
 
-gatsby-typegen-remark-smartypants@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-smartypants/-/gatsby-typegen-remark-smartypants-1.0.0-alpha12-alpha.faff3fa9.tgz#7b5d6639d7beb8d8fd526ee6c957d5a75a162f13"
+gatsby-typegen-remark-smartypants@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark-smartypants/-/gatsby-typegen-remark-smartypants-1.0.0-alpha12-alpha.a82bd105.tgz#7c509d5d4c9db3be80f141cc2ca6658343e61aef"
   dependencies:
     retext "^4.0.0"
     retext-smartypants "^2.0.0"
     unist-util-visit "^1.1.1"
 
-gatsby-typegen-remark@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark/-/gatsby-typegen-remark-1.0.0-alpha12-alpha.faff3fa9.tgz#172a10c4c6ed86dabc748592552411dc9602fc8b"
+gatsby-typegen-remark@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-typegen-remark/-/gatsby-typegen-remark-1.0.0-alpha12-alpha.a82bd105.tgz#472cd559fa9107585773f7ed58c954a9060eb99d"
   dependencies:
     excerpt-html "^1.2.0"
     graphql "^0.8.2"
@@ -3056,18 +3056,18 @@ gatsby-typegen-remark@1.0.0-alpha12-alpha.faff3fa9:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.1.1"
 
-gatsby-typegen-sharp@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby-typegen-sharp/-/gatsby-typegen-sharp-1.0.0-alpha12-alpha.faff3fa9.tgz#d51a4e465a53f8ae462c2f0d4f5476de8fe3777b"
+gatsby-typegen-sharp@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby-typegen-sharp/-/gatsby-typegen-sharp-1.0.0-alpha12-alpha.a82bd105.tgz#1d6a2c199f51280d2dcd662759c2246be0ae064b"
   dependencies:
     graphql "^0.8.2"
     image-size "^0.5.1"
     lodash "^4.17.2"
     sharp "^0.17.0"
 
-gatsby@1.0.0-alpha12-alpha.faff3fa9:
-  version "1.0.0-alpha12-alpha.faff3fa9"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.0.0-alpha12-alpha.faff3fa9.tgz#786069247988b1c8b3057517f77c7721c8423dad"
+gatsby@1.0.0-alpha12-alpha.a82bd105:
+  version "1.0.0-alpha12-alpha.a82bd105"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.0.0-alpha12-alpha.a82bd105.tgz#9f944d3f91f3f67a3a8e1d955e9bcc738f23057a"
   dependencies:
     async "^2.1.2"
     babel-core "^6.18.2"
@@ -6476,9 +6476,9 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-"recursive-readdir@https://github.com/KyleAMathews/recursive-readdir.git":
+"recursive-readdir@git+https://github.com/KyleAMathews/recursive-readdir.git":
   version "2.1.0"
-  resolved "https://github.com/KyleAMathews/recursive-readdir.git#fbfe835d2e75a977db2d1e794214aa26ecdb0671"
+  resolved "git+https://github.com/KyleAMathews/recursive-readdir.git#fbfe835d2e75a977db2d1e794214aa26ecdb0671"
   dependencies:
     minimatch "3.0.2"
 
