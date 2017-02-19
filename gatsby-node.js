@@ -43,6 +43,12 @@ exports.createPages = ({ args }) => {
         })
       })
 
+      // Add temp app-shell path (this will get moved to plugin)
+      pages.push({
+        path: `/app-shell-fallback/`,
+        component: path.resolve(`pages/template-app-shell.js`),
+      })
+
       // Tag pages.
       let tags = []
       _.each(result.data.allMarkdownRemark.edges, (edge) => {
@@ -95,8 +101,13 @@ exports.postBuild = () => {
     const rootDir = `public`
 
     const options = {
-      staticFileGlobs: [`${rootDir}/**/*.{js,woff2}`, `${rootDir}/index.html`],
+      staticFileGlobs: [
+        `${rootDir}/**/*.{js,woff2}`,
+        `${rootDir}/index.html`
+        `${rootDir}/app-shell-fallback/index.html`
+      ],
       stripPrefix: rootDir,
+      navigateFallback: `/app-shell-fallback/index.html`,
       cacheId: `kyle-blog`,
       dontCacheBustUrlsMatching: /(.*.woff2|.*.js)/,
       runtimeCaching: [
