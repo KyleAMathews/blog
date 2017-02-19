@@ -6,6 +6,10 @@ class AppShell extends React.Component {
     console.log(this.props.location)
     browserHistory.replace(this.props.location.pathname)
   }
+
+  render () {
+    return <div />
+  }
 }
 
 export default AppShell
