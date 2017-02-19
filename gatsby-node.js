@@ -103,11 +103,11 @@ exports.postBuild = () => {
     const options = {
       staticFileGlobs: [
         `${rootDir}/**/*.{js,woff2}`,
-        `${rootDir}/index.html`
-        `${rootDir}/app-shell-fallback/index.html`
+        `${rootDir}/index.html`,
+        `${rootDir}/app-shell-fallback/index.html`,
       ],
       stripPrefix: rootDir,
-      navigateFallback: `/app-shell-fallback/index.html`,
+      navigateFallback: '/app-shell-fallback/index.html',
       cacheId: `kyle-blog`,
       dontCacheBustUrlsMatching: /(.*.woff2|.*.js)/,
       runtimeCaching: [
@@ -142,7 +142,7 @@ exports.postBuild = () => {
         "theme_color": "#48a896",
         "display": "standalone",
       }
-      fs.writeFileSync(`public/manifest.json`, JSON.stringify(manifest))
+      fs.writeFileSync(`./public/manifest.json`, JSON.stringify(manifest))
 
       if (err) {
         reject(err)
