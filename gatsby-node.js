@@ -124,7 +124,7 @@ exports.postBuild = () => {
         `${rootDir}/app-shell-fallback/index.html`,
       ],
       stripPrefix: rootDir,
-      navigateFallback: '/app-shell-fallback/index.html',
+      navigateFallback: '/app-shell-fallback/',
       cacheId: `kyle-blog`,
       dontCacheBustUrlsMatching: /(.*.woff2|.*.js)/,
       runtimeCaching: [
