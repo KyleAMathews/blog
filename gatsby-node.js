@@ -3,6 +3,7 @@ const Promise = require('bluebird')
 const path = require('path')
 const select = require(`unist-util-select`)
 const precache = require(`sw-precache`)
+const fs = require(`fs`)
 
 exports.createPages = ({ args }) => {
   const { graphql } = args
@@ -123,4 +124,21 @@ exports.postBuild = () => {
       }
     })
   })
+
+  const manifest = {
+    "name": "Bricolage",
+    "short_name": "Bricolage",
+    "icons": [{
+        "src": "1cbe35120ae20cf7acd4d7098b7f9b15-quality=50&pngCompressionLevel=9&width=295.png",
+        "sizes": "295x295",
+        "type": "image/png",
+      },
+    ],
+    "start_url": "/",
+    "background_color": "#48a896",
+    "theme_color": "#48a896",
+    "display": "standalone",
+  }
+  fs.writeFileSync(`public/manifest.json`, JSON.stringify(manifest))
+
 }

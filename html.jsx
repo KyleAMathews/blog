@@ -31,6 +31,8 @@ module.exports = React.createClass({
             content="width=device-width, initial-scale=1.0"
           />
           {this.props.headComponents}
+          <meta name="theme-color" content="#48a896" />
+          <link rel="manifest" href="/manifest.json" />
           <TypographyStyle typography={typography} />
           {css}
           {head.title.toComponent()}
