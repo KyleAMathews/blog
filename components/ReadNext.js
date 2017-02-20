@@ -31,7 +31,7 @@ const Component = React.createClass({
             }}
           >
             <Link
-              to={nextPost.path}
+              to={nextPost.slug}
             >
               {nextPost.frontmatter.title}
             </Link>
