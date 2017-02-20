@@ -1,6 +1,7 @@
 import React from 'react'
 import { TypographyStyle } from 'react-typography'
 import Helmet from 'react-helmet'
+import logo from './images/logo.png'
 
 import typography from './utils/typography'
 
@@ -29,6 +30,12 @@ module.exports = React.createClass({
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="1024x1024"
+            href={logo}
           />
           {this.props.headComponents}
           <TypographyStyle typography={typography} />
