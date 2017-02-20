@@ -3,7 +3,7 @@ const Promise = require('bluebird')
 const path = require('path')
 const select = require(`unist-util-select`)
 const precache = require(`sw-precache`)
-const fs = require(`fs`)
+const fs = require(`fs-extra`)
 
 exports.createPages = ({ args }) => {
   const { graphql } = args
@@ -41,12 +41,6 @@ exports.createPages = ({ args }) => {
             slug: edge.node.slug,
           },
         })
-      })
-
-      // Add temp app-shell path (this will get moved to plugin)
-      pages.push({
-        path: `/app-shell-fallback/`,
-        component: path.resolve(`pages/template-app-shell.js`),
       })
 
       // Tag pages.
@@ -97,62 +91,5 @@ exports.modifyAST = ({ args }) => {
 }
 
 exports.postBuild = () => {
-  return new Promise((resolve, reject) => {
-    const manifest = {
-      "name": "Bricolage",
-      "short_name": "Bricolage",
-      "icons": [{
-          "src": "1cbe35120ae20cf7acd4d7098b7f9b15-quality=50&pngCompressionLevel=9&width=295.png",
-          "sizes": "295x295",
-          "type": "image/png",
-        },
-      ],
-      "start_url": "/",
-      "background_color": "#48a896",
-      "theme_color": "#48a896",
-      "display": "standalone",
-    }
-    fs.writeFileSync(`./public/manifest.json`, JSON.stringify(manifest))
-
-    const rootDir = `public`
-
-    const options = {
-      staticFileGlobs: [
-        `${rootDir}/**/*.{js,woff2}`,
-        `${rootDir}/index.html`,
-        `${rootDir}/manifest.json`,
-        `${rootDir}/app-shell-fallback/index.html`,
-      ],
-      stripPrefix: rootDir,
-      navigateFallback: '/app-shell-fallback/index.html',
-      cacheId: `kyle-blog`,
-      dontCacheBustUrlsMatching: /(.*.woff2|.*.js)/,
-      runtimeCaching: [
-        {
-          urlPattern: /.*.png/,
-          handler: 'fastest',
-        },
-        {
-          urlPattern: /.*.jpg/,
-          handler: 'fastest',
-        },
-        {
-          urlPattern: /.*.jpeg/,
-          handler: 'fastest',
-        },
-      ],
-      skipWaiting: false,
-    }
-
-    precache.write(`public/sw.js`, options, (err) => {
-
-      if (err) {
-        reject(err)
-      } else {
-        resolve()
-      }
-    })
-  })
-
-
+  fs.copySync(`./images/logo.png`, `./public/logo.png`)
 }

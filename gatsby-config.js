@@ -45,6 +45,24 @@ module.exports = {
         trackingId: `UA-774017-3`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Bricolage",
+        short_name: "Bricolage",
+        "icons": [{
+            "src": "/logo.png",
+            "sizes": "1024x1024",
+            "type": "image/png",
+          },
+        ],
+        start_url: "/",
+        background_color: "white",
+        theme_color: "white",
+        display: "minimal-ui",
+      },
+    },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-preact`,
   ],
 }
