@@ -6,8 +6,8 @@ const precache = require(`sw-precache`);
 const fs = require(`fs-extra`);
 const webpackLodashPlugin = require("lodash-webpack-plugin");
 
-exports.createPages = ({ args }) => {
-  const { graphql } = args;
+exports.createPages = ({ graphql, actionCreators }) => {
+  const { upsertPage } = actionCreators;
 
   return new Promise((resolve, reject) => {
     const pages = [];
@@ -31,12 +31,13 @@ exports.createPages = ({ args }) => {
     ).then(result => {
       if (result.errors) {
         console.log(result.errors);
-        reject(result.errors);
+        resolve();
+        // reject(result.errors);
       }
 
       // Create blog posts pages.
       _.each(result.data.allMarkdownRemark.edges, edge => {
-        pages.push({
+        upsertPage({
           path: edge.node.slug, // required
           component: blogPost,
           context: {
@@ -55,7 +56,7 @@ exports.createPages = ({ args }) => {
       tags = _.uniq(tags);
       tags.forEach(tag => {
         const tagPath = `/tags/${_.kebabCase(tag)}/`;
-        pages.push({
+        upsertPage({
           path: tagPath,
           component: tagPages,
           context: {
@@ -64,7 +65,7 @@ exports.createPages = ({ args }) => {
         });
       });
 
-      resolve(pages);
+      resolve();
     });
   });
 };
@@ -72,24 +73,26 @@ exports.createPages = ({ args }) => {
 //exports.postBuild = require('./post-build')
 
 // Add custom url pathname for blog posts.
-exports.modifyAST = ({ args }) => {
-  const { ast } = args;
-  const files = select(ast, "File");
-  files.forEach(file => {
-    const parsedFilePath = path.parse(file.absolutePath);
+exports.onNodeCreate = ({ node, actionCreators, getNode }) => {
+  const { updateNode } = actionCreators;
+
+  if (node.type === `File` && typeof node.slug === "undefined") {
+    const parsedFilePath = path.parse(node.absolutePath);
     const slug = `/${parsedFilePath.dir.split("---")[1]}/`;
-    file.slug = slug;
-    const markdownNode = select(file, `MarkdownRemark`)[0];
-    if (markdownNode) {
-      markdownNode.slug = slug;
-      if (markdownNode.frontmatter.tags) {
-        markdownNode.frontmatter.tagSlugs = markdownNode.frontmatter.tags.map(
-          tag => `/tags/${_.kebabCase(tag)}/`
-        );
-      }
+    node.slug = slug;
+    updateNode(node);
+  } else if (
+    node.type === `MarkdownRemark` && typeof node.slug === "undefined"
+  ) {
+    const fileNode = getNode(node.parent);
+    node.slug = fileNode.slug;
+    if (node.frontmatter.tags) {
+      node.frontmatter.tagSlugs = node.frontmatter.tags.map(
+        tag => `/tags/${_.kebabCase(tag)}/`
+      );
     }
-  });
-  return files;
+    updateNode(node);
+  }
 };
 
 exports.postBuild = () => {
@@ -97,8 +100,7 @@ exports.postBuild = () => {
 };
 
 // Add Lodash plugin
-exports.modifyWebpackConfig = ({ args }) => {
-  const { config, stage } = args;
+exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === `build-javascript`) {
     config.plugin(`Lodash`, webpackLodashPlugin, null);
   }
