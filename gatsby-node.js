@@ -97,7 +97,7 @@ exports.onNodeCreate = ({ node, boundActionCreators, getNode }) => {
 }
 
 exports.postBuild = () => {
-  fs.copySync(`./images/logo.png`, `./public/logo.png`)
+  fs.copySync(`./src/images/logo.png`, `./public/logo.png`)
 }
 
 // Add Lodash plugin
