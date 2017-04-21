@@ -1,10 +1,10 @@
-const React = require('react')
-const Link = require('gatsby-link')
+const React = require("react")
+const Link = require("gatsby-link")
 
-const { rhythm, scale } = require('utils/typography')
+const { rhythm, scale } = require("../utils/typography")
 
 const Component = React.createClass({
-  render () {
+  render() {
     //console.log(this.props)
     let { nextPost } = this.props
     if (nextPost && nextPost.children && nextPost.children[0]) {
@@ -30,9 +30,7 @@ const Component = React.createClass({
               margin: 0,
             }}
           >
-            <Link
-              to={nextPost.slug}
-            >
+            <Link to={nextPost.slug}>
               {nextPost.frontmatter.title}
             </Link>
           </h3>
@@ -41,7 +39,7 @@ const Component = React.createClass({
         </div>
       )
     }
-  }
+  },
 })
 
 export default Component
@@ -55,4 +53,3 @@ readNext {
 	}
 }
 `
-

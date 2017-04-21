@@ -1,19 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: 'Bricolage',
-    author: 'Kyle Mathews',
-    homeCity: 'San Francisco',
+    title: "Bricolage",
+    author: "Kyle Mathews",
+    homeCity: "San Francisco",
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
-    `gatsby-parser-remark`,
-    `gatsby-parser-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-typegen-remark`,
       options: {
@@ -30,9 +30,9 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-typegen-remark-prismjs',
-          'gatsby-typegen-remark-copy-linked-files',
-          'gatsby-typegen-remark-smartypants',
+          "gatsby-typegen-remark-prismjs",
+          "gatsby-typegen-remark-copy-linked-files",
+          "gatsby-typegen-remark-smartypants",
         ],
       },
     },
@@ -50,10 +50,11 @@ module.exports = {
       options: {
         name: "Bricolage",
         short_name: "Bricolage",
-        "icons": [{
-            "src": "/logo.png",
-            "sizes": "1024x1024",
-            "type": "image/png",
+        icons: [
+          {
+            src: "/logo.png",
+            sizes: "1024x1024",
+            type: "image/png",
           },
         ],
         start_url: "/",

@@ -1,15 +1,15 @@
-import React from "react";
-import DocumentTitle from "react-document-title";
-import Link from "gatsby-link";
-import typography from "utils/typography";
+import React from "react"
+import DocumentTitle from "react-document-title"
+import Link from "gatsby-link"
 
-const rhythm = typography.rhythm;
-const profilePic = require("../images/kyle-round-small-pantheon.jpg");
+import typography from "../utils/typography"
+const rhythm = typography.rhythm
+const profilePic = require("../images/kyle-round-small-pantheon.jpg")
 
 class BlogIndexRoute extends React.Component {
   render() {
-    const posts = this.props.data.allMarkdownRemark.edges;
-    const siteTitle = this.props.data.site.siteMetadata.title;
+    const posts = this.props.data.allMarkdownRemark.edges
+    const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
       <DocumentTitle title={siteTitle}>
@@ -59,11 +59,11 @@ class BlogIndexRoute extends React.Component {
           </ul>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default BlogIndexRoute;
+export default BlogIndexRoute
 
 export const pageQuery = `
   {
@@ -95,4 +95,4 @@ export const pageQuery = `
       }
     }
   }
-`;
+`
