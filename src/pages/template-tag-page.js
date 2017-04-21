@@ -1,18 +1,16 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import DocumentTitle from 'react-document-title'
+import React from "react"
+import Link from "gatsby-link"
+import DocumentTitle from "react-document-title"
 
 class TagRoute extends React.Component {
-  render () {
+  render() {
     //console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
     const title = this.props.data.site.siteMetadata.title
-    const postLinks = posts.map((post) => {
+    const postLinks = posts.map(post => {
       return (
         <li key={post.node.slug}>
-          <Link
-            to={post.node.slug}
-          >
+          <Link to={post.node.slug}>
             {post.node.frontmatter.title}
           </Link>
         </li>
@@ -24,7 +22,7 @@ class TagRoute extends React.Component {
         <div>
           <h2>
             {this.props.data.allMarkdownRemark.totalCount}
-            {' '}posts tagged with “{this.props.pathContext.tag}”
+            {" "}posts tagged with “{this.props.pathContext.tag}”
           </h2>
           <ul>{postLinks}</ul>
           <p>

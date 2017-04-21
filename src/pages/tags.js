@@ -1,10 +1,10 @@
-import React from 'react'
-import DocumentTitle from 'react-document-title'
-import Link from 'gatsby-link'
-import kebabCase from 'lodash/kebabCase'
+import React from "react"
+import DocumentTitle from "react-document-title"
+import Link from "gatsby-link"
+import kebabCase from "lodash/kebabCase"
 
 class TagsPageRoute extends React.Component {
-  render () {
+  render() {
     const title = this.props.data.site.siteMetadata.title
     const allTags = this.props.data.allMarkdownRemark.groupBy
 
@@ -14,13 +14,11 @@ class TagsPageRoute extends React.Component {
           <div>
             <h1>Tags</h1>
             <ul>
-              {allTags.map((tag) => (
-                <li
-                  key={tag.fieldValue}
-                >
+              {allTags.map(tag => (
+                <li key={tag.fieldValue}>
                   <Link
                     style={{
-                      textDecoration: 'none',
+                      textDecoration: "none",
                     }}
                     to={`/tags/${kebabCase(tag.fieldValue)}/`}
                   >
