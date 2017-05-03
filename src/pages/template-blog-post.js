@@ -108,7 +108,7 @@ class BlogPostRoute extends React.Component {
 
 export default BlogPostRoute
 
-export const pageQuery = `
+export const pageQuery = graphql`
 query BlogPostBySlug($slug: String!) {
   site {
     siteMetadata {
