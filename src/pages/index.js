@@ -8,6 +8,7 @@ const profilePic = require("../images/kyle-round-small-pantheon.jpg")
 
 class BlogIndexRoute extends React.Component {
   render() {
+    // console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
     const siteTitle = this.props.data.site.siteMetadata.title
 

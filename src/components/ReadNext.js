@@ -44,12 +44,12 @@ const Component = React.createClass({
 
 export default Component
 
-export const query = `
-readNext {
-	id
-	excerpt(pruneLength: 200)
-	frontmatter {
-		title
-	}
+export const query = graphql`
+fragment ReadNext on MarkdownRemark {
+  slug
+  excerpt(pruneLength: 200)
+  frontmatter {
+    title
+  }
 }
 `

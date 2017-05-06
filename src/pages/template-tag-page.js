@@ -50,11 +50,11 @@ export const pageQuery = graphql`
         order: DESC
       },
       frontmatter: {
-        draft: {
-          ne: true
-        }
         tags: {
           in: [$tag]
+        }
+        draft: {
+          ne: true
         }
       }
     ) {
