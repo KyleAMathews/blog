@@ -36,25 +36,25 @@ class TagsPageRoute extends React.Component {
 
 export default TagsPageRoute
 
-export const pageQuery = `
-  {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      limit: 2000,
-      frontmatter: {
-        draft: {
-          ne: true
-        }
-      }
-    ) {
-      groupBy(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
+export const pageQuery = graphql`
+query TagsQuery{
+  site {
+    siteMetadata {
+      title
     }
   }
+  allMarkdownRemark(
+    limit: 2000,
+    frontmatter: {
+      draft: {
+        ne: true
+      }
+    }
+  ) {
+    groupBy(field: frontmatter___tags) {
+      fieldValue
+      totalCount
+    }
+  }
+}
 `
