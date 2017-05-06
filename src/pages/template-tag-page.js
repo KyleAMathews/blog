@@ -36,7 +36,7 @@ class TagRoute extends React.Component {
 
 export default TagRoute
 
-export const pageQuery = `
+export const pageQuery = graphql`
   query TagPage($tag: String) {
     site {
       siteMetadata {
@@ -50,11 +50,11 @@ export const pageQuery = `
         order: DESC
       },
       frontmatter: {
-        draft: {
-          ne: true
-        }
         tags: {
           in: [$tag]
+        }
+        draft: {
+          ne: true
         }
       }
     ) {

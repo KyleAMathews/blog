@@ -8,6 +8,7 @@ const profilePic = require("../images/kyle-round-small-pantheon.jpg")
 
 class BlogIndexRoute extends React.Component {
   render() {
+    // console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
     const siteTitle = this.props.data.site.siteMetadata.title
 
@@ -65,34 +66,34 @@ class BlogIndexRoute extends React.Component {
 
 export default BlogIndexRoute
 
-export const pageQuery = `
-  {
-    site {
-      siteMetadata {
-        title
-        author
+export const pageQuery = graphql`
+query IndexQuery {
+  site {
+    siteMetadata {
+      title
+      author
+    }
+  }
+  allMarkdownRemark(
+    limit: 2000,
+    sortBy: {
+      fields: [frontmatter___date]
+      order: DESC
+    },
+    frontmatter: {
+      draft: {
+        ne: true
       }
     }
-    allMarkdownRemark(
-      limit: 2000,
-      sortBy: {
-        fields: [frontmatter___date]
-        order: DESC
-      },
-      frontmatter: {
-        draft: {
-          ne: true
-        }
-      }
-    ) {
-      edges {
-        node {
-          slug
-          frontmatter {
-            title
-          }
+  ) {
+    edges {
+      node {
+        slug
+        frontmatter {
+          title
         }
       }
     }
   }
+}
 `
