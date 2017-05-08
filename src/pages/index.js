@@ -36,7 +36,7 @@ class BlogIndexRoute extends React.Component {
             <strong>{this.props.data.site.siteMetadata.author}</strong>
             {" "}
             who lives and works
-            in San Francisco building really useful things. You should
+            in {this.props.data.site.siteMetadata.homeCity} building really useful things. You should
             {" "}
             <a href="https://twitter.com/kylemathews">follow him on Twitter</a>
           </p>
@@ -72,6 +72,7 @@ query IndexQuery {
     siteMetadata {
       title
       author
+      homeCity
     }
   }
   allMarkdownRemark(
