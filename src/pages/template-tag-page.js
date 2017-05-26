@@ -9,8 +9,8 @@ class TagRoute extends React.Component {
     const title = this.props.data.site.siteMetadata.title
     const postLinks = posts.map(post => {
       return (
-        <li key={post.node.slug}>
-          <Link to={post.node.slug}>
+        <li key={post.node.fields.slug}>
+          <Link to={post.node.fields.slug}>
             {post.node.frontmatter.title}
           </Link>
         </li>
@@ -61,7 +61,9 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
-          slug
+          fields {
+            slug
+          }
           frontmatter {
             title
           }

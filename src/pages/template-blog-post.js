@@ -10,7 +10,7 @@ const query = `
 readNext___file {
   children {
     ... on MarkdownRemark {
-      slug
+      fields { slug }
       excerpt(pruneLength: 200)
       frontmatter {
         title
@@ -27,8 +27,8 @@ class BlogPostRoute extends React.Component {
 
     let tags
     let tagsSection
-    if (this.props.data.markdownRemark.frontmatter.tagSlugs) {
-      const tagsArray = this.props.data.markdownRemark.frontmatter.tagSlugs
+    if (this.props.data.markdownRemark.fields.tagSlugs) {
+      const tagsArray = this.props.data.markdownRemark.fields.tagSlugs
       tags = tagsArray.map((tag, i) => {
         const divider = i < tagsArray.length - 1 && <span>{" | "}</span>
         return (
@@ -116,13 +116,15 @@ query BlogPostBySlug($slug: String!) {
       homeCity
     }
   }
-  markdownRemark(slug: { eq: $slug }) {
+  markdownRemark(fields: { slug: { eq: $slug }}) {
     html
     excerpt
+    fields {
+      tagSlugs
+    }
     frontmatter {
       title
       tags
-      tagSlugs
       date(formatString: "MMMM DD, YYYY")
     }
   }

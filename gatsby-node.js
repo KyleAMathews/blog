@@ -19,7 +19,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         allMarkdownRemark(limit: 1000, frontmatter: { draft: { ne: true }}) {
           edges {
             node {
-              slug
+              fields {
+                slug
+              }
               frontmatter {
                 tags
               }
@@ -38,10 +40,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       // Create blog posts pages.
       _.each(result.data.allMarkdownRemark.edges, edge => {
         upsertPage({
-          path: edge.node.slug, // required
+          path: edge.node.fields.slug, // required
           component: blogPost,
           context: {
-            slug: edge.node.slug,
+            slug: edge.node.fields.slug,
           },
         })
       })
@@ -74,30 +76,29 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
 // Add custom url pathname for blog posts.
 exports.onNodeCreate = ({ node, boundActionCreators, getNode }) => {
-  const { updateNode } = boundActionCreators
+  const { addFieldToNode } = boundActionCreators
 
-  if (node.type === `File` && typeof node.slug === "undefined") {
+  if (node.internal.type === `File`) {
     const parsedFilePath = path.parse(node.absolutePath)
     const slug = `/${parsedFilePath.dir.split("---")[1]}/`
-    node.slug = slug
-    updateNode(node)
+    addFieldToNode({ node, fieldName: `slug`, fieldValue: slug })
   } else if (
-    node.type === `MarkdownRemark` &&
+    node.internal.type === `MarkdownRemark` &&
     typeof node.slug === "undefined"
   ) {
     const fileNode = getNode(node.parent)
-    node.slug = fileNode.slug
+    addFieldToNode({
+      node,
+      fieldName: `slug`,
+      fieldValue: fileNode.fields.slug,
+    })
     if (node.frontmatter.tags) {
-      node.frontmatter.tagSlugs = node.frontmatter.tags.map(
+      const tagSlugs = node.frontmatter.tags.map(
         tag => `/tags/${_.kebabCase(tag)}/`
       )
+      addFieldToNode({ node, fieldName: `tagSlugs`, fieldValue: tagSlugs })
     }
-    updateNode(node)
   }
-}
-
-exports.postBuild = () => {
-  fs.copySync(`./src/images/logo.png`, `./public/logo.png`)
 }
 
 // Add Lodash plugin
