@@ -70,7 +70,7 @@ class Wrapper extends React.Component {
         <div>
           {header}
         </div>
-        {this.props.children}
+        {this.props.children()}
       </div>
     )
   }

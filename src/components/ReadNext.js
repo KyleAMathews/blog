@@ -30,7 +30,7 @@ const Component = React.createClass({
               margin: 0,
             }}
           >
-            <Link to={nextPost.slug}>
+            <Link to={nextPost.fields.slug}>
               {nextPost.frontmatter.title}
             </Link>
           </h3>
@@ -46,7 +46,9 @@ export default Component
 
 export const query = graphql`
 fragment ReadNext on MarkdownRemark {
-  slug
+  fields {
+    slug
+  }
   excerpt(pruneLength: 200)
   frontmatter {
     title

@@ -46,12 +46,12 @@ class BlogIndexRoute extends React.Component {
             }}
           >
             {posts.map(post => (
-              <li key={post.node.slug}>
+              <li key={post.node.fields.slug}>
                 <Link
                   style={{
                     textDecoration: "none",
                   }}
-                  to={post.node.slug}
+                  to={post.node.fields.slug}
                 >
                   {post.node.frontmatter.title}
                 </Link>
@@ -88,7 +88,9 @@ query IndexQuery {
   ) {
     edges {
       node {
-        slug
+        fields {
+          slug
+        }
         frontmatter {
           title
         }
