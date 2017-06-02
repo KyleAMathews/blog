@@ -1,5 +1,5 @@
 import React from "react"
-import DocumentTitle from "react-document-title"
+import Helmet from "react-helmet"
 import Link from "gatsby-link"
 import kebabCase from "lodash/kebabCase"
 
@@ -9,27 +9,26 @@ class TagsPageRoute extends React.Component {
     const allTags = this.props.data.allMarkdownRemark.groupBy
 
     return (
-      <DocumentTitle title={title}>
+      <div>
+        <Helmet title={title} />
         <div>
-          <div>
-            <h1>Tags</h1>
-            <ul>
-              {allTags.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link
-                    style={{
-                      textDecoration: "none",
-                    }}
-                    to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                  >
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <h1>Tags</h1>
+          <ul>
+            {allTags.map(tag => (
+              <li key={tag.fieldValue}>
+                <Link
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                >
+                  {tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-      </DocumentTitle>
+      </div>
     )
   }
 }

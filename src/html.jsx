@@ -1,6 +1,5 @@
 import React from "react"
 import { TypographyStyle } from "react-typography"
-import Helmet from "react-helmet"
 import logo from "./images/logo.png"
 
 import typography from "./utils/typography"
@@ -16,7 +15,6 @@ if (process.env.NODE_ENV === `production`) {
 
 module.exports = React.createClass({
   render() {
-    const head = Helmet.rewind()
     let css
     if (process.env.NODE_ENV === `production`) {
       css = (
@@ -36,13 +34,10 @@ module.exports = React.createClass({
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <link rel="icon" type="image/png" sizes="1024x1024" href={logo} />
           {this.props.headComponents}
+          <link rel="icon" type="image/png" sizes="1024x1024" href={logo} />
           <TypographyStyle typography={typography} />
           {css}
-          {head.title.toComponent()}
-          {head.meta.toComponent()}
-          {head.link.toComponent()}
         </head>
         <body>
           <div
