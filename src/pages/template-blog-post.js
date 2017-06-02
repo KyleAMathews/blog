@@ -95,7 +95,7 @@ class BlogPostRoute extends React.Component {
           />
           <strong>{this.props.data.site.siteMetadata.author}</strong>
           {" "}
-          lives and works in San Francisco building useful things.
+          lives and works in {this.props.data.site.siteMetadata.homeCity} building useful things.
           {" "}
           <a href="https://twitter.com/kylemathews">
             You should follow him on Twitter
@@ -113,6 +113,7 @@ query BlogPostBySlug($slug: String!) {
   site {
     siteMetadata {
       author
+      homeCity
     }
   }
   markdownRemark(fields: { slug: { eq: $slug }}) {

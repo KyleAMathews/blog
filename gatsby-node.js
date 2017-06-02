@@ -39,7 +39,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
       // Create blog posts pages.
       _.each(result.data.allMarkdownRemark.edges, edge => {
+<<<<<<< HEAD
         createPage({
+=======
+        upsertPage({
+>>>>>>> origin/master
           path: edge.node.fields.slug, // required
           component: blogPost,
           context: {
@@ -75,19 +79,32 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 //exports.postBuild = require('./post-build')
 
 // Add custom url pathname for blog posts.
+<<<<<<< HEAD
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
+=======
+exports.onNodeCreate = ({ node, boundActionCreators, getNode }) => {
+  const { addFieldToNode } = boundActionCreators
+>>>>>>> origin/master
 
   if (node.internal.type === `File`) {
     const parsedFilePath = path.parse(node.absolutePath)
     const slug = `/${parsedFilePath.dir.split("---")[1]}/`
+<<<<<<< HEAD
     createNodeField({ node, fieldName: `slug`, fieldValue: slug })
+=======
+    addFieldToNode({ node, fieldName: `slug`, fieldValue: slug })
+>>>>>>> origin/master
   } else if (
     node.internal.type === `MarkdownRemark` &&
     typeof node.slug === "undefined"
   ) {
     const fileNode = getNode(node.parent)
+<<<<<<< HEAD
     createNodeField({
+=======
+    addFieldToNode({
+>>>>>>> origin/master
       node,
       fieldName: `slug`,
       fieldValue: fileNode.fields.slug,
@@ -96,7 +113,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       const tagSlugs = node.frontmatter.tags.map(
         tag => `/tags/${_.kebabCase(tag)}/`
       )
+<<<<<<< HEAD
       createNodeField({ node, fieldName: `tagSlugs`, fieldValue: tagSlugs })
+=======
+      addFieldToNode({ node, fieldName: `tagSlugs`, fieldValue: tagSlugs })
+>>>>>>> origin/master
     }
   }
 }

@@ -58,7 +58,6 @@ class BlogIndexRoute extends React.Component {
             </li>
           ))}
         </ul>
-      </div>
     )
   }
 }
@@ -71,6 +70,7 @@ query IndexQuery {
     siteMetadata {
       title
       author
+      homeCity
     }
   }
   allMarkdownRemark(
