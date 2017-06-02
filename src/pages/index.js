@@ -58,6 +58,7 @@ class BlogIndexRoute extends React.Component {
             </li>
           ))}
         </ul>
+      </div>
     )
   }
 }
