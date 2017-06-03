@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
-import DocumentTitle from "react-document-title"
+import Helmet from "react-helmet"
 
 class TagRoute extends React.Component {
   render() {
@@ -18,18 +18,17 @@ class TagRoute extends React.Component {
     })
 
     return (
-      <DocumentTitle title={title}>
-        <div>
-          <h2>
-            {this.props.data.allMarkdownRemark.totalCount}
-            {" "}posts tagged with “{this.props.pathContext.tag}”
-          </h2>
-          <ul>{postLinks}</ul>
-          <p>
-            <Link to="/tags/">Browse all tags</Link>
-          </p>
-        </div>
-      </DocumentTitle>
+      <div>
+        <Helmet title={title} />
+        <h2>
+          {this.props.data.allMarkdownRemark.totalCount}
+          {" "}posts tagged with “{this.props.pathContext.tag}”
+        </h2>
+        <ul>{postLinks}</ul>
+        <p>
+          <Link to="/tags/">Browse all tags</Link>
+        </p>
+      </div>
     )
   }
 }
