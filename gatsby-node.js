@@ -3,7 +3,6 @@ const Promise = require("bluebird")
 const path = require("path")
 const select = require(`unist-util-select`)
 const precache = require(`sw-precache`)
-const fs = require(`fs-extra`)
 const webpackLodashPlugin = require("lodash-webpack-plugin")
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
