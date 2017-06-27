@@ -10,25 +10,28 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const pages = []
-    const blogPost = path.resolve("src/pages/template-blog-post.js")
-    const tagPages = path.resolve("src/pages/template-tag-page.js")
+    const blogPost = path.resolve("src/templates/blog-post.js")
+    const tagPages = path.resolve("src/templates/tag-page.js")
     graphql(
       `
-      {
-        allMarkdownRemark(limit: 1000, frontmatter: { draft: { ne: true }}) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                tags
+        {
+          allMarkdownRemark(
+            limit: 1000,
+            filter: { frontmatter: { draft: { ne: true } } },
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  tags
+                }
               }
             }
           }
         }
-      }
-    `
+      `
     ).then(result => {
       if (result.errors) {
         console.log(result.errors)

@@ -34,7 +34,9 @@ const Component = React.createClass({
               {nextPost.frontmatter.title}
             </Link>
           </h3>
-          <p>{nextPost.excerpt}</p>
+          <p>
+            {nextPost.excerpt}
+          </p>
           <hr />
         </div>
       )
@@ -45,13 +47,13 @@ const Component = React.createClass({
 export default Component
 
 export const query = graphql`
-fragment ReadNext on MarkdownRemark {
-  fields {
-    slug
+  fragment ReadNext on MarkdownRemark {
+    fields {
+      slug
+    }
+    excerpt(pruneLength: 200)
+    frontmatter {
+      title
+    }
   }
-  excerpt(pruneLength: 200)
-  frontmatter {
-    title
-  }
-}
 `
