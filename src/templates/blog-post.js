@@ -30,7 +30,11 @@ class BlogPostRoute extends React.Component {
     if (this.props.data.markdownRemark.fields.tagSlugs) {
       const tagsArray = this.props.data.markdownRemark.fields.tagSlugs
       tags = tagsArray.map((tag, i) => {
-        const divider = i < tagsArray.length - 1 && <span>{" | "}</span>
+        const divider =
+          i < tagsArray.length - 1 &&
+          <span>
+            {" | "}
+          </span>
         return (
           <span key={tag}>
             <Link to={tag}>
@@ -59,7 +63,9 @@ class BlogPostRoute extends React.Component {
           title={`${post.frontmatter.title}`}
           meta={[{ name: "description", content: post.excerpt }]}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <h1>
+          {post.frontmatter.title}
+        </h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         {tagsSection}
         <p
@@ -93,10 +99,9 @@ class BlogPostRoute extends React.Component {
               height: rhythm(2),
             }}
           />
-          <strong>{this.props.data.site.siteMetadata.author}</strong>
-          {" "}
-          lives and works in {this.props.data.site.siteMetadata.homeCity} building useful things.
-          {" "}
+          <strong>{this.props.data.site.siteMetadata.author}</strong> lives and
+          works in {this.props.data.site.siteMetadata.homeCity} building useful
+          things.{" "}
           <a href="https://twitter.com/kylemathews">
             You should follow him on Twitter
           </a>
@@ -109,24 +114,24 @@ class BlogPostRoute extends React.Component {
 export default BlogPostRoute
 
 export const pageQuery = graphql`
-query BlogPostBySlug($slug: String!) {
-  site {
-    siteMetadata {
-      author
-      homeCity
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        author
+        homeCity
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      excerpt
+      fields {
+        tagSlugs
+      }
+      frontmatter {
+        title
+        tags
+        date(formatString: "MMMM DD, YYYY")
+      }
     }
   }
-  markdownRemark(fields: { slug: { eq: $slug }}) {
-    html
-    excerpt
-    fields {
-      tagSlugs
-    }
-    frontmatter {
-      title
-      tags
-      date(formatString: "MMMM DD, YYYY")
-    }
-  }
-}
 `

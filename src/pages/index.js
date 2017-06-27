@@ -31,13 +31,11 @@ class BlogIndexRoute extends React.Component {
               height: rhythm(2),
             }}
           />
-          Written by
-          {" "}
-          <strong>{this.props.data.site.siteMetadata.author}</strong>
-          {" "}
-          who lives and works
-          in San Francisco building really useful things. You should
-          {" "}
+          Written by <strong>
+            {this.props.data.site.siteMetadata.author}
+          </strong>{" "}
+          who lives and works in San Francisco building really useful things.
+          You should{" "}
           <a href="https://twitter.com/kylemathews">follow him on Twitter</a>
         </p>
         <ul
@@ -45,7 +43,7 @@ class BlogIndexRoute extends React.Component {
             marginBottom: 0,
           }}
         >
-          {posts.map(post => (
+          {posts.map(post =>
             <li key={post.node.fields.slug}>
               <Link
                 style={{
@@ -56,7 +54,7 @@ class BlogIndexRoute extends React.Component {
                 {post.node.frontmatter.title}
               </Link>
             </li>
-          ))}
+          )}
         </ul>
       </div>
     )
@@ -66,36 +64,29 @@ class BlogIndexRoute extends React.Component {
 export default BlogIndexRoute
 
 export const pageQuery = graphql`
-query IndexQuery {
-  site {
-    siteMetadata {
-      title
-      author
-      homeCity
-    }
-  }
-  allMarkdownRemark(
-    limit: 2000,
-    sortBy: {
-      fields: [frontmatter___date]
-      order: DESC
-    },
-    frontmatter: {
-      draft: {
-        ne: true
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+        author
+        homeCity
       }
     }
-  ) {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          title
+    allMarkdownRemark(
+      limit: 2000,
+      sort: { fields: [frontmatter___date], order: DESC },
+      filter: { frontmatter: { draft: { ne: true } } },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
         }
       }
     }
   }
-}
 `

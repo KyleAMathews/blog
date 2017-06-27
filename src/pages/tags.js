@@ -6,7 +6,7 @@ import kebabCase from "lodash/kebabCase"
 class TagsPageRoute extends React.Component {
   render() {
     const title = this.props.data.site.siteMetadata.title
-    const allTags = this.props.data.allMarkdownRemark.groupBy
+    const allTags = this.props.data.allMarkdownRemark.group
 
     return (
       <div>
@@ -14,7 +14,7 @@ class TagsPageRoute extends React.Component {
         <div>
           <h1>Tags</h1>
           <ul>
-            {allTags.map(tag => (
+            {allTags.map(tag =>
               <li key={tag.fieldValue}>
                 <Link
                   style={{
@@ -25,7 +25,7 @@ class TagsPageRoute extends React.Component {
                   {tag.fieldValue} ({tag.totalCount})
                 </Link>
               </li>
-            ))}
+            )}
           </ul>
         </div>
       </div>
@@ -36,24 +36,20 @@ class TagsPageRoute extends React.Component {
 export default TagsPageRoute
 
 export const pageQuery = graphql`
-query TagsQuery{
-  site {
-    siteMetadata {
-      title
-    }
-  }
-  allMarkdownRemark(
-    limit: 2000,
-    frontmatter: {
-      draft: {
-        ne: true
+  query TagsQuery {
+    site {
+      siteMetadata {
+        title
       }
     }
-  ) {
-    groupBy(field: frontmatter___tags) {
-      fieldValue
-      totalCount
+    allMarkdownRemark(
+      limit: 2000,
+      filter: { frontmatter: { draft: { ne: true } } },
+    ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
     }
   }
-}
 `

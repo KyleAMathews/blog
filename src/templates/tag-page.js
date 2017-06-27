@@ -21,10 +21,11 @@ class TagRoute extends React.Component {
       <div>
         <Helmet title={title} />
         <h2>
-          {this.props.data.allMarkdownRemark.totalCount}
-          {" "}posts tagged with “{this.props.pathContext.tag}”
+          {this.props.data.allMarkdownRemark.totalCount} posts tagged with “{this.props.pathContext.tag}”
         </h2>
-        <ul>{postLinks}</ul>
+        <ul>
+          {postLinks}
+        </ul>
         <p>
           <Link to="/tags/">Browse all tags</Link>
         </p>
@@ -42,20 +43,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark (
+    allMarkdownRemark(
       limit: 1000,
-      sortBy: {
-        fields: [frontmatter___date]
-        order: DESC
-      },
-      frontmatter: {
-        tags: {
-          in: [$tag]
-        }
-        draft: {
-          ne: true
-        }
-      }
+      sort: { fields: [frontmatter___date], order: DESC },
+      filter: { frontmatter: { tags: { in: [$tag] }, draft: { ne: true } } },
     ) {
       totalCount
       edges {
