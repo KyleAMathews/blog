@@ -66,7 +66,7 @@ class Wrapper extends React.Component {
           margin: `0 auto`,
         }}
       >
-        <Helmet title="Bricolage" titleTemplate="Bricolage | %s" />
+        <Helmet defaultTitle="Bricolage" titleTemplate="Bricolage | %s" />
         <div>
           {header}
         </div>
