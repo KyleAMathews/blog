@@ -73,9 +73,9 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      limit: 2000,
-      sort: { fields: [frontmatter___date], order: DESC },
-      filter: { frontmatter: { draft: { ne: true } } },
+      limit: 2000
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { draft: { ne: true } } }
     ) {
       edges {
         node {
