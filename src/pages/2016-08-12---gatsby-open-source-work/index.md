@@ -9,7 +9,7 @@ draft: false
 ---
 
 After several years of working on a startup, I've recently quit. The
-reasons are quite boring, poor product traction and we ran out of money,
+reasons are quite boring---poor product traction and we ran out of money---
 so I won't go into that here. But the exciting part is that I'm now free
 to work more on some of my open source projects! Two in particular,
 [Gatsby.js](https://github.com/gatsbyjs/gatsby) and
@@ -32,15 +32,14 @@ building websites and web apps for a long time now and they both are a
 compilation of a decade+ of thought about and experimentation into what
 is the perfect toolset for building for the web.
 
-They were also both, interestingly, by-products of working on my startup
+Both projects were also, interestingly, by-products of working on my startup
 RelateRocket. Gatsby started when I needed to create a website for
 RelateRocket and wanted to avoid using anything other than React.js.
 Typography.js started when we were thinking about building a product
 that'd automatically create personalized landing pages for sales reps to
 send and I started thinking about how to easily/quickly emulate the
-typography and other design choices from our customers' websites. It is
-satisfying that although the startup didn't succeed that phoenix-like,
-something of value has risen from the ashes.
+typography and other design choices from our customers' websites. It is satisfying that although the startup didn't succeed, 
+something of value has risen, phoenix-like, from the ashes.
 
 Now that my full attention is on Gatsby, I have a number of ideas
 I'm working on that I'm really excited about.
@@ -50,17 +49,17 @@ I'm working on that I'm really excited about.
 years. It makes possible (finally) sophisticated client caching plus
 true offline support. I'm adding excellent on-by-default support to
 Gatsby for Service Workers and a great offline experience.
-* **Code splitting** A great website loads really fast. Code splitting
+* **Code splitting**. A great website loads really fast. Code splitting
   is a technique for ensuring that every page loads with *only* the code
 that's necessary for that page.
-* **Themes & Plugins** Wordpress & Jekyll are both great examples of
+* **Themes & Plugins**. Wordpress & Jekyll are both great examples of
   open source communities with robust theme & plugins ecosystems. I'd
 love something like that to develop around Gatsby.
-* **Website & Documentation/Tutorials** Somewhat ironically for a
+* **Website & Documentation/Tutorials**. Somewhat ironically for a
   website building tool, Gatsby doesn't yet have a website. This will be
-fixed plus I'll be writing high-quality documentation and tutorials.
-* **Pull instead of Push** This last idea is a bit abstract but super
-  powerful. Currently data in Gatsby (like pretty much every static site
+fixed, plus I'll be writing high-quality documentation and tutorials.
+* **Pull instead of Push**. This last idea is a bit abstract but super
+  powerful. Currently, data in Gatsby (like pretty much every static site
 generator) is *pushed* into templates to be rendered into HTML. This is
 a simple pattern and works great for many use cases. But when you start
 working on more complex sites, you really start to miss the flexibility
