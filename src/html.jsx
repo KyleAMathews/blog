@@ -13,40 +13,32 @@ if (process.env.NODE_ENV === `production`) {
   }
 }
 
-module.exports = React.createClass({
-  render() {
-    let css
-    if (process.env.NODE_ENV === `production`) {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
-        />
-      )
-    }
-
-    return (
-      <html lang="en">
-        <head>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          {this.props.headComponents}
-          <link rel="icon" type="image/png" sizes="1024x1024" href={logo} />
-          <TypographyStyle typography={typography} />
-          {css}
-        </head>
-        <body>
-          <div
-            id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
-          />
-          {this.props.postBodyComponents}
-        </body>
-      </html>
+module.exports = props => {
+  let css
+  if (process.env.NODE_ENV === `production`) {
+    css = (
+      <style
+        id="gatsby-inlined-css"
+        dangerouslySetInnerHTML={{ __html: stylesStr }}
+      />
     )
-  },
-})
+  }
+
+  return (
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {props.headComponents}
+        <link rel="icon" type="image/png" sizes="1024x1024" href={logo} />
+        <TypographyStyle typography={typography} />
+        {css}
+      </head>
+      <body>
+        <div id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
+        {props.postBodyComponents}
+      </body>
+    </html>
+  )
+}

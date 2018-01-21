@@ -3,7 +3,7 @@ const Promise = require("bluebird")
 const path = require("path")
 const select = require(`unist-util-select`)
 const precache = require(`sw-precache`)
-const webpackLodashPlugin = require("lodash-webpack-plugin")
+const WebpackLodashPlugin = require("lodash-webpack-plugin")
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -16,8 +16,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       `
         {
           allMarkdownRemark(
-            limit: 1000,
-            filter: { frontmatter: { draft: { ne: true } } },
+            limit: 1000
+            filter: { frontmatter: { draft: { ne: true } } }
           ) {
             edges {
               node {
@@ -104,10 +104,10 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 }
 
 // Add Lodash plugin
-exports.modifyWebpackConfig = ({ config, stage }) => {
+exports.modifyWebpackConfig = ({ stage, actions }) => {
   if (stage === `build-javascript`) {
-    config.plugin(`Lodash`, webpackLodashPlugin, null)
+    actions.setWebpackConfig({
+      plugins: [new WebpackLodashPlugin()],
+    })
   }
-
-  return
 }

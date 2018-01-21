@@ -31,9 +31,7 @@ class BlogIndexRoute extends React.Component {
               height: rhythm(2),
             }}
           />
-          Written by <strong>
-            {this.props.data.site.siteMetadata.author}
-          </strong>{" "}
+          Written by <strong>{this.props.data.site.siteMetadata.author}</strong>{" "}
           who lives and works in San Francisco building really useful things.
           You should{" "}
           <a href="https://twitter.com/kylemathews">follow him on Twitter</a>
@@ -43,7 +41,7 @@ class BlogIndexRoute extends React.Component {
             marginBottom: 0,
           }}
         >
-          {posts.map(post =>
+          {posts.map(post => (
             <li key={post.node.fields.slug}>
               <Link
                 style={{
@@ -54,7 +52,7 @@ class BlogIndexRoute extends React.Component {
                 {post.node.frontmatter.title}
               </Link>
             </li>
-          )}
+          ))}
         </ul>
       </div>
     )
