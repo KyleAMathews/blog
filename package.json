@@ -33,6 +33,7 @@
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.1",
+    "strip-json-comments": "^2.0.1",
     "typeface-alegreya": "^0.0.35",
     "typeface-alegreya-sans": "^0.0.35",
     "typography": "^0.16.4",
