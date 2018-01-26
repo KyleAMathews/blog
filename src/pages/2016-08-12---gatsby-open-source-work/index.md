@@ -9,7 +9,7 @@ draft: false
 ---
 
 After several years of working on a startup, I've recently quit. The
-reasons are quite boring---poor product traction and we ran out of money---
+reasons are quite boring—poor product traction and we ran out of money—
 so I won't go into that here. But the exciting part is that I'm now free
 to work more on some of my open source projects! Two in particular,
 [Gatsby.js](https://github.com/gatsbyjs/gatsby) and
