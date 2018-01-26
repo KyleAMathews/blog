@@ -57,7 +57,7 @@ To return to the Ira Glass quote:
 
 It is so easy to quit. We feel this strong spiritual experience and we have this intense feeling of hope and joy in what we can become and then… weeks and months and years pass and your disappointment in yourself grows and grows until perhaps, finally, you just quit trying.
 
-My testimony to you today is that those feelings of hope and visions of what you can become are real and that they’re a gift given to us. But also that achieving that vision is going to take a lot of hard work. There’s no getting around that. But all of us are capable of so much and we shouldn’t ever let that hope slip away from us.
+My testimony to you today is that those feelings of hope and visions of what you can become are real and that they’re a gift given to us. But also that achieving that vision is going to take a lot of hard work. There’s no getting around that. But all of us are capable of so much and we shouldn’t ever let that vision and hope slip away from us.
 
 I’ll close with two of my favorite scriptures
 
