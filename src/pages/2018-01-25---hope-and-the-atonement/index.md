@@ -1,3 +1,11 @@
+---
+title: "Hope and the Atonement"
+tags: null
+date: "2018-1-25"
+---
+
+*I gave the following at the local [LDS church](https://www.mormon.org/) church I attend. Our church doesn't have paid ministry meaning everyone who attends occasionally takes their turn preaching and exhorting.*
+
 Bishop asked me to speak on what I’m doing in my daily life to become more Christ-like. This has been an interesting talk to prepare for. It’s been really interesting to reflect on the important lessons I’ve learned over the past 5-6 years.
 
 When I was growing up, I could never ever quite understand the role of Christ and his atonement. I sometimes got the impression that saved-by-grace-like that when you turn to Christ and your issues start magically to disappear and I was always like, “nope, still got lots of personal issues.”
