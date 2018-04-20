@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: "Bricolage",
+    description:
+      "Internet home of Kyle Mathews — tech entrepreneur and bricolager",
     author: "Kyle Mathews",
     homeCity: "San Francisco",
+    siteUrl: "https://www.bricolage.io/",
+    twitter: "@kylemathews",
   },
   plugins: [
     {
@@ -10,6 +14,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     `gatsby-transformer-sharp`,

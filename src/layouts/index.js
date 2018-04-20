@@ -1,15 +1,15 @@
 import React from "react"
-import Link from "gatsby-link"
-import Helmet from "react-helmet"
+import { Link } from "gatsby"
 import "typeface-alegreya"
 import "typeface-alegreya-sans"
-
 import "../css/prism-coy.css"
+
+import SEOBase from "../components/seo-base"
 import typography from "../utils/typography"
 const rhythm = typography.rhythm
 const scale = typography.scale
 
-class Wrapper extends React.Component {
+class Layout extends React.Component {
   render() {
     let header
     // Check if the location is either the front page or a tags page.
@@ -66,14 +66,12 @@ class Wrapper extends React.Component {
           margin: `0 auto`,
         }}
       >
-        <Helmet defaultTitle="Bricolage" titleTemplate="Bricolage | %s" />
-        <div>
-          {header}
-        </div>
-        {this.props.children()}
+        <SEOBase />
+        <div>{header}</div>
+        {this.props.children}
       </div>
     )
   }
 }
 
-export default Wrapper
+export default Layout

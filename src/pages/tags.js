@@ -1,7 +1,9 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Link from "gatsby-link"
+import { Link } from "gatsby"
 import kebabCase from "lodash/kebabCase"
+
+import Layout from "../layouts"
 
 class TagsPageRoute extends React.Component {
   render() {
@@ -9,12 +11,12 @@ class TagsPageRoute extends React.Component {
     const allTags = this.props.data.allMarkdownRemark.group
 
     return (
-      <div>
+      <Layout location={this.props.location}>
         <Helmet title={title} />
         <div>
           <h1>Tags</h1>
           <ul>
-            {allTags.map(tag =>
+            {allTags.map(tag => (
               <li key={tag.fieldValue}>
                 <Link
                   style={{
@@ -25,10 +27,10 @@ class TagsPageRoute extends React.Component {
                   {tag.fieldValue} ({tag.totalCount})
                 </Link>
               </li>
-            )}
+            ))}
           </ul>
         </div>
-      </div>
+      </Layout>
     )
   }
 }

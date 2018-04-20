@@ -1,12 +1,9 @@
 const _ = require("lodash")
 const Promise = require("bluebird")
 const path = require("path")
-const select = require(`unist-util-select`)
-const precache = require(`sw-precache`)
-const webpackLodashPlugin = require("lodash-webpack-plugin")
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     const pages = []
@@ -16,8 +13,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       `
         {
           allMarkdownRemark(
-            limit: 1000,
-            filter: { frontmatter: { draft: { ne: true } } },
+            limit: 1000
+            filter: { frontmatter: { draft: { ne: true } } }
           ) {
             edges {
               node {
@@ -74,11 +71,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   })
 }
 
-//exports.postBuild = require('./post-build')
-
 // Add custom url pathname for blog posts.
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
   if (node.internal.type === `File`) {
     const parsedFilePath = path.parse(node.absolutePath)
@@ -101,13 +96,4 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       createNodeField({ node, name: `tagSlugs`, value: tagSlugs })
     }
   }
-}
-
-// Add Lodash plugin
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === `build-javascript`) {
-    config.plugin(`Lodash`, webpackLodashPlugin, null)
-  }
-
-  return
 }

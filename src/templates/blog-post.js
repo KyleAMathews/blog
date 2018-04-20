@@ -1,24 +1,11 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Link from "gatsby-link"
+import { Link } from "gatsby"
 import typography from "../utils/typography"
 const { rhythm, scale } = typography
-const profilePic = require("../images/kyle-round-small-pantheon.jpg")
-import ReadNext from "../components/ReadNext"
-//import { query } from '../components/ReadNext'
-const query = `
-readNext___file {
-  children {
-    ... on MarkdownRemark {
-      fields { slug }
-      excerpt(pruneLength: 200)
-      frontmatter {
-        title
-      }
-    }
-  }
-}
-`
+import ReadNext from "../components/read-next"
+import Bio from "../components/bio"
+import Layout from "../layouts"
 
 class BlogPostRoute extends React.Component {
   render() {
@@ -30,11 +17,7 @@ class BlogPostRoute extends React.Component {
     if (this.props.data.markdownRemark.fields.tagSlugs) {
       const tagsArray = this.props.data.markdownRemark.fields.tagSlugs
       tags = tagsArray.map((tag, i) => {
-        const divider =
-          i < tagsArray.length - 1 &&
-          <span>
-            {" | "}
-          </span>
+        const divider = i < tagsArray.length - 1 && <span>{" | "}</span>
         return (
           <span key={tag}>
             <Link to={tag}>
@@ -58,14 +41,12 @@ class BlogPostRoute extends React.Component {
     }
 
     return (
-      <div>
+      <Layout location={this.props.location}>
         <Helmet
           title={`${post.frontmatter.title}`}
           meta={[{ name: "description", content: post.excerpt }]}
         />
-        <h1>
-          {post.frontmatter.title}
-        </h1>
+        <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         {tagsSection}
         <p
@@ -83,30 +64,8 @@ class BlogPostRoute extends React.Component {
           }}
         />
         <ReadNext nextPost={post.frontmatter.readNext} />
-        <p
-          style={{
-            marginBottom: 0,
-          }}
-        >
-          <img
-            src={profilePic}
-            style={{
-              borderRadius: `100%`,
-              float: "left",
-              marginRight: rhythm(1 / 4),
-              marginBottom: 0,
-              width: rhythm(2),
-              height: rhythm(2),
-            }}
-          />
-          <strong>{this.props.data.site.siteMetadata.author}</strong> lives and
-          works in {this.props.data.site.siteMetadata.homeCity} building useful
-          things.{" "}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
-          </a>
-        </p>
-      </div>
+        <Bio />
+      </Layout>
     )
   }
 }
@@ -115,12 +74,6 @@ export default BlogPostRoute
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        author
-        homeCity
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
