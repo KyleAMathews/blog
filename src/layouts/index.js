@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "gatsby-link"
+import { Link, StaticQuery } from "gatsby"
 import Helmet from "react-helmet"
 import "typeface-alegreya"
 import "typeface-alegreya-sans"
@@ -9,7 +9,7 @@ import typography from "../utils/typography"
 const rhythm = typography.rhythm
 const scale = typography.scale
 
-class Wrapper extends React.Component {
+class Layout extends React.Component {
   render() {
     let header
     // Check if the location is either the front page or a tags page.
@@ -59,19 +59,35 @@ class Wrapper extends React.Component {
       )
     }
     return (
-      <div
-        style={{
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          maxWidth: rhythm(22),
-          margin: `0 auto`,
-        }}
-      >
-        <Helmet defaultTitle="Bricolage" titleTemplate="Bricolage | %s" />
-        <div>{header}</div>
-        {this.props.children()}
-      </div>
+      <StaticQuery
+        query={graphql`
+          query Layout {
+            site {
+              siteMetadata {
+                title
+              }
+            }
+          }
+        `}
+        render={data => (
+          <div
+            style={{
+              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+              maxWidth: rhythm(22),
+              margin: `0 auto`,
+            }}
+          >
+            <Helmet
+              defaultTitle={data.site.siteMetadata.title}
+              titleTemplate={`${data.site.siteMetadata.title} | %s`}
+            />
+            <div>{header}</div>
+            {this.props.children}
+          </div>
+        )}
+      />
     )
   }
 }
 
-export default Wrapper
+export default Layout

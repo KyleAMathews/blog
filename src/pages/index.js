@@ -1,44 +1,24 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Link from "gatsby-link"
+import { Link } from "gatsby"
 
+import Bio from "../components/bio"
 import typography from "../utils/typography"
 const rhythm = typography.rhythm
-const profilePic = require("../images/kyle-round-small-pantheon.jpg")
+import Layout from "../layouts"
 
 class BlogIndexRoute extends React.Component {
   render() {
     // console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
-    const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
-      <div>
-        <Helmet title={siteTitle} />
-        <p
-          style={{
-            marginBottom: rhythm(1.5),
-          }}
-        >
-          <img
-            src={profilePic}
-            style={{
-              borderRadius: `100%`,
-              float: "left",
-              marginRight: rhythm(1 / 4),
-              marginBottom: 0,
-              width: rhythm(2),
-              height: rhythm(2),
-            }}
-          />
-          Written by <strong>{this.props.data.site.siteMetadata.author}</strong>{" "}
-          who lives and works in San Francisco building really useful things.
-          You should{" "}
-          <a href="https://twitter.com/kylemathews">follow him on Twitter</a>
-        </p>
+      <Layout location={this.props.location}>
+        <Bio />
         <ul
           style={{
             marginBottom: 0,
+            marginTop: rhythm(1.5),
           }}
         >
           {posts.map(post => (
@@ -54,7 +34,7 @@ class BlogIndexRoute extends React.Component {
             </li>
           ))}
         </ul>
-      </div>
+      </Layout>
     )
   }
 }
@@ -63,13 +43,6 @@ export default BlogIndexRoute
 
 export const pageQuery = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        title
-        author
-        homeCity
-      }
-    }
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }

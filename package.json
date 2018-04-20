@@ -19,6 +19,7 @@
     "gatsby-plugin-preact": "canary",
     "gatsby-plugin-react-helmet": "canary",
     "gatsby-plugin-sharp": "canary",
+    "gatsby-plugin-typography": "^2.1.0-alpha.523a4286",
     "gatsby-remark-copy-linked-files": "canary",
     "gatsby-remark-images": "canary",
     "gatsby-remark-prismjs": "canary",
@@ -34,10 +35,10 @@
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.1",
-    "typeface-alegreya": "^0.0.35",
-    "typeface-alegreya-sans": "^0.0.35",
+    "typeface-alegreya": "0.0.54",
+    "typeface-alegreya-sans": "0.0.54",
     "typography": "^0.16.4",
-    "typography-plugin-code": "^0.15.10",
-    "typography-theme-de-young": "^0.15.10"
+    "typography-plugin-code": "^0.16.11",
+    "typography-theme-de-young": "^0.16.9"
   }
 }

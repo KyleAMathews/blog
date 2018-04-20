@@ -1,12 +1,13 @@
 import React from "react"
-import Link from "gatsby-link"
+import { Link } from "gatsby"
 import Helmet from "react-helmet"
+
+import Layout from "../layouts"
 
 class TagRoute extends React.Component {
   render() {
     //console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
-    const title = this.props.data.site.siteMetadata.title
     const postLinks = posts.map(post => {
       return (
         <li key={post.node.fields.slug}>
@@ -16,18 +17,17 @@ class TagRoute extends React.Component {
     })
 
     return (
-      <div>
-        <Helmet title={title} />
+      <Layout location={this.props.location}>
         <h2>
           {this.props.data.allMarkdownRemark.totalCount} posts tagged with “{
-            this.props.pathContext.tag
+            this.props.pageContext.tag
           }”
         </h2>
         <ul>{postLinks}</ul>
         <p>
           <Link to="/tags/">Browse all tags</Link>
         </p>
-      </div>
+      </Layout>
     )
   }
 }
@@ -36,11 +36,6 @@ export default TagRoute
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
