@@ -9,7 +9,6 @@ import Layout from "../layouts"
 
 class BlogIndexRoute extends React.Component {
   render() {
-    // console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
 
     return (

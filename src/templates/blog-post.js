@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { Link } from "gatsby"
 import typography from "../utils/typography"
 const { rhythm, scale } = typography
-import ReadNext from "../components/ReadNext"
+import ReadNext from "../components/read-next"
 import Bio from "../components/bio"
 import Layout from "../layouts"
 

@@ -1,10 +1,10 @@
 import React from "react"
-import { Link, StaticQuery } from "gatsby"
-import Helmet from "react-helmet"
+import { Link } from "gatsby"
 import "typeface-alegreya"
 import "typeface-alegreya-sans"
-
 import "../css/prism-coy.css"
+
+import SEOBase from "../components/seo-base"
 import typography from "../utils/typography"
 const rhythm = typography.rhythm
 const scale = typography.scale
@@ -59,33 +59,17 @@ class Layout extends React.Component {
       )
     }
     return (
-      <StaticQuery
-        query={graphql`
-          query Layout {
-            site {
-              siteMetadata {
-                title
-              }
-            }
-          }
-        `}
-        render={data => (
-          <div
-            style={{
-              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-              maxWidth: rhythm(22),
-              margin: `0 auto`,
-            }}
-          >
-            <Helmet
-              defaultTitle={data.site.siteMetadata.title}
-              titleTemplate={`${data.site.siteMetadata.title} | %s`}
-            />
-            <div>{header}</div>
-            {this.props.children}
-          </div>
-        )}
-      />
+      <div
+        style={{
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          maxWidth: rhythm(22),
+          margin: `0 auto`,
+        }}
+      >
+        <SEOBase />
+        <div>{header}</div>
+        {this.props.children}
+      </div>
     )
   }
 }
