@@ -5,7 +5,7 @@ import { StaticQuery } from "gatsby"
 export default () => (
   <StaticQuery
     query={graphql`
-      query Layout {
+      query SEOBase {
         site {
           siteMetadata {
             title
