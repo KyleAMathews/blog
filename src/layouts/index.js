@@ -67,10 +67,8 @@ class Wrapper extends React.Component {
         }}
       >
         <Helmet defaultTitle="Bricolage" titleTemplate="Bricolage | %s" />
-        <div>
-          {header}
-        </div>
-        {this.props.children()}
+        <div>{header}</div>
+        {this.props.children}
       </div>
     )
   }
