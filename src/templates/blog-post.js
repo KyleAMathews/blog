@@ -2,9 +2,11 @@ import React from "react"
 import Helmet from "react-helmet"
 import Link from "gatsby-link"
 import typography from "../utils/typography"
-const { rhythm, scale } = typography
-const profilePic = require("../images/kyle-round-small-pantheon.jpg")
 import ReadNext from "../components/ReadNext"
+import Layout from "../layouts/index.js"
+import profilePic from "../images/kyle-round-small-pantheon.jpg"
+
+const { rhythm, scale } = typography
 //import { query } from '../components/ReadNext'
 const query = `
 readNext___file {
@@ -30,11 +32,7 @@ class BlogPostRoute extends React.Component {
     if (this.props.data.markdownRemark.fields.tagSlugs) {
       const tagsArray = this.props.data.markdownRemark.fields.tagSlugs
       tags = tagsArray.map((tag, i) => {
-        const divider =
-          i < tagsArray.length - 1 &&
-          <span>
-            {" | "}
-          </span>
+        const divider = i < tagsArray.length - 1 && <span>{" | "}</span>
         return (
           <span key={tag}>
             <Link to={tag}>
@@ -58,14 +56,12 @@ class BlogPostRoute extends React.Component {
     }
 
     return (
-      <div>
+      <Layout location={this.props.location}>
         <Helmet
           title={`${post.frontmatter.title}`}
           meta={[{ name: "description", content: post.excerpt }]}
         />
-        <h1>
-          {post.frontmatter.title}
-        </h1>
+        <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         {tagsSection}
         <p
@@ -106,7 +102,7 @@ class BlogPostRoute extends React.Component {
             You should follow him on Twitter
           </a>
         </p>
-      </div>
+      </Layout>
     )
   }
 }

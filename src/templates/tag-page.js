@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
+import Layout from "../layouts/index.js"
 
 class TagRoute extends React.Component {
   render() {
@@ -10,26 +11,23 @@ class TagRoute extends React.Component {
     const postLinks = posts.map(post => {
       return (
         <li key={post.node.fields.slug}>
-          <Link to={post.node.fields.slug}>
-            {post.node.frontmatter.title}
-          </Link>
+          <Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link>
         </li>
       )
     })
 
     return (
-      <div>
+      <Layout location={this.props.location}>
         <Helmet title={title} />
         <h2>
-          {this.props.data.allMarkdownRemark.totalCount} posts tagged with “{this.props.pathContext.tag}”
+          {this.props.data.allMarkdownRemark.totalCount} posts tagged with “
+          {this.props.pathContext.tag}”
         </h2>
-        <ul>
-          {postLinks}
-        </ul>
+        <ul>{postLinks}</ul>
         <p>
           <Link to="/tags/">Browse all tags</Link>
         </p>
-      </div>
+      </Layout>
     )
   }
 }

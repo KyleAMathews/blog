@@ -3,7 +3,7 @@ const Link = require("gatsby-link")
 
 const { rhythm, scale } = require("../utils/typography")
 
-const Component = React.createClass({
+class Component extends React.Component {
   render() {
     //console.log(this.props)
     let { nextPost } = this.props
@@ -30,19 +30,15 @@ const Component = React.createClass({
               margin: 0,
             }}
           >
-            <Link to={nextPost.fields.slug}>
-              {nextPost.frontmatter.title}
-            </Link>
+            <Link to={nextPost.fields.slug}>{nextPost.frontmatter.title}</Link>
           </h3>
-          <p>
-            {nextPost.excerpt}
-          </p>
+          <p>{nextPost.excerpt}</p>
           <hr />
         </div>
       )
     }
-  },
-})
+  }
+}
 
 export default Component
 
