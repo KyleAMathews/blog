@@ -1,26 +1,12 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Link from "gatsby-link"
+import { Link, graphql } from "gatsby"
 import typography from "../utils/typography"
 import ReadNext from "../components/ReadNext"
 import Layout from "../layouts/index.js"
 import profilePic from "../images/kyle-round-small-pantheon.jpg"
 
 const { rhythm, scale } = typography
-//import { query } from '../components/ReadNext'
-const query = `
-readNext___file {
-  children {
-    ... on MarkdownRemark {
-      fields { slug }
-      excerpt(pruneLength: 200)
-      frontmatter {
-        title
-      }
-    }
-  }
-}
-`
 
 class BlogPostRoute extends React.Component {
   render() {
@@ -86,6 +72,7 @@ class BlogPostRoute extends React.Component {
         >
           <img
             src={profilePic}
+            alt="Kyle's profile pic"
             style={{
               borderRadius: `100%`,
               float: "left",

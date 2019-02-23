@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "gatsby-link"
+import { Link, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import Layout from "../layouts/index.js"
 
@@ -21,7 +21,7 @@ class TagRoute extends React.Component {
         <Helmet title={title} />
         <h2>
           {this.props.data.allMarkdownRemark.totalCount} posts tagged with “
-          {this.props.pathContext.tag}”
+          {this.props.pageContext.tag}”
         </h2>
         <ul>{postLinks}</ul>
         <p>

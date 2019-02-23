@@ -1,7 +1,7 @@
 const React = require("react")
-const Link = require("gatsby-link")
+const { Link, graphql } = require("gatsby")
 
-const { rhythm, scale } = require("../utils/typography")
+const { scale } = require("../utils/typography")
 
 class Component extends React.Component {
   render() {
