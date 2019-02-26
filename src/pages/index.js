@@ -18,14 +18,14 @@ class BlogIndexRoute extends React.Component {
       <Layout location={this.props.location}>
         <Helmet title={siteTitle} />
         <p
-          style={{
+          css={{
             marginBottom: rhythm(1.5),
           }}
         >
           <img
             src={profilePic}
             alt="Kyle's profile pic"
-            style={{
+            css={{
               borderRadius: `100%`,
               float: "left",
               marginRight: rhythm(1 / 4),
@@ -40,14 +40,14 @@ class BlogIndexRoute extends React.Component {
           <a href="https://twitter.com/kylemathews">follow him on Twitter</a>
         </p>
         <ul
-          style={{
+          css={{
             marginBottom: 0,
           }}
         >
           {posts.map(post => (
             <li key={post.node.fields.slug}>
               <Link
-                style={{
+                css={{
                   textDecoration: "none",
                 }}
                 to={post.node.fields.slug}

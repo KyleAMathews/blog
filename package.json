@@ -7,7 +7,10 @@
     "format": "prettier --write '**/*.js'"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
     "gatsby": "^2.0.0",
+    "gatsby-plugin-emotion": "^4.0.4",
     "gatsby-plugin-google-analytics": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.0",
@@ -29,8 +32,7 @@
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-typography": "^1.0.0-alpha.0",
-    "typeface-alegreya": "^0.0.35",
-    "typeface-alegreya-sans": "^0.0.35",
+    "typeface-cooper-hewitt": "^0.0.44",
     "typography": "^1.0.0-alpha.0",
     "typography-plugin-code": "^1.0.0-alpha.0",
     "typography-theme-de-young": "^1.0.0-alpha.0"
