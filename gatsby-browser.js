@@ -1,2 +1,2 @@
 import "typeface-cooper-hewitt"
-import "./css/prism-coy.css"
+import "./src/css/prism-coy.css"
