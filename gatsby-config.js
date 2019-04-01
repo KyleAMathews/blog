@@ -1,3 +1,5 @@
+const whitish = `#deeaf3`
+
 module.exports = {
   siteMetadata: {
     title: "Bricolage",
@@ -54,16 +56,10 @@ module.exports = {
       options: {
         name: "Bricolage",
         short_name: "Bricolage",
-        icons: [
-          {
-            src: "/logo.png",
-            sizes: "1024x1024",
-            type: "image/png",
-          },
-        ],
+        icon: "static/logo.png",
         start_url: "/",
-        background_color: "white",
-        theme_color: "white",
+        background_color: whitish,
+        theme_color: whitish,
         display: "minimal-ui",
       },
     },
