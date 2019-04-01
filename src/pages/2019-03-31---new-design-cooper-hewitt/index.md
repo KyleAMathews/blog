@@ -36,7 +36,7 @@ With a bit of absolute positioning and media queries, I got the the rest of the 
 ## Other notes
 
 ### css-in-js still rocks
-It's so simple to prototype with and refine styles. My previous design aas so old that it pre-dates libraries that add the `css` prop (the full-featured replacement for the classic React `styles` prop). During this redesign I migrated styles to use [Emotion.js](https://emotion.sh/docs/introduction)
+It's so simple to prototype with and refine styles. My previous design was so old that it pre-dates libraries that add the `css` prop (the full-featured replacement for the classic React `styles` prop). During this redesign I migrated styles to use [Emotion.js](https://emotion.sh/docs/introduction)
 
 It's so fast to prototype and refine code when it's all colocated. Just look at how nice this media query syntax is here:
 
