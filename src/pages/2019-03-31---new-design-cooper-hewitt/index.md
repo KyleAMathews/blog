@@ -13,7 +13,7 @@ So here I am playing with my blog again :-) It was only recently that I got the 
 
 ## Typeface
 
-For the redesign, I used on of my all time favorite typefaces, Cooper Hewitt. [Cooper Hewitt](https://www.cooperhewitt.org/) is a design museum in NYC (that I really want to visit some time — design museums tend to be favorites). At some point in the past few years, they did a rebrand and commissioned a custom typeface as part of that. Apparently as a design museum, they feel it appropriate to share as widely as possible all designs they create so they [open sourced the typeface](https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/). Jeremiah Shoaf from [Typewolf](https://www.typewolf.com/) says it's his favorite open source font.
+For the redesign, I used one of my all time favorite typefaces, Cooper Hewitt. [Cooper Hewitt](https://www.cooperhewitt.org/) is a design museum in NYC (that I really want to visit some time — design museums tend to be favorites). At some point in the past few years, they did a rebrand and commissioned a custom typeface as part of that. Apparently as a design museum, they feel it appropriate to share as widely as possible all designs they create so they [open sourced the typeface](https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/). Jeremiah Shoaf from [Typewolf](https://www.typewolf.com/) says it's his favorite open source font.
 
 I've been looking for a chance to use it in a project and this felt like the perfect opportunity.
 
