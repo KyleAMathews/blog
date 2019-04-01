@@ -9,9 +9,6 @@ let theme = {
   baseLineHeight: 1.45,
   blockMarginBottom: 0.85,
   overrideThemeStyles: ({ rhythm }) => ({
-    body: {
-      // border: `${rhythm(3 / 4)} solid #c5484d`,
-    },
     a: {
       color: `#3A69A8`,
     },
