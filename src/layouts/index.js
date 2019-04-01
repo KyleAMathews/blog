@@ -1,9 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
-import "typeface-cooper-hewitt"
 
-import "../css/prism-coy.css"
 import typography from "../utils/typography"
 const rhythm = typography.rhythm
 const scale = typography.scale
