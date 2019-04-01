@@ -64,7 +64,7 @@ It's so fast to prototype and refine code when it's all colocated. Just look at 
 
 ### Typography.js
 
-[Typogrpahy.js](https://github.com/KyleAMathews/typography.js/) is my attempt at making a lib to generate typography CSS from a few base options.
+[Typography.js](https://github.com/KyleAMathews/typography.js/) is my attempt at making a lib to generate typography CSS from a few base options.
 
 E.g. the options for this site look like this:
 
