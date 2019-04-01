@@ -8,55 +8,12 @@ import typography from "../utils/typography"
 const rhythm = typography.rhythm
 const scale = typography.scale
 
+const NoStyleLink = props => (
+  <Link css={{ color: `inherit`, textDecoration: `none` }} {...props} />
+)
+
 class Wrapper extends React.Component {
   render() {
-    let header
-    // Check if the location is either the front page or a tags page.
-    // If so, use a big header, otherwise use a smaller one.
-    if (
-      ["/", "/tags/"].indexOf(this.props.location.pathname) !== -1 ||
-      this.props.location.pathname.indexOf("/tags/") !== -1
-    ) {
-      header = (
-        <Link
-          css={{
-            textDecoration: "none",
-            boxShadow: "none",
-            color: "inherit",
-          }}
-          to="/"
-        >
-          <h1
-            css={{
-              ...scale(1.5),
-              marginBottom: rhythm(1),
-              marginTop: 0,
-            }}
-          >
-            Bricolage
-          </h1>
-        </Link>
-      )
-    } else {
-      header = (
-        <Link
-          css={{
-            textDecoration: "none",
-            boxShadow: "none",
-            color: "inherit",
-          }}
-          to="/"
-        >
-          <h3
-            css={{
-              marginTop: 0,
-            }}
-          >
-            Bricolage
-          </h3>
-        </Link>
-      )
-    }
     return (
       <div
         css={{
@@ -67,6 +24,33 @@ class Wrapper extends React.Component {
           },
         }}
       >
+        <div css={{ minHeight: rhythm(1) }}>
+          <div
+            css={{
+              float: `left`,
+              // color: `#c5484d`,
+              marginTop: rhythm(3 / 4),
+              marginLeft: rhythm(3 / 4),
+              fontSize: scale(2 / 5).fontSize,
+              lineHeight: scale(2 / 5).lineHeight,
+            }}
+          >
+            <NoStyleLink to="/">bricolage</NoStyleLink>
+          </div>
+          <div
+            css={{
+              float: `right`,
+              // color: `#c5484d`,
+              marginTop: rhythm(3 / 4),
+              marginRight: rhythm(3 / 4),
+              fontSize: scale(2 / 5).fontSize,
+              lineHeight: scale(2 / 5).lineHeight,
+            }}
+          >
+            <NoStyleLink to="/blog/">blog</NoStyleLink>,{" "}
+            <NoStyleLink to="/about/">about</NoStyleLink>
+          </div>
+        </div>
         <div
           css={{
             padding: `${rhythm(2)} ${rhythm(3 / 4)}`,
@@ -78,7 +62,6 @@ class Wrapper extends React.Component {
           }}
         >
           <Helmet defaultTitle="Bricolage" titleTemplate="Bricolage | %s" />
-          <div>{header}</div>
           {this.props.children}
         </div>
       </div>

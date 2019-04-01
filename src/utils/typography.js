@@ -3,12 +3,11 @@ const CodePlugin = require("typography-plugin-code").default
 
 let theme = {
   baseFontSize: `18px`,
-  headerFontFamily: [`Comic Sans MS`, `Cooper Hewitt`, `sans-serif`],
-  bodyFontFamily: [`Comic Sans MS`, `Cooper Hewitt`, `sans-serif`],
-  bodyWeight: 300,
+  headerFontFamily: [`Cooper Hewitt`, `sans-serif`],
+  bodyFontFamily: [`Cooper Hewitt`, `sans-serif`],
   plugins: [new CodePlugin()],
   baseLineHeight: 1.45,
-  blockMarginBottom: 0.75,
+  blockMarginBottom: 0.85,
   overrideThemeStyles: ({ rhythm }) => ({
     body: {
       // border: `${rhythm(3 / 4)} solid #c5484d`,
