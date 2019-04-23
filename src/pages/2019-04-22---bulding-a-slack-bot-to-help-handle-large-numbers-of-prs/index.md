@@ -41,7 +41,7 @@ The main principle from there we’ve taken to heart at Gatsby is principle 4: �
 
 “High-queue states” means in our context — too many PRs. PR count naturally flucuates as PRs come in semi-randomly and core maintainers have time to review and merge them. Sometimes these natural fluctuations mean the PR count soars to unusually high numbers. If not taken care of rapidly, this means the whole process will get bogged down.
 
-The rule we’ve adopted is that 115 PRs is a warning state when more people should shift over to working on PRs and 130 is red state when everyone should stop what they’re doing to focus on PRs.
+The current rule we’ve adopted is that 115 PRs is a warning state when more people should shift over to working on PRs and 130 is red state when everyone should stop what they’re doing to focus on PRs.
 
 This has been very successful as in the past, we’d at times get into 140+ PR count range and it’d kinda sit there for a few days until someone would finally heroically drive it down. Now PRs tend toward 100-115 state and we rarely move past that for long.
 
