@@ -3,17 +3,19 @@ title: "Making a Slack bot to automate Gatsby PR reviews with OneGraph and Rende
 date: "2019-04-22T06:37:26.000Z"
 ---
 
-Gatsby gets a lot of PRs. We’ve been averaging ~100 / week for the past few months. And even with the great OSS team we’ve built, this is still a lot of code changes to keep on top of.
+Gatsby gets a lot of PRs. We’ve been averaging ~100 / week for the past few months. And even with the great OSS team we’ve built, this is a lot of code changes to keep on top of.
 
-For most of Gatsby’s history, we’ve been able to rely on GitHub’s built-in notification and sorting tools to track PRs and make sure we’re giving adequate attention to different proposals that are coming in. But the last few months, it feels like things are slipping a bit. We’ll sometimes miss responding to PRs and everyone feels stretched.
+For most of Gatsby’s history, we’ve been able to rely on GitHub’s built-in notification and sorting tools to track PRs and make sure we’re giving adequate attention to different proposals that are coming in. But the last few months, it feels like we’re reaching the limits of these tools. We’ll sometimes miss PRs in the flood of notifications and everyone feels stretched.
 
-A novel problem can only mean one thing! Time for some theory!! My all time favorite product theory book is [_The Principles of Product Development Flow_](<https://www.amazon.com/dp/B007TKU0O0/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1>) which has unparalleled depth of analysis around what really makes product development tick.
+Scaling projects often introduce novel problems. And novel problems can only mean one thing! Time for some theory!!
+
+My all time favorite product theory book is [_The Principles of Product Development Flow_](<https://www.amazon.com/dp/B007TKU0O0/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1>) which has unparalleled depth of analysis around what really makes product development tick.
 
 ![cover of book Product Development Flow](./product-development-flow.png)
 
 I highly recommend anyone deeply involved with product to read it. The book is about 10x deeper than the normal handwavey product advice you hear and ever so worth the time investment to wrap your head around its ideas.
 
-On a recent plane ride, I skimmed through the book looking for ideas to help us know how to better handle all the PRs we get.
+On a recent plane ride, I skimmed through the book looking for ideas to help us get a better handle on all the PRs we get.
 
 ## The Economic Basis of Product Development
 
@@ -41,7 +43,7 @@ The main principle from there we’ve taken to heart at Gatsby is principle 4: �
 
 The rule we’ve adopted is that 120 PRs is a warning state when more people should shift over to working on PRs and 130 is red state when everyone should stop what they’re doing.
 
-This has been very successful as in the past, we’d at times get into 140+ PR count range and it’d kinda sit there for a few days until someone would finally heroically drive it down. Now PRs tend toward 100-115 state and we rarely move past that.
+This has been very successful as in the past, we’d at times get into 140+ PR count range and it’d kinda sit there for a few days until someone would finally heroically drive it down. Now PRs tend toward 100-115 state and we rarely move past that for long.
 
 ## Multiple Classes of Queues?
 
@@ -73,7 +75,7 @@ Enter [OneGraph](<https://www.onegraph.com/>) — whose tagline sums things up n
 
 Their mission resonates deeply with me as Gatsby is focused on a similar problem (in part) — how to get data out of APIs into websites without “messy integration work”.
 
-Anyone who’s worked with APIs know they’re a riot (the bad sort, not e.g. a riot of color) of poorly documented & inconsistent APIs locked behind authentication systems that seem just as determined to keep you out of your data as the bad actors. This isn’t a GraphQL vs. REST article but it’s hard not to mention that the excessively freeform nature of REST APIs pretty much guerentees this 😜
+Anyone who’s worked with APIs know they’re often a riot (the bad sort, not e.g. a riot of color) of poorly documented & inconsistent APIs locked behind authentication systems that seem just as determined to keep you out of your data as the bad actors. This isn’t a GraphQL vs. REST article but it’s hard not to mention that the excessively freeform nature of REST APIs pretty much guerentees this 😜 (This is not a knock against all the hard-working API teams out there — it’s just API design is a _hard_ problem and the lack of built-in constraints in most APIs doesn’t help).
 
 Anyways, OneGraph does a great job of fixing that by wrapping all the messiness of APIs into a consistent GraphQL based UI. Just look how beautiful this view from their dashboard is:
 
@@ -81,7 +83,7 @@ Anyways, OneGraph does a great job of fixing that by wrapping all the messiness 
 
 Just click on a provider, authenticate via oauth, and you’re off. That’s easily 100x faster than normal.
 
-So back to my Slack bot. With OneGraph, I quickly found the data that I needed from GitHub. OneGraph has a very nice "Code Exporter" that gives you starter code to run your queries from browser code or in node.js. I used that to pull the data into a node script where I could split PRs into the different queues.
+So back to the Slack bot. With OneGraph, I quickly found the data that I needed from GitHub. OneGraph has a very nice "Code Exporter" that gives you starter code to run your queries from browser code or in node.js. I used that to pull the data into a node script where I could split PRs into the different queues.
 
 For generating the Slack messages, Slack [has created a nice tool](https://api.slack.com/tools/block-kit-builder) for designing how messages will look. I went back and forth between tweaking output in Slack’s design tool and applying those tweaks to the script until I had something I liked.
 
@@ -101,13 +103,15 @@ That seems on point.
 
 Also, (perhaps not coincidentally!), their site is built on Gatsby.
 
-And sure enough, five minutes later, after connecting my GitHub repo for the project and instructing it how to build and run my code, my Slack bot was set to run daily.
+And sure enough, five minutes later, after connecting the GitHub repo for the project and instructing it how to build and run the code, the Slack bot was set to run daily.
 
 ## Early Results
 
 With this we discovered we had six PRs that hadn’t had any reviews — several that were close to a month old. Those got reviewed quickly (the last one in the screenshot above is waiting a core member’s review who’s on holidays until tomorrow).
 
 We’ve eaten into the other queue as well and expect to bring it down quickly as well.
+
+As a new tool, we’ll be iterating rapidly on the tool design as we discover what helps.
 
 ## Next steps
 
