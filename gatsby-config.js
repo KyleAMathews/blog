@@ -1,4 +1,4 @@
-const whitish = `#deeaf3`
+const redish = `#c5484d`
 
 module.exports = {
   siteMetadata: {
@@ -58,8 +58,8 @@ module.exports = {
         short_name: "Bricolage",
         icon: "static/logo.png",
         start_url: "/",
-        background_color: whitish,
-        theme_color: whitish,
+        background_color: redish,
+        theme_color: redish,
         display: "minimal-ui",
       },
     },

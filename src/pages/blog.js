@@ -36,8 +36,13 @@ class BlogIndexRoute extends React.Component {
           />
           Blog written by{" "}
           <strong>{this.props.data.site.siteMetadata.author}</strong> who lives
-          and works in San Francisco building useful things.
+          and works in San Francisco building useful things. I also{" "}
+          <a href="https://www.gatsbyjs.org/contributors/kyle-mathews/">
+            blog at gatsbyjs.org
+          </a>{" "}
+          for my work on Gatsby
         </p>
+        <p />
         <ul
           css={{
             marginBottom: 0,
