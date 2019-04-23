@@ -3,7 +3,7 @@ title: "Making a Slack bot to automate Gatsby PR reviews with OneGraph and Rende
 date: "2019-04-22T06:37:26.000Z"
 ---
 
-Gatsby gets a lot of PRs. Well over a 100 / week. Even with the great OSS team we’ve built, this is still a lot of code changes to keep on top of.
+Gatsby gets a lot of PRs. We’ve been averaging ~100 / week for the past few months. And even with the great OSS team we’ve built, this is still a lot of code changes to keep on top of.
 
 For most of Gatsby’s history, we’ve been able to rely on GitHub’s built-in notification and sorting tools to track PRs and make sure we’re giving adequate attention to different proposals that are coming in. But the last few months, it feels like things are slipping a bit. We’ll sometimes miss responding to PRs and everyone feels stretched.
 
