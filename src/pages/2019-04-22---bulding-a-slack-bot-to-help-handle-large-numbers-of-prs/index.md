@@ -1,5 +1,5 @@
 ---
-title: "Making a Slack bot to automate Gatsby PR reviews with OneGraph and Render.com"
+title: "Building a Slack bot to help handle large numbers of PRs"
 date: "2019-04-22T06:37:26.000Z"
 ---
 
@@ -31,7 +31,7 @@ Clearly for Gatsby, we think PRs and the people writing the PRs are valuable —
 
 ## Managing Queues
 
-The next chapter is on “Managing Queues”. Really fun stuff. 
+The next chapter is on “Managing Queues”. Really fun stuff.
 
 >In the last chapter, I showed you how to use an economic framework to guide your product development decisions. When we use such a framework, we often discover that cycle time has high economic leverage. If we can find cheap ways to reduce cycle time, our profits go up. But what causes long product development cycle time?
 
