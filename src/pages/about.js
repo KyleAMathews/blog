@@ -27,7 +27,7 @@ export default ({ location }) => {
       </p>
       <p>
         I tried founding two startups before Gatsby. I've done a fair bit of
-        interesting contracting and consulting. My only institutional work on
+        interesting contracting and consulting. My only institutional work of
         note is a few years I spent early on at{" "}
         <Link to="/new-beginnings/">
           Pantheon leading the frontend product work.
@@ -36,7 +36,7 @@ export default ({ location }) => {
       <p>
         I grew up in a{" "}
         <a href="https://www.cityoftoledo.org/">
-          little town on the Oregon Coast with lots of trees
+          little town on the Oregon coast with lots of trees
         </a>
         . After high school, I served a two year mission in the Philippines for{" "}
         <a href="https://lds.org">
