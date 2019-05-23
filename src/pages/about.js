@@ -1,14 +1,13 @@
 import React from "react"
-import Helmet from "react-helmet"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
+import { css } from "theme-ui"
 
-import { rhythm } from "../utils/typography"
 import Layout from "../layouts/index.js"
 
 export default ({ location }) => {
   return (
     <Layout location={location}>
-      <h1>Welcome Internet</h1>
+      <h1 css={css({ color: `link` })}>Welcome Internet</h1>
       <p>
         Welcome to my humble abode on the internet where weary travelers may
         come and rest for a season.
