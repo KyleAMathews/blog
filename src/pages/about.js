@@ -45,6 +45,7 @@ export default ({ location }) => {
         Then I attended <a href="https://byu.edu">BYU</a> and graduated with a
         degree in Information Systems.
       </p>
+      <p>Life is good.</p>
     </Layout>
   )
 }
