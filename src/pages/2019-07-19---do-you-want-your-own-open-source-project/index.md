@@ -27,3 +27,4 @@ keep things fun and rewarding even when the project feels especially demanding:
 - You like making friends with other OSS developers
 - You want to innovate and influence the direction of our craft
 - You want to solve an annoying problem you keep encountering
+- You love learning. OSS projects bring a constant stream of new challenges your way.
