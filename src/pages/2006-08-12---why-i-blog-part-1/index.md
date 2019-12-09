@@ -10,7 +10,7 @@ I'd been thinking about blogging for a long time but what finally pushed me over
 
 > What Mills calls "intellectual craftsmanship" involves more than the ability to produce work that can pass peer review. "Scholarship is a choice of how to live," he writes, "as well as a choice of career." It is (if I may be excused for borrowing another [old Greek word][1]) an _ethos._ That is, a structure of habits that sustains and embodies a quality of mind, a tendency of character.
 >
-> "Whether he knows it or not," Mills goes on to say, "the intellectual workman forms his own self as he works towards the perfection of his craft." The notion of having a "career" is subordinate to --- even a side-effect of --- this process of inner shaping. "To realize his own potentialities, and any opportunities that come his way," the scholar "constructs a character which has its core the qualities of the good workman."
+> "Whether he knows it or not," Mills goes on to say, "the intellectual workman forms his own self as he works towards the perfection of his craft." The notion of having a "career" is subordinate to—even a side-effect of—this process of inner shaping. "To realize his own potentialities, and any opportunities that come his way," the scholar "constructs a character which has its core the qualities of the good workman."
 >
 > For Mills, there is a kind of bench where all of this crafting takes place. He calls it "the file." I'm not sure this is the happiest of expressions. It's simple enough, but Mills uses it in his own sense."
 
