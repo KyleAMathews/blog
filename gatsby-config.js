@@ -1,6 +1,9 @@
 const redish = `#c5484d`
 
 module.exports = {
+  flags: {
+    FAST_DEV: true,
+  },
   siteMetadata: {
     title: "Bricolage",
     author: "Kyle Mathews",
@@ -30,6 +33,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              withAvif: true,
             },
           },
           {
