@@ -2,13 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import { scale, rhythm } from "../utils/typography"
 
-const NoStyleLink = props => (
+const NoStyleLink = (props) => (
   <Link css={{ color: `inherit`, textDecoration: `none` }} {...props} />
 )
 
 const whitish = `#deeaf3`
 
-export default () => {
+export default function Index() {
   return (
     <div
       css={{
