@@ -1,11 +1,9 @@
 import React from "react"
-import Helmet from "react-helmet"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 
-import { rhythm } from "../utils/typography"
 import Layout from "../layouts/index.js"
 
-export default ({ location }) => {
+export default function About({ location }) {
   return (
     <Layout location={location}>
       <h1>Welcome Internet</h1>
