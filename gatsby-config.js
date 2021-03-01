@@ -7,6 +7,7 @@ module.exports = {
     homeCity: "San Francisco",
   },
   plugins: [
+    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
