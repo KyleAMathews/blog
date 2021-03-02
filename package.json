@@ -33,7 +33,7 @@
     "react-dom": "^17.0.0",
     "react-helmet": "^6.1.0",
     "react-typography": "^1.0.0-alpha.0",
-    "typeface-cooper-hewitt": "^1.1.13",
+    "typeface-cooper-hewitt": "^0.0.44",
     "typography": "^1.0.0-alpha.0",
     "typography-plugin-code": "^1.0.0-alpha.0",
     "typography-theme-de-young": "^1.0.0-alpha.0"

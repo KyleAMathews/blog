@@ -12857,10 +12857,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typeface-cooper-hewitt@^1.1.13:
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/typeface-cooper-hewitt/-/typeface-cooper-hewitt-1.1.13.tgz#4bfec54ec711e558a419ed5e915b95403d717b45"
-  integrity sha512-l+1Hk9U3cE71ZUGZG3XmrHVOHATYkNZA6vCLUpaEaxlW2nBAzOUAsken7p1YYF/sKxZ0hdX5EEyLnXyImXvSiQ==
+typeface-cooper-hewitt@^0.0.44:
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/typeface-cooper-hewitt/-/typeface-cooper-hewitt-0.0.44.tgz#def4915d143bebb8a9a1ca4ea6b81946271a2a57"
+  integrity sha512-5TEnSbhWCnCQ25dGaFrSqCphJQoAaVeCuqmMMAXLK7uOiOn3YrMBdpq2nh4R6SEM+Z7FGYXZY7/Vdz/cDl06Ww==
 
 typography-breakpoint-constants@^1.0.0-alpha.0:
   version "1.0.0-alpha.0"
