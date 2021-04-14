@@ -1,6 +1,9 @@
 const redish = `#c5484d`
 
 module.exports = {
+  flags: {
+    DEV_SSR: true,
+  },
   siteMetadata: {
     title: "Bricolage",
     author: "Kyle Mathews",
