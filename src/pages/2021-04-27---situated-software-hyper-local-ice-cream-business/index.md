@@ -1,9 +1,9 @@
 ---
-title: Situated Software for Hyper-local Hyper-yummy Ice Cream
+title: Situated Software for Hyper-local, Hyper-yummy Ice Cream
 date: "2021-04-28T18:59:39.000Z"
 ---
 
-My wife and I are working on a new super fun side project to create a micro-business to make and sell homemade ice cream to our neighbors. We've been fiddling with designs for a few weeks and I'm going to start building the web app soon. I'll be live streaming all the coding so [follow me on Twitter](https://twitter.com/kylemathews) to see announcements on that.
+My wife and I are working on a fun side project to create a micro-business to make and sell homemade ice cream to our neighbors. We've been fiddling with designs for a few weeks and I'm going to start building the web app soon. I'll be live streaming all the coding so [follow me on Twitter](https://twitter.com/kylemathews) to see announcements on that.
 
 ## Story/Idea
 
@@ -12,7 +12,7 @@ We had our first child last August (pandemic baby, baby). As a treat, I fulfille
 ![One of the first ice creams we made](./first-ice-cream.JPG)
 _One of the first ice creams we made last August_
 
-One of the problems with making ice cream (all desserts really) is that once you make it you... well have to eat it. Ice cream, while delicious, is not perhaps the key component of a healthy balanced diet.
+One of the problems with making ice cream (all desserts really) is that once you make it you... end up eating it. Ice cream, while delicious, is not perhaps the key component of a healthy balanced diet.
 
 So I have the dilemma that I want to make all the ice cream flavors but can't eat them fast enough.
 
@@ -20,7 +20,7 @@ My wife and I have also felt isolated during the pandemic (like most people) and
 
 I've also been looking for good streaming projects for Gatsby to show off all the work we're doing on the framework and in [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/) like [functions](https://github.com/gatsbyjs/gatsby/discussions/30735) and [hosting](https://www.gatsbyjs.com/products/cloud/hosting/).
 
-So sprung forth the idea of creating a new ice cream micro-business. We create a web app where people could browse our flavors (seasonal from our backyard fruit trees and local grocery store) and schedule a time for us to deliver the home-make hyper-fresh, hyper-local, hyper-yummy ice cream.
+So sprung forth the idea of creating a new ice cream micro-business. We create a web app where people could browse our flavors (seasonal from our backyard fruit trees and local grocery store) and schedule a time for us to deliver the home-made hyper-fresh, hyper-local, hyper-yummy ice cream.
 
 And then once a week or so, we'll strap the little guy into his stroller, meander over to the nearby grocery store to pick up ingredients, make the ice cream, then deliver the ice cream (leaving a bit left-over at home for tasting).
 
@@ -35,7 +35,7 @@ Something I've been thinking about for a decade+ is the idea of _Situated Softwa
 
 > software designed in and for a particular social situation or context. This way of making software is in contrast with what I'll call the Web School (the paradigm I learned to program in), where scalability, generality, and completeness were the key virtues.)
 
-Software is great. I've written, write, and will write a lot of it and interact with 10,000x more of it in all the physical/virtual parts of my life.
+Software is great. I've write some of it and interact with lots more of it in all the physical/virtual parts of my life.
 
 But I think we should and will have a lot more of it.
 
@@ -45,8 +45,8 @@ As Richard Feynman famously said about nanotechnology, "there's plenty of room a
 
 So this project is also an exploration of this the idea of situated software. How practical is it to build software that only my family and a few neighbors use? 
 
-If in fact writing high quality software is easier now than ever — easier to start projects, build, ship, and maintain software — then we should see a lot more situated software get written.
+If, in fact, writing high quality software is easier now than ever — easier to start projects, build, ship, and maintain software — then we should see a lot more situated software get written.
 
-Historically I haven't ended up enjoying side projects. They're fun at first but the friction of ongoing maintenance and having to re-orient myself every time I want to change something end up sucking the fun out of them.
+Historically, I haven't ended up enjoying side projects. They're fun at first but the friction of ongoing maintenance and having to re-orient myself every time I want to change something end up sucking the fun out of them.
 
 I'm really curious if the strong conventions of Gatsby, painless CI/CD and hosting with Gatsby Cloud, and liberal usage of hosted services for the more complicated bits end up making this fun side project stay fun.

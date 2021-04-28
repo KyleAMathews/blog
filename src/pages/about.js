@@ -13,7 +13,7 @@ export default function About({ location }) {
       </p>
       <p>
         I'm the creator of the open source project{" "}
-        <a href="https://www.gatsbyjs.org">Gatsby</a> and co-founder and CEO of{" "}
+        <a href="https://www.gatsbyjs.org">Gatsby</a> and co-founder and CTO of{" "}
         <a href="https://gatsbyjs.com">Gatsby Inc.</a> A company my co-founder{" "}
         <a href="https://twitter.com/calcsam">Sam Bhagwat</a> and I started to
         drive the Gatsby vision.
