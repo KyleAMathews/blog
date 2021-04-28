@@ -47,18 +47,17 @@ class BlogPostRoute extends React.Component {
           title={`${post.frontmatter.title}`}
           meta={[{ name: "description", content: post.excerpt }]}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        {tagsSection}
+        <h1 css={{ marginBottom: rhythm(1 / 4) }}>{post.frontmatter.title}</h1>
         <p
           style={{
-            ...scale(-1 / 5),
+            ...scale(-1 / 4),
             display: "block",
-            marginBottom: rhythm(1),
           }}
         >
           Posted {post.frontmatter.date}
         </p>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        {tagsSection}
         <hr
           style={{
             marginBottom: rhythm(1),
