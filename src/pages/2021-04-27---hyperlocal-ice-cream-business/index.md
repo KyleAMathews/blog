@@ -22,7 +22,7 @@ I've also been looking for good streaming projects for Gatsby to show off all th
 
 So sprung forth the idea of creating a new ice cream micro-business. We create a web app where people could browse our flavors (seasonal from our backyard fruit trees and local grocery store) and schedule a time for us to deliver the home-make hyper-fresh, hyper-local, hyper-yummy ice cream.
 
-And then once a week or so, we'd strap the little guy into his stroller, meander over to the nearby grocery store to pick up ingredients, make the ice cream, then deliver the ice cream (leaving a bit left-over at home for tasting).
+And then once a week or so, we'll strap the little guy into his stroller, meander over to the nearby grocery store to pick up ingredients, make the ice cream, then deliver the ice cream (leaving a bit left-over at home for tasting).
 
 We'll restrict stroller delivery to within a 1/2 mile (people further out can pick up)
 
@@ -45,7 +45,7 @@ As Richard Feynman famously said about nanotechnology, "there's plenty of room a
 
 So this project is also an exploration of this the idea of situated software. How practical is it to build software that only my family and a few neighbors use? 
 
-If in fact writing high quality software is easier now than ever. Easier to start projects, build, ship, and maintain software — then we should see a lot more situated software get written.
+If in fact writing high quality software is easier now than ever — easier to start projects, build, ship, and maintain software — then we should see a lot more situated software get written.
 
 Historically I haven't ended up enjoying side projects. They're fun at first but the friction of ongoing maintenance and having to re-orient myself every time I want to change something end up sucking the fun out of them.
 
