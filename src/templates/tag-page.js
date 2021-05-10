@@ -8,7 +8,7 @@ class TagRoute extends React.Component {
     //console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
     const title = this.props.data.site.siteMetadata.title
-    const postLinks = posts.map(post => {
+    const postLinks = posts.map((post) => {
       return (
         <li key={post.node.fields.slug}>
           <Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link>

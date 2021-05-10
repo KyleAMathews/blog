@@ -15,7 +15,7 @@ class TagsPageRoute extends React.Component {
         <div>
           <h1>Tags</h1>
           <ul>
-            {allTags.map(tag => (
+            {allTags.map((tag) => (
               <li key={tag.fieldValue}>
                 <Link
                   style={{

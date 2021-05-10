@@ -9,7 +9,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
-    "gatsby": "^3.5.0-next.4",
+    "gatsby": "^3.6.0-next.0",
     "gatsby-plugin-emotion": "^4.0.4",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
     "gatsby-plugin-google-analytics": "^3.0.0",
@@ -32,9 +32,9 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.1.0",
-    "react-typography": "^1.0.0-alpha.0",
+    "react-typography": "^0.16.20",
     "typeface-cooper-hewitt": "^0.0.44",
-    "typography": "^1.0.0-alpha.0",
+    "typography": "^0.16.20",
     "typography-plugin-code": "^1.0.0-alpha.0",
     "typography-theme-de-young": "^1.0.0-alpha.0"
   }

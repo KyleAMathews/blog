@@ -6,7 +6,7 @@ import typography from "../utils/typography"
 const rhythm = typography.rhythm
 const scale = typography.scale
 
-const NoStyleLink = props => (
+const NoStyleLink = (props) => (
   <Link css={{ color: `inherit`, textDecoration: `none` }} {...props} />
 )
 

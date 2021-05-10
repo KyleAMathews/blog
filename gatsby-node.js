@@ -28,7 +28,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       `
-    ).then(result => {
+    ).then((result) => {
       if (result.errors) {
         console.log(result.errors)
         resolve()
@@ -36,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
 
       // Create blog posts pages.
-      _.each(result.data.allMarkdownRemark.edges, edge => {
+      _.each(result.data.allMarkdownRemark.edges, (edge) => {
         createPage({
           path: edge.node.fields.slug, // required
           component: blogPost,
@@ -48,13 +48,13 @@ exports.createPages = ({ graphql, actions }) => {
 
       // Tag pages.
       let tags = []
-      _.each(result.data.allMarkdownRemark.edges, edge => {
+      _.each(result.data.allMarkdownRemark.edges, (edge) => {
         if (_.get(edge, "node.frontmatter.tags")) {
           tags = tags.concat(edge.node.frontmatter.tags)
         }
       })
       tags = _.uniq(tags)
-      tags.forEach(tag => {
+      tags.forEach((tag) => {
         const tagPath = `/tags/${_.kebabCase(tag)}/`
         createPage({
           path: tagPath,
@@ -92,7 +92,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(
-        tag => `/tags/${_.kebabCase(tag)}/`
+        (tag) => `/tags/${_.kebabCase(tag)}/`
       )
       createNodeField({ node, name: `tagSlugs`, value: tagSlugs })
     }

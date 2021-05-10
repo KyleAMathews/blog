@@ -48,7 +48,7 @@ class BlogIndexRoute extends React.Component {
             marginBottom: 0,
           }}
         >
-          {posts.map(post => (
+          {posts.map((post) => (
             <li key={post.node.fields.slug}>
               <Link
                 css={{
