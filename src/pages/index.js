@@ -51,7 +51,7 @@ export default function Index() {
           right: 0,
           justifyContent: `center`,
           alignItems: `center`,
-          background: `#c5484d`,
+          background: `purple`,
         }}
       >
         <h1
