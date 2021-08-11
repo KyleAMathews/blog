@@ -7,7 +7,7 @@ readNext: /gatsby-open-source-work/
 ---
 
 Once upon a time, I thought self-hosting web fonts was intimidating. It
-seemed nice but the complexities were too much.  I needed to create a
+seemed nice but the complexities were too much. I needed to create a
 bunch of weird files (eot?), write weird css syntax (bullet proof
 what?), etc. Much easier to drop a little Google Fonts `<link>` in my
 html's `<head>` and call it a day.
