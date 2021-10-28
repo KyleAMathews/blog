@@ -3,7 +3,6 @@ const redish = `#c5484d`
 module.exports = {
   flags: {
     DEV_SSR: true,
-    LMDB_STORE: true,
   },
   siteMetadata: {
     title: "Bricolage",
