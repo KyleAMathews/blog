@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: "Bricolage",
     author: "Kyle Mathews",
-    homeCity: "San Francisco",
+    homeCity: "Berkeley",
   },
   plugins: [
     `gatsby-plugin-gatsby-cloud`,
