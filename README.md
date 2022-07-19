@@ -1,4 +1,4 @@
-blog
+Blog
 ====
 
 My blog!
