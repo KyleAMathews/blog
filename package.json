@@ -9,9 +9,8 @@
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
-    "gatsby": "^4.0.0",
+    "gatsby": "^4.19.1",
     "gatsby-plugin-emotion": "^4.0.4",
-    "gatsby-plugin-gatsby-cloud": "^4.0.0",
     "gatsby-plugin-google-analytics": "^4.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
     "gatsby-plugin-offline": "^5.0.0",
