@@ -5,7 +5,6 @@ import { scale, rhythm } from "../utils/typography"
 const NoStyleLink = (props) => (
   <Link css={{ color: `inherit`, textDecoration: `none` }} {...props} />
 )
-
 const whitish = `#deeaf3`
 
 export default function Index() {
