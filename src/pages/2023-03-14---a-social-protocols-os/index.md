@@ -57,6 +57,6 @@ I use a running and weight training app which reliably takes me from terrible sh
 
 Or is this too cyperpunk-ish and cold and unworkable?
 
-My main question now Is if there a there here. This is a complex space with a lot of history. If you’re interested or have thoughts — please reach out, I’d love to chat. Also a concrete use case or two would be idle for tinkering with the idea e.g. you’d like a Discord bot to coordinate your group doing something.
+My main question now is if there's a there there. This is a complex space with a lot of history. If you’re interested or have thoughts — please reach out, I’d love to chat. Also a concrete use case or two would be idle for tinkering with the idea e.g. you’d like a Discord bot to coordinate your group doing something.
 
 _Thanks to Shannon Soper, Kerry Soper, Sam Bhagwat, and Venkatesh Rao for reading drafts of this post_
