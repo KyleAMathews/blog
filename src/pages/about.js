@@ -23,7 +23,7 @@ export default function About({ location }) {
       <p>
         I'm exploring different areas while looking for my next big
         thing. In the meantime, I'm also taking on advising and consulting roles so
-        please reach out!
+        please reach out if you think I can help — mathews.kyle@gmail.com
       </p>
       <p>
         I'm currently residing in Seattle with my lovely wife{" "}
