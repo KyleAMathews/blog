@@ -26,6 +26,12 @@ let theme = {
     "h3,h4,h5,h6": {
       fontWeight: `normal`,
     },
+    ".toc": {
+      marginBottom: rhythm(1 / 2),
+      paddingLeft: rhythm(5 / 8),
+      borderLeft: `${rhythm(1 / 8)} solid #CDE7B0`,
+      fontSize: "85%",
+    },
     "li > p": {
       marginBottom: rhythm(1 / 2),
     },

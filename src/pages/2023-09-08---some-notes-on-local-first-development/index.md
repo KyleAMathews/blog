@@ -10,6 +10,11 @@ A few months ago in June, I attended [a local-first meetup in Berlin](https://ww
 
 In the months since, I’ve continued to tinker with these technologies and have collected some point-in-time notes on what I see happening and what might happen in the years to come.
 
+### Table of Contents
+```toc
+# This code block gets replaced with the TOC
+exclude: Table of Contents
+```
 
 ## What’s Happening?
 
