@@ -23,6 +23,9 @@ let theme = {
     "blockquote > h1, blockquote > h2, blockquote > h3, blockquote > h4": {
       marginTop: 0,
     },
+    "h3,h4,h5,h6": {
+      fontWeight: `normal`,
+    },
     "li > p": {
       marginBottom: rhythm(1 / 2),
     },

@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "Bricolage",
     author: "Kyle Mathews",
-    homeCity: "Berkeley",
+    homeCity: "Seattle",
   },
   plugins: [
     {
