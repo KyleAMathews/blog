@@ -48,7 +48,7 @@ If you’re looking for a more general introduction to local-first, I’d start 
 
 I’ve read about and played with local-first type ideas for a decade or so but only now does it seem to be gaining steam with many young startups rushing to productize its ideas. Why?
 
-My general model for change in the tech world is that a given bounded community of practice can only adopt one large shift in practices at a time. While local-first ideas have been floating around for decades, they haven’t come to the forefront of practitioners who’ve been focused on more important and urgent changes.
+My general model for change in the tech world is that a given bounded community of practice can only adopt one large shift in practices at a time. While local-first ideas have been floating around for decades, they haven’t come to the forefront for practitioners as they’ve been focused on more important and urgent changes.
 
 A simplified timeline of these practice shifts for building web apps is:
 
@@ -258,5 +258,7 @@ Some additional reading on local-first:
 * [https://electric-sql.com/blog/2023/02/09/developing-local-first-software](https://electric-sql.com/blog/2023/02/09/developing-local-first-software)
 * [https://electric-sql.com/blog/2022/12/16/evolution-state-transfer](https://electric-sql.com/blog/2022/12/16/evolution-state-transfer)
 * [https://electric-sql.com/docs/reference/alternatives](https://electric-sql.com/docs/reference/alternatives)
+* [Linear's CTO thread on DX advantages of Local-First](https://twitter.com/artman/status/1558081796914483201)
+* [Building an offline realtime sync engine](https://gist.github.com/pesterhazy/3e039677f2e314cb77ffe3497ebca07b)
 
 _Thanks to Sam Bhagwat, Shannon Soper, Johannes Schickling, Pekka Enberg, Anselm Eickhoff, and James Arthur for reading drafts of this post_
