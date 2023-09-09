@@ -17,13 +17,13 @@ export default function About({ location }) {
         ex-CEO/CTO of <a href="https://gatsbyjs.com">Gatsby Inc.</a> A company
         my co-founder <a href="https://twitter.com/calcsam">Sam Bhagwat</a> and
         I started to drive the Gatsby vision. Seven years after founding the
-        open source project, <a href="https://www.netlify.com/">Netlify</a> bought the
-        company and project in 2023.
+        open source project, <a href="https://www.netlify.com/">Netlify</a>{" "}
+        bought the company and project in 2023.
       </p>
       <p>
-        I'm exploring different areas while looking for my next big
-        thing. In the meantime, I'm also taking on advising and consulting roles so
-        please reach out if you think I can help — mathews.kyle@gmail.com
+        I'm exploring different areas while looking for my next big thing. In
+        the meantime, I'm also taking on advising and consulting roles so please
+        reach out if you think I can help — mathews.kyle@gmail.com
       </p>
       <p>
         I'm currently residing in Seattle with my lovely wife{" "}
