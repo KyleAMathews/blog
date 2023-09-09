@@ -114,32 +114,38 @@ E.g. a client wants to update the user name. So it creates the following object:
 
 ```json
 {
-   "machine": "updateName",
+   "machine": "updateUserName",
    "state": "requestUpdate",
    "request": {
-     "name": "fred",
-     "user": 123,
+     "name": "Fred",
+     "id": 123,
      "timestamp": 1694122496
    },
   "response": {}
 }
 ```
 
-The server is listening for new objects like this so upon receiving it, the server validates the request and then performs the write, and then updates the object to the following (which is synced back to clients):
+The server is listening for new objects like this so upon receiving it, the server validates the request and updates the name on the correct user object, and then updates the object to the following (which is synced back to clients):
 
 ```json
 {
-   "machine": "updateName",
+   "machine": "updateUserName",
    "state": "finished",
    "request": {
-     "name": "fred",
-     "user": 123,
+     "name": "Fred",
+     "id": 123,
      "timestamp": 1694122496
    }
   "response": {
     "error": false,
     "timestamp": 1694122996
   }
+}
+
+// User 123
+{
+  "name": "Fred",
+  "id": 123
 }
 ```
 
@@ -203,19 +209,19 @@ Given Postgres’ widespread usage and central position in most application arch
 
 I’ve built a number of  job queues and notification systems over the years and they’ve all struggled with their version of the Byzantine Generals problem. Clients would miss an update (usually due to being offline), and then users would complain about zombie jobs that never finished. In contrast, replicated database tables mean the background process can simply write updates to Postgres, confident all connected clients will get the update.
 
-#### Postgres
+#### Postgres to SQLite
 * [ElectricSQL](https://electric-sql.com/)
 * [Powersync](https://www.powersync.co/)
 * [SQLedge](https://github.com/zknill/sqledge)
 
 ElectricSQL also supports syncing client writes back to Postgres and other clients.
 
-#### SQLite
+#### SQLite to SQLite
 * [SQLSync](https://github.com/orbitinghail/sqlsync)
 * [VLCN](https://vlcn.io/)
 * [Mycelite](https://mycelial.com/)
 
-#### MongoDB
+#### MongoDB to SQLite
 * [Relm](https://realm.io/)
 
 ### 3. Replication as a Protocol
@@ -227,7 +233,7 @@ The startup [Replicache](https://replicache.dev/) has a unique “replication as
 
 It depends on your use case and risk tolerance.
 
-For the right people and teams this is an incredibly exciting time to jump in and contribute to a new, powerful way to build applications. These new tools make it dramatically easier to build realtime, multiplayer, and offline applications — which will improve much of our day-to-day software.
+For the right people and teams this is an incredibly exciting time to jump in and contribute to a new, powerful way to build applications. These new tools make it dramatically easier for you to build realtime, multiplayer, and offline applications — which will improve much of our day-to-day software.
 
 For almost any **real-time use case**, I’d choose replicated data structures over raw web sockets as they give you a much simpler DX and robust guarantees that clients will get updates.
 
