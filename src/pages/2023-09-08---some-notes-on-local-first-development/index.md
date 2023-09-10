@@ -123,6 +123,12 @@ E.g. a client wants to update the user name. So it creates the following object:
    },
   "response": {}
 }
+
+// User 123
+{
+  "name": "Bob",
+  "id": 123
+}
 ```
 
 The server is listening for new objects like this so upon receiving it, the server validates the request and updates the name on the correct user object, and then updates the object to the following (which is synced back to clients):
