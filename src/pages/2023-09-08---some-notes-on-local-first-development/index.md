@@ -280,6 +280,6 @@ Some additional reading on local-first:
 * [https://electric-sql.com/docs/reference/alternatives](https://electric-sql.com/docs/reference/alternatives)
 * [Linear's CTO thread on DX advantages of Local-First](https://twitter.com/artman/status/1558081796914483201)
 * [Building an offline realtime sync engine](https://gist.github.com/pesterhazy/3e039677f2e314cb77ffe3497ebca07b)
-* thread with local-first use cases
+* [Twitter thread with local-first use cases](https://twitter.com/samwillis/status/1694328387601362966)
 
 _Thanks to Sam Bhagwat, Shannon Soper, Johannes Schickling, Pekka Enberg, Anselm Eickhoff, and James Arthur for reading drafts of this post_
