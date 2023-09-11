@@ -18,7 +18,7 @@ exclude: Table of Contents
 
 ## What’s Happening?
 
-I see “local-first” as a movement amongst application developers for moving data reads and writes to an embedded database in each client as seen with products like Figma or Linear. The technology at the heart of this movement is "sync engines" which facilitate data exchange between clients and backend databases.
+I see “local-first” as a movement amongst application developers for moving data reads and writes to an embedded database in each client — as seen with products like Figma or Linear. The technology at the heart of this movement is "sync engines" which facilitate data exchange between clients and backends.
 
 The benefits are multiple:
 
@@ -34,25 +34,23 @@ I’ve been particularly interested in recent developments in sync engines as th
 
 The key questions I’ve been thinking about and discuss in this post are:
 
-* Why is Local-First happening now?
-* How big will Local-First be?
+* Why is local-first happening now?
+* How big will local-first be?
 * What are the main approaches?
-* Should I adopt Local-First?
+* Should I adopt local-first?
 
 If you’re looking for a more general introduction to local-first, I’d start with this post: [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/) and this talk: [Why Local First?](https://www.youtube.com/watch?v=jxuXGeMJsBU&t=1s) There’s additional suggested readings at the end of the post.
 
 (There are also a lot of interesting implications of local-first development in the realm of privacy, decentralization, data control and so on, but I’ll leave it to others more well-versed in these topics to flesh them out.) 
 
 
-## Why is Local-First happening now?
+## Why is Local-First Happening now?
 
 I’ve read about and played with local-first type ideas for a decade or so but only now does it seem to be gaining steam with many young startups rushing to productize its ideas. Why?
 
 My general model for change in the tech world is that a given bounded community of practice can only adopt one large shift in practices at a time. While local-first ideas have been floating around for decades, they haven’t come to the forefront for practitioners as they’ve been focused on more important and urgent changes.
 
 A simplified timeline of these practice shifts for building web apps is:
-
-
 
 * 2000s: the rise of Rails / Django 
 * 2010s: the shift to SPAs powered by APIs (REST, GraphQL, etc) in the 2010s, spurred on by the release of React.js in 2013
@@ -61,20 +59,22 @@ We’re now in the late stages of the shift to SPAs so the time seems ripe for a
 
 Figma, Superhuman, and Linear are good examples of pioneering startups in the local-first paradigm — they have gotten a lot of attention recently for their fast, multiplayer UX — and all rely on local-first ideas and bespoke sync engines.
 
-For many builders, the way to differentiate their work is to make their apps very fast and multiplayer.
+Many builders now see local-first as a key way to differentiate their applications.
 
-A number of devtool startups are now productizing local-first ideas making it easier for the next generation of startups to emulate pioneering local-first products.
+In response to this demand for tooling for fast multiplayer apps, a number of devtool startups are now productizing local-first ideas which will make it far easier for local-first to get broad adoption.
+
+There's also this sense that the Cloud has gotten too complicated. Local-First is one the many avenues people are exploring to attempt to simplify our application stack.
 
 
-## How big will local-first become?
+## How big will Local-First Become?
 
 Local-first tools are focused on solving real-time sync, multiplayer collaboration, and offline use cases. Largely because those are the most difficult problems to solve with today's standard API layers. I’ve built several real-time features and it was really hard!
 
-Most companies using local-first run it alongside traditional cloud-first approaches. 
+Most companies using local-first tech run it alongside cloud-first approaches. 
 
-Something like a collaborative text editor might have the text editor built with local-first methods but the account information built using a traditional CRUD model.
+Something like a collaborative text editor might have the text editor built with local-first methods but the account information built using an API CRUD model.
 
-I’ve chatted with a number of developers who—frustrated at maintaining the homegrown bespoke sync systems they wrote—are replacing it with new local-first tooling. The tooling feels a lot better and having standard primitives make it easier to build great experiences.
+I’ve chatted with a number of developers who — frustrated at maintaining the homegrown bespoke sync systems they wrote — are replacing it with new local-first tooling. The tooling feels a lot better and having standard primitives make it easier to build great experiences.
 
 Local-first is developing  into an ecosystem similar to authentication services but for handling data and features that need to be real-time / collaborative / offline.
 
@@ -89,9 +89,9 @@ This would then be the third major shift in the modern web era for server/client
 
 To fully replace APIs, local-first tools need robust support for fine-grained access control and complex write validation.
 
-The most basic use case for an API is _state transfer_ from the server to the client. The client wants to show information about a product so reads the necessary data through the API.
+The most basic use case for an API is _state transfer_ from the server to the client. The client wants to show information about an object so reads the necessary data through the API.
 
-Local-first tools all handle this perfectly. They ensure the latest product data is synced correctly to the client db for querying from the UI.
+Local-first tools all handle this perfectly. They ensure the latest object data is synced correctly to the client db for querying from the UI.
 
 But while reads are easy, support for complex writes are still immature in local-first tools — clients tend to have unrestricted write access and updates are immediately synced to other clients. While this is generally fine for e.g. text collaboration or a multiplayer drawing surface, this wouldn’t work for typical ecommerce / SaaS / CRUD-heavy applications.
 
@@ -131,7 +131,7 @@ E.g. a client wants to update the user name. So it creates the following object:
 }
 ```
 
-The server is listening for new objects like this so upon receiving it, the server validates the request and updates the name on the correct user object, and then updates the object to the following (which is synced back to clients):
+The server is listening for new objects like this so upon receiving it, the server validates the request and updates the state machine object along with the name on the user object (which again are synced back to clients):
 
 ```json
 {
@@ -157,12 +157,14 @@ The server is listening for new objects like this so upon receiving it, the serv
 
 This has the interesting and useful implication that in-flight requests are synced to other clients and it’s trivial for the server to emit progress updates. E.g. an app that supports a team of users uploading images for some nifty AI enhancements. The client can emit progress updates on the upload and the server as it works through enhancements.
 
-These patterns can be wrapped up in fairly standard looking mutation libraries e.g. `const {res, error} = await updateName({ name: "fred" })`
+Or in other words, requests/responses have the same multiplayer, offline, real-time sync properties as the rest of the app.
+
+This pattern can be wrapped up in fairly standard looking mutation function e.g. `const {res, error} = await updateName({ name: "fred" })`
 
 Jazz also lets you restrict writes to certain object fields to a specific role. So sensitive information would be marked read-only for clients who would need to request the server to update them.
 
 
-### Local-First DX is still being explored
+### Local-First DX is Still Being Explored
 
 Beyond the question of _can_ you build any application with local-first tools, there’s still the question whether devs will _want_ to.
 
@@ -174,7 +176,7 @@ Beyond the question of _can_ you build any application with local-first tools, t
 The success of Figma, Superhuman, and Linear suggest these issues will get solved in time.
 
 
-## What approaches are people exploring now?
+## What Approaches are People Exploring Now?
 
 I’m grouping approaches I see into three broad categories.
 
@@ -182,7 +184,7 @@ I’m grouping approaches I see into three broad categories.
 
 These projects provide support for replicated data structures. These are convenient building blocks for any sort of real-time or multiplayer project. They typically give you APIs similar to native Javascript maps and arrays but which guarantee state updates are replicated to other clients and to the server.
 
-They feel like magic—when you can build a simple application and load it on both your phone and computer and see changes instantly replicate.
+They feel like magic — when you can build a simple application and load it on both your phone and computer and see changes instantly replicate.
 
 Most rely on CRDT algorithms to merge simultaneous edits from multiple clients.
 
@@ -211,6 +213,8 @@ Hosted services:
 
 An approach several projects are taking is to sync from Postgres to a client db (generally SQLite). You pick tables (or materialized views) to sync to the client and then they get loaded along with real-time updates as writes land in Postgres.
 
+SQLite in the browser is a big advantage of this approach as it gives you rich, familiar querying in the client.
+
 Given Postgres’ widespread usage and central position in most application architectures, this is a great way to start with local-first. Instead of syncing data in and out of replicated data structures, you can read and write directly to Postgres as normal, confident that clients will be in sync.
 
 I’ve built a number of  job queues and notification systems over the years and they’ve all struggled with their version of the Byzantine Generals problem. Clients would miss an update (usually due to being offline), and then users would complain about zombie jobs that never finished. In contrast, replicated database tables mean the background process can simply write updates to Postgres, confident all connected clients will get the update.
@@ -222,34 +226,38 @@ I’ve built a number of  job queues and notification systems over the years and
 
 ElectricSQL also supports syncing client writes back to Postgres and other clients.
 
-#### SQLite to SQLite
+Some related database syncing tools:
+
+SQLite to SQLite
+
 * [SQLSync](https://github.com/orbitinghail/sqlsync)
 * [VLCN](https://vlcn.io/)
 * [Mycelite](https://mycelial.com/)
 
-#### MongoDB to SQLite
+MongoDB to SQLite
+
 * [Relm](https://realm.io/)
 
 ### 3. Replication as a Protocol
 
-The startup [Replicache](https://replicache.dev/) has a unique “replication as a protocol” approach. Replicache is a client JS library along with a replication protocol—which lets you integrate arbitrary backends provided you follow the spec. It’s more upfront work, as the sync engine is “some assembly required”, but as Replicache is mostly your own code, it gives the most flexibility and power of any local-first tool I’ve seen to date. The startup behind Replicache is also building Reflect, a hosted backend for Replicache.
+The startup [Replicache](https://replicache.dev/) has a unique “replication as a protocol” approach. Replicache is a client JS library along with a replication protocol — which lets you integrate arbitrary backends provided you follow the spec. It’s more upfront work, as the sync engine is “some assembly required”, but as Replicache is mostly your own code, it gives the most flexibility and power of any local-first tool I’ve seen to date. The startup behind Replicache is also building Reflect, a hosted backend for Replicache.
 
 
-## Should you adopt local-first?
+## Should you Adopt Local-First?
 
 It depends on your use case and risk tolerance.
 
-For the right people and teams this is an incredibly exciting time to jump in and contribute to a new, powerful way to build applications. These new tools make it dramatically easier for you to build realtime, multiplayer, and offline applications — which will improve much of our day-to-day software.
+For the right people and teams this is an incredibly exciting time to jump in and start using and contributing to a new, powerful way to build applications. These new tools make it dramatically easier for you to build realtime, multiplayer, and offline applications — which will improve much of our day-to-day software.
 
-For almost any **real-time use case**, I’d choose replicated data structures over raw web sockets as they give you a much simpler DX and robust guarantees that clients will get updates.
+For almost any **real-time use case**, I’d choose *replicated data structures* over raw web sockets as they give you a much simpler DX and robust guarantees that clients will get updates.
 
-For **multiplayer and offline**, again you’ll almost certainly want to pick an open source replicated data structure or hosted service. There’s a lot of difficult problems that they help solve.
+For **multiplayer and offline**, again you’ll almost certainly want to pick an open source *replicated data structure* or hosted service. There’s a lot of difficult problems that they help solve.
 
-The Replicated Database approach also works for real-time, multiplayer, offline as well. They should be especially useful for data-heavy applications and ones with many background processing writing into Postgres.
+The *Replicated Database* approach also works for real-time, multiplayer, offline as well. They should be especially useful for data-heavy applications and ones with many background processing writing into Postgres.
 
-But in general, I’d still be wary using local-first outside realtime/multiplayer/offline use cases. Local-first is definitely bleeding-edge. You will hit unexpected problems. A good community has developed but there’ll still be some lonely stretches on the road where you’ll have to solve novel problems. Things are rapidly progressing but it's still early.
+But in general, I’d still be wary using local-first outside realtime / multiplayer / offline use cases. Local-first is definitely still bleeding-edge. You will hit unexpected problems. A good community has developed but there’ll still be some lonely stretches on the road where you’ll have to solve novel problems. Things are rapidly progressing but it's still early.
 
-So: first ask if you really need local-first and second, see if it makes sense to isolate the local-first parts and architect the rest of the app for now in a more traditional fashion.
+So: first ask if you really need local-first and second, see if it makes sense to isolate the local-first parts and architect the rest of the app for now in a more conventional fashion.
 
 To ask questions and start experimenting — all the major tools have plenty of examples and demos to play with and active Discord channels where you can ask questions. There’s also a general Local-First community website and Discord that holds regular meetups — https://localfirstweb.dev/
 
@@ -272,5 +280,6 @@ Some additional reading on local-first:
 * [https://electric-sql.com/docs/reference/alternatives](https://electric-sql.com/docs/reference/alternatives)
 * [Linear's CTO thread on DX advantages of Local-First](https://twitter.com/artman/status/1558081796914483201)
 * [Building an offline realtime sync engine](https://gist.github.com/pesterhazy/3e039677f2e314cb77ffe3497ebca07b)
+* thread with local-first use cases
 
 _Thanks to Sam Bhagwat, Shannon Soper, Johannes Schickling, Pekka Enberg, Anselm Eickhoff, and James Arthur for reading drafts of this post_
