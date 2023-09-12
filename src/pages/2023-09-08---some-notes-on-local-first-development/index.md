@@ -262,4 +262,4 @@ And some more links below. Happy building!
 
 Discuss this post on [X.com née Twitter](), [Farcaster](https://warpcast.com/kam/0x0c1632), or [Bluesky](https://bsky.app/profile/kam.bsky.social/post/3k77qihvoip2h)
 
-_Thanks to Sam Bhagwat, Shannon Soper, Johannes Schickling, Pekka Enberg, Anselm Eickhoff, and James Arthur for reading drafts of this post_
+_Thanks to Sam Bhagwat, Shannon Soper, Johannes Schickling, Andreas Klinger, Pekka Enberg, Anselm Eickhoff, and James Arthur for reading drafts of this post_
