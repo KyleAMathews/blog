@@ -23,6 +23,15 @@ let theme = {
     "blockquote > h1, blockquote > h2, blockquote > h3, blockquote > h4": {
       marginTop: 0,
     },
+    "h3,h4,h5,h6": {
+      fontWeight: `normal`,
+    },
+    ".toc": {
+      marginBottom: rhythm(1 / 2),
+      paddingLeft: rhythm(5 / 8),
+      borderLeft: `${rhythm(1 / 8)} solid #CDE7B0`,
+      fontSize: "85%",
+    },
     "li > p": {
       marginBottom: rhythm(1 / 2),
     },

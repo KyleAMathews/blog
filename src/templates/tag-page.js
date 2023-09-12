@@ -34,28 +34,29 @@ class TagRoute extends React.Component {
 
 export default TagRoute
 
-export const pageQuery = graphql`query TagPage($tag: String) {
-  site {
-    siteMetadata {
-      title
+export const pageQuery = graphql`
+  query TagPage($tag: String) {
+    site {
+      siteMetadata {
+        title
+      }
     }
-  }
-  allMarkdownRemark(
-    limit: 1000
-    sort: {frontmatter: {date: DESC}}
-    filter: {frontmatter: {tags: {in: [$tag]}, draft: {ne: true}}}
-  ) {
-    totalCount
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          title
+    allMarkdownRemark(
+      limit: 1000
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { tags: { in: [$tag] }, draft: { ne: true } } }
+    ) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
         }
       }
     }
   }
-}
 `

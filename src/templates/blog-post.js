@@ -83,10 +83,11 @@ class BlogPostRoute extends React.Component {
           />
           <strong>{this.props.data.site.siteMetadata.author}</strong> lives and
           works in {this.props.data.site.siteMetadata.homeCity} building useful
-          things.{" "}
+          things.{` `}
           <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
-          </a>
+            You should follow him on Twitter.
+          </a>{" "}
+          Currently exploring what's next and <Link to="/about">open to consulting</Link>.
         </p>
       </Layout>
     )

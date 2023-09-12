@@ -13,23 +13,21 @@ export default function About({ location }) {
       </p>
       <p>
         I'm the creator of the open source project{" "}
-        <a href="https://www.gatsbyjs.org">Gatsby</a> and co-founder and CTO of{" "}
-        <a href="https://gatsbyjs.com">Gatsby Inc.</a> A company my co-founder{" "}
-        <a href="https://twitter.com/calcsam">Sam Bhagwat</a> and I started to
-        drive the Gatsby vision.
+        <a href="https://www.gatsbyjs.org">Gatsby</a> and co-founder and
+        ex-CEO/CTO of <a href="https://gatsbyjs.com">Gatsby Inc.</a> A company
+        my co-founder <a href="https://twitter.com/calcsam">Sam Bhagwat</a> and
+        I started to drive the Gatsby vision. Seven years after founding the
+        open source project, <a href="https://www.netlify.com/">Netlify</a>{" "}
+        bought the company and project in 2023.
       </p>
       <p>
-        I've lived in the bay area since college — I'm currently residing in
-        Berkeley with my lovely wife{" "}
-        <a href="https://twitter.com/shannonb_ux">Shannon</a>.
+        I'm exploring different areas while looking for my next big thing. In
+        the meantime, I'm also taking on advising and consulting roles so please
+        reach out if you think I can help — mathews.kyle@gmail.com
       </p>
       <p>
-        I tried founding two startups before Gatsby. I've done a fair bit of
-        interesting contracting and consulting. My only institutional work of
-        note is a few years I spent early on at{" "}
-        <Link to="/new-beginnings/">
-          Pantheon leading the frontend product work.
-        </Link>
+        I'm currently residing in Seattle with my lovely wife{" "}
+        <a href="https://twitter.com/shannonb_ux">Shannon</a> and toddler son.
       </p>
       <p>
         I grew up in a{" "}

@@ -68,29 +68,30 @@ class BlogIndexRoute extends React.Component {
 
 export default BlogIndexRoute
 
-export const pageQuery = graphql`query IndexQuery {
-  site {
-    siteMetadata {
-      title
-      author
-      homeCity
+export const pageQuery = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+        author
+        homeCity
+      }
     }
-  }
-  allMarkdownRemark(
-    limit: 2000
-    sort: {frontmatter: {date: DESC}}
-    filter: {frontmatter: {draft: {ne: true}}}
-  ) {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          title
+    allMarkdownRemark(
+      limit: 2000
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { draft: { ne: true } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
         }
       }
     }
   }
-}
 `
