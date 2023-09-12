@@ -18,7 +18,7 @@ exclude: Table of Contents
 
 ## What’s Happening?
 
-The web is ready for a major upgrade. We had tightly coupled web frameworks in the Rails/Django years and lost them with the shift to API-powered SPAs. Emerging database-grade sync technology will recouple our application stacks allowing for a new era of framework innovation.
+The web feels ready for a major upgrade. We had tightly coupled web frameworks in the Rails/Django years and lost them with the shift to API-powered SPAs. The developing database-grade sync technology will tightly recouple our application stacks allowing for a new era of framework innovation.
 
 I see “local-first” as shifting reads and writes to an embedded database in each client via“sync engines” that facilitate data exchange between clients and servers. Applications like Figma and Linear pioneered this approach, but it’s becoming increasingly easy to do. The benefits are multiple:
 
@@ -47,7 +47,9 @@ What we’ve seen over the last decade is that application speed and collaborati
 
 We’ve shifted from Rails-type server-rendered apps, to single-page-apps powered by APIs. A core lesson from this transition is that while standard REST and GraphQL APIs are very easy to get started with for solving client/server sync, they require significant effort and skill to scale and refine and they struggle with use-cases like multiplayer and offline support.
 
-Sync engines are a robust database-grade syncing technology to ensure that data is consistent and up-to-date. It’s an ecosystem-wide refactor talented groups are exploring to attempt to simplify the application stack.
+Sync engines are a robust database-grade syncing technology to ensure that data is consistent and up-to-date. It’s an ecosystem-wide refactor that many talented groups are exploring to attempt to simplify the application stack.
+
+Assuming they succeed, they'll provide a solid substrate for new types of framework that can rely on local data and rock solid sync.
 
 ## Will Most Rich Client Apps Use Local-First?
 
@@ -145,7 +147,7 @@ Jazz also lets you restrict writes to certain object fields to a specific role. 
 Beyond the question of _can_ you build any application with local-first tools, there’s still the question of whether devs will _want_ to.
 
 - Do advantages make it worth learning a new stack and migrating applications?
-- There’s a lot of missing gaps still — what will a full production DX for a local-first toolchain look like?
+- There’s a lot of missing components still — what will a full production DX for a local-first toolchain look like?
 - How complex will it feel to build a simple app?
 - Is there enough demand to fund all the new libraries and products that’ll need to be built?
 
@@ -206,6 +208,7 @@ ElectricSQL also supports syncing client writes back to Postgres and other clien
 
 - SQLite to SQLite
 
+  - [libSQL](https://libsql.org/)
   - [SQLSync](https://github.com/orbitinghail/sqlsync)
   - [VLCN](https://vlcn.io/)
   - [Mycelite](https://mycelial.com/)
