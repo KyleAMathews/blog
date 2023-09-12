@@ -202,7 +202,7 @@ I’ve built a number of job queues and notification systems over the years and 
 - [Powersync](https://www.powersync.co/)
 - [SQLedge](https://github.com/zknill/sqledge)
 
-ElectricSQL also supports syncing client writes back to Postgres and other clients.
+ElectricSQL and Powersync support syncing client writes back to Postgres and other clients.
 
 #### Some Related Database Syncing Tools:
 
