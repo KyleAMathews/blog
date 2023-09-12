@@ -260,4 +260,6 @@ And some more links below. Happy building!
 - [Building an offline realtime sync engine](https://gist.github.com/pesterhazy/3e039677f2e314cb77ffe3497ebca07b)
 - [Twitter thread with local-first use cases](https://twitter.com/samwillis/status/1694328387601362966)
 
+Discuss this post on [X.com née Twitter](), [Farcaster](https://warpcast.com/kam/0x0c1632), or [Bluesky](https://bsky.app/profile/kam.bsky.social/post/3k77qihvoip2h)
+
 _Thanks to Sam Bhagwat, Shannon Soper, Johannes Schickling, Pekka Enberg, Anselm Eickhoff, and James Arthur for reading drafts of this post_
