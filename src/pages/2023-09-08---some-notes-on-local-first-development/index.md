@@ -213,8 +213,8 @@ ElectricSQL and Powersync support syncing client writes back to Postgres and oth
   - [VLCN](https://vlcn.io/)
   - [Mycelite](https://mycelial.com/)
 
-- MongoDB to SQLite
-  - [Relm](https://realm.io/)
+- MongoDB to Client DB
+  - [Relam](https://realm.io/)
 
 ### 3. Replication as a Protocol
 
