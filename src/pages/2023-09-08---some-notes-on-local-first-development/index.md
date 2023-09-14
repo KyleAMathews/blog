@@ -185,6 +185,7 @@ Hosted services:
 - [Reflect](https://reflect.net/)
 - [Instant](https://www.instantdb.com/)
 - [Ditto](https://www.ditto.live/)
+- [Dexie Cloud](https://dexie.org/cloud/)
 
 ### 2. Replicated Database Tables
 
