@@ -11,6 +11,7 @@
     "@emotion/styled": "^10.0.7",
     "gatsby": "^5.7.0",
     "gatsby-plugin-emotion": "^4.0.4",
+    "gatsby-plugin-feed": "^5.12.0",
     "gatsby-plugin-google-analytics": "^5.7.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
