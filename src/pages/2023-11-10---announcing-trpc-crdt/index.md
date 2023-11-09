@@ -11,8 +11,8 @@ Now available on NPM:
 
 
 
-* trpc-yjs for [Yjs](https://yjs.dev/)
-* trpc-electric-sql for [ElectricSQL](https://electric-sql.com/)
+* `trpc-yjs` for [Yjs](https://yjs.dev/)
+* `trpc-electric-sql` for [ElectricSQL](https://electric-sql.com/)
 
 I’m working with members of the [Jazz](https://jazz.tools/) and [Automerge](https://automerge.org/) communities to finish up libraries for those systems. Other CRDT library maintainers, please jump in!
 
