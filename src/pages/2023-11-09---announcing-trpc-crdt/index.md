@@ -36,7 +36,7 @@ The benefits are multiple:
 
 Ok, so CRDTs are nice — but why trpc-crdt?
 
-Given CRDTs/local-first are so client-centric, I’ll first make the, probably obvious, arguments for why running code on a server is often necessary. Followed by my explanation of the, perhaps not so obvious, rationale for using a CRDT as the transport layer for RPC calls from client to servers (at least when building an application with a CRDT.
+Given CRDTs/local-first are so client-centric, I’ll first make the, probably obvious, arguments for why running code on a server is often necessary. Followed by my explanation of the, perhaps not so obvious, rationale for using a CRDT as the transport layer for RPC calls from client to servers (at least when building an application with a CRDT).
 
 
 ## Sometimes you just need a server
@@ -54,7 +54,7 @@ This can happen because:
 * Only the server can run the code as the code:
     * needs more compute resources than the client has
     * is an ongoing background processes
-    * is written in a language other than JS (WASM is changing this of course)
+    * is written in a language other than JS (WASM is changing this)
 
 In the post, I wrote about a pattern to solve this with a [“distributed state machine” running across client and server](https://bricolage.io/some-notes-on-local-first-development/#using-a-distributed-state-machine-to-handle-complex-writes) — where the server is just another node in the network but with super powers. I outlined the mechanics and suggested the pattern could be wrapped up in a simple RPC library.
 
