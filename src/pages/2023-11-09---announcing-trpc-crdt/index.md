@@ -1,6 +1,6 @@
 ---
 title: Announcing trpc-crdt
-date: "2023-11-09T18:59:39.000Z"
+date: "2023-11-10T18:59:39.000Z"
 ---
 
 Since [my last blog post on local-first](https://bricolage.io/some-notes-on-local-first-development/) and CRDTs two months ago, I’ve continued to explore the possibilities around systems that colocate code with subsets of data, interconnected by sync engines.
