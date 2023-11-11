@@ -59,7 +59,7 @@ Local-first is developing into an ecosystem similar to authentication services b
 
 The key question for us technologists is whether local-first will remain a niche technology or if it’ll gradually replace the current API-based approach.
 
-It’s still early but I’m confident that at a minimum, we’ll see multiple breakout startups along with a few healthy open-source ecosystems around the different approaches. And if local-first becomes the new default paradigm for handling data,, it will be much larger and reshape many parts of the cloud ecosystem.
+It’s still early but I’m confident that at a minimum, we’ll see multiple breakout startups along with a few healthy open-source ecosystems around the different approaches. And if local-first becomes the new default paradigm for handling data, it will be much larger and reshape many parts of the cloud ecosystem.
 
 But: there are many issues to solve first! Let’s look in detail at one of the first issues that people encounter: handling CRUD operations.
 
@@ -159,7 +159,7 @@ I’m grouping approaches I see into three broad categories.
 
 ### 1. Replicated Data Structures
 
-These projects provide support for replicated data structures. They are convenient building blocks for any sort of real-time or multiplayer project. They typically give you APIs similar to native Javascript maps and arrays but which guarantee state updates are replicated to other clients and to the server.
+These projects provide support for replicated data structures. They are convenient building blocks for any sort of real-time or multiplayer project. They typically give you APIs similar to native JavaScript maps and arrays but which guarantee state updates are replicated to other clients and to the server.
 
 It feels like magic when you can build a simple application and and see changes instantly replicate between devices with no additional work.
 
@@ -215,7 +215,7 @@ ElectricSQL and Powersync support syncing client writes back to Postgres and oth
   - [Mycelite](https://mycelial.com/)
 
 - MongoDB to Client DB
-  - [Relam](https://realm.io/)
+  - [Realm](https://realm.io/)
 
 ### 3. Replication as a Protocol
 
