@@ -1,5 +1,5 @@
 ---
-title: "Build Notes: Creating a Local Lirst Vite/React/ElectricSQL Starter"
+title: "Build Notes: Creating a Local First Vite/React/ElectricSQL Starter"
 date: "2023-11-15"
 ---
 
