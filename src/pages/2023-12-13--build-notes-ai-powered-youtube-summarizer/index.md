@@ -36,7 +36,7 @@ But there’s two issues before your reactive query can go to work. First is ens
 
 The simplest way to build a local-first app is to just sync upfront all data but this gets slow as the data size grows. So just like with code splitting, you can split data syncing along route boundaries so the user waits for only the minimal amount of data to be synced.
 
-It’d be really rare to want an entire database synced to each client. So instead you can specify which tables and even which subsets of tables e.g. only load the latest 10 notifications.
+It’d be really rare to want an entire database synced to each client. So instead you can specify which tables and even which subsets of tables — e.g. only load the latest 10 notifications.
 
 ElectricSQL has this concept of “[Shapes](https://electric-sql.com/docs/usage/data-access/shapes)” — which let you declare the shape of data you want synced. It’s basically the declarative equivalent of making an API call (an imperative operation). Instead of saying “fetch this data”, you say “sync this data”. You get the same initial load and ElectricSQL also ensures any updates continue to get synced to you.
 
