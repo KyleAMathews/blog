@@ -85,7 +85,7 @@ As these are all functions, you could reuse common shapes across routes e.g. use
 
 ### Pre-running queries
 
-The other problem I ran into is that while local SQLite queries run very fast, they are async and take a bit of time so on transitioning to a route, there’s some number of frames where nothing renders. So while fast, it causes a very noticeable blink in the UI.
+The other problem I ran into is that while local SQLite queries run very fast, they are async and take a bit of time, so on transitioning to a route, there’s some number of frames where nothing renders. So while fast, it causes a very noticeable blink in the UI.
 
 Make the above clearer and show how it’s similar to react-query
 
