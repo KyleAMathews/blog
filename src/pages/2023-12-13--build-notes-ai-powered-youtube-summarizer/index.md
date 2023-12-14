@@ -80,7 +80,7 @@ I proposed an API for this to ElectricSQL at [https://github.com/electric-sql/el
 ```
 
 
-As these are all functions, you could reuse common shapes across routes e.g. user and org data. You can also flexibly say what “done” is e.g. for some routes, somewhat stale data is fine so don’t wait on loading for the freshest data to be loaded from the server.
+As these are all functions, you could reuse common shapes across routes e.g. user and org data. You can also flexibly say what “done” is—e.g. for some routes, somewhat stale data is fine, so don’t wait on loading for the freshest data to be loaded from the server.
 
 
 ### Pre-running queries
