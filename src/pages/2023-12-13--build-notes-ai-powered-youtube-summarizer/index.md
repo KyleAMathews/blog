@@ -129,7 +129,7 @@ This was a pretty stock standard app. The only thing I did which really took adv
   <source src="./progress-bar.mp4" type="video/mp4" />
 </video>
 
-As ElectricSQL gives you a full-stack reactive data layer for free — it was quite easy. A progress bar is just a value between 0 & 1 i.e. what percentage of the work has been done. The question for this sort of long-running job is how to get that value from the backend doing the work to the frontend for the user to see. Normally it’d be some sort of string and glue hacky setup where the backend pushes events over websockets which the client code then has custom code to intercept and direct to the component through a global data store of some sort.
+As ElectricSQL gives you a full-stack reactive data layer for free — it was quite easy. A progress bar is just a value between 0 & 1, i.e., what percentage of the work has been done. The question for this sort of long-running job is how to get that value from the backend doing the work to the frontend for the user to see. Normally it’d be some sort of string and glue hacky setup where the backend pushes events over websockets which the client code then has custom code to intercept and direct to the component through a global data store of some sort.
 
 But none of that here. I have a `youtube_video` table for each video which has a `progress` column. The backend just keeps writing new values to that as summarization calls finish and the new value is synced directly into the Video component.
 
