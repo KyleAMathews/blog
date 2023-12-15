@@ -40,7 +40,9 @@ It’d be really rare to want an entire database synced to each client. So inste
 
 ElectricSQL has this concept of “[Shapes](https://electric-sql.com/docs/usage/data-access/shapes)” — which let you declare the shape of data you want synced to construct a particular route's UI. It’s basically the declarative equivalent of making an API call (an imperative operation). Instead of saying “fetch this shape of data”, you say “sync this shape of data”. You get the same initial load but ElectricSQL also ensures any updates across the system continue to get synced to you in real-time.
 
-This btw is basically jQuery -> React again — jQuery made you push the DOM around and add event listeners, etc. — work we don’t have to do with React and other new reactive JS frameworks. And in the same sense, sync engines like ElectricSQL give you a real-time reactive data system for your entire stack. Your client can declare the data it needs and ElectricSQL makes it so.
+Shapes is very similar to code splitting in some ways. Small apps can easily load all code in one go but as apps get larger, splitting up code loading (often by route) becomes increasingly necessary. Same with data - many apps have only a mb or two total of data so easily could sync all data up front. But the largest apps effectively have unbounded data sets so "data spitting" is necessary. One big advantage of data over code however is that the data on the client is at rest mostly and not in RAM. Browsers these days allow apps to load GBs of data and SQLite makes it efficient to query against that.
+
+This switch to declarative syncing is basically jQuery -> React again — jQuery made you push the DOM around and add event listeners, etc. — work we don’t have to do with React and other new reactive JS frameworks. And in the same sense, sync engines like ElectricSQL give you a real-time reactive data system for your entire stack. Your client can declare the data it needs and ElectricSQL makes it so.
 
 So shapes are great but the next question is where to put them. The route loader function (in React Router) seems to me the obvious place and what I did with Samurize.
 
@@ -82,7 +84,7 @@ I [proposed a `SyncManager` API for this to ElectricSQL](https://github.com/elec
 
 As these are all functions, you could reuse common shapes across routes e.g. user and org data. You can also flexibly say what “done” is—e.g. for some routes, somewhat stale data is fine, so don’t wait on loading for the freshest data to be loaded from the server.
 
-One big current caveat to all this is that ElectricSQL is still working on shipping Shapes as of December 2023. So currently Samurize syjncs all video data to each client as you can't yet say "only sync videos that I'm looking at". Once that arrives, Samurize will be able to lazily sync data as needed making this approach suitable for however many videos people summarize.
+One big current caveat to all this is that ElectricSQL is still working on shipping Shapes as of December 2023. So currently Samurize syncs all video data to each client as you can't yet say "only sync videos that I'm looking at". Once that arrives, Samurize will be able to lazily sync data as needed making this approach suitable for however many videos people summarize.
 
 ### Pre-running queries
 
@@ -107,7 +109,9 @@ The difference is stark:
 
 It wasn’t much code but I think it’s a critical pattern to follow so I’ll be pulling it out into its own library very soon.
 
-This is similar to how people use tools like [TanStack Query](https://tanstack.com/router/v1/docs/guide/external-data-loading#a-more-realistic-example-using-tanstack-query) — where they prefetch in the loader to warm the cache so the query hook in the route component can respond immediately.
+Another approach to this problem is making queries sync. [Riffle](https://riffle.systems/) explores this approach (soon to be open sourced). Sync queries mean that the first render of the component would have all the data it needs. This comes with the tradeoff of having SQLite running in the UI thread (vs. a worker) and with all data in memory (vs on disk in IndexedDb or OPFS).
+
+Pre-running queries is similar to how people use tools like [TanStack Query](https://tanstack.com/router/v1/docs/guide/external-data-loading#a-more-realistic-example-using-tanstack-query) — where they prefetch in the loader to warm the cache so the query hook in the route component can respond immediately.
 
 
 ```tsx
