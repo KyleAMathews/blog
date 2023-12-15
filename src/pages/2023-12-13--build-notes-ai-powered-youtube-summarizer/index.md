@@ -5,15 +5,15 @@ date: "2023-12-13"
 
 My wife and I have been working on a side project for a while — an AI-powered tool that summarizes YouTube videos.
 
-This tool was highly inspired by [https://www.summarize.tech/](https://www.summarize.tech/) — which I used a lot before building my own — so thanks NAME
+This tool was highly inspired by [https://www.summarize.tech/](https://www.summarize.tech/) — which I used a lot before building my own — so thanks Pete Hunt!
 
-There’s a lot of videos you might want to read a quick summary as either that’s the extent of your interest or to see if the video is interesting. Skimming through a video is hard while skimming a video summary is fast
+I'm much more of a reader than video watcher so tools like this are perfect when I run across an interesting looking YouTube video. I might still end up watching but the video summary at least quickly satisfies my curiousity.
 
 ![Screenshot of the Samurize app](./screenshot.png)
 
-We were also looking for a fun side project while my wife did her job hunt and partly as an excuse to build something with LLMs and Local-First tools (ElectricSQL in this case). If you’re new to [Local-First — check out my explainer post from a few months ago](https://bricolage.io/some-notes-on-local-first-development/).
+This was also an excuse to build something with LLMs and Local-First tools ([ElectricSQL](https://electric-sql.com/) in this case). If you’re new to [Local-First — check out my explainer post from a few months ago](https://bricolage.io/some-notes-on-local-first-development/).
 
-Check it out at [https://samurize.shannonsoper.com](https://samurize.shannonsoper.com) and then read on for some build notes.
+Check it out at [https://samurize.shannon-soper.com](samurize.shannon-soper.com) and then read on for some build notes.
 
 ### Table of Contents
 
@@ -23,13 +23,13 @@ exclude: Table of Contents
 ```
 
 
-## Lazy syncing and pre-caching route queries for fast & smooth route transitions
+## Lazy syncing and pre-running route queries for fast & smooth route transitions
 
-ElectricSQL syncs data between a backend Postgres database and client SQLite database. Instead of loading route data from a backend API, you just run SQL queries against the local data! 
+ElectricSQL syncs data between a backend Postgres database and client SQLite databases. Instead of loading route data through a backend API, you just run reactive SQL queries against the local database!
 
 Which is awesome! I love having the full power of SQL to query data + built-in reactivity for real-time updates. It’s really everything I’ve ever wanted for client-side data.
 
-But there’s two issues before your reactive query can go to work. First is ensuring the data you want to query is synced. And the second is pre-running the query so the new route can immediately render.
+But there’s two issues before your reactive queries can go to work. First is ensuring the data you want to query is synced. And the second is pre-running the query so the new route can immediately render.
 
 
 ### Route Syncing
@@ -38,15 +38,13 @@ The simplest way to build a local-first app is to just sync upfront all data but
 
 It’d be really rare to want an entire database synced to each client. So instead you can specify which tables and even which subsets of tables — e.g. only load the latest 10 notifications.
 
-ElectricSQL has this concept of “[Shapes](https://electric-sql.com/docs/usage/data-access/shapes)” — which let you declare the shape of data you want synced. It’s basically the declarative equivalent of making an API call (an imperative operation). Instead of saying “fetch this data”, you say “sync this data”. You get the same initial load and ElectricSQL also ensures any updates continue to get synced to you.
+ElectricSQL has this concept of “[Shapes](https://electric-sql.com/docs/usage/data-access/shapes)” — which let you declare the shape of data you want synced to construct a particular route's UI. It’s basically the declarative equivalent of making an API call (an imperative operation). Instead of saying “fetch this shape of data”, you say “sync this shape of data”. You get the same initial load but ElectricSQL also ensures any updates across the system continue to get synced to you in real-time.
 
-This is basically jQuery -> React again — jQuery made you push the DOM around and add event listeners, etc. — work we don’t have to do with React and other new reactive JS frameworks. And in the same sense, sync engines like ElectricSQL give you a real-time reactive data system for your entire stack. Your client can declare the data it needs and ElectricSQL makes it so.
+This btw is basically jQuery -> React again — jQuery made you push the DOM around and add event listeners, etc. — work we don’t have to do with React and other new reactive JS frameworks. And in the same sense, sync engines like ElectricSQL give you a real-time reactive data system for your entire stack. Your client can declare the data it needs and ElectricSQL makes it so.
 
 So shapes are great but the next question is where to put them. The route loader function (in React Router) seems to me the obvious place and what I did with Samurize.
 
-There’s a few moving parts here. First what is the shape, second what state is syncing of that shape in (never synced, synced and up to date, or synced but stale (and how long ago was the last sync).
-
-I proposed an API for this to ElectricSQL at [https://github.com/electric-sql/electric/discussions/704](https://github.com/electric-sql/electric/discussions/704) that looks like
+I [proposed a `SyncManager` API for this to ElectricSQL](https://github.com/electric-sql/electric/discussions/704) that looks like:
 
 
 ```ts
@@ -61,6 +59,7 @@ I proposed an API for this to ElectricSQL at [https://github.com/electric-sql/el
             where: { id: params.user_id },
           }),
         isDone: (shapeMetatdata) =>
+          // Allow data that's up to 12 hours stale.
           shapeMetadata.msSinceLastSynced < 12 * 60 * 60 * 1000 ||
           shapeMetadata.state === `SYNCED`,
       },
@@ -70,6 +69,7 @@ I proposed an API for this to ElectricSQL at [https://github.com/electric-sql/el
             where: { id: params.video_id },
           }),
         isDone: (shapeMetatdata) =>
+          // Allow data that's up to 12 hours stale.
           shapeMetadata.msSinceLastSynced < 12 * 60 * 60 * 1000 ||
           shapeMetadata.state === `SYNCED`,
       },
@@ -82,36 +82,64 @@ I proposed an API for this to ElectricSQL at [https://github.com/electric-sql/el
 
 As these are all functions, you could reuse common shapes across routes e.g. user and org data. You can also flexibly say what “done” is—e.g. for some routes, somewhat stale data is fine, so don’t wait on loading for the freshest data to be loaded from the server.
 
+One big current caveat to all this is that ElectricSQL is still working on shipping Shapes as of December 2023. So currently Samurize syjncs all video data to each client as you can't yet say "only sync videos that I'm looking at". Once that arrives, Samurize will be able to lazily sync data as needed making this approach suitable for however many videos people summarize.
 
 ### Pre-running queries
 
 The other problem I ran into is that while local SQLite queries run very fast, they are async and take a bit of time, so on transitioning to a route, there’s some number of frames where nothing renders. So while fast, it causes a very noticeable blink in the UI.
 
-Make the above clearer and show how it’s similar to react-query
-
-I fixed that by running each routes’ queries in the loader function, storing those in a cache, and then using the pre-run query results until the live queries start running.
+I fixed that by running each routes’ queries in the loader function, storing those in a cache, and then using the pre-run query results until the reactive live queries start running.
 
 The difference is stark:
 
 ### Glitchy transition
 
-<video controls width="500">
+<video controls width="100%">
   <source src="./glitchy-route-transition.mp4" type="video/mp4" />
 </video>
 
 ### Smooth transition
 
-<video controls width="500">
+<video controls width="100%">
   <source src="./smooth-route-transition.mp4" type="video/mp4" />
 </video>
 
 
 It wasn’t much code but I think it’s a critical pattern to follow so I’ll be pulling it out into its own library very soon.
 
-This is similar to how people use tools like [TanStack Query](https://tanstack.com/query/latest) — where they prefetch in the loader to warm the cache so the query hook in the route component can respond immediately.
+This is similar to how people use tools like [TanStack Query](https://tanstack.com/router/v1/docs/guide/external-data-loading#a-more-realistic-example-using-tanstack-query) — where they prefetch in the loader to warm the cache so the query hook in the route component can respond immediately.
 
 
-## LLM/AI stuff
+```tsx
+import { Route } from '@tanstack/react-router'
+
+const postsQueryOptions = queryOptions({
+  queryKey: 'posts',
+  queryFn: () => fetchPosts,
+})
+
+const postsRoute = new Route({
+  getParentPath: () => rootRoute,
+  path: 'posts',
+  // Use the `loader` option to ensure that the data is loaded
+  loader: () => queryClient.ensureQueryData(postsQueryOptions),
+  component: () => {
+    // Read the data from the cache and subscribe to updates
+    const posts = useSuspenseQuery(postsQueryOptions)
+
+    return (
+      <div>
+        {posts.map((post) => (
+          <Post key={post.id} post={post} />
+        ))}
+      </div>
+    )
+  },
+})
+```
+
+
+## LLM/AI Summarization stuff
 
 The AI bits are pretty standard so I won’t spend a lot of time on them.
 
@@ -125,13 +153,27 @@ Even basic LLMs are already good enough at many tasks so I think many workloads 
 
 This was a pretty stock standard app. The only thing I did which really took advantage of ElectricSQL superpowers was the progress bar for indicating progress of the summarization.
 
-<video controls width="500">
+<video controls width="100%">
   <source src="./progress-bar.mp4" type="video/mp4" />
 </video>
 
 As ElectricSQL gives you a full-stack reactive data layer for free — it was quite easy. A progress bar is just a value between 0 & 1, i.e., what percentage of the work has been done. The question for this sort of long-running job is how to get that value from the backend doing the work to the frontend for the user to see. Normally it’d be some sort of string and glue hacky setup where the backend pushes events over websockets which the client code then has custom code to intercept and direct to the component through a global data store of some sort.
 
 But none of that here. I have a `youtube_video` table for each video which has a `progress` column. The backend just keeps writing new values to that as summarization calls finish, and the new value is synced directly into the Video component.
+
+This is what the code looks like:
+
+```tsx
+const video = useLiveQuery(db.youtube_videos.liveUnique({
+  select: {
+    title: true,
+    author_url: true,
+    author_name: true,
+    progress: true,
+  },
+  where: { id },
+}))
+```
 
 The component just [checks if `video.progress !== 1` to see if it should display a progress bar or not.](https://github.com/KyleAMathews/samurize/blob/959e9e0c44aa1a5215888411e06eda12938e7f56/src/routes/video.tsx#L119-L141)
 
