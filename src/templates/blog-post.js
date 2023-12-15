@@ -87,7 +87,8 @@ class BlogPostRoute extends React.Component {
           <a href="https://twitter.com/kylemathews">
             You should follow him on Twitter.
           </a>{" "}
-          Currently exploring what's next and <Link to="/about">open to consulting</Link>.
+          Currently exploring what's next and{" "}
+          <Link to="/about">open to consulting</Link>.
         </p>
       </Layout>
     )

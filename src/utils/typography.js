@@ -26,6 +26,9 @@ let theme = {
     "h3,h4,h5,h6": {
       fontWeight: `normal`,
     },
+    "video": {
+      marginBottom: rhythm(1 / 2),
+    },
     ".toc": {
       marginBottom: rhythm(1 / 2),
       paddingLeft: rhythm(5 / 8),
