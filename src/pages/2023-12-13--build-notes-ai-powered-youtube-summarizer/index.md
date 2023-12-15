@@ -13,7 +13,7 @@ I'm much more of a reader than video watcher so tools like this are perfect when
 
 This was also an excuse to build something with LLMs and Local-First tools ([ElectricSQL](https://electric-sql.com/) in this case). If you’re new to [Local-First — check out my explainer post from a few months ago](https://bricolage.io/some-notes-on-local-first-development/).
 
-Check it out at [https://samurize.shannon-soper.com](samurize.shannon-soper.com) and then read on for some build notes.
+Check it out at [https://samurize.shannon-soper.com](https://samurize.shannon-soper.com) and then read on for some build notes.
 
 ### Table of Contents
 
