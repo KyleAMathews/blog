@@ -4,6 +4,7 @@
   "version": "0.0.3",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "scripts": {
+    "create-post": "node create-post.js",
     "format": "prettier --write '**/*.js'"
   },
   "dependencies": {
