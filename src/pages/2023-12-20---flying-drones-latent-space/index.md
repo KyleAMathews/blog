@@ -74,7 +74,7 @@ I'm arguing "prompts as a photograph" is a much more useful metaphor for the lat
 
 Large models are hyperdimensional static lossy representations of their dataset and prompts elicit specific snapshots from within this space. I like that process to "drone cameras" that we can position and point anywhere within a latent space to take snapshots from that particular perspective.
 
-Writing a prompt is how we position and point the "latent space camera". The output from the prompt is the unique snapshot. And like with photography how we can adjust our perspective, position, exposure, time of day, lightning conditions, zoom, depth of field to change the photograph of the same subject, we can also endlessly tweak our prompts to change the output.
+Writing a prompt is how we position and point the "latent space camera". The output from the prompt is the unique snapshot. And like with photography where we can adjust the perspective, position, exposure, time of day, lightning conditions, zoom, depth of field to change the photograph of the same subject, we can also endlessly tweak our prompts to change the output.
 
 Regular light cameras capture a snapshot of reality. Latent space cameras capture a snapshot of intelligence.
 
@@ -304,5 +304,7 @@ This prompt does a pretty good job guiding you through this process:
 >If the user doesn't immediately provide the problem or idea, simply ask them to provide it.
 
 We're all connected now to these bizarre but amazing databases of human intelligence. We might as well get good at them.
+
+Come up with an interesting prompt? I'd love to see it! Share it on [Twitter](https://twitter.com/kylemathews/status/1737633927937085816), [Warpcast](https://warpcast.com/~/conversations/0x1dd60ed3aede0ea704a365d16c624a6eac18bcdd), or [Bluesky](https://bsky.app/profile/kam.bsky.social/post/3kgzdnes4j22x).
 
 ![LLM organic database](./llm-organic-database.webp)

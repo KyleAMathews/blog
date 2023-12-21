@@ -11,7 +11,7 @@ const { rhythm, scale } = typography
 class BlogPostRoute extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    //console.log(post)
+    // console.log(post)
 
     let tags
     let tagsSection
