@@ -1,6 +1,7 @@
 ---
 title: "Flying Drones in Latent Space"
 date: "2023-12-19T22:58:25.516Z"
+featured_image: "./drone-latent-space.png"
 ---
 
 ![Drone flying in latent space](./drone-latent-space.png)

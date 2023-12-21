@@ -43,10 +43,20 @@ class BlogPostRoute extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Helmet
-          title={`${post.frontmatter.title}`}
-          meta={[{ name: "description", content: post.excerpt }]}
-        />
+        <Helmet>
+          <title>{post.frontmatter.title}</title>
+          <meta property="description" content={post.excerpt} />
+          <meta property="og:title" content={post.frontmatter.title} />
+          <meta property="og:description" content={post.excerpt} />
+      </Helmet>
+      {post.frontmatter.featured_image && (
+        <Helmet>
+          <meta property="og:image" content={`https://bricolage.io${post.frontmatter.featured_image.childImageSharp.fixed.src}`} />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:image" content={`https://bricolage.io${post.frontmatter.featured_image.childImageSharp.fixed.src}`} />
+        </Helmet>
+        )}
         <h1 css={{ marginBottom: rhythm(1 / 4) }}>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -115,6 +125,13 @@ export const pageQuery = graphql`
         title
         tags
         date(formatString: "MMMM DD, YYYY")
+        featured_image {
+          childImageSharp {
+            fixed(height:630, width: 1200) {
+              src
+            }
+          }
+        }
       }
     }
   }
