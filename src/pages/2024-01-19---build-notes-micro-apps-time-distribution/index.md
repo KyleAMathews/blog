@@ -61,8 +61,6 @@ I read a great book recently: [How Big Things Get Done](https://www.amazon.com/g
 
 In general, the most optimal tools and workflows aren't those that are optimal in some sort of global sense, i.e. do the most possible things for you the quickest but those that are small and simple and reusable in many contexts. You can get rediculously good at these small things fairly quickly and find lots of ways to use them where the more complicated the tool, the harder it is to actually master and the fewer opportunities you'll find to use them.
 
-E.g. turning my dev environment into a reusable starter dropped the time to start a new project to minutes from hours. Standardizing my production environment around simple customizable tools and workflows is also dropping the time to deploy a new project from days to minutes.
-
 The book talks about how nuculear plants are incredibly complex to build and how each plant tends to differ quite a bit from every other plant. And compares them to solar panals which have one tiny little solar cell which is repeated millions of times. Solar projects are very predictable as to time and costs and how the cost / GW for solar has dropped precipitiously for decades. Whereas nuculear energy seems to just get more and more costly over time.
 
 [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve) is the technical term for these ideas for those looking for the Wikipedia link.
