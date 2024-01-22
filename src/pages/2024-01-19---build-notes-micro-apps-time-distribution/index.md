@@ -49,24 +49,26 @@ For the Primal Pulse app I spent:
 
 The most general conclusion I can make is that doing anything novel takes much much longer than anything I'm repeating.
 
+This is the 5th ElectricSQL app I've built — I've been slowly converting everything I'm learning into a reusable project starter and standard production environment which I repeat on every project. So both the "setup dev and prod" workflows are getting a lot lot faster.
+
 E.g. setting up my basic development environment for my ElectricSQL apps. I first hand did this with Vite and React last fall over a day or two, etc. then spent a day converting that into a starter which I've since refined over 5 apps now. That's days of work to learn those things which is now compressed into running one command and about 3 minutes of work to get going on a new project.
 
-It's the same with my production environment. It took two days to figure out everything when deploying my first app. Now it's a checklist I follow that takes me ~40 minutes. And I'm planning on adding some minor automation that'll cut that in half again.
+It's the same with my production environment. It took two days to figure out everything when deploying my first app. Now it's a checklist I follow that takes me ~1 hour. And I'm planning on adding some minor automation that'll cut that in half again.
 
-You can see that across these two apps. Just with the experience from the chocolate app, I went from ~8 hours to ~2 hours setting up dev/prod.
+You can see that across these two apps. Just with the experience from the chocolate app, I went from ~8 hours total for the chocolate app to ~2 hours for primal pulse to set up dev/prod.
 
 You can just ferociously compress how long it takes you to do simple things — as long as you repeat them a few times.
 
 I read a great book recently: [How Big Things Get Done](https://www.amazon.com/gp/product/B0B3HS4C98/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). A very readable and insightful book into what factors make large and small projects go well and fast or slowly fail. Two factors he discusses are the role of experience and modularity. Which in my mind are often the same thing. If you can make your tools and workflows "modular" i.e. reusable across multiple projects, then you'll go up the experience curve on these much faster than if they're slightly different on every project.
 
-In general, the most optimal tools and workflows aren't those that are optimal in some sort of global sense, i.e. do the most possible things for you the quickest but those that are small and simple and reusable in many contexts. You can get rediculously good at these small things fairly quickly and find lots of ways to use them where the more complicated the tool, the harder it is to actually master and the fewer opportunities you'll find to use them.
+In general, the most optimal tools and workflows aren't those that are optimal in some sort of global sense, i.e. do the most possible things for you the quickest but those that are small and simple and reusable in many contexts. You can get ridiculously good at these small things fairly quickly and find lots of ways to use them where the more complicated the tool, the harder it is to actually master and the fewer opportunities you'll find to use them.
 
-The book talks about how nuculear plants are incredibly complex to build and how each plant tends to differ quite a bit from every other plant. And compares them to solar panals which have one tiny little solar cell which is repeated millions of times. Solar projects are very predictable as to time and costs and how the cost / GW for solar has dropped precipitiously for decades. Whereas nuculear energy seems to just get more and more costly over time.
+The book talks about how nuclear plants are incredibly complex to build and how each plant tends to differ quite a bit from every other plant — so there's very learning across plants. And compares them to solar panels where a single solar cell is repeated millions of times. Solar projects are very predictable as to time and costs and the cost / GW for solar has dropped precipitously for decades. Whereas nuclear energy seems to just get more and more costly over time.
 
 [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve) is the technical term for these ideas for those looking for the Wikipedia link.
 
-So this is my grand strategy (as it were) right now — I'm looking for what to do next and the only way I know to do that is to prototype as many interesting things as possible and then eventually double-down on the most interesting. So I'm picking and practicing tools that'll allow me to build whatever interesting idea I can think of very quickly.
+So this is my grand strategy (as it were) right now — I'm looking for what to do next and the only way I know to do that is to prototype as many interesting things as possible and then eventually double-down on the most interesting. So I need an approach that optimizes for prototyping time.
 
-React is my old standby and ElectricSQL is a new tool that eliminates a lot of setup and developmentglobally, the learning curve for time and gives you free real-time sync. I'm also finding that just using raw VMs & Lambdas are proving much faster than working with PaaSs as I have a lot more flexibility to do weird stuff and don't run into paywalls whenever I try to do something novel.
+React is my old standby and ElectricSQL is a new tool that eliminates a lot of setup and development time and gives you free real-time sync. I'm also finding that just using raw VMs & Lambdas are proving much faster than working with PaaSs as I have a lot more flexibility to do weird stuff and don't run into paywalls whenever I try to do something novel.
 
 A well-practiced, modular set of low-level tools allows for fluid exploration of higher-level concepts.
