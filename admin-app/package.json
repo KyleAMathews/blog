@@ -1,11 +1,8 @@
 {
-  "name": "vite-react-router-electric-sql-starter",
-  "description": "Somewhat opinionated starter for ElectricSQL with Vite, and React Router",
+  "name": "blog-admin",
+  "description": "an admin for my blog",
   "version": "1.0.1",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/KyleAMathews/vite-react-router-electric-sql-starter/issues"
-  },
   "dependencies": {
     "@clerk/clerk-react": "^4.30.3",
     "@databases/pg-migrations": "^5.0.3",
@@ -59,8 +56,8 @@
     "url": "git+https://github.com/KyleAMathews/vite-react-router-electric-sql-starter.git"
   },
   "scripts": {
-    "backend:start": "docker compose --env-file src/backend/compose/.envrc -f src/backend/compose/docker-compose.yaml up",
     "backend:down": "docker compose  --env-file src/backend/compose/.envrc -f src/backend/compose/docker-compose.yaml down --volumes",
+    "backend:start": "docker compose --env-file src/backend/compose/.envrc -f src/backend/compose/docker-compose.yaml up",
     "build": "cross-env-shell ELECTRIC_URL=$ELECTRIC_URL ELECTRIC_PROXY=$ELECTRIC_PROXY VITE_ELECTRIC_URL=$ELECTRIC_URL \"npm run client:generate:prod && vite build\"",
     "client:generate": "electric-sql generate --service http://localhost:5133",
     "client:generate:prod": "electric-sql generate --service https://$ELECTRIC_URL --proxy $ELECTRIC_PROXY",
