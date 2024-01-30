@@ -11,7 +11,7 @@ const web = new WebClient(process.env.SLACK_TOKEN, options)
 const sendSlackMessage = async (message: string) => {
   return new Promise(async (resolve, reject) => {
     const channelId = process.env.SLACK_CHANNEL_ID
-    console.log({ message, channelId })
+    console.log(`sending`, { message, channelId })
     try {
       const resp = await web.chat.postMessage({
         channel: channelId,
@@ -20,6 +20,7 @@ const sendSlackMessage = async (message: string) => {
       console.log({resp})
       return resolve(true)
     } catch (error) {
+      console.log(error)
       return resolve(true)
     }
   })
