@@ -12,7 +12,7 @@ export default function Root() {
             <ConnectivityIcon />
             <Heading size="2" weight="bold" trim="normal">
               <NavLink to="/" style={{ textDecoration: `none` }}>
-                Primal Pulse
+                Blog Admin
               </NavLink>
             </Heading>
           </Flex>
