@@ -92,7 +92,7 @@ export default async function handler(
       throw e
     }
 
-    sendSlackMessage(`new subscriber that needs verification! ${email}`)
+    await sendSlackMessage(`new subscriber that needs verification! ${email}`)
 
     res.send({ ok: true })
   }
