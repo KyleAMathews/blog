@@ -1,17 +1,9 @@
-import { useState, useEffect } from "react"
-import { Flex, Button, Heading, Text, Box, Em, Strong } from "@radix-ui/themes"
-import { useLiveQuery } from "electric-sql/react"
+import { Flex } from "@radix-ui/themes"
 import { genUUID } from "electric-sql/util"
 import { Electric } from "../generated/client"
 import { useLocation } from "react-router-dom"
 import { useElectricData } from "electric-query"
-import { Line } from "@ant-design/charts"
 import { useElectric } from "../context"
-import { useUser } from "@clerk/clerk-react"
-
-const lambdaFunction = import.meta.env.PROD
-  ? `https://7dr5i4gfxg.execute-api.us-east-1.amazonaws.com`
-  : `https://owqae9qlal.execute-api.us-east-1.amazonaws.com`
 
 const queries = ({ db }: { db: Electric[`db`] }) => {
   return {
@@ -31,15 +23,12 @@ const queries = ({ db }: { db: Electric[`db`] }) => {
 
 Index.queries = queries
 
-console.log({ useElectric })
 export default function Index() {
   const { db } = useElectric()!
   const location = useLocation()
   const { events, subscriptions } = useElectricData(
     location.pathname + location.search
   )
-
-  console.log({ events, subscriptions })
 
   return (
     <>

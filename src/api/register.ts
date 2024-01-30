@@ -49,7 +49,7 @@ export default async function handler(
       [email]
     )
 
-    console.log(subscriptionInfo.rows)
+    console.log(email, subscriptionInfo.rows)
     if (subscriptionInfo.rows[0]?.state === `needs_verification`) {
       return res.status(400).send({
         error: `You've already subscribed and are awaiting verification. Hold tight! If this seems wrong, email Kyle @ mathews.kyle@gmail.com`,
