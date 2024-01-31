@@ -11,6 +11,7 @@ const { rhythm, scale } = typography
 function BlogPostRoute(props) {
   const [subscribeError, setSubscribeError] = React.useState()
   const [subscribeSuccess, setSubscribeSuccess] = React.useState()
+  const [submitting, setSubmitting] = React.useState(false)
   const post = props.data.markdownRemark
 
   let tags
@@ -90,6 +91,7 @@ function BlogPostRoute(props) {
           e.preventDefault()
           const form = e.target
           const formData = Object.fromEntries(new FormData(form))
+          setSubmitting(true)
           fetch(`/api/register`, {
             headers: {
               Accept: "application/json",
@@ -98,6 +100,7 @@ function BlogPostRoute(props) {
             method: `POST`,
             body: JSON.stringify(formData),
           }).then(async (res) => {
+            setSubmitting(false)
             if (!res.ok) {
               const body = await res.json()
               setSubscribeError(body.error)
@@ -127,7 +130,7 @@ function BlogPostRoute(props) {
           required
           style={{ marginRight: rhythm(0.25) }}
         />
-        <button type="submit">Subscribe</button>
+        <button disabled={submitting} type="submit">Subscribe</button>
       </form>
 
       <p
