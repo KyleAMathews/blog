@@ -3,15 +3,13 @@ import Helmet from "react-helmet"
 import { Link, graphql } from "gatsby"
 import typography from "../utils/typography"
 import ReadNext from "../components/ReadNext"
+import Subscribe from "../components/subscribe"
 import Layout from "../layouts/index.js"
 import profilePic from "../images/kyle-round-small-pantheon.jpg"
 
 const { rhythm, scale } = typography
 
 function BlogPostRoute(props) {
-  const [subscribeError, setSubscribeError] = React.useState()
-  const [subscribeSuccess, setSubscribeSuccess] = React.useState()
-  const [submitting, setSubmitting] = React.useState(false)
   const post = props.data.markdownRemark
 
   let tags
@@ -80,59 +78,7 @@ function BlogPostRoute(props) {
       />
       <ReadNext nextPost={post.frontmatter.readNext} />
 
-      <p style={{ marginBottom: rhythm(0.25) }}>
-        Subscribe to get updated on new posts!
-      </p>
-
-      <form
-        action="/api/register"
-        style={{ marginBottom: rhythm(1) }}
-        onSubmit={(e) => {
-          e.preventDefault()
-          const form = e.target
-          const formData = Object.fromEntries(new FormData(form))
-          setSubmitting(true)
-          fetch(`/api/register`, {
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json",
-            },
-            method: `POST`,
-            body: JSON.stringify(formData),
-          }).then(async (res) => {
-            setSubmitting(false)
-            if (!res.ok) {
-              const body = await res.json()
-              setSubscribeError(body.error)
-            } else {
-              setSubscribeError()
-              setSubscribeSuccess(
-                `Got your subscription request. Kyle will manually send an verification email soon.`
-              )
-              form.reset()
-            }
-          })
-        }}
-      >
-        {subscribeError && (
-          <p style={{ marginBottom: rhythm(0.5), color: `red` }}>
-            {subscribeError}
-          </p>
-        )}
-        {subscribeSuccess && (
-          <p style={{ marginBottom: rhythm(0.5), color: `green` }}>
-            {subscribeSuccess}
-          </p>
-        )}
-        <input
-          type="email"
-          name="email"
-          required
-          style={{ marginRight: rhythm(0.25) }}
-        />
-        <button disabled={submitting} type="submit">Subscribe</button>
-      </form>
-
+       <Subscribe />
       <p
         style={{
           marginBottom: 0,
