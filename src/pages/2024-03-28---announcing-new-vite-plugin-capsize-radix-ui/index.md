@@ -43,7 +43,7 @@ The code and docs are at https://github.com/KyleAMathews/vite-plugin-capsize-rad
 how the text doesn't move even a pixel up and down as I switch between fonts — this
 is incredible and impossible without Capsize. The practical benefit of this is
 it makes it trivial to try out different fonts as you're building your app
-without breaking your layout.
+without breaking your layout. There's a wealth of beautiful fonts out there to try.
 
 <video controls width="100%">
   <source src="https://github.com/KyleAMathews/vite-plugin-capsize-radix-ui/assets/71047/3ec5d6ca-bf00-4b79-8552-4e3da3454f52" type="video/mp4" />
