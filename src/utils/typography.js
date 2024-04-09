@@ -17,6 +17,9 @@ let theme = {
       paddingLeft: rhythm(5 / 8),
       borderLeft: `${rhythm(3 / 8)} solid #CDE7B0`,
     },
+    "blockquote strong": {
+      color: `hsla(0,0%,0%,0.64)`,
+    },
     "blockquote > *": {
       fontStyle: `italic`,
     },
