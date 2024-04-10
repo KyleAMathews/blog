@@ -59,6 +59,6 @@ This seems like the most important question of our time, can our institutions su
 
 Josh Stark compared Protocol Theory to Information Theory in his essay [Atoms, Institutions, Blockchains](https://stark.mirror.xyz/n2UpRqwdf7yjuiPKVICPpGoUNeDhlWxGqjulrlpyYi0). Not until [Claude Shannon published his Information Theory in 1946](https://en.wikipedia.org/wiki/Claude_Shannon#Information_theory), did the now common abstraction of “information” or “data” exist.
 
-Information Theory created a powerful new way of seeing the world as discrete information which is stored, transmitted, and processed. This new perspective helped inspire a whole generation of technologists to imagine and successfully invent technologies like the CPU, fiber optics, and the internet. Information Theory led to the Information Age.
+Information Theory created a powerful new way of seeing the world as full of discrete information which is stored, transmitted, and processed. This new perspective helped inspire a whole generation of technologists to imagine and successfully invent technologies like the CPU, fiber optics, and the internet. Information Theory led to the Information Age.
 
 Perhaps Protocol Theory is also laying the foundation for a coming Protocol Age?
