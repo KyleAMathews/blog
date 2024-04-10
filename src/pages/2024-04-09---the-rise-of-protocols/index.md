@@ -37,7 +37,7 @@ Protocols again aren’t _new_. They just haven’t been important enough in the
 
 Protocols thoroughly permeate our lives. There are 100s of protocols embedded in the walls of our homes. We follow dozens throughout our day-to-day lives from brushing our teeth to which side of the road we drive.
 
-But like the [famous “how’s the water?” fish story](https://fs.blog/david-foster-wallace-this-is-water/) — for most of us, if someone asked “how’s your protocols?” we’d also respond “what the hell is a protocol?”
+But like the [famous “how’s the water?” fish story](https://fs.blog/david-foster-wallace-this-is-water/) — for most of us, if someone asked “how’re the protocols?” we’d also respond “what the hell is a protocol?”
 
 To successfully adapt our institutions, many of us are going to need to get a lot more comfortable at seeing the “water” of protocols that surround us.
 
