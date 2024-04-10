@@ -46,7 +46,7 @@ export default function Index() {
         {subscriptions.map((sub) => {
           return (
             <div>
-              {sub.email} | {sub.state}
+              {sub.email}
               {` `}
               {sub.state === `needs_verification` && (
                 <button
