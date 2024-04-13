@@ -28,10 +28,6 @@ export function ElectricalProvider({ children }) {
           schema,
           sqliteWasmPath: sqliteWasm,
           config: {
-            auth: {
-              token,
-              clientId: user.id,
-            },
             debug: true, //DEBUG_MODE,
             url: electricUrl,
           },
