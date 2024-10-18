@@ -41,9 +41,13 @@
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.20",
     "shakespeares-monkeys": "^0.0.13",
+    "sst": "3.2.36",
     "typeface-cooper-hewitt": "^0.0.44",
     "typography": "^0.16.20",
     "typography-plugin-code": "^1.0.0-alpha.0",
     "typography-theme-de-young": "^1.0.0-alpha.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20241004.0"
   }
 }
