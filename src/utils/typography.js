@@ -17,6 +17,9 @@ let theme = {
       paddingLeft: rhythm(5 / 8),
       borderLeft: `${rhythm(3 / 8)} solid #CDE7B0`,
     },
+    "h2, h3, h4, h5, h6, p": {
+      textWrap: `pretty`,
+    },
     "blockquote strong": {
       color: `hsla(0,0%,0%,0.64)`,
     },
@@ -28,12 +31,12 @@ let theme = {
     },
     ".gatsby-resp-image-wrapper + em": {
       display: `block`,
-      marginTop: rhythm(1/8),
+      marginTop: rhythm(1 / 8),
     },
     "h3,h4,h5,h6": {
       fontWeight: `normal`,
     },
-    "video": {
+    video: {
       marginBottom: rhythm(1 / 2),
     },
     ".toc": {
