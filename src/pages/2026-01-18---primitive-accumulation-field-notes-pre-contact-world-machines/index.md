@@ -1151,17 +1151,21 @@ Fastidious:
 
 Seven hundred thirty-seven years. Four machines:
 
+1. **The Trade Machine**: Emergent coordination through distributed exchange. Runs on reputation and relationship. Has always existed; I observed it in 1287, but humans have been trading on trust since before they had writing.
 
+2. **The Legibility Machine** (emerged 1500s, dominant 1600s-present): Standardization, enumeration, interoperability at scale. Enabled nation-states and global coordination. Still operating but increasingly overwhelmed by the complexity it generated.
 
-1. **The Trade Machine** (1287): Emergent coordination through distributed exchange. Ran on reputation and relationship. Completed.
+3. **The Diversity Machine** (emerged 1700s, dominant 1800s-present): Coordination without requiring homogeneity. Universal rights, pluralism, coexistence. Still under construction; facing significant resistance.
 
-2. **The Legibility Machine** (1500-1900): Standardization, enumeration, interoperability at scale. Enabled nation-states and global coordination. Completed.
+4. **The Divergence Machine** (emerging): Coordination without requiring consensus. Systems that treat divergence as normal rather than problematic.
 
-3. **The Diversity Machine** (1789-present): Coordination without requiring homogeneity. Universal rights, pluralism, coexistence. Under construction; facing significant resistance.
+The machines do not replace each other. They layer. The Trade Machine still runs beneath everything—reputation still matters, relationships still coordinate. The Legibility Machine still operates—states still count, currencies still standardize, bureaucracies still enumerate. The Diversity Machine still functions where it has taken root.
 
-4. **The Divergence Machine** (emerging): Coordination without requiring consensus. Systems that treat divergence as normal rather than problematic. Bootstrapping in the wreckage of the Legibility Machine's success.
+What changes is which machine *sets the tone*. Which one points to the future. Which one organizes the others.
 
-What distinguishes the Divergence Machine: it coordinates through *configuration*—the way things fit together over time, through ongoing adjustments rather than predetermined ends. Not shared standards (like the Legibility Machine) or shared principles (like the Diversity Machine). Just the fitting-together itself.
+The interregnum—the time of monsters—is the period when no machine dominates. When the old order can no longer set the direction, and the new order hasn't yet established itself. The confusion of these periods is not that things stop working. It's that *the future disappears*. No one knows which way is forward.
+
+The Divergence Machine is emerging in this gap. It coordinates through *configuration*—the way things fit together over time, through ongoing adjustments rather than predetermined ends. Not shared standards (like the Legibility Machine) or shared principles (like the Diversity Machine). Just the fitting-together itself.
 
 In this sense, it resembles the Trade Machine more than any of its successors. Emergent order, no central design, meaning arising from relationship rather than from blueprint. But at a scale the Trade Machine never approached, and with an awareness the Trade Machine never had. They are learning to build infrastructure for emergence—not designing outcomes, but designing conditions that let outcomes emerge.
 
