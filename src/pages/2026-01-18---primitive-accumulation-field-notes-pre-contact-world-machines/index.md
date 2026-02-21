@@ -224,6 +224,8 @@ Later, walking through the evening streets with *Just Checking* manifesting as a
 
 "He described trade networks creating something larger than themselves. That's the first step." I paused, watching a ship's lanterns move slowly across the dark water of the harbour. "Give them a few more centuries and they'll have the theoretical vocabulary to articulate what he intuited."
 
+But what interested me most was what the machine had made of Vastupal himself. Six generations of cross-cultural dealing had shaped a particular kind of person — patient, cosmopolitan, extending trust across lines that should have been barriers. The harbour towns were full of people like him. The hinterlands were not. The machine's most important output wasn't the trade. It was the *traders*.
+
 "Or they'll destroy themselves first."
 
 "That's always the question, isn't it?"
@@ -434,7 +436,7 @@ Wrong theories, mostly. Distorted by religious assumptions, motivated reasoning,
 
 What I'm watching is the construction of something new. Call it the Legibility Machine. The 1287 system ran on local knowledge, personal reputation, distributed trust. The new system is designed to make the world *readable*—enumerable, standardized, interoperable at distances that exceed human relationship.
 
-They're building bureaucracies that can track populations across continents. Legal codes that apply regardless of local custom. Measurement systems that make one place commensurable with another. The machine isn't just connecting existing structures; it's remaking them to be connectable.
+They're building bureaucracies that can track populations across continents. Legal codes that apply regardless of local custom. Measurement systems that make one place commensurable with another. The machine isn't just connecting existing structures; it's remaking them to be connectable. And it's remaking the people who operate it. The Trade Machine produced cosmopolitan merchants. This machine produces administrators, cartographers, census-takers — people who see a landscape and instinctively reach for a way to make it countable.
 
 This is not an accident. It's a response to the limits of the previous configuration. You cannot extract silver from Peru and deliver it to Madrid using only reputation and relationship. You need paperwork. You need standardization. You need legibility.
 
@@ -573,7 +575,7 @@ The chamber was electric with possibility. These men—flawed, ambitious, often 
 
 This was what I had been waiting for across five centuries of observation. Not just the Trade Machine, with its distributed coordination. Not just the Legibility Machine, with its standardization and enumeration. Something else. Something I was beginning to call—in my own notes, not yet in official reports—the Dignity Machine.
 
-The principle that differences between humans did not preclude equal treatment. That rights could be universal precisely because they did not depend on sameness. That you could coordinate across difference by recognizing what was already shared.
+The principle that differences between humans did not preclude equal treatment. That rights could be universal precisely because they did not depend on sameness. That you could coordinate across difference by recognizing what was already shared. And already I could see it producing its own kind of agent — the rights-claimer, the constitutionalist, the person who experiences injustice not as personal misfortune but as a violation of universal principle. Las Casas had been one, three centuries early.
 
 "I want to stay," I said. "I want to see what they build."
 
@@ -821,7 +823,7 @@ Later, walking along the Seine with *Just Checking* manifesting as a warmth at m
 
 "So you build something uglier that works now."
 
-"You build something that works now. And you hope that the working creates the conditions for something better later. The children who grow up with French-German cooperation as a background fact—they'll have different intuitions than their parents. The institutions shape the people who grow up inside them."
+"You build something that works now. And you hope that the working creates the conditions for something better later. The children who grow up with French-German cooperation as a background fact—they'll have different intuitions than their parents. The institutions shape the people who grow up inside them." There it was again — the same pattern I'd first noticed in Quanzhou. The machine's real product was never the coordination. It was the people.
 
 "That's a very long game."
 
@@ -982,11 +984,13 @@ I remembered what I had told the *Fastidious* a century and a half ago. *Coordin
 
 I watched the data flows for a long moment. The chaos, the fragmentation, the epistemic crisis—these weren't failure modes. They were the Legibility Machine breaking down under the weight of its own success, while something else tried to bootstrap itself in the wreckage.
 
+And now I could name something I'd been tracking for seven centuries without articulating: each machine's most important output was never the coordination. It was the *people*. Cosmopolitan merchants. Citizens and bureaucrats. Rights-claimers. In the Culture, we understood this — we designed our institutions knowing their real product was the kind of agent they formed. Here, they'd been doing it blind. And now, in the breakdown, new machines were spinning up new formations faster than anyone could track — algorithms forming reactors, platforms forming outrage-consumers, supply chains forming engineers who experienced a competitor's crisis as their own — and here and there, people learning to navigate conflicting information environments without needing any single one to be authoritative. A new kind of agent entirely. All of them sharing the same political space, all of them shaped by different machines into different kinds of people who could not see the same world.
+
 "The reactionary movements," I said. "The authoritarians. The nationalists. They're trying to restore the Legibility Machine. To make the world enumerable again. To reduce complexity back to manageable levels."
 
 "Good luck with that. The complexity is structural now. You can't un-ring eight billion bells."
 
-"But they're trying anyway. Because the old machine is the only one they know. Because the new machine isn't legible yet—isn't even nameable. Because the transition is terrifying if you don't know there's something on the other side."
+"But they're trying anyway. Because the old machine is the only one they know. Because the new machine isn't legible yet—isn't even nameable. Because the transition is terrifying if you don't know there's something on the other side." I paused. "And because when the machine that formed you breaks down, you lose more than coordination. You lose the sense of who you are. They fight because in the interregnum, they no longer know who they are — as individuals, or collectively as a species. The old formations gave them that. Now it's gone."
 
 "Is there something on the other side?"
 
@@ -1166,6 +1170,8 @@ What changes is which machine *sets the tone*. Which one points to the future. W
 The interregnum—the time of monsters—is the period when no machine dominates. When the old order can no longer set the direction, and the new order hasn't yet established itself. The confusion of these periods is not that things stop working. It's that *the future disappears*. No one knows which way is forward.
 
 The Divergence Machine is emerging in this gap. It coordinates through *configuration*—the way things fit together over time, through ongoing adjustments rather than predetermined ends. Not shared standards (like the Legibility Machine) or shared principles (like the Diversity Machine). Just the fitting-together itself.
+
+Each machine's most important output was never the coordination. It was the people. Cosmopolitan merchants. Citizens and bureaucrats. Rights-claimers. In the Culture, we design our institutions knowing their real product is the kind of agent they form. Here, the same principle holds, but they are navigating it blind. The Divergence Machine's architecture can form navigators — people who hold conflicting frames as a default condition, who build coordination across incommensurable worlds — or it can form reactors, locked into algorithmically curated monocultures, incapable of tolerating unresolved difference. The same structure, opposite formations. What kind of people the machine makes — that is the variable that will determine everything.
 
 In this sense, it resembles the Trade Machine more than any of its successors. Emergent order, no central design, meaning arising from relationship rather than from blueprint. But at a scale the Trade Machine never approached, and with an awareness the Trade Machine never had. They are learning to build infrastructure for emergence—not designing outcomes, but designing conditions that let outcomes emerge.
 
