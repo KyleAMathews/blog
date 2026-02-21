@@ -47,7 +47,7 @@ The drone made a sound I had learned to interpret as profound spiritual exhausti
 
 "Down there. The wharf reserved for foreign vessels."
 
-Below us, a ship-captain from Basra was negotiating with a Tamil factor over credit instruments drawn on a Gujarati banking house. Neither spoke the other's language with any fluency. They were using a pidgin that incorporated Arabic, Tamil, and Hokkien, supplemented by hand gestures. The negotiation concerned goods that were currently six weeks away by sea, priced in a currency neither of them used domestically, secured by the reputation of an institution neither of them had visited.
+Below us, a ship-captain from Basra was negotiating with a Tamil factor over credit instruments drawn on a Gujarati banking house. Neither spoke the other's language with any fluency. They were using a pidgin that incorporated Arabic, Tamil, and Hokkien, supplemented by hand gestures. The negotiation concerned goods that were currently six weeks away by sea.
 
 "I see two men haggling," *Just Checking* said. "I've seen haggling. It's not interesting."
 
