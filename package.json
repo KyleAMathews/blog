@@ -5,7 +5,10 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "scripts": {
     "create-post": "node create-post.js",
-    "format": "prettier --write '**/*.js'"
+    "format": "prettier --write '**/*.js'",
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "deploy": "gatsby build && wrangler pages deploy public --project-name=blog"
   },
   "dependencies": {
     "@emotion/core": "^10.0.7",
@@ -48,6 +51,17 @@
     "typography-theme-de-young": "^1.0.0-alpha.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20241004.0"
+    "@cloudflare/workers-types": "4.20241004.0",
+    "wrangler": "^4.82.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild",
+      "lmdb",
+      "workerd",
+      "@parcel/watcher",
+      "msgpackr-extract"
+    ]
   }
 }
