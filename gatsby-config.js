@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "Bricolage",
     author: "Kyle Mathews",
-    homeCity: "Seattle",
+    homeCity: "Salt Lake City",
     description: `Kyle Mathews' blog yo`,
     siteUrl: `https://bricolage.io`,
   },

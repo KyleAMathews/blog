@@ -37,10 +37,10 @@ class BlogIndexRoute extends React.Component {
           />
           Blog written by{" "}
           <strong>{this.props.data.site.siteMetadata.author}</strong> who lives
-          and works in Seattle building useful things.
-          <div style={{ marginTop: rhythm(1/2) }}>
+          and works in Salt Lake City building useful things.
+          {/* <div style={{ marginTop: rhythm(1/2) }}>
             <Subscribe />
-          </div>
+          </div> */}
         </p>
         <p />
         <ul

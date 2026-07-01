@@ -78,7 +78,7 @@ function BlogPostRoute(props) {
       />
       <ReadNext nextPost={post.frontmatter.readNext} />
 
-       <Subscribe />
+      {/* <Subscribe /> */}
       <p
         style={{
           marginBottom: 0,
@@ -101,8 +101,7 @@ function BlogPostRoute(props) {
         <a href="https://twitter.com/kylemathews">
           You should follow him on Twitter.
         </a>{" "}
-        Currently exploring what's next and{" "}
-        <Link to="/about">open to consulting</Link>.
+        Co-founder at <a href="https://electric.ax">Electric</a>.
       </p>
     </Layout>
   )
