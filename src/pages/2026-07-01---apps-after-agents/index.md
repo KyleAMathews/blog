@@ -1,6 +1,7 @@
 ---
 title: "Apps After Agents"
 date: "2026-07-01T12:00:00.000Z"
+description: "Models are commodity. Substrate is differentiation. The question isn't how smart your agents are — it's where the crystallized judgment lives."
 ---
 
 ## The Bitter Lesson Has Limits
