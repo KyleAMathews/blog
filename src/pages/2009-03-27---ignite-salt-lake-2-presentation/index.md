@@ -5,6 +5,7 @@ tags:
   - ignite salt lake
   - presentation
 date: "2009-03-27T18:07:51.000Z"
+description: "Slides from my Ignite Salt Lake talk on social networking in the classroom at BYU."
 layout: post
 ---
 

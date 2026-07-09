@@ -2,6 +2,7 @@
 title: How to create a résumé using Latex
 tags: null
 date: "2011-05-21T02:22:02.000Z"
+description: "Using LaTeX to create a beautiful resume that looks miles better than any Word template."
 layout: post
 ---
 

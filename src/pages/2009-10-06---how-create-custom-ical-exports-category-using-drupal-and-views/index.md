@@ -3,6 +3,7 @@ title: How to create custom ical exports by category using Drupal and the Views 
 tags:
   - drupal
 date: "2009-10-06T15:32:34.000Z"
+description: "How to filter iCal feeds by taxonomy terms in Drupal by overriding the Calendar module's URL generation."
 layout: post
 ---
 

@@ -4,6 +4,7 @@ tags:
   - education
   - social learning
 date: "2009-10-07T17:28:58.000Z"
+description: "Watching others learn is an act of learning. How transparent learning through social media accelerates progress."
 layout: post
 ---
 

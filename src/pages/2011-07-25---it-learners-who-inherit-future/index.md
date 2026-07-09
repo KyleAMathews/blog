@@ -2,6 +2,7 @@
 title: It is the learners who inherit the future
 tags: null
 date: "2011-07-25T04:59:38.000Z"
+description: "Eric Hoffer on how the learned find themselves equipped for a world that no longer exists."
 layout: post
 ---
 

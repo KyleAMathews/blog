@@ -3,6 +3,7 @@ title: Purple Cow Erratum
 tags:
   - internet-marketing
 date: "2007-07-02T18:55:15.000Z"
+description: "How Apple's iPhone proved Seth Godin's Purple Cow case study about boring phones wrong."
 layout: post
 ---
 

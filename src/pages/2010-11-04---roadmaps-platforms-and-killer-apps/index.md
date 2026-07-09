@@ -5,6 +5,7 @@ tags:
   - eduglu
   - platforms
 date: "2010-11-04T23:10:52.000Z"
+description: "Killer platforms need killer apps. Eduglu needs compelling applications that make it indispensable for learning."
 layout: post
 ---
 

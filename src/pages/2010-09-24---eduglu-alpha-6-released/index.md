@@ -4,6 +4,7 @@ tags:
   - drupal
   - eduglu
 date: "2010-09-24T18:56:43.000Z"
+description: "New Eduglu release with quiz feature, searchable member directory, and group admin tools."
 layout: post
 ---
 

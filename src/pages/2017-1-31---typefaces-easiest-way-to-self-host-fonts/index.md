@@ -3,6 +3,7 @@ title: "Typefaces: The easiest way to self-host open-source fonts"
 tags:
   - open source
 date: "2017-01-31"
+description: "NPM packages for self-hosting fonts. Faster than Google Fonts, works offline, and opens the door to further optimizations."
 readNext: /gatsby-open-source-work/
 ---
 

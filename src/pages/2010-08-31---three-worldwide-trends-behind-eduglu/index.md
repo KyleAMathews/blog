@@ -7,6 +7,7 @@ tags:
   - eduglu
   - launchup
 date: "2010-08-31T22:01:23.000Z"
+description: "The shrinking half-life of knowledge, the higher ed bubble, and global demand driving new education models."
 draft: true
 layout: post
 ---

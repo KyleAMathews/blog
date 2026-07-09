@@ -3,6 +3,7 @@ title: New blog design
 tags:
   - design
 date: "2019-03-31T04:29:30+0000"
+description: "Redesigning my blog with Cooper Hewitt typeface, inspired by an airport banner ad in Amsterdam."
 ---
 
 I last redesigned my blog around three years ago — before I started on the rewrite of Gatsby that became Gatsby v1. Which is a long time — and a bummer cause I really enjoy fiddling with my blog design. So #protip — if you want to have time to fiddle with your site's design, don't start large open source projects and startups.

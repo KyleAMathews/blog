@@ -4,6 +4,7 @@ tags:
   - linux
   - ubuntu
 date: "2007-05-02T04:07:15.000Z"
+description: "How to use the DISPLAY environment variable to launch GUI applications from cron jobs in Ubuntu Linux."
 layout: post
 readNext___file: ../2014-04-18---hosting-static-sites-with-docker-and-nginx/index.md
 ---

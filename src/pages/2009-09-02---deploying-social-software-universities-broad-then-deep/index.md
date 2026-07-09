@@ -8,6 +8,7 @@ tags:
   - social software
   - social learning
 date: "2009-09-02T23:53:44.000Z"
+description: "Why small pilots fail for social software: scale is the oxygen that feeds collaboration. Launch broadly first, then go deep."
 layout: post
 ---
 

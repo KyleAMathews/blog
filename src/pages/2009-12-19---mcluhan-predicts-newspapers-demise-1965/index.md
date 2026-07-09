@@ -3,6 +3,7 @@ title: "McLuhan predicts newspaper's demise in 1965."
 tags:
   - newspapers
 date: "2009-12-19T20:29:17.000Z"
+description: "Marshall McLuhan predicted that newspapers would fold if an alternative to classified ads emerged."
 layout: post
 ---
 

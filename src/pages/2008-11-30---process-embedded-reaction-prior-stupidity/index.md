@@ -3,6 +3,7 @@ title: Process is an embedded reaction to prior stupidity
 tags:
   - process
 date: "2008-11-30T02:39:36.000Z"
+description: "Clay Shirky and Paul Graham on the hidden costs of bureaucratic checks and processes in organizations."
 layout: post
 ---
 

@@ -7,6 +7,7 @@ tags:
   - learning
   - social software
 date: "2008-02-02T17:58:14.000Z"
+description: "A Drupal community learning site for BYU that aggregates student blogs with expert feeds using FeedAPI."
 layout: post
 ---
 I've been putting some final touches on a website I built for a class running at BYU this semester on web analytics. You can visit the site <a href="http://ebiz2.byu.edu/analytics">here</a>. I did a <a href="http://groups.drupal.org/node/8610">write-up about the site</a> for Drupal's education working group. I discuss the design principles that guided my construction of the site.

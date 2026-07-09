@@ -6,6 +6,7 @@ tags:
   - social learning
   - eduglu
 date: "2010-02-05T18:47:56.000Z"
+description: "Announcing Eduglu, a Drupal install profile combining a social learning engine with pluggable educational tools."
 layout: post
 ---
 

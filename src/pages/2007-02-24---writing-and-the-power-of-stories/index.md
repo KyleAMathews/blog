@@ -3,6 +3,7 @@ title: Writing and The Power of Stories
 tags:
   - writing
 date: "2007-02-24T22:47:21.000Z"
+description: "How journaling helps us discover our personal story and gives life meaning, purpose, and direction."
 layout: post
 ---
 

@@ -4,6 +4,7 @@ tags:
   - drupal
   - memetracker
 date: "2008-07-01T21:26:22.000Z"
+description: "First alpha release of my Drupal memetracker module, a smart aggregator that groups content by topic and interestingness."
 layout: post
 ---
 

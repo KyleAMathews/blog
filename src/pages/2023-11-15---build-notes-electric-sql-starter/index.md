@@ -1,6 +1,7 @@
 ---
 title: "Build Notes: Creating a Local First Vite/React/ElectricSQL Starter"
 date: "2023-11-15"
+description: "Notes from building a Vite/React/ElectricSQL starter with excellent DX and schema-first development."
 ---
 
 I was thinking last night about [the new starter I released](https://github.com/KyleAMathews/vite-react-router-electric-sql-starter) — that in the past, I'd do a short Twitter thread dumping out the various observations I made to myself during the project. But now, with Twitter but a shadow of its former self (at least when it comes to tech discussions), it seems less enticing to do that. So back to the original blogging platform pre-micro-blogging (who remembers that term haha).

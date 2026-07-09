@@ -1,6 +1,7 @@
 ---
 title: Ubuntu meta-packages website
 date: "2008-05-17T15:12:59.000Z"
+description: "An idea for a website where users could discover and install curated meta-packages for any task on Ubuntu."
 draft: true
 layout: post
 ---

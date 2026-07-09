@@ -2,6 +2,7 @@
 title: The True Executive
 tags: null
 date: "2011-05-07T03:43:15.000Z"
+description: "From The Organization Man: the true executive remains most suspicious of The Organization and wants to dominate, not be dominated."
 layout: post
 ---
 

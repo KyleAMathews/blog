@@ -7,6 +7,7 @@ tags:
   - conversation
   - byu
 date: "2008-07-18T21:57:59.000Z"
+description: "Proposing conversations per student per day as the key metric for measuring eLearning success."
 layout: post
 ---
 

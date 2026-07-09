@@ -5,6 +5,7 @@ tags:
   - social software
   - social media
 date: "2008-12-13T18:31:53.000Z"
+description: "Exploring trade-offs in social media design: following ideas vs people, search vs browse, forums vs social networks."
 layout: post
 ---
 

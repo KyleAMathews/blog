@@ -6,6 +6,7 @@ tags:
   - social learning
   - marshall mcLuhan
 date: "2009-11-12T16:17:57.000Z"
+description: "McLuhan's prescient analysis: students live mythically in an electronic world but schools still teach data classification."
 layout: post
 ---
 

@@ -3,6 +3,7 @@ title: Memetracker module gets some press
 tags:
   - memetracker
 date: "2008-09-17T22:08:08.000Z"
+description: "Web Dev News covers my Drupal memetracker module built during Google Summer of Code."
 layout: post
 ---
 

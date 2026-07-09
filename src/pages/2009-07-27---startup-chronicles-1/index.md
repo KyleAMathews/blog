@@ -4,6 +4,7 @@ tags:
   - entrepreneurship
   - startup
 date: "2009-07-27T22:40:41.000Z"
+description: "On the feeling that calling your company a 'company' is a lie when you're working from a messy apartment."
 layout: post
 ---
 

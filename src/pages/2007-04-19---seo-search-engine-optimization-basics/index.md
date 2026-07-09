@@ -5,6 +5,7 @@ tags:
   - internet-marketing
   - seo
 date: "2007-04-19T22:00:37.000Z"
+description: "The three key factors that determine search engine rankings: domain strength, links, and title tags."
 layout: post
 ---
 

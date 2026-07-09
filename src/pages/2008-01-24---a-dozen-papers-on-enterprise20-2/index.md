@@ -5,6 +5,7 @@ tags:
   - enterprise2.0
   - innovation
 date: "2008-01-24T01:09:00.000Z"
+description: "A curated list of essential papers on Enterprise 2.0 from Jim McGee."
 layout: post
 ---
 

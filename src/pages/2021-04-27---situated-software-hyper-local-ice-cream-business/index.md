@@ -1,6 +1,7 @@
 ---
 title: Situated Software for Hyper-local, Hyper-yummy Ice Cream
 date: "2021-04-28T18:59:39.000Z"
+description: "Building a micro-business web app to sell homemade ice cream to neighbors, exploring situated software."
 ---
 
 My wife and I are working on a fun side project to create a micro-business to make and sell homemade ice cream to our neighbors. We've been fiddling with designs for a few weeks and I'm going to start building the web app soon. I'll be live streaming all the coding so [follow me on Twitter](https://twitter.com/kylemathews) to see announcements on that.

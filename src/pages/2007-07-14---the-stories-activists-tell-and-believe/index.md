@@ -3,6 +3,7 @@ title: The stories activists tell and believe
 tags:
   - history
 date: "2007-07-14T04:22:38.000Z"
+description: "John Gardner on how political extremism grows from believing in limitless virtue of one's cause and doubting others' morality."
 layout: post
 ---
 

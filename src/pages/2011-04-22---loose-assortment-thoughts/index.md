@@ -2,6 +2,7 @@
 title: A loose assortment of thoughts
 tags: null
 date: "2011-04-22T22:39:10.000Z"
+description: "Reflections on Tempo, Nietzsche, and the paradoxical tension between contemplation and action."
 layout: post
 ---
 

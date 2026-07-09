@@ -9,6 +9,7 @@ tags:
   - organizational behavior
   - micro-labs
 date: "2009-11-18T19:55:21.000Z"
+description: "Launch broad then deep, help learners climb the participation curve, and focus on creating value."
 layout: post
 ---
 

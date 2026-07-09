@@ -5,6 +5,7 @@ tags:
   - internet
   - experts
 date: "2008-10-23T20:06:34.000Z"
+description: "Professors should guide students into communities of practice, teaching tacit knowledge that Google cannot provide."
 layout: post
 ---
 

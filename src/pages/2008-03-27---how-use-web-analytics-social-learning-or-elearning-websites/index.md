@@ -1,6 +1,7 @@
 ---
 title: How to use web analytics on social learning or elearning websites
 date: "2008-03-27T16:27:15.000Z"
+description: "Using web analytics to measure behavior, outcomes, and experience on eLearning sites to drive continuous improvement."
 layout: post
 ---
 

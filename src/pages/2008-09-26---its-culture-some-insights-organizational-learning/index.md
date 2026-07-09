@@ -11,6 +11,7 @@ tags:
   - social media
   - open source development
 date: "2008-09-26T04:39:10.000Z"
+description: "Why knowledge management fails: tools can't create a culture of sharing. Open source communities show how it's done."
 layout: post
 ---
 

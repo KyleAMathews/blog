@@ -5,6 +5,7 @@ tags:
   - creative destruction
   - reality
 date: "2011-05-10T20:01:57.000Z"
+description: "John Boyd on why mental images must be destroyed and rebuilt to match new realities or chaos results."
 layout: post
 ---
 

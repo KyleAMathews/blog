@@ -5,6 +5,7 @@ tags:
   - memetracker
   - knight news challenge
 date: "2008-11-02T06:47:27.000Z"
+description: "My Knight News Challenge application to bring the Memetracker and Content Recommendation Engine modules to production."
 layout: post
 ---
 

@@ -4,6 +4,7 @@ tags:
   - social software
   - opened09
 date: "2009-08-13T21:38:59.000Z"
+description: "Video and slides from my OpenEd 2009 talk on designing and using group software through patterns."
 layout: post
 ---
 

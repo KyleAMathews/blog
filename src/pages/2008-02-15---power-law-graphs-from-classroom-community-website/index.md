@@ -8,6 +8,7 @@ tags:
   - power law
   - social software
 date: "2008-02-15T18:18:04.000Z"
+description: "Analyzing student participation data from an eLearning site reveals power law distributions in comments and visits."
 layout: post
 ---
 

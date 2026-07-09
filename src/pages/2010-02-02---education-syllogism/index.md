@@ -8,6 +8,7 @@ tags:
   - social learning
   - syllogism
 date: "2010-02-02T22:24:43.000Z"
+description: "Schools must shift from mechanistic preparation to electronic preparation: pattern recognition over data classification."
 layout: post
 ---
 

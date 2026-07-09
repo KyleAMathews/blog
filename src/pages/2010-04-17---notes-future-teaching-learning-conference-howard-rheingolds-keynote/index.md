@@ -6,6 +6,7 @@ tags:
   - teaching
   - socialmediaclassroom
 date: "2010-04-17T17:04:24.000Z"
+description: "Howard Rheingold on digital literacy, social media in education, and the socialmediaclassroom.com tool."
 layout: post
 ---
 

@@ -3,6 +3,7 @@ title: Building your own tools
 tags:
   - tools
 date: "2011-10-28T08:00:37.000Z"
+description: "Never outsource a core competency. As a knowledge worker, defining what my work is shouldn't depend on poor-fitting tools."
 layout: post
 readNext: "/problem-too-general-tools/"
 readNext___file: ../2010-06-02---problem-too-general-tools/index.md

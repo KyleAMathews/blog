@@ -4,6 +4,7 @@ tags:
   - enterprise2.0
   - social software
 date: "2008-01-16T22:08:31.000Z"
+description: "Links to case studies on Enterprise 2.0 implementations including wiki adoption at DrKW."
 layout: post
 ---
 

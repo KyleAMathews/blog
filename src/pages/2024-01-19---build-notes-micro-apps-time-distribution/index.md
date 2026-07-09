@@ -1,6 +1,7 @@
 ---
 title: "Build Notes: Where is my time spent when building two micro-apps?"
 date: "2024-01-22T18:49:20.128Z"
+description: "Time breakdown of building two ElectricSQL apps. Repetition compresses novel tasks into fast routines."
 ---
 
 In the past week I built and deployed two micro-apps.

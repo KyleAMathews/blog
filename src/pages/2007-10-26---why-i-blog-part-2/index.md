@@ -6,6 +6,7 @@ tags:
   - learning
   - writing
 date: "2007-10-26T04:57:56.000Z"
+description: "Using blogging as a signaling mechanism to demonstrate skills and ideas to potential employers when grades won't impress."
 layout: post
 ---
 

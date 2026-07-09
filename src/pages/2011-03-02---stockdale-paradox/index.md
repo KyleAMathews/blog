@@ -2,6 +2,7 @@
 title: Stockdale paradox
 tags: null
 date: "2011-03-02T17:31:52.000Z"
+description: "Admiral Stockdale on maintaining faith in success while confronting the brutal facts of current reality."
 layout: post
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: First Post
 date: "2006-07-22T22:39:53.000Z"
+description: "My first blog post, celebrating the joy of joining the global conversation after five years of reading blogs."
 layout: post
 ---
 

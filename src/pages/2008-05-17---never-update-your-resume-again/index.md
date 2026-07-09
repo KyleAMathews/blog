@@ -3,6 +3,7 @@ title: Never update your resume again (just your blog)
 tags:
   - blogging
 date: "2008-05-17T13:22:14.000Z"
+description: "Your blog as an authentic, unfakeable alternative to a resume that lets employers see who you really are."
 layout: post
 ---
 

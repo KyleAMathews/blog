@@ -5,6 +5,7 @@ tags:
   - elearning2.0
   - social software
 date: "2008-01-02T01:56:46.000Z"
+description: "Update on recent projects including e-commerce sites with Drupal, a t-shirt company, and eLearning research at BYU."
 layout: post
 ---
 

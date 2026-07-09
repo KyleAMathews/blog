@@ -1,6 +1,7 @@
 ---
 title: "Excellence, creativity, innovation"
 date: "2008-05-17T15:12:59.000Z"
+description: "Thoughts on achieving excellence through deliberate practice and confronting brutal facts while maintaining faith."
 draft: true
 layout: post
 ---

@@ -6,6 +6,7 @@ tags:
   - byu
   - island
 date: "2008-10-25T00:33:29.000Z"
+description: "A proposal for a self-directed learning course where students design their own projects and teach what they learn."
 layout: post
 ---
 

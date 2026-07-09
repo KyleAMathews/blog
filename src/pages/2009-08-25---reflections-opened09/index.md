@@ -6,6 +6,7 @@ tags:
   - social learning
   - opened09
 date: "2009-08-25T17:12:26.000Z"
+description: "Great teachers don't scale. We need to identify their successful patterns and build simplified technology around them."
 layout: post
 ---
 

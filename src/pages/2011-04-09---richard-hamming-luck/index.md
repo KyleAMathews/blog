@@ -3,6 +3,7 @@ title: Richard Hamming on Luck
 tags:
   - luck
 date: "2011-04-09T18:26:54.000Z"
+description: "The particular thing you do is luck, but that you do something is not. The prepared mind finds something important."
 layout: post
 ---
 

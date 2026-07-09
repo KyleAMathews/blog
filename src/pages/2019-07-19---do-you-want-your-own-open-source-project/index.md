@@ -4,6 +4,7 @@ tags:
   - open source
 blogchain: "Sustainable Open Source"
 date: "2019-07-19T12:29:30+0000"
+description: "Running OSS projects is rewarding but demanding. Consider your motives before starting one."
 ---
 
 Open source is great! It's an amazing way to grow as a developer, influence our craft, make friends, build your online resume, and help solve your own and others' problems.

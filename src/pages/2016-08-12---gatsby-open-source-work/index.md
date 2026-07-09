@@ -5,6 +5,7 @@ tags:
   - gatsby
   - typography.js
 date: "2016-08-12T17:52:44.000Z"
+description: "Announcing full-time work on Gatsby.js and Typography.js after leaving my startup, with plans for service workers and GraphQL."
 draft: false
 ---
 

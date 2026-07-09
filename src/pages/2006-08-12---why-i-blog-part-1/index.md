@@ -4,6 +4,7 @@ tags:
   - learning
   - writing
 date: "2006-08-12T22:52:44.000Z"
+description: "How C. Wright Mills' concept of 'intellectual craftsmanship' inspired me to blog as a way to develop habits of mind through writing."
 ---
 
 I'd been thinking about blogging for a long time but what finally pushed me over the edge was this [post][0]. The author, Scott McLemee, wrote about what he's learned from a pamphlet by C. Wright Mill "On Intellectual Craftsmanship". Here's the key quote,

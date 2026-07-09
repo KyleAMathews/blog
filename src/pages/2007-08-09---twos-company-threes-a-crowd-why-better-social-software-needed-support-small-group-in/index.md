@@ -5,6 +5,7 @@ tags:
   - elearning2.0
   - social software
 date: "2007-08-09T16:39:34.000Z"
+description: "Why communities don't scale like audiences, and the importance of designing social software that supports genuine connections."
 layout: post
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Tools to help administer your Facebook Groups
 date: "2014-05-20T23:46:37.121Z"
+description: "Open source tools to export and analyze Facebook Group data for admins frustrated by the lack of built-in analytics."
 layout: post
 readNext___file: ../2011-10-28---building-your-own-tools/index.md
 ---

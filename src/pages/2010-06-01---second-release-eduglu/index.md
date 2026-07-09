@@ -5,6 +5,7 @@ tags:
   - social learning
   - eduglu
 date: "2010-06-01T21:06:28.000Z"
+description: "Eduglu alpha 2 with discussion boards, polls, wikis, and plans for hosted version."
 layout: post
 ---
 

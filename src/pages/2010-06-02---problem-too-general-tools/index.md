@@ -3,6 +3,7 @@ title: The problem of too general tools
 tags:
   - entrepreneurship
 date: "2010-06-02T19:49:23.000Z"
+description: "People buy solutions to specific problems, not general-purpose tools. Narrower focus and deeper pain wins."
 layout: post
 readNext___file: ../2009-02-27---how-design-social-networking-site-using-social-objects/index.md
 ---

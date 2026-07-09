@@ -9,6 +9,7 @@ tags:
   - social learning
   - drupalcon
 date: "2009-04-11T15:17:27.000Z"
+description: "My Drupalcon DC 2009 presentation on building effective social networks using social object theory."
 layout: post
 ---
 

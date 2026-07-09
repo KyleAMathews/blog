@@ -1,6 +1,7 @@
 ---
 title: "The Rise of Protocols"
 date: "2024-04-09T21:02:20.704Z"
+description: "Protocol Theory may be as important as Information Theory, helping us rebuild struggling institutions."
 ---
 
 Here’s a quick sketch about why I think protocols are so important and why I think protocol design is a practical skill for many of us to learn.

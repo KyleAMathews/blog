@@ -1,6 +1,7 @@
 ---
 title: A new focus for my blog
 date: "2007-08-01T00:30:56.000Z"
+description: "Announcing a new focus on social software and eLearning 2.0 research at BYU's eBusiness center."
 layout: post
 ---
 

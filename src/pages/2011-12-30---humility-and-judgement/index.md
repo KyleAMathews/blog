@@ -3,6 +3,7 @@ title: Humility and judgement
 tags:
   - humility
 date: "2011-12-30T03:48:00.000Z"
+description: "Chesterton's fence: understand why something exists before destroying it."
 layout: post
 ---
 

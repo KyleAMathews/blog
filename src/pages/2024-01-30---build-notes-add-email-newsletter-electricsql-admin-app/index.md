@@ -1,6 +1,7 @@
 ---
 title: "Build Notes: Where I add an email newsletter with an ElectricSQL admin app"
 date: "2024-01-30T22:08:41.640Z"
+description: "Adding a simple newsletter by decomposing the problem and doing things that don't scale."
 ---
 
 I've been avoiding adding a newsletter to my blog for months now. It's an

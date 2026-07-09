@@ -6,6 +6,7 @@ tags:
   - micro-labs
   - connectivism
 date: "2009-10-30T16:26:04.000Z"
+description: "Detailed case study of running a student-directed micro-lab course at BYU using learning contracts and peer feedback."
 layout: post
 ---
 

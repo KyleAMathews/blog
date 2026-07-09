@@ -4,6 +4,7 @@ tags:
   - education
   - learning
 date: "2006-12-31T06:37:26.000Z"
+description: "Three criteria for evaluating tests: measuring something valuable, reliability and validity, and providing correct incentives for learning."
 ---
 
 I recently finished up a semester at [BYU][0]. The end of another semester

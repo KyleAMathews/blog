@@ -5,6 +5,7 @@ tags:
   - social objects
   - social networking
 date: "2009-02-27T18:20:59.000Z"
+description: "Define the objects, name the verbs, network the objects: a framework for designing social networking sites."
 layout: post
 readNext___file: ../2009-02-22---what-are-social-objects/index.md
 ---

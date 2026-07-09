@@ -3,6 +3,7 @@ title: SimpleGTD
 tags:
   - gtd
 date: "2011-10-07T18:59:39.000Z"
+description: "Designing a GTD app with automatic garbage collection for abandoned tasks, built for speed and forgiveness."
 layout: post
 ---
 

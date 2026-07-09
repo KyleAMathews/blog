@@ -5,6 +5,7 @@ tags:
   - backbone.js
   - node.js
 date: "2011-10-12T19:47:34.000Z"
+description: "Building a real-time group chatroom for Drupal using Node.js, Backbone.js, Socket.io, and Redis."
 layout: post
 ---
 

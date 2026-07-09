@@ -4,6 +4,7 @@ tags:
   - social software
   - social objects
 date: "2009-02-22T01:48:22.000Z"
+description: "Social objects are the reasons people talk to each other. They bind us together and shape our behavior."
 layout: post
 readNext___file: ../2009-02-27---how-design-social-networking-site-using-social-objects/index.md
 ---

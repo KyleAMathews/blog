@@ -3,6 +3,7 @@ title: New Drupal-Mixpanel integration module released to track event-based anal
 tags:
   - drupal
 date: "2011-04-23T00:23:01.000Z"
+description: "A Drupal module integrating with Mixpanel for powerful event-based analytics and user segmentation."
 layout: post
 ---
 

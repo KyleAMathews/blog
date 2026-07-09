@@ -1,6 +1,7 @@
 ---
 title: "Announcing a new Vite Plugin for integrating Capsizecss & Radix-ui"
 date: "2024-03-28T18:33:49.008Z"
+description: "A Vite plugin that integrates Capsize with Radix UI for precise, consistent typography across fonts."
 ---
 
 I really enjoy typography — which causes pain when developing for the web. Because the web

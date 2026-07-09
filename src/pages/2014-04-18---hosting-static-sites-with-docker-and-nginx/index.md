@@ -1,6 +1,7 @@
 ---
 title: Hosting static sites with Docker and Nginx
 date: "2014-04-24T22:12:03.284Z"
+description: "Using Docker to bundle static sites with Nginx into atomic, deployable images that run anywhere."
 layout: post
 readNext___file: ../2011-10-28---building-your-own-tools/index.md
 tags:

@@ -3,6 +3,7 @@ title: school and learning
 tags:
   - learning
 date: "2008-05-17T15:12:59.000Z"
+description: "Reflections on why school is often an unproductive source of learning and how multiple perspectives accelerate understanding."
 draft: true
 layout: post
 ---

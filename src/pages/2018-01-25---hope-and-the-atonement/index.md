@@ -1,6 +1,7 @@
 ---
 title: "Hope and the Atonement"
 date: "2018-01-25"
+description: "The atonement gives us taste for what we can become. Closing the gap between vision and reality is hard work."
 ---
 
 *I gave the following at the local [LDS church](https://www.mormon.org/) church I attend. Our church doesn't have paid ministry meaning everyone who attends occasionally takes their turn preaching and exhorting.*

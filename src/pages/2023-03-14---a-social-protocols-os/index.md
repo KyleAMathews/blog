@@ -1,6 +1,7 @@
 ---
 title: A Social Protocols OS
 date: "2023-03-14T18:47:56.000Z"
+description: "What if we had an OS for social protocols that made running clubs, conferences, and potlucks almost trivial?"
 ---
 
 My wife and I often talk about the difficulty of making friends as adults. There’s lots of articles online about this so I won’t rehash them — what’s been on my mind recently is that the root of the problem is broader than it appears, and understanding that root leads to novel solutions.

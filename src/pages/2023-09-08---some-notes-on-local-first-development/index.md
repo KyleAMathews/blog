@@ -1,6 +1,7 @@
 ---
 title: Some notes on Local-First Development
 date: "2023-09-08T06:37:26.000Z"
+description: "Local-first shifts reads and writes to client databases synced by engines. A major paradigm shift ahead."
 ---
 
 A few months ago in June, I attended [a local-first meetup in Berlin](https://www.youtube.com/results?search_query=Local-First+Meetup+Berlin+%231) organized by Johannes Schickling, formerly the founder of Prisma. An intellectual crackle filled the air as we watched demos of new libraries and products. Many of us had been independently playing around with local-first development ideas for a while — in my case, over a decade — and the in-person meetup gave us the chance to trade notes late into the night.

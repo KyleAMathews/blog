@@ -7,6 +7,7 @@ tags:
   - social learning
   - eduglu
 date: "2010-03-22T20:19:25.000Z"
+description: "First alpha release of Eduglu, my Drupal social learning distribution, with installation screencast."
 layout: post
 ---
 

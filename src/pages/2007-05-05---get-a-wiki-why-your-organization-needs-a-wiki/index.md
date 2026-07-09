@@ -3,6 +3,7 @@ title: "Get a Wiki: Why Your Organization needs a Wiki"
 tags:
   - enterprise2.0
 date: "2007-05-05T20:03:57.000Z"
+description: "Three reasons to adopt a wiki: enabling participation, creating organizational knowledge repositories, and low cost."
 layout: post
 ---
 

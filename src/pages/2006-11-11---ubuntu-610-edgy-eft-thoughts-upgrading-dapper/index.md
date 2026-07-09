@@ -4,6 +4,7 @@ tags:
   - linux
   - ubuntu
 date: "2006-11-11T03:42:01.000Z"
+description: "Notes on upgrading to Ubuntu Edgy Eft, including faster boot times, lower memory usage, and essential Linux programs."
 layout: post
 ---
 

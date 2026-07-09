@@ -1,6 +1,7 @@
 ---
 title: New Beginnings
 date: "2014-04-16T22:40:32.169Z"
+description: "Leaving Pantheon after two years to freelance and work through a backlog of side projects and books."
 layout: post
 readNext: "/hosting-static-sites-with-docker-and-nginx/"
 readNext___file: ../2014-04-18---hosting-static-sites-with-docker-and-nginx/index.md

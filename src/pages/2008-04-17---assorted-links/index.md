@@ -6,6 +6,7 @@ tags:
   - enterprise2.0
   - innovation
 date: "2008-04-17T18:43:26.000Z"
+description: "Curated links on social learning theory, expertise, Web 2.0 in education, wikis, and the psychology of willpower."
 layout: post
 ---
 

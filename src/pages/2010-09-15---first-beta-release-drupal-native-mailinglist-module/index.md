@@ -5,6 +5,7 @@ tags:
   - eduglu
   - og mailinglist
 date: "2010-09-15T22:49:54.000Z"
+description: "OG Mailinglist brings Google Groups-like email integration to Drupal Organic Groups sites."
 layout: post
 ---
 

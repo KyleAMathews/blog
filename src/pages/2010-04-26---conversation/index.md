@@ -5,6 +5,7 @@ tags:
   - social learning
   - conversation
 date: "2010-04-26T20:48:42.000Z"
+description: "Michael Oakeshott on conversation as an endless, unrehearsed intellectual adventure."
 layout: post
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: I deleted /bin
 date: "2008-05-17T15:12:59.000Z"
+description: "A cautionary tale about accidentally deleting /bin on a Linux server and how to recover using a live CD."
 draft: true
 layout: post
 ---

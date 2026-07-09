@@ -2,46 +2,23 @@ import React from "react"
 import Helmet from "react-helmet"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../layouts/index.js"
-import typography from "../utils/typography"
-import profilePic from "../images/kyle-round-small-pantheon.jpg"
+import Layout from "../../layouts/index.js"
+import typography from "../../utils/typography"
 
 const rhythm = typography.rhythm
 
-class BlogIndexRoute extends React.Component {
+class BlogAllRoute extends React.Component {
   render() {
-    // console.log(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
     const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
       <Layout location={this.props.location}>
-        <Helmet title={siteTitle} />
-        <p
-          css={{
-            marginBottom: rhythm(1.5),
-          }}
-        >
-          <img
-            src={profilePic}
-            alt="Kyle's profile pic"
-            css={{
-              borderRadius: `100%`,
-              float: "right",
-              marginRight: rhythm(1 / 4),
-              marginBottom: 0,
-              width: rhythm(2),
-              height: rhythm(2),
-            }}
-          />
-          Blog written by{" "}
-          <strong>{this.props.data.site.siteMetadata.author}</strong> who lives
-          and works in Salt Lake City building useful things.
-          {/* <div style={{ marginTop: rhythm(1/2) }}>
-            <Subscribe />
-          </div> */}
+        <Helmet title={`Archive | ${siteTitle}`} />
+        <h1>Archive</h1>
+        <p css={{ marginBottom: rhythm(1.5) }}>
+          Older posts from before August 2016. <Link to="/blog">Back to recent posts</Link>.
         </p>
-        <p />
         <div>
           {posts.map((post) => (
             <article
@@ -80,23 +57,18 @@ class BlogIndexRoute extends React.Component {
             </article>
           ))}
         </div>
-        <p css={{ marginTop: rhythm(2) }}>
-          <Link to="/blog/all">View older posts →</Link>
-        </p>
       </Layout>
     )
   }
 }
 
-export default BlogIndexRoute
+export default BlogAllRoute
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogAllQuery {
     site {
       siteMetadata {
         title
-        author
-        homeCity
       }
     }
     allMarkdownRemark(
@@ -105,7 +77,7 @@ export const pageQuery = graphql`
       filter: {
         frontmatter: {
           draft: { ne: true }
-          date: { gte: "2016-08-12" }
+          date: { lt: "2016-08-12" }
         }
       }
     ) {

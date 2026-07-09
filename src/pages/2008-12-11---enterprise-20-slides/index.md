@@ -3,6 +3,7 @@ title: Enterprise 2.0 Slides
 tags:
   - enterprise2.0
 date: "2008-12-11T16:41:56.000Z"
+description: "Slides from my Information Systems class presentation on Enterprise 2.0."
 layout: post
 ---
 

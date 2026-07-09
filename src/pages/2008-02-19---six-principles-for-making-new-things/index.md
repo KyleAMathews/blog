@@ -4,6 +4,7 @@ tags:
   - blogging
   - innovation
 date: "2008-02-19T01:51:40.000Z"
+description: "Paul Graham's approach to innovation: simple solutions to overlooked problems, delivered informally and iterated rapidly."
 layout: post
 ---
 

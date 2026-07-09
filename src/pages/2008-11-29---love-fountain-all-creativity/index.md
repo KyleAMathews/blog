@@ -4,6 +4,7 @@ tags:
   - creativity
   - love
 date: "2008-11-29T19:53:57.000Z"
+description: "Love drives creativity by pushing us beyond 'good enough,' conquering fear of failure, and focusing our attention."
 draft: true
 layout: post
 ---

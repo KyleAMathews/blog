@@ -1,6 +1,7 @@
 ---
 title: Eduglu enters the deadpool
 date: "2011-04-22T23:03:50.000Z"
+description: "Announcing the end of my work on Eduglu after being unable to find a sustainable business model."
 tags:
   - eduglu
 ---

@@ -5,6 +5,7 @@ tags:
   - memetracker
   - google summer of code
 date: "2008-04-22T03:59:17.000Z"
+description: "Announcing my acceptance to Google Summer of Code to build memetracking software for Drupal."
 layout: post
 ---
 

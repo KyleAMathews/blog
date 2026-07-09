@@ -3,6 +3,7 @@ title: Enterprise 2.0 — A Summary Post
 tags:
   - enterprise2.0
 date: "2007-03-14T13:53:48.000Z"
+description: "A comprehensive guide to Enterprise 2.0 tools including wikis, blogs, CRMs, and project management software for organizational collaboration."
 layout: post
 ---
 

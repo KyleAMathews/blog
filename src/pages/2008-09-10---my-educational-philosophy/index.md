@@ -5,6 +5,7 @@ tags:
   - entrepreneurship
   - learning
 date: "2008-09-10T14:43:20.000Z"
+description: "Why smart people with bad grades may be the most creative: they learn what they want, not what they're told."
 layout: post
 ---
 

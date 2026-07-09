@@ -1,6 +1,7 @@
 ---
 title: "Build Notes: Creating a Local-First, AI-powered YouTube Summarizer"
 date: "2023-12-13"
+description: "Building a YouTube summarizer with ElectricSQL, exploring lazy syncing and real-time progress updates."
 ---
 
 My wife and I have been working on a side project for a while — an AI-powered tool that summarizes YouTube videos.

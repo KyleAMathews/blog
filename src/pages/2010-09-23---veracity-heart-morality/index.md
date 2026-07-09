@@ -3,6 +3,7 @@ title: Veracity is the heart of morality
 tags:
   - education
 date: "2010-09-23T04:43:53.000Z"
+description: "Thomas Huxley on the ideal university and why enthusiasm for truth is greater than much learning."
 layout: post
 ---
 

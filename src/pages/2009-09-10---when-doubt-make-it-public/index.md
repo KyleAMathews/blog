@@ -4,6 +4,7 @@ tags:
   - education
   - social learning
 date: "2009-09-10T00:15:20.000Z"
+description: "How making private interactions public and permanent creates powerful effects, from Blogger to Flickr to classroom discussions."
 layout: post
 ---
 

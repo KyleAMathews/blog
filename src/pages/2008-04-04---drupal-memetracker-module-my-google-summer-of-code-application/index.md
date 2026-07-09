@@ -6,6 +6,7 @@ tags:
   - social software
   - google summer of code
 date: "2008-04-04T23:03:38.000Z"
+description: "My Google Summer of Code proposal to build a memetracker module for Drupal using machine learning to surface interesting content."
 layout: post
 ---
 

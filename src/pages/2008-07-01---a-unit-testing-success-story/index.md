@@ -5,6 +5,7 @@ tags:
   - google summer of code
   - unit testing
 date: "2008-07-01T21:46:58.000Z"
+description: "How writing unit tests for my Drupal memetracker module helped me catch a subtle validation bug."
 layout: post
 ---
 

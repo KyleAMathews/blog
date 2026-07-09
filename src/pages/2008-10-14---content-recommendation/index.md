@@ -4,6 +4,7 @@ tags:
   - memetracker
   - content recommendation
 date: "2008-10-14T00:26:11.000Z"
+description: "A framework for understanding content recommendation as filtering, organizing, and displaying information."
 draft: true
 layout: post
 ---

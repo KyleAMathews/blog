@@ -1,6 +1,7 @@
 ---
 title: "LocalFirst.fm Podcast with Johannes Schickling"
 date: "2024-03-13T16:37:55.483Z"
+description: "Podcast transcript discussing sync engines, local-first DX, and why data-first development is the future."
 ---
 
 _Johannes invited me on his LocalFirst.fm podcast and we had a great chat talking about all things Sync Engine / LocalFirst._

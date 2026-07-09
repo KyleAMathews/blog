@@ -9,6 +9,7 @@ tags:
   - universities
   - course design
 date: "2009-10-21T17:43:27.000Z"
+description: "Micro-labs as an alternative to courses: small learning communities that adapt to students through demand-pull learning."
 layout: post
 ---
 

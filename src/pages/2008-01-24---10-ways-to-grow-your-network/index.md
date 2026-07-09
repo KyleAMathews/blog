@@ -5,6 +5,7 @@ tags:
   - innovation
   - learning
 date: "2008-01-24T00:50:26.000Z"
+description: "Ten practical strategies for expanding your professional network through introductions, collaboration, and trust-building."
 layout: post
 ---
 

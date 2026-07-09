@@ -1,6 +1,7 @@
 ---
 title: "Building a Slack bot to help handle large numbers of PRs"
 date: "2019-04-22T06:37:26.000Z"
+description: "Using queuing theory from Product Development Flow to build a Slack bot that identifies unreviewed Gatsby PRs."
 ---
 
 Gatsby gets a lot of PRs. We’ve been averaging ~100 / week for the past few months. And even with the great OSS team we’ve built, this is a lot of code changes to keep on top of.

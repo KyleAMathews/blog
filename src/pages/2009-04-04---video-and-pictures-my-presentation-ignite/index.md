@@ -6,6 +6,7 @@ tags:
   - ignite salt lake
   - social learning
 date: "2009-04-04T00:44:22.000Z"
+description: "Video and photos from my Ignite Salt Lake 2 presentation on building social networks at universities."
 layout: post
 ---
 

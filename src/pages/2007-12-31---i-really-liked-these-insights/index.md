@@ -6,6 +6,7 @@ tags:
   - innovation
   - learning
 date: "2007-12-31T21:25:54.000Z"
+description: "Evan Williams on how new ideas are stumbled upon accidentally, hard to explain, and obvious in retrospect."
 layout: post
 ---
 

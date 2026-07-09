@@ -4,6 +4,7 @@ tags:
   - entrepreneurship
   - learning
 date: "2007-02-15T06:20:32.000Z"
+description: "Why I quit my job to teach myself web development and start a business, inspired by advice that taking risks opens options."
 layout: post
 ---
 

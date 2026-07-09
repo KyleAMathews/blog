@@ -1,6 +1,7 @@
 ---
 title: Building a "per-user database" SaaS app with Turso
 date: "2023-10-03T06:37:26.000Z"
+description: "Using Turso's 10,000 database limit to build SaaS apps where each user gets their own isolated SQLite database."
 ---
 
 [Turso](https://turso.tech/) is a SQLite-in-the-cloud startup with automatic backup and multi-region leader-follower replication across dozens of regions.

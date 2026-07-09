@@ -2,6 +2,7 @@
 title: Developing faith in God
 tags: null
 date: "2011-06-26T23:30:50.000Z"
+description: "Faith in God is confidence that He will do what He says. Understanding Him and having faith in Him is one and the same."
 ---
 
 _The following is a talk I recently gave at the local [LDS church][0] I attend. Our church doesn't have paid ministry meaning everyone who attends occasionally takes their turn preaching and exhorting._
