@@ -11,3 +11,6 @@ public/
 
 # sst
 .sst
+.obsidian
+.opentrace
+.opentrace-index.log
