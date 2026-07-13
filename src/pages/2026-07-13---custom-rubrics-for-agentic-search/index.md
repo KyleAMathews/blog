@@ -5,7 +5,7 @@ date: "2026-07-13T12:00:00.000Z"
 description: "Platform search fails niche users because it optimizes for the majority. Custom rubrics—private criteria applied by AI—let you find what you actually want by reading the signals businesses can't fake."
 ---
 
-_[My rubrics are on GitHub](https://github.com/KyleAMathews/scratch-food-rubrics) — try them with your favorite agent._
+_[My rubrics are on GitHub](https://github.com/KyleAMathews/scratch-food-rubrics) — try them with your favorite agent. [Example output](https://gisthost.github.io/?58aa770da42135b981647c4de01cbd86)._
 
 I moved from the Bay Area to Salt Lake City a couple years ago, and restaurant and bakery reviews stopped helping. In the Bay Area, reviews discriminated on quality, uniqueness, whether the kitchen was doing something interesting. A 4.5 meant something. Here, everything that isn't actively terrible sits at 4.5+. An incredible restaurant gets ranked the same as a place reheating Sysco lava cakes.
 
