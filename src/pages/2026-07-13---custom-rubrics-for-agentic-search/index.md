@@ -21,7 +21,7 @@ Art historians solved a version of this problem a century ago. Giovanni Morelli 
 
 My bakery and restaurant rubric took about 20 iterations, tested against places I'd lived and knew well. Once it started highlighting my favorite spots _and_ surfacing places I'd never seen before but looked great, I knew it was working.
 
-It's a skill I run in a coding agent (Claude Code, Codex, or similar). I give it an area, and it pulls every restaurant or bakery from OpenStreetMap (popularity-neutral — no ranking), then spawns subagents to score each one against my rubric. The subagents read menus, reviews, and websites, looking for specific signals. Results come back as a ranked list with explanations for each score.
+It's a skill I run in a coding agent (Claude Code, Codex, or similar). I give it an area, and it pulls every restaurant or bakery from OpenStreetMap (popularity-neutral — no ranking), then spawns subagents to score each one against my rubric. The subagents read menus, reviews, and websites, looking for specific signals. Results come back organized by occasion — e.g. for restaurants: best meal, something new, great casual — plus rare dishes worth a detour.
 
 The trick to making the rubric work was finding the hidden dimension that matters. For me, the question is _ambition_. Does the kitchen try to make things from scratch, or are they running a business that happens to serve food? That single question predicts two things I want: uniqueness (they're not serving the same reheated items as everyone else) and caring (someone who makes their own pasta probably cares about quality in ways that don't show up in star ratings).
 
