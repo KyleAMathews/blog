@@ -8,7 +8,8 @@
     "format": "prettier --write '**/*.js'",
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "deploy": "gatsby build && wrangler pages deploy public --project-name=blog"
+    "deploy": "gatsby build && wrangler pages deploy public --project-name=blog",
+    "seo:report": "node scripts/search-console-report.mjs"
   },
   "dependencies": {
     "@emotion/core": "^10.0.7",
@@ -18,7 +19,7 @@
     "gatsby": "^5.7.0",
     "gatsby-plugin-emotion": "^4.0.4",
     "gatsby-plugin-feed": "^5.12.0",
-    "gatsby-plugin-google-analytics": "^5.7.0",
+    "gatsby-plugin-google-gtag": "^5.16.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-offline": "^6.7.0",
@@ -53,6 +54,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20241004.0",
+    "google-auth-library": "^10.9.0",
     "wrangler": "^4.82.1"
   },
   "pnpm": {

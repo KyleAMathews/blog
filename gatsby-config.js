@@ -54,9 +54,16 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `UA-774017-3`,
+        trackingIds: [`G-Y6GJVKC1VN`],
+        gtagConfig: {
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false,
+        },
+        pluginConfig: {
+          respectDNT: true,
+        },
       },
     },
     {
