@@ -14,3 +14,17 @@ public/
 .obsidian
 .opentrace
 .opentrace-index.log
+
+# Local secrets and credentials
+/SEO_EXPERIMENTS.md
+.env
+.env.*
+!.env.example
+.dev.vars
+*.pem
+*.key
+*.p12
+*.pfx
+search-console-reader.json
+*service-account*.json
+google-credentials*.json
