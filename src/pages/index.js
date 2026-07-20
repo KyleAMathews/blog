@@ -104,6 +104,7 @@ export default function Index() {
         }}
       >
         <NoStyleLink to="/blog/">blog</NoStyleLink>,{" "}
+        <NoStyleLink to="/ai-agents/">AI &amp; agents</NoStyleLink>,{" "}
         <NoStyleLink to="/about/">about</NoStyleLink>
       </div>
     </div>

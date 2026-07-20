@@ -2,6 +2,7 @@
 title: "Essential Until It Wasn't"
 date: "2026-07-03T12:00:00.000Z"
 description: "Every generation of programmers believed their ground was solid. Assembly, C, manual memory management — each felt essential until the boundary moved. Now AI is moving it again."
+topic: "AI and agents"
 ---
 
 What we call programming today is not the same activity it was two years ago. The daily work, the skills that matter, the texture of the craft — all changed. And yet people talk about it as if "programming" names a fixed thing that AI tools either threaten or enhance. But "programming" has never rested on solid ground.

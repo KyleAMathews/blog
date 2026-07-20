@@ -46,6 +46,7 @@ class Wrapper extends React.Component {
             }}
           >
             <NoStyleLink to="/blog/">blog</NoStyleLink>,{" "}
+            <NoStyleLink to="/ai-agents/">AI &amp; agents</NoStyleLink>,{" "}
             <NoStyleLink to="/about/">about</NoStyleLink>
           </div>
         </div>
@@ -59,7 +60,7 @@ class Wrapper extends React.Component {
             margin: `0 auto`,
           }}
         >
-          <Helmet defaultTitle="Bricolage" titleTemplate="Bricolage | %s" />
+          <Helmet defaultTitle="Bricolage" titleTemplate="%s | Bricolage" />
           {this.props.children}
         </div>
       </div>

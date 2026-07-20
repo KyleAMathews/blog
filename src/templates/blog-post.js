@@ -1,9 +1,9 @@
 import React from "react"
-import Helmet from "react-helmet"
 import { Link, graphql } from "gatsby"
 import typography from "../utils/typography"
 import ReadNext from "../components/ReadNext"
 import Subscribe from "../components/subscribe"
+import SEO from "../components/seo"
 import Layout from "../layouts/index.js"
 import profilePic from "../images/kyle-round-small-pantheon.jpg"
 
@@ -40,35 +40,37 @@ function BlogPostRoute(props) {
 
   return (
     <Layout location={props.location}>
-      <Helmet>
-        <title>{post.frontmatter.title}</title>
-        <meta property="description" content={post.excerpt} />
-        <meta property="og:title" content={post.frontmatter.title} />
-        <meta property="og:description" content={post.excerpt} />
-      </Helmet>
-      {post.frontmatter.featured_image && (
-        <Helmet>
-          <meta
-            property="og:image"
-            content={`https://bricolage.io${post.frontmatter.featured_image.childImageSharp.fixed.src}`}
-          />
-          <meta property="og:type" content="website" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta
-            name="twitter:image"
-            content={`https://bricolage.io${post.frontmatter.featured_image.childImageSharp.fixed.src}`}
-          />
-        </Helmet>
-      )}
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+        pathname={post.fields.slug}
+        siteMetadata={props.data.site.siteMetadata}
+        type="article"
+        image={post.frontmatter.featured_image?.childImageSharp.fixed.src}
+        datePublished={post.frontmatter.datePublished}
+        tags={post.frontmatter.tags || []}
+      />
       <h1 css={{ marginBottom: rhythm(1 / 4) }}>{post.frontmatter.title}</h1>
       <p
         style={{
           ...scale(-1 / 4),
           display: "block",
+          marginBottom: post.frontmatter.topic ? rhythm(1 / 4) : undefined,
         }}
       >
         Posted {post.frontmatter.date}
       </p>
+      {post.frontmatter.topic === "AI and agents" && (
+        <p
+          style={{
+            ...scale(-1 / 5),
+            marginBottom: rhythm(1),
+          }}
+        >
+          Part of my essays on{" "}
+          <Link to="/ai-agents/">AI agents and the future of software</Link>.
+        </p>
+      )}
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       {tagsSection}
       <hr
@@ -113,20 +115,26 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
+        title
         author
         homeCity
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
       fields {
+        slug
         tagSlugs
       }
       frontmatter {
         title
+        description
+        topic
         tags
         date(formatString: "MMMM DD, YYYY")
+        datePublished: date
         featured_image {
           childImageSharp {
             fixed(height: 630, width: 1200) {

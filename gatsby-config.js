@@ -9,7 +9,7 @@ module.exports = {
     title: "Bricolage",
     author: "Kyle Mathews",
     homeCity: "Salt Lake City",
-    description: `Kyle Mathews' blog yo`,
+    description: `Essays by Kyle Mathews about software, AI agents, local-first systems, organizations, and how technology changes the way we work.`,
     siteUrl: `https://bricolage.io`,
   },
   plugins: [
@@ -74,6 +74,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     // `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {

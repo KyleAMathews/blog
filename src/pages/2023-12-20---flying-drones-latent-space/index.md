@@ -3,6 +3,7 @@ title: "Flying Drones in Latent Space"
 date: "2023-12-19T22:58:25.516Z"
 featured_image: "./drone-latent-space.png"
 description: "LLM prompts are like flying cameras through latent space, capturing snapshots of frozen intelligence."
+topic: "AI and agents"
 ---
 
 ![Drone flying in latent space](./drone-latent-space.png)

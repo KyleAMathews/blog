@@ -3,6 +3,7 @@ title: "Custom Rubrics for Agentic Search"
 subtitle: "Or how I'm now using AI to find better food"
 date: "2026-07-13T12:00:00.000Z"
 description: "Platform search fails niche users because it optimizes for the majority. Custom rubrics—private criteria applied by AI—let you find what you actually want by reading the signals businesses can't fake."
+topic: "AI and agents"
 ---
 
 _[My rubrics are on GitHub](https://github.com/KyleAMathews/scratch-food-rubrics) — try them with your favorite agent. [Example output](https://gisthost.github.io/?58aa770da42135b981647c4de01cbd86)._
